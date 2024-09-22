@@ -60,7 +60,6 @@
     padding: 1rem;
     gap: .5rem;
     border-radius: .5rem;
-    opacity: 0px;
   }
 
   .btn-nav {
@@ -69,7 +68,6 @@
     padding: 1rem;
     gap: .5rem;
     border-radius: .5rem;
-    opacity: 0px;
   }
 
   .btn-nav-text {
@@ -86,7 +84,6 @@
     height: 33px;
     padding: 10px;
     gap: 10px;
-    opacity: 0px;
     background: #FFFFFF;
   }
 
@@ -123,7 +120,6 @@
     width: 70px;
     height: 70px;
     gap: 0px;
-    opacity: 0px;
     border-radius: 31px;
     background: #B9FFC469;
 
@@ -156,7 +152,6 @@
     padding: 16px 13px 16px 13px;
     gap: 10px;
     border-radius: 7px;
-    opacity: 0px;
     background: #DFFCE3;
   }
 
@@ -202,7 +197,6 @@
     height: 164px;
     gap: 0px;
     border-radius: 29px;
-    opacity: 0px;
     background: #EBEBEB;
   }
 
@@ -249,7 +243,6 @@
     padding: 10px 10px 10px 10px;
     gap: 10px;
     border-radius: 11px 11px 11px 11px;
-    opacity: 0px;
     background: #2CE5B1;
   }
 
@@ -259,7 +252,6 @@
     padding: 10px 10px 10px 10px;
     gap: 10px;
     border-radius: 11px 11px 11px 11px;
-    opacity: 0px;
     background: #2CE5B1;
     font-family: Satoshi;
     font-size: 11px;
@@ -275,7 +267,6 @@
     padding: 10px;
     gap: 10px;
     border-radius: 50%;
-    opacity: 0px;
     font-family: Satoshi;
     font-size: 11px;
     font-weight: 700;
@@ -294,7 +285,6 @@
     padding: 1rem;
     gap: .5rem;
     border-radius: .5rem;
-    opacity: 0px;
     font-family: Satoshi;
     font-size: 14px;
     font-weight: 500;
@@ -363,7 +353,6 @@
     height: 118px;
     gap: 0px;
     border-radius: 29px;
-    opacity: 0px;
     background: #2CE5B1;
   }
 
@@ -372,7 +361,6 @@
     height: 264px;
     gap: 0px;
     border-radius: 29px;
-    opacity: 0px;
     background: #2CE5B1;
   }
 
