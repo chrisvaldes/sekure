@@ -158,9 +158,9 @@ export default function NavBar() {
                       </select>
                     </div>
 
-                    <div className="flex items-center justify-center bg-slate-600 gap-x-2">
-                      <Link to='/' className="btn-nav-text  flex items-center justify-center bg-green-color btn-nav" href="#">
-                        <span>Connexion</span>
+                    <div className="flex items-center justify-center gap-x-2">
+                      <Link to='/' className="btn-nav-text  flex items-center justify-center bg-green-color btn-nav">
+                        <span className="bg-slate-500">Connexion</span>
                         <div className='ml-2'>
                           <div className='btn-icon-circle  flex items-center'>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
@@ -169,7 +169,7 @@ export default function NavBar() {
                           </div>
                         </div>
                       </Link>
-                      <Link to="/" className="btn-nav-text flex items-center justify-center bg-green-deep btn-nav" href="#">
+                      <Link to="/" className="btn-nav-text flex items-center justify-center bg-green-deep btn-nav">
                         <span>Contacter</span>
                         <Message />
                       </Link>
