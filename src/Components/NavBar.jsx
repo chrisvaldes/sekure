@@ -155,8 +155,7 @@ export default function NavBar() {
                             </div>
                           </div>
                         </option>
-                      </select>
-                      <div className="flex items-center bg-slate-500 justify-center gap-x-2">
+                      </select> 
                         <Link to='/' className="btn-nav-text  flex items-center justify-center bg-green-color btn-nav" href="#">
                           <span>Connexion</span>
                           <Arrow />
@@ -164,8 +163,7 @@ export default function NavBar() {
                         <Link to="/" className="btn-nav-text flex items-center justify-center bg-green-deep btn-nav" href="#">
                           <span>Contacter</span>
                           <Message />
-                        </Link>
-                      </div>
+                        </Link> 
                     </div>
 
 
