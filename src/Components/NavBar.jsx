@@ -155,8 +155,8 @@ export default function NavBar() {
                             </div>
                           </div>
                         </option>
-                      </select>
-                        <Link to='/' className="btn-nav-text  flex items-center justify-center bg-green-color" href="#">
+                      </select> 
+                        <Link to='/' className="   flex items-center justify-center bg-green-color btn-nav" href="#">
                           <span>Connexion</span>
                           <Arrow />
                         </Link>
