@@ -57,24 +57,24 @@
   .btn {
     width: 236px;
     height: 50px;
-    padding: var(--sds-size-space-300);
-    gap: var(--sds-size-space-200);
-    border-radius: var(--sds-size-radius-200);
+    padding: 1rem;
+    gap: .5rem;
+    border-radius: .5rem;
     opacity: 0px;
   }
 
   .btn-nav {
     width: 160px;
     height: 45px;
-    padding: var(--sds-size-space-300);
-    gap: var(--sds-size-space-200);
-    border-radius: var(--sds-size-radius-200);
+    padding: 1rem;
+    gap: .5rem;
+    border-radius: .5rem;
     opacity: 0px;
   }
 
   .btn-nav-text {
     font-family: Satoshi;
-    font-size: var(--BodySmallSize);
+    font-size: 16px;
     font-weight: 500;
     line-height: 12px;
     text-align: left;
@@ -84,7 +84,7 @@
   .btn-verification {
     width: 183px;
     height: 33px;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
     gap: 10px;
     opacity: 0px;
     background: #FFFFFF;
@@ -101,7 +101,7 @@
 
   .btn-text {
     font-family: Satoshi;
-    font-size: var(--BodyMediumSize);
+    font-size: 15px;
     font-weight: 700;
     line-height: 14px;
     text-align: center;
@@ -124,7 +124,7 @@
     height: 70px;
     gap: 0px;
     opacity: 0px;
-    border-radius: 31px 31px 31px 31px;
+    border-radius: 31px;
     background: #B9FFC469;
 
   }
@@ -155,7 +155,7 @@
     height: 131px;
     padding: 16px 13px 16px 13px;
     gap: 10px;
-    border-radius: 7px 7px 7px 7px;
+    border-radius: 7px;
     opacity: 0px;
     background: #DFFCE3;
   }
@@ -291,9 +291,9 @@
     height: 51px;
     top: 4717px;
     left: 190px;
-    padding: var(--sds-size-space-300);
-    gap: var(--sds-size-space-200);
-    border-radius: var(--sds-size-radius-200);
+    padding: 1rem;
+    gap: .5rem;
+    border-radius: .5rem;
     opacity: 0px;
     font-family: Satoshi;
     font-size: 14px;
