@@ -1,10 +1,667 @@
+@tailwind base;
+@tailwind components;
+
+:root {
+  --sds-size-space-300: 1rem;
+  /* ou toute autre valeur */
+  --sds-size-space-200: 0.5rem;
+  --sds-size-radius-200: 0.25rem;
+  --sds-size-stroke-border: 1px solid #ccc;
+  --Text-Brand-On-Brand: #F5F5F5;
+  --sds-size-space-300: 1rem;
+  --sds-size-space-200: 0.5rem
+}
+
+@layer components {
+
+  /* navbar */
+  .logo {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+  }
+
+  .nav-logo {
+    font-family: Satoshi;
+    font-size: 30px;
+    font-weight: bolder;
+    line-height: 47px;
+    letter-spacing: -2px;
+    text-align: left;
+    color: #285246;
+  }
+
+  .nav-language {
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 15.13px;
+    text-align: left;
+    color: #000000;
+  }
+
+  nav ul li .text-nav {
+    font-family: Inter;
+    font-size: 12.5px;
+    font-weight: 400;
+    line-height: 15.13px;
+    text-align: left;
+    color: #5A5A5A;
+  }
+
+  nav ul li svg {
+    width: 11px;
+    height: 5px;
+  }
+
+  .btn {
+    width: 236px;
+    height: 50px;
+    padding: var(--sds-size-space-300);
+    gap: var(--sds-size-space-200);
+    border-radius: var(--sds-size-radius-200);
+    opacity: 0px;
+  }
+
+  .btn-nav {
+    width: 160px;
+    height: 45px;
+    padding: var(--sds-size-space-300);
+    gap: var(--sds-size-space-200);
+    border-radius: var(--sds-size-radius-200);
+    opacity: 0px;
+  }
+
+  .btn-nav-text {
+    font-family: Satoshi;
+    font-size: var(--BodySmallSize);
+    font-weight: 500;
+    line-height: 12px;
+    text-align: left;
+    color: #F5F5F5;
+  }
+
+  .btn-verification {
+    width: 183px;
+    height: 33px;
+    padding: 10px 10px 10px 10px;
+    gap: 10px;
+    opacity: 0px;
+    background: #FFFFFF;
+  }
+
+  .btn-verification-text {
+    font-family: Satoshi;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: center;
+    color: #285246;
+  }
+
+  .btn-text {
+    font-family: Satoshi;
+    font-size: var(--BodyMediumSize);
+    font-weight: 700;
+    line-height: 14px;
+    text-align: center;
+    color: var(--Text-Brand-On-Brand);
+  }
+
+  .btn-icon-circle {
+    width: 32px;
+    height: 32px;
+    padding: 10px 5px 10px 5px;
+    gap: 10px;
+    border-radius: 31px 31px 31px 31px;
+    background-color: #FFFF;
+    color: #285246F5;
+  }
+
+  /* section-1  */
+  .btn-icon-cart {
+    width: 70px;
+    height: 70px;
+    gap: 0px;
+    opacity: 0px;
+    border-radius: 31px 31px 31px 31px;
+    background: #B9FFC469;
+
+  }
+
+  .card-icon-title {
+    font-family: Satoshi;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    color: #285246;
+  }
+
+  .card-icon-content {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #285246;
+  }
+
+  /* end section-1  */
+
+
+  .card-choice {
+    width: 219px;
+    height: 131px;
+    padding: 16px 13px 16px 13px;
+    gap: 10px;
+    border-radius: 7px 7px 7px 7px;
+    opacity: 0px;
+    background: #DFFCE3;
+  }
+
+  .card-choice-title {
+    font-family: Satoshi;
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: -2px;
+    text-align: center;
+    color: #2CE5B1;
+  }
+
+  .card-choice-content {
+    font-family: Satoshi;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 17px;
+    text-align: center;
+    color: #285246;
+  }
+
+  .mini-card-connexion {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 13rem);
+    /* Utilisez minmax pour une meilleure flexibilité */
+    align-items: center;
+    justify-content: center;
+    gap: 19px;
+  }
+
+  .card-choice-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 15rem);
+    /* Utilisez minmax pour une meilleure flexibilité */
+    align-items: center;
+    justify-content: center;
+    gap: 19px;
+  }
+
+  .mini-card-square {
+    width: 164px;
+    height: 164px;
+    gap: 0px;
+    border-radius: 29px;
+    opacity: 0px;
+    background: #EBEBEB;
+  }
+
+  .mini-card-square-title {
+    font-family: Satoshi;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    text-align: center;
+
+  }
+
+  .mini-card-square-content {
+    font-family: Satoshi;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 19px;
+    text-align: center;
+
+  }
+
+  .accordion-title {
+    font-family: Satoshi;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 19px;
+    text-align: left;
+    color: #285246;
+  }
+
+  .accordion-content {
+    font-family: Satoshi;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 19px;
+    text-align: left;
+    color: #285246;
+  }
+
+
+  .btn-small {
+    width: 111px;
+    height: 25px;
+    padding: 10px 10px 10px 10px;
+    gap: 10px;
+    border-radius: 11px 11px 11px 11px;
+    opacity: 0px;
+    background: #2CE5B1;
+  }
+
+  .btn-choice {
+    width: 139px;
+    height: 34px;
+    padding: 10px 10px 10px 10px;
+    gap: 10px;
+    border-radius: 11px 11px 11px 11px;
+    opacity: 0px;
+    background: #2CE5B1;
+    font-family: Satoshi;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .btn-about-us {
+    width: 111px;
+    height: 25px;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 50%;
+    opacity: 0px;
+    font-family: Satoshi;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #2CE5B1;
+
+  }
+
+  .big-btn-about-us {
+    width: 182px;
+    height: 51px;
+    top: 4717px;
+    left: 190px;
+    padding: var(--sds-size-space-300);
+    gap: var(--sds-size-space-200);
+    border-radius: var(--sds-size-radius-200);
+    opacity: 0px;
+    font-family: Satoshi;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    text-align: left;
+    color: #F5F5F5
+  }
+
+  .title {
+    font-family: Satoshi;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: -2px;
+    text-align: left;
+  }
+
+  .title-content {
+    font-family: Satoshi;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #285246;
+  }
+
+  .sub-title {
+    font-family: Satoshi;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 37px;
+    text-align: left;
+    color: #285246
+  }
+
+  .title-1 {
+    font-family: Satoshi;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -1px;
+    text-align: left;
+    color: #285246
+  }
+
+  .title-content-1 {
+    font-family: Satoshi;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: #285246
+  }
+
+  .title-content-card {
+    font-family: Satoshi;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 13px;
+    text-align: left;
+    color: #285246
+  }
+
+  .card-vert {
+    width: 441px;
+    height: 118px;
+    gap: 0px;
+    border-radius: 29px;
+    opacity: 0px;
+    background: #2CE5B1;
+  }
+
+  .card-horiz {
+    width: 205px;
+    height: 264px;
+    gap: 0px;
+    border-radius: 29px;
+    opacity: 0px;
+    background: #2CE5B1;
+  }
+
+  .small-check-circle {
+    width: 25px;
+    height: 25px;
+    gap: 0px;
+    background: #2CE5B1;
+    color: white;
+    padding: .2rem;
+  }
+
+  .content-small-circle-check {
+    font-family: Satoshi;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 13px;
+    text-align: left;
+    color: #285246;
+  }
+
+  .cniPassport {
+    top: -25%;
+    left: 10%
+  }
+}
+
+.sidebar-group-btn {
+  display: none;
+}
+
+.menu-bars {
+  display: none;
+}
+
+.accueil .women-selfie {
+  background-image: url("../src/images/women--background-accueil.png");
+  background-repeat: no-repeat;
+  background-position: 100% 10%;
+}
+
+.world-section {
+  background-image: url("../src/images/world.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.background-footer {
+  background-image: url("../src/images/Vector.png");
+  background-repeat: no-repeat;
+  background-position: 100% 10%;
+  background-size: cover;
+  width: 715.18px;
+  height: 381.01px;
+}
+
+.grid-footer-grid-title {
+  font-family: Lufga;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+  color: #285246
+}
+
+.grid-footer-grid-content {
+  font-family: Open Sans Hebrew;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #285246;
+}
+.footer-grid-logo{
+  font-family: Satoshi;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 47px;
+    letter-spacing: -2px;
+    text-align: left;
+    color: #285246;
+}
+
+/* @media (max-width:1390px) {
+
+  .background-footer{
+    width: 690px;
+    height:300px;
+
+  }
+  .main-footer{
+    padding: 2rem;
+  }
+} */
+
+.section-tree-col-selfie {
+  margin: 0 5rem;
+}
+
+.cni-img {
+  position: absolute;
+  top: -23%;
+  left: 0;
+}
+
+.bigMother {
+  position: absolute;
+  top: -45.5%;
+  left: 3%;
+}
+
+.groupDatabase {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  height: 90%;
+}
+
+.group-card-vert {
+  padding: 0 3rem;
+}
+
+.group-card-horiz {
+  padding: 0 3rem;
+}
+
+.phone-accordion {
+  padding: 0 5rem;
+}
+
+@media (max-width : 736px) {
+  .accueil .women-selfie {
+    background-image: none;
+  }
+
+  /* .accueil .women-selfie .title{
+    text-align: justify;
+  } */
+  .accueil .women-selfie .accueil-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: auto;
+    margin: 0 1rem;
+  }
+
+  .section-tree-col-selfie {
+    margin: 0 1rem;
+  }
+
+  .card-vert {
+    width: 300px;
+    height: 80px;
+  }
+
+  .card-horiz {
+    width: 150px;
+    height: 180px;
+  }
+
+  .bigMother {
+    position: absolute;
+    top: -45%;
+    left: 11%;
+    width: 90%;
+  }
+
+  .group-card-vert {
+    padding: 0 2rem;
+  }
+
+  .group-card-horiz {
+    padding: 0 2rem;
+  }
+
+  .cni-img {
+    position: absolute;
+    top: -20%;
+    left: 0;
+  }
+
+  .section-choise-us {
+    padding: 0 1rem;
+  }
+
+  .world-section {
+    background-size: contain;
+    padding: 0 2rem;
+  }
+
+  .phone-accordion {
+    padding: 0 2rem;
+  }
+
+  .img-arrow {
+    display: none;
+  }
+
+}
+
+@media (max-width:1116px) {
+  .accueil .women-selfie {
+    background-image: none;
+  }
+}
+
+
+@media (max-width:920px) {
+  .sidebar-group-btn {
+    display: block;
+  }
+
+  .nav-group-btn {
+    display: none;
+  }
+}
+
+@media (max-width:1400px) {
+  .nav-items {
+    display: none;
+  }
+
+  .menu-bars {
+    display: block;
+  }
+}
+
+@media (max-width:1000px) {
+  .bg-phone {
+    display: none;
+  }
+
+  .top-accordion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media (min-width:1700px) {
+  .accueil {
+    /* background-color: #c04949; */
+    margin: 0 6rem;
+  }
+}
+
+@media (min-width:1800px) {
+  .accueil {
+    /* background-color: #256695; */
+    margin: 0 10rem;
+  }
+}
+
+@media (min-width:1900px) {
+  .accueil {
+    /* background-color: #a6166c; */
+    margin: 0 13rem;
+  }
+}
+
+@media (min-width:2000px) {
+  .accueil {
+    /* background-color: #33a616; */
+    margin: 0 20rem;
+  }
+}
+
+@media (min-width:2500px) {
+  .accueil {
+    /* background-color: #d4d723; */
+    margin: 0 40rem;
+  }
+}
+
+@tailwind utilities;
+
 body {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: -apple-system, Bli nkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #F3F3F3;
 }
 
 code {
