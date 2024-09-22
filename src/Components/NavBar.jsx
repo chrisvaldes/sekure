@@ -47,7 +47,7 @@ export default function NavBar() {
               <div className="md:flex md:items-center md:gap-12">
                 <a className="block text-teal-600" href="#">
                   <div className="nav-logo flex items-center justify-center">
-                    <Link to="#" className="logo-title cursor-pointer py-1.5 pr-1">
+                    <Link to="/" className="logo-title cursor-pointer py-1.5 pr-1">
                       AIBIOMETRICS
                     </Link>
                     <img src={logo} alt="" className="logo object-cover pt-2" />
@@ -79,7 +79,6 @@ export default function NavBar() {
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6">
                           <path fillRule="evenodd" d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z" clipRule="evenodd" />
                         </svg>
-
                       </span>
                     </li>
 
@@ -166,15 +165,15 @@ export default function NavBar() {
                     </div>
 
                     <div className=" flex items-center justify-center bg-green-color btn-nav">
-                      <a className="btn-nav-text" href="#">
+                      <Link to='/' className="btn-nav-text" href="#">
                         Connexion
-                      </a>
+                      </Link>
                       <Arrow />
                     </div>
                     <div className=" flex items-center justify-center bg-green-deep btn-nav">
-                      <a className="btn-nav-text" href="#">
+                      <Link to="/" className="btn-nav-text" href="#">
                         Contacter
-                      </a>
+                      </Link>
                       <Message />
                     </div>
                   </div>
