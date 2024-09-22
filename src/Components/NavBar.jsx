@@ -156,24 +156,19 @@ export default function NavBar() {
                           </div>
                         </option>
                       </select>
+                      <div className="flex items-center bg-slate-500 justify-center gap-x-2">
+                        <Link to='/' className="btn-nav-text  flex items-center justify-center bg-green-color btn-nav" href="#">
+                          <span>Connexion</span>
+                          <Arrow />
+                        </Link>
+                        <Link to="/" className="btn-nav-text flex items-center justify-center bg-green-deep btn-nav" href="#">
+                          <span>Contacter</span>
+                          <Message />
+                        </Link>
+                      </div>
                     </div>
 
-                    <div className="flex items-center justify-center gap-x-2">
-                      <div className="btn-nav-text  flex items-center justify-center bg-green-color btn-nav">
-                        <span className="">Connexion</span>
-                        <div className='ml-2'>
-                          <div className='btn-icon-circle  flex items-center'>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
-                              <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="btn-nav-text flex items-center justify-center bg-green-deep btn-nav">
-                        <span>Contacter</span>
-                        <Message />
-                      </div>
-                    </div>
+
                   </div>
                 </div>
 
