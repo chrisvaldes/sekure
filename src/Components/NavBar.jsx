@@ -159,7 +159,7 @@ export default function NavBar() {
                     </div>
 
                     <div className="flex items-center justify-center gap-x-2">
-                      <Link to='/' className="btn-nav-text  flex items-center justify-center bg-green-color btn-nav">
+                      <div className="btn-nav-text  flex items-center justify-center bg-green-color btn-nav">
                         <span className="">Connexion</span>
                         <div className='ml-2'>
                           <div className='btn-icon-circle  flex items-center'>
@@ -168,11 +168,11 @@ export default function NavBar() {
                             </svg>
                           </div>
                         </div>
-                      </Link>
-                      <Link to="/" className="btn-nav-text flex items-center justify-center bg-green-deep btn-nav">
+                      </div>
+                      <div className="btn-nav-text flex items-center justify-center bg-green-deep btn-nav">
                         <span>Contacter</span>
                         <Message />
-                      </Link>
+                      </div>
                     </div>
                   </div>
                 </div>
