@@ -21,6 +21,7 @@ import unionDown from "../../images/Union (1).png"
 import unionUp from "../../images/Union.png"
 import vectorDatabases from "../../images/vectorDatabases.png"
 import FooterAccueil from '../../Components/FooterAccueil'
+import { Link } from 'react-router-dom'
 
 export default function Accueil() {
     return (
@@ -38,10 +39,10 @@ export default function Accueil() {
                     <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2  mt-32">
                         <div className=" accueil-content  top-[145px] ml-20">
                             <div className="text-nowrap gap-[6px] pb-[27px]">
-                                <div className='flex items-center justify-center btn-verification btn-verification-text mb-5'>
-                                    <a href="#">
+                                <div className=''>
+                                    <Link to="/" className='flex items-center justify-center btn-verification btn-verification-text mb-5'>
                                         VERIFICATION D'UTILISATEURS
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className='text-wrap title text-green-deep'>
                                     <span>Construisez une base <br />

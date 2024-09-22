@@ -160,7 +160,7 @@ export default function NavBar() {
 
                     <div className="flex items-center justify-center gap-x-2">
                       <Link to='/' className="btn-nav-text  flex items-center justify-center bg-green-color btn-nav">
-                        <span className="bg-slate-500">Connexion</span>
+                        <span className="">Connexion</span>
                         <div className='ml-2'>
                           <div className='btn-icon-circle  flex items-center'>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
