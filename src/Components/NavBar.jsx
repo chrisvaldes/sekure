@@ -60,7 +60,7 @@ export default function NavBar() {
                 <nav aria-label="Global">
                   <ul className="flex items-center gap-6 text-sm">
                     <li class="flex items-center justify-center gap-2">
-                      <Link className=" text-nowrap" to="/">
+                      <Link className="text-nowrap text-nav" to="/">
                         Accueil
                       </Link>
                       <span class="text-emerald-300">
@@ -72,7 +72,7 @@ export default function NavBar() {
                     </li>
 
                     <li class="flex items-center justify-center gap-2">
-                      <Link className="   text-nowrap" to="/customer">
+                      <Link className=" text-nav text-nowrap" to="/customer">
                         Know your customer
                       </Link>
                       <span class="text-emerald-300">
@@ -83,7 +83,7 @@ export default function NavBar() {
                     </li>
 
                     <li class="flex items-center justify-center gap-2">
-                      <a className="   text-nowrap" href="/screening">
+                      <a className="text-nav text-nowrap" href="/screening">
                         AML Screening
                       </a>
                       <span class="text-emerald-300">
@@ -95,7 +95,7 @@ export default function NavBar() {
                     </li>
 
                     <li class="flex items-center justify-center gap-2">
-                      <Link className="   text-nowrap" to="/pricing">
+                      <Link className="text-nav text-nowrap" to="/pricing">
                         Pricing
                       </Link>
                       <span class="text-emerald-300">
@@ -107,7 +107,7 @@ export default function NavBar() {
                     </li>
 
                     <li class="flex items-center justify-center gap-2">
-                      <Link className="   text-nowrap" to="/about">
+                      <Link className="text-nav text-nowrap" to="/about">
                         About us
                       </Link>
                       <span class="text-emerald-300">

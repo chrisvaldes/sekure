@@ -54,6 +54,15 @@
     height: 5px;
   }
 
+  .text-nav {
+    font-family: Inter;
+    font-size: 12.5px;
+    font-weight: 400;
+    line-height: 15.13px;
+    text-align: left;
+    color: #5A5A5A;
+  }
+
   .btn {
     width: 236px;
     height: 50px;
@@ -435,14 +444,15 @@
   text-align: left;
   color: #285246;
 }
-.footer-grid-logo{
+
+.footer-grid-logo {
   font-family: Satoshi;
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 47px;
-    letter-spacing: -2px;
-    text-align: left;
-    color: #285246;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 47px;
+  letter-spacing: -2px;
+  text-align: left;
+  color: #285246;
 }
 
 /* @media (max-width:1390px) {
