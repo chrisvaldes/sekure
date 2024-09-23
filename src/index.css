@@ -501,7 +501,9 @@
 .phone-accordion {
   padding: 0 5rem;
 }
-
+.footer-section{
+  padding: 0 5rem;
+}
 @media (max-width : 736px) {
   .accueil .women-selfie {
     background-image: none;
@@ -518,9 +520,14 @@
     padding: auto;
     margin: 0 1rem;
   }
-
+  .background-footer{
+    display: none;
+  }
   .section-tree-col-selfie {
     margin: 0 1rem;
+  }
+  .footer-section{
+    padding: 0 2rem;
   }
 
   .card-vert {

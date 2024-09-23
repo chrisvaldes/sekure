@@ -5,7 +5,7 @@ import logo from "../images/Group.png"
 
 export default function FooterAccueil() {
     return (
-        <div className='bg-green-color px-20 py-20 overflow-y-hidden'>
+        <div className='bg-green-color py-20  footer-section'>
             <div className="flex items-center justify-around">
                 <div className="">
                     <div className="title text-green-deep">
