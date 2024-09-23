@@ -479,7 +479,7 @@ export default function Accueil() {
                                 </div>
                             </div>
                         </div>
-                        <div className="mini-card-connexion flex flex-wrap items-center justify-center w-full  gap-y-20">
+                        <div className="mini-card-connexion flex flex-wrap items-center justify-center w-full ">
                             <div className="relative">
                                 <MiniCardSquare title="Sign In"
                                     content={

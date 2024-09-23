@@ -497,18 +497,21 @@
 .group-card-horiz {
   padding: 0 3rem;
 }
+
 @media (max-width:1024px) {
-  .order-img{
-     order: 1;
-  } 
+  .order-img {
+    order: 1;
+  }
 }
 
 .phone-accordion {
   padding: 0 5rem;
 }
-.footer-section{
+
+.footer-section {
   padding: 0 5rem;
 }
+
 @media (max-width : 736px) {
   .accueil .women-selfie {
     background-image: none;
@@ -525,13 +528,16 @@
     padding: auto;
     margin: 0 1rem;
   }
-  .background-footer{
+
+  .background-footer {
     display: none;
   }
+
   .section-tree-col-selfie {
     margin: 0 1rem;
   }
-  .footer-section{
+
+  .footer-section {
     padding: 0 2rem;
   }
 
@@ -583,7 +589,7 @@
     display: none;
   }
 
-  .card-choice{
+  .card-choice {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -591,14 +597,24 @@
     width: 300px;
     height: 160px;
   }
+
   .card-choice-items {
     gap: 19px;
   }
-  .mini-card-square{
+
+  .mini-card-square {
     width: 300px;
     height: 200px;
+    column-gap: 1rem;
   }
 
+  .mini-card-connexion {
+    row-gap: .5px;
+  }
+}
+
+.mini-card-connexion {
+  row-gap: 5rem;
 }
 
 @media (max-width:1116px) {
