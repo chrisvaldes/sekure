@@ -200,7 +200,7 @@ export default function Accueil() {
                 {/* start section with big mother */}
                 <section>
                     <div className='group-card-horiz grid grid-cols-1 items-center justify-center bg-no-repeat  md:grid-cols-1 lg:grid-cols-2 lg:pt-32 gap-x-8 gap-y-32 mt-10' style={{ backgroundImage: `url(${vectorBigMother})` }}>
-                        <div className="order-2 md:order-1 lg:order-1 flex items-center justify-center">
+                        <div className="order-2  flex items-center justify-center">
                             <div className='relative flex gap-5'>
                                 <div className=" card-horiz"></div>
                                 <div className="card-horiz"></div>
