@@ -321,7 +321,7 @@ export default function Accueil() {
                 {/* start section communication */}
                 <section className="group-card-vert bg-no-repeat bg-right" style={{ backgroundImage: `url(${vectorDatabases})` }}>
                     <div className='grid grid-cols-1 items-center justify-center md:grid-cols-1 lg:grid-cols-2 pb-20 gap-x-8 gap-y-20'>
-                        <div className="order-2 md:order-1 lg:order-1  flex items-center justify-center h-[120%]">
+                        <div className="order-2 flex items-center justify-center h-[120%]">
                             <div className='relative flex items-center gap-5  h-[120%]'>
                                 <div className=" card-horiz"></div>
                                 <div className="card-horiz"></div>
