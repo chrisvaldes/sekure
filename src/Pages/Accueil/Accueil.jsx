@@ -22,6 +22,7 @@ import unionUp from "../../images/Union.png"
 import vectorDatabases from "../../images/vectorDatabases.png"
 import FooterAccueil from '../../Components/FooterAccueil'
 import { Link } from 'react-router-dom'
+import MiniNavBar from '../../Components/MiniNavBar'
 
 export default function Accueil() {
     return (
@@ -391,7 +392,7 @@ export default function Accueil() {
                             Nos clients sont au cœur de nos préoccupations. Grâce à notre solution, 98% de nos utilisateurs ont déclaré être satisfaits de <br />
                             l'expérience de vérification. De plus, nous avons réduit de 50% le taux d'abandon lors du processus d'inscription.
                         </div>
-                        <div className="card-choice-items flex flex-col items-center justify-center w-full py-10">
+                        <div className="card-choice-items flex flex-wrap items-center justify-center w-full py-10">
                             <MiniCard title="6 s"
                                 content={
                                     <>
@@ -426,6 +427,12 @@ export default function Accueil() {
                     </div>
                 </section>
                 {/* end section choice us */}
+                
+                {/* start section mini navbar  */}
+                <section>
+                    <MiniNavBar/>
+                </section>
+                {/* end section mini navbar  */}
 
                 {/* start world section  */}
                 <section className='world-section bg-no-repeat bg-[100%_10%] bg-contain'>
