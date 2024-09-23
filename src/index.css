@@ -605,18 +605,8 @@
   .mini-card-square {
     width: 300px;
     height: 200px;
-    column-gap: 1rem;
-  }
-
-  .mini-card-connexion {
-    row-gap: .5px;
   }
 }
-
-.mini-card-connexion {
-  row-gap: 5rem;
-}
-
 @media (max-width:1116px) {
   .accueil .women-selfie {
     background-image: none;
