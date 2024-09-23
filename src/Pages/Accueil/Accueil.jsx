@@ -69,7 +69,7 @@ export default function Accueil() {
                                         <button className='btn-text text-green-deep'>
                                             Contacter
                                         </button>
-                                        <Arrow />
+                                        <Message/>
                                     </div>
                                 </div>
                                 <div className='sub-title mt-10 pb-10'>
@@ -200,14 +200,14 @@ export default function Accueil() {
                 {/* start section with big mother */}
                 <section>
                     <div className='group-card-horiz grid grid-cols-1 items-center justify-center bg-no-repeat  md:grid-cols-1 lg:grid-cols-2 lg:pt-32 gap-x-8 gap-y-32 mt-10' style={{ backgroundImage: `url(${vectorBigMother})` }}>
-                        <div className="order-2  flex items-center justify-center">
+                        <div className=" order-img flex items-center justify-center">
                             <div className='relative flex gap-5'>
                                 <div className=" card-horiz"></div>
                                 <div className="card-horiz"></div>
                                 <img src={bigMother} alt="" className=' bigMother' />
                             </div>
                         </div>
-                        <div className="order-1 group-card-horiz-content flex flex-col items-center gap-y-5">
+                        <div className=" order-text group-card-horiz-content flex flex-col items-center gap-y-5">
                             <div className="">
                                 <div className="title-1">
                                     Identifications et Vérifications par scan <br />
@@ -321,14 +321,14 @@ export default function Accueil() {
                 {/* start section communication */}
                 <section className="group-card-vert bg-no-repeat bg-right" style={{ backgroundImage: `url(${vectorDatabases})` }}>
                     <div className='grid grid-cols-1 items-center justify-center md:grid-cols-1 lg:grid-cols-2 pb-20 gap-x-8 gap-y-20'>
-                        <div className="order-2 flex items-center justify-center h-[120%]">
+                        <div className="order-img flex items-center justify-center h-[120%]">
                             <div className='relative flex items-center gap-5  h-[120%]'>
                                 <div className=" card-horiz"></div>
                                 <div className="card-horiz"></div>
                                 <img src={groupDatabases} alt="" className='groupDatabase' />
                             </div>
                         </div>
-                        <div className="order-1 flex flex-col items-center gap-y-5 bg-no-repeat">
+                        <div className="flex flex-col items-center gap-y-5 bg-no-repeat">
                             <div className="">
                                 <div className="title-1">
                                     Identifications et Vérifications par scan <br />
@@ -381,7 +381,7 @@ export default function Accueil() {
 
                 {/* section choice us */}
                 <section className='section-choise-us bg-no-repeat bg-center bg-cover' style={{ backgroundImage: `url(${bgChoice})` }}>
-                    <div className='flex flex-col items-center py-10' >
+                    <div className='flex flex-col items-center justify-center py-10' >
                         <a href="#" className="btn-choice flex items-center justify-center">Pourquoi nous choisir</a>
                         <div className="title-1 text-center text-green-deep py-10">
                             Avec Aibiometrics, les <span className='text-green-color'>étrangers</span> anonymes deviennent <br />
@@ -391,7 +391,7 @@ export default function Accueil() {
                             Nos clients sont au cœur de nos préoccupations. Grâce à notre solution, 98% de nos utilisateurs ont déclaré être satisfaits de <br />
                             l'expérience de vérification. De plus, nous avons réduit de 50% le taux d'abandon lors du processus d'inscription.
                         </div>
-                        <div className="card-choice-items w-full py-10">
+                        <div className="card-choice-items flex flex-col items-center justify-center w-full py-10">
                             <MiniCard title="6 s"
                                 content={
                                     <>

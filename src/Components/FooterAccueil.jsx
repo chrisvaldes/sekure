@@ -2,6 +2,7 @@ import React from 'react'
 import Arrow from './Arrow'
 import ArrowGreen from './ArrowGreen'
 import logo from "../images/Group.png"
+import Message from './Message'
 
 export default function FooterAccueil() {
     return (
@@ -33,7 +34,7 @@ export default function FooterAccueil() {
                             <button className='btn-text text-green-deep'>
                                 Nous Contacter
                             </button>
-                            <ArrowGreen />
+                            <Message />
                         </div>
                     </div>
                 </div>

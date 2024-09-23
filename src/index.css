@@ -497,6 +497,11 @@
 .group-card-horiz {
   padding: 0 3rem;
 }
+@media (max-width:1024px) {
+  .order-img{
+     order: 1;
+  } 
+}
 
 .phone-accordion {
   padding: 0 5rem;
@@ -576,6 +581,18 @@
 
   .img-arrow {
     display: none;
+  }
+
+  .card-choice{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    height: 160px;
+  }
+  .card-choice-items {
+    gap: 19px;
   }
 
 }
