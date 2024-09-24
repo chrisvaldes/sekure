@@ -1,8 +1,7 @@
-import React from 'react'
 import React, { useState } from 'react';
-import { faArrowRight, faCheck } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import { Link } from 'react-router-dom';
+import preuveAddress from '../images/preuveAddress.png';
+import SmallCheckCircle from './SmallCheckCircle';
 
 export default function AccordionMiniNav() {
     const [open, setOpen] = useState(null);
@@ -13,7 +12,7 @@ export default function AccordionMiniNav() {
 
 
     return (
-        <div className="w-full mx-auto">
+        <div className="w-full">
 
             {/* Q 1 */}
             <div className="border border-gray-200 dark:border-slate-700 rounded-md my-5">
@@ -33,82 +32,82 @@ export default function AccordionMiniNav() {
                     </svg>
                 </button>
                 {open === 1 && (
-                    <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center w-full mx-auto gap-10 ">
-                        <div className="hand-div2 h-[25rem] md:h-[30rem] lg:h-[30rem] w-full">
-                            {/* <img src={hand} alt="" className='hand contain' /> */}
+                    <div className=" bg-white grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center w-full mx-auto gap-10 ">
+                        <div className="flex items-center justify-center  hand-div2 h-[25rem] md:h-[30rem] lg:h-[30rem] w-full">
+                            <img src={preuveAddress} alt="" className='hand contain' />
                         </div>
-                        <div className='flex flex-col items-center justify-center '>
-                            <h2 className="text-cyan-deep text-justify text-title-3 font-weight-title-3 font-satoshi leading-normal mb-5 font-bold">
+                        <div className='flex flex-col items-center justify-center w-full'>
+                            <h2 className="mini-nav-side-title mb-5 w-full">
                                 Identifications et Vérifications par scan <br />
                                 facial intelligent et rapide
                             </h2>
-                            <div className="text-justify text-content font-family-content font-normal leading-loose mb-10">
+                            <div className="mini-nav-side-content mb-10 w-full">
                                 Localement ou internationalement, vos achats en ligne ne connaissent plus de limite <br />
                                 avec les cartes virtuelles Visa MasterCard de chez SEKURE. En 2 minutes, créez et <br />
                                 vérifiez votre compte Sekure pour obtenir votre carte virtuelle. Entre des frais d'entretien <br />
                                 inexistants et des frais de
                             </div>
-                            <div>
-                                <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center justify-center gap-10">
-                                    <div class="flex items-center justify-center gap-5">
-                                        <div class="flex items-center justify-center small-circle-check rounded-full bg-cyan-color z-100">
-                                            <span class="icon text-white p-2">
-                                                {/* <FontAwesomeIcon icon={faCheck} /> */}
-                                            </span>
-                                        </div>
-                                        <div class="text-left text-content-title-3 font-semibold">
-                                            Idéales pour sponsoriser les publicités <br /> sur facebook, LinkedIn, X, Google
-                                        </div>
-                                    </div>
-                                    <div class="flex items-center justify-center gap-5">
-                                        <div class="flex items-center justify-center small-circle-check rounded-full bg-cyan-color z-100">
-                                            <span class="icon text-white p-2">
-                                                {/* <FontAwesomeIcon icon={faCheck} /> */}
-                                            </span>
-                                        </div>
-                                        <div class="text-left text-content-title-3 font-semibold">
-                                            Idéales pour sponsoriser les publicités <br /> sur facebook, LinkedIn, X, Google
+                            <div className='w-full'>
+                                <div class="w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-start justify-start gap-5">
+                                    <div className="flex gap-3">
+                                        <SmallCheckCircle />
+                                        <div className='flex flex-col'>
+                                            <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                            <p className='mini-nav-grid-content'>
+                                                Passeports, permis de conduire, cartes, <br />
+                                                d'identity nationales, etc
+                                            </p>
                                         </div>
                                     </div>
-                                    <div class="flex items-center justify-center gap-5">
-                                        <div class="flex items-center justify-center small-circle-check rounded-full bg-cyan-color z-100">
-                                            <span class="icon text-white p-2">
-                                                {/* <FontAwesomeIcon icon={faCheck} /> */}
-                                            </span>
-                                        </div>
-                                        <div class="text-left text-content-title-3 font-semibold">
-                                            Idéales pour sponsoriser les publicités <br /> sur facebook, LinkedIn, X, Google
+                                    <div className="flex gap-3">
+                                        <SmallCheckCircle />
+                                        <div className='flex flex-col'>
+                                            <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                            <p className='mini-nav-grid-content'>
+                                                Passeports, permis de conduire, cartes, <br />
+                                                d'identity nationales, etc
+                                            </p>
                                         </div>
                                     </div>
-                                    <div class="flex items-center justify-center gap-5">
-                                        <div class="flex items-center justify-center small-circle-check rounded-full bg-cyan-color z-100">
-                                            <span class="icon text-white p-2">
-                                                {/* <FontAwesomeIcon icon={faCheck} /> */}
-                                            </span>
+                                    <div className="flex gap-3 ">
+                                        <SmallCheckCircle />
+                                        <div className='flex flex-col'>
+                                            <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                            <p className='mini-nav-grid-content'>
+                                                Passeports, permis de conduire, cartes, <br />
+                                                d'identity nationales, etc
+                                            </p>
                                         </div>
-                                        <div class="text-left text-content-title-3 font-semibold">
-                                            Idéales pour sponsoriser les publicités <br /> sur facebook, LinkedIn, X, Google
+                                    </div>
+                                    <div className="flex gap-3 ">
+                                        <SmallCheckCircle />
+                                        <div className='flex flex-col'>
+                                            <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                            <p className='mini-nav-grid-content'>
+                                                Passeports, permis de conduire, cartes, <br />
+                                                d'identity nationales, etc
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="flex pt-20">
-                                    <div class=" flex flex-wrap  gap-5 pb-10">
-                                        <button class="bg-cyan-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
+                                <div class="flex pt-10">
+                                    <div class=" flex flex-wrap  gap-5">
+                                        <Link class="bg-green-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
                                             <span class="text-nowrap" >Commencer </span>
                                             <div class="btn-circle rounded-full bg-white flex items-center justify-center">
                                                 <span class="icon text-cyan-deep">
                                                     {/* <FontAwesomeIcon icon={faArrowRight} /> */}
                                                 </span>
                                             </div>
-                                        </button>
-                                        <button class=" bg-cyan-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
+                                        </Link>
+                                        <Link class=" bg-green-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
                                             <span class="text-white text-nowrap pr-5">Contacter</span>
                                             <div class="btn-circle rounded-full bg-white flex items-center justify-center">
                                                 <span class="icon text-cyan-deep">
                                                     {/* <FontAwesomeIcon icon={faArrowRight} /> */}
                                                 </span>
                                             </div>
-                                        </button>
+                                        </Link>
 
                                     </div>
                                 </div>

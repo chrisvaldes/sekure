@@ -1,7 +1,12 @@
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Accordion from './Accordion';
+import detectionApp from "../images/detectionAppareil.png";
+import preuveAddress from '../images/preuveAddress.png';
+import sactions from "../images/sanction.png";
+import verificationBiomet from '../images/verificationBiometric.png';
+import verificatiIdentite from '../images/verificationIdentite.png';
+import AccordionMiniNav from './AccordionMiniNav';
 import SmallCheckCircle from './SmallCheckCircle';
 
 export default function MiniNavBar() {
@@ -52,8 +57,8 @@ export default function MiniNavBar() {
                     <div className="flex flex-wrap items-center justify-center gap-16 pb-10 lg:pb-16">
                         {content === "Vérification d'identité" && (
                             <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center w-full mx-auto gap-10 ">
-                                <div className="hand-div2 h-[25rem] md:h-[30rem] lg:h-[30rem] w-full">
-                                    {/* <img src={hand} alt="" className='hand contain' /> */}
+                                <div className="hand-div2 flex items-center justify-center h-[25rem] md:h-[30rem] lg:h-[30rem] w-full">
+                                    <img src={verificatiIdentite} alt="" className='hand contain' />
                                 </div>
                                 <div className='flex flex-col items-center justify-center w-full'>
                                     <h2 className="mini-nav-side-title mb-5 w-full">
@@ -136,9 +141,9 @@ export default function MiniNavBar() {
                             </div>
                         )}
                         {content === "Vérification biométrique" && (
-                            <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center w-full mx-auto gap-10 ">
-                                <div className="hand-div2 h-[25rem] md:h-[30rem] lg:h-[30rem] w-full">
-                                    {/* <img src={hand} alt="" className='hand contain' /> */}
+                            <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center w-full mx-auto gap-10 ">
+                                <div className="flex items-center justify-center  hand-div2 h-[25rem] md:h-[30rem] lg:h-[30rem] w-full">
+                                    <img src={verificationBiomet} alt="" className='hand contain' />
                                 </div>
                                 <div className='flex flex-col items-center justify-center w-full'>
                                     <h2 className="mini-nav-side-title mb-5 w-full">
@@ -223,8 +228,8 @@ export default function MiniNavBar() {
                         {/* REFERENCE ....... */}
                         {content === "Preuve d'adresse" && (
                             <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center w-full mx-auto gap-10 ">
-                                <div className="hand-div2 h-[25rem] md:h-[30rem] lg:h-[30rem] w-full">
-                                    {/* <img src={hand} alt="" className='hand contain' /> */}
+                                <div className="flex items-center justify-center  hand-div2 h-[25rem] md:h-[30rem] lg:h-[30rem] w-full">
+                                    <img src={preuveAddress} alt="" className='hand contain' />
                                 </div>
                                 <div className='flex flex-col items-center justify-center w-full'>
                                     <h2 className="mini-nav-side-title mb-5 w-full">
@@ -308,9 +313,9 @@ export default function MiniNavBar() {
                         )}
                         {/** END REFERENCE ....... */}
                         {content === "Détection d'appareil" && (
-                           <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center w-full mx-auto gap-10 ">
+                            <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center w-full mx-auto gap-10 ">
                                 <div className="hand-div2 h-[25rem] md:h-[30rem] lg:h-[30rem] w-full">
-                                    {/* <img src={hand} alt="" className='hand contain' /> */}
+                                    <img src={detectionApp} alt="" className='hand contain' />
                                 </div>
                                 <div className='flex flex-col items-center justify-center w-full'>
                                     <h2 className="mini-nav-side-title mb-5 w-full">
@@ -394,82 +399,86 @@ export default function MiniNavBar() {
                         )}
                         {content === "Sanctions" && (
                             <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center w-full mx-auto gap-10 ">
-                                <div className="hand-div2 h-[25rem] md:h-[30rem] lg:h-[30rem] w-full">
-                                    {/* <img src={hand} alt="" className='hand contain' /> */}
-                                </div>
-                                <div className='flex flex-col items-center justify-center w-full'>
-                                    <h2 className="mini-nav-side-title mb-5 w-full">
-                                        Identifications et Vérifications par scan <br />
-                                        facial intelligent et rapide
-                                    </h2>
-                                    <div className="mini-nav-side-content mb-10 w-full">
-                                        Localement ou internationalement, vos achats en ligne ne connaissent plus de limite <br />
-                                        avec les cartes virtuelles Visa MasterCard de chez SEKURE. En 2 minutes, créez et <br />
-                                        vérifiez votre compte Sekure pour obtenir votre carte virtuelle. Entre des frais d'entretien <br />
-                                        inexistants et des frais de
+                                <div className='w-full flex items-center justify-center'>
+                                    <div className="hand-div2 h-[25rem] md:w-1/2 lg:w-[25rem] w-full">
+                                        <img src={sactions} alt="" className='hand contain' />
                                     </div>
-                                    <div className='w-full'>
-                                        <div class="w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-start justify-start gap-5">
-                                            <div className="flex gap-3">
-                                                <SmallCheckCircle />
-                                                <div className='flex flex-col'>
-                                                    <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
-                                                    <p className='mini-nav-grid-content'>
-                                                        Passeports, permis de conduire, cartes, <br />
-                                                        d'identity nationales, etc
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div className="flex gap-3">
-                                                <SmallCheckCircle />
-                                                <div className='flex flex-col'>
-                                                    <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
-                                                    <p className='mini-nav-grid-content'>
-                                                        Passeports, permis de conduire, cartes, <br />
-                                                        d'identity nationales, etc
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div className="flex gap-3 ">
-                                                <SmallCheckCircle />
-                                                <div className='flex flex-col'>
-                                                    <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
-                                                    <p className='mini-nav-grid-content'>
-                                                        Passeports, permis de conduire, cartes, <br />
-                                                        d'identity nationales, etc
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div className="flex gap-3 ">
-                                                <SmallCheckCircle />
-                                                <div className='flex flex-col'>
-                                                    <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
-                                                    <p className='mini-nav-grid-content'>
-                                                        Passeports, permis de conduire, cartes, <br />
-                                                        d'identity nationales, etc
-                                                    </p>
-                                                </div>
-                                            </div>
+                                </div>
+                                <div className="w-full items-center justify-center">
+                                    <div className='flex flex-col items-center justify-center w-full'>
+                                        <h2 className="mini-nav-side-title mb-5 w-full">
+                                            Identifications et Vérifications par scan <br />
+                                            facial intelligent et rapide
+                                        </h2>
+                                        <div className="mini-nav-side-content mb-10 w-full">
+                                            Localement ou internationalement, vos achats en ligne ne connaissent plus de limite <br />
+                                            avec les cartes virtuelles Visa MasterCard de chez SEKURE. En 2 minutes, créez et <br />
+                                            vérifiez votre compte Sekure pour obtenir votre carte virtuelle. Entre des frais d'entretien <br />
+                                            inexistants et des frais de
                                         </div>
-                                        <div class="flex pt-20">
-                                            <div class=" flex flex-wrap  gap-5 pb-10">
-                                                <button class="bg-cyan-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
-                                                    <span class="text-nowrap" >Commencer </span>
-                                                    <div class="btn-circle rounded-full bg-white flex items-center justify-center">
-                                                        <span class="icon text-cyan-deep">
-                                                            {/* <FontAwesomeIcon icon={faArrowRight} /> */}
-                                                        </span>
+                                        <div className='w-full'>
+                                            <div class="w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-start justify-start gap-5">
+                                                <div className="flex gap-3">
+                                                    <SmallCheckCircle />
+                                                    <div className='flex flex-col'>
+                                                        <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                                        <p className='mini-nav-grid-content'>
+                                                            Passeports, permis de conduire, cartes, <br />
+                                                            d'identity nationales, etc
+                                                        </p>
                                                     </div>
-                                                </button>
-                                                <button class=" bg-cyan-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
-                                                    <span class="text-white text-nowrap pr-5">Contacter</span>
-                                                    <div class="btn-circle rounded-full bg-white flex items-center justify-center">
-                                                        <span class="icon text-cyan-deep">
-                                                            {/* <FontAwesomeIcon icon={faArrowRight} /> */}
-                                                        </span>
+                                                </div>
+                                                <div className="flex gap-3">
+                                                    <SmallCheckCircle />
+                                                    <div className='flex flex-col'>
+                                                        <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                                        <p className='mini-nav-grid-content'>
+                                                            Passeports, permis de conduire, cartes, <br />
+                                                            d'identity nationales, etc
+                                                        </p>
                                                     </div>
-                                                </button>
+                                                </div>
+                                                <div className="flex gap-3 ">
+                                                    <SmallCheckCircle />
+                                                    <div className='flex flex-col'>
+                                                        <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                                        <p className='mini-nav-grid-content'>
+                                                            Passeports, permis de conduire, cartes, <br />
+                                                            d'identity nationales, etc
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div className="flex gap-3 ">
+                                                    <SmallCheckCircle />
+                                                    <div className='flex flex-col'>
+                                                        <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                                        <p className='mini-nav-grid-content'>
+                                                            Passeports, permis de conduire, cartes, <br />
+                                                            d'identity nationales, etc
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex pt-20">
+                                                <div class=" flex flex-wrap  gap-5 pb-10">
+                                                    <Link to="/" class="bg-green-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
+                                                        <span class="text-nowrap" >Commencer </span>
+                                                        <div class="btn-circle rounded-full bg-white flex items-center justify-center">
+                                                            <span class="icon text-cyan-deep">
+                                                                {/* <FontAwesomeIcon icon={faArrowRight} /> */}
+                                                            </span>
+                                                        </div>
+                                                    </Link>
+                                                    <Link class=" bg-green-color px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
+                                                        <span class="text-white text-nowrap pr-5">Contacter</span>
+                                                        <div class="btn-circle rounded-full bg-white flex items-center justify-center">
+                                                            <span class="icon text-cyan-deep">
+                                                                {/* <FontAwesomeIcon icon={faArrowRight} /> */}
+                                                            </span>
+                                                        </div>
+                                                    </Link>
 
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -485,7 +494,7 @@ export default function MiniNavBar() {
             </div>
 
             <div className='accordion'>
-                <Accordion />
+                <AccordionMiniNav />
             </div>
         </section>
     );

@@ -45,7 +45,7 @@ export default function Accueil() {
                                         VERIFICATION D'UTILISATEURS
                                     </Link>
                                 </div>
-                                <div className='text-wrap title text-green-deep'>
+                                <div className='text-wrap title sarabun-bold text-green-deep'>
                                     <span>Construisez une base <br />
                                         d'utilisateur fiables grâce à la <br /></span>
                                     <span className='text-green-color'>vérification d'identité facile et <br />rapide</span>

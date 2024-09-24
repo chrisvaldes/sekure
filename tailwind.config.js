@@ -20,8 +20,9 @@ module.exports = {
 
       },
       fontFamily : {
+        inter: ['Inter', 'sans-serif'], // Ajoutez la police Inter
         satoshi: ['Satoshi', 'sans-serif'],
-      }
+      }, 
     },
   },
   plugins: [],
