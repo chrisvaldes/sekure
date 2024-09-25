@@ -121,7 +121,6 @@
     padding: 10px 5px 10px 5px;
     gap: 10px;
     border-radius: 31px 31px 31px 31px;
-    background-color: #FFFF;
     color: #285246F5;
   }
 
@@ -491,6 +490,58 @@
   left: 3%;
 }
 
+.passport-page2 {
+  position: absolute;
+  top: -5%;
+}
+
+.respect-grid-title {
+  font-family: Satoshi;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: -1px;
+  text-align: center;
+  color: #18382B;
+}
+
+.respect-grid-content {
+  font-family: Satoshi;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #285246;
+}
+
+.take-selfie-title {
+  font-family: Satoshi;
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: -1px;
+  text-align: left;
+  color: #285246;
+}
+.customer-selfie{
+  bottom: -11.5%;
+}
+@media (max-width:1241.78px) {
+  .customer-selfie{
+    bottom: -9%;
+  }
+}
+@media (max-width:1195px) {
+  .customer-selfie{
+    bottom: -8%;
+  }
+}
+@media (max-width:1082px) {
+  .customer-selfie{
+    bottom: -7%;
+  }
+}
+
 .groupDatabase {
   position: absolute;
   top: 5%;
@@ -601,7 +652,8 @@
   border-radius: 7px;
   background: #DFFCE3;
 }
-.text-btn{
+
+.text-btn {
   font-family: Satoshi;
   font-size: 14px;
   font-weight: 600;
@@ -628,20 +680,22 @@
   color: #285246;
 }
 
-.customer-page{
+.customer-page {
   padding: 10rem 0;
   background-image: url('../src/images/bg-page-2.png');
   background-position: 100% 50%;
   background-repeat: no-repeat;
   background-size: 50%
 }
+
 @media (max-width:1432px) {
-  .customer-page{ 
+  .customer-page {
     background-position: 100% 60%;
   }
 }
+
 @media (max-width:1168px) {
-  .customer-page{ 
+  .customer-page {
     background-position: 100% 65%;
   }
 }
@@ -760,53 +814,62 @@
 .accordion {
   display: none;
 }
+
 @media (max-width:1540px) {
-  .sub-title-page-2{
+  .sub-title-page-2 {
     padding-top: 12rem;
   }
 }
+
 @media (max-width:1416px) {
-  .sub-title-page-2{
+  .sub-title-page-2 {
     padding-top: 16rem;
   }
 }
+
 @media (max-width:1236px) {
-  .sub-title-page-2{
+  .sub-title-page-2 {
     padding-top: 20rem;
   }
 }
+
 @media (max-width:1070px) {
-  .sub-title-page-2{
+  .sub-title-page-2 {
     padding-top: 24rem;
   }
 }
+
 @media (max-width:960px) {
-  .sub-title-page-2{
+  .sub-title-page-2 {
     padding-top: 25rem;
   }
 }
+
 @media (max-width:936px) {
-  .sub-title-page-2{
+  .sub-title-page-2 {
     padding-top: 30rem;
   }
 }
 
 @media (max-width:832px) {
-  .sub-title-page-2{
+  .sub-title-page-2 {
     padding-top: 35rem;
   }
 }
+
 @media (max-width:778px) {
-  .sub-title-page-2{
+  .sub-title-page-2 {
     padding-top: 40rem;
   }
 }
+
 @media (max-width:768px) {
-  .section-tree-col-selfie{
+  .section-tree-col-selfie {
     width: 100%;
     margin: 0 auto;
   }
 }
+
 @media (max-width:884px) {
   .not-accordion {
     display: none;
