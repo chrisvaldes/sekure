@@ -638,6 +638,11 @@
   background-size: 50%
 }
 
+.sub-title-page-2{
+  margin-left: 3rem;
+  padding: 0 2rem;
+}
+
 @media (max-width:1432px) {
   .customer-page {
     background-position: 100% 60%;
@@ -765,6 +770,7 @@
   display: none;
 }
 
+
 @media (max-width:1540px) {
   .sub-title-page-2 {
     padding-top: 12rem;
@@ -791,7 +797,7 @@
 
 @media (max-width:960px) {
   .sub-title-page-2 {
-    padding-top: 25rem;
+    padding-top: 27rem;
   }
 }
 
@@ -811,7 +817,7 @@
   .sub-title-page-2 {
     padding-top: 40rem;
   }
-}
+} 
 
 @media (max-width:768px) {
   .section-tree-col-selfie {
@@ -871,11 +877,20 @@
     width: 100%;
   }
 }
+/* customer side  */
+@media (min-width:1500px) {
+  .sub-title-page-2 {
+    padding-top: 10rem;
+  }
+}
 
 @media (min-width:1700px) {
   .accueil {
     /* background-color: #c04949; */
     margin: 0 6rem;
+  }
+  .sub-title-page-2 {
+    padding-top: 10rem;
   }
 }
 
@@ -884,12 +899,18 @@
     /* background-color: #256695; */
     margin: 0 10rem;
   }
+  .sub-title-page-2 {
+    padding-top: 12rem;
+  }
 }
 
 @media (min-width:1900px) {
   .accueil {
     /* background-color: #a6166c; */
     margin: 0 13rem;
+  }
+  .sub-title-page-2 {
+    padding-top: 13rem;
   }
 }
 
@@ -898,12 +919,20 @@
     /* background-color: #33a616; */
     margin: 0 20rem;
   }
+  .sub-title-page-2 {
+    padding-top: 10rem; 
+    
+  }
+  .section-tree-col-selfie{
+    left: 4%; 
+  }
 }
 
 @media (min-width:2500px) {
   .accueil {
     /* background-color: #d4d723; */
     margin: 0 40rem;
+    
   }
 }
 

@@ -7,6 +7,8 @@ import sactions from "../images/sanction.png";
 import verificationBiomet from '../images/verificationBiometric.png';
 import verificatiIdentite from '../images/verificationIdentite.png';
 import AccordionMiniNav from './AccordionMiniNav';
+import Arrow from './Arrow';
+import Message from './Message';
 import SmallCheckCircle from './SmallCheckCircle';
 
 export default function MiniNavBar() {
@@ -116,22 +118,14 @@ export default function MiniNavBar() {
                                         </div>
                                         <div class="flex pt-20">
                                             <div class=" flex flex-wrap  gap-5 pb-10">
-                                                <button class="bg-cyan-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
+                                                <Link to="/" class="bg-green-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
                                                     <span class="text-nowrap" >Commencer </span>
-                                                    <div class="btn-circle rounded-full bg-white flex items-center justify-center">
-                                                        <span class="icon text-cyan-deep">
-                                                            {/* <FontAwesomeIcon icon={faArrowRight} /> */}
-                                                        </span>
-                                                    </div>
-                                                </button>
-                                                <button class=" bg-cyan-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
+                                                    <Arrow background="#FFFF" textcolor="#285246" />
+                                                </Link>
+                                                <Link to="/" class=" bg-green-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
                                                     <span class="text-white text-nowrap pr-5">Contacter</span>
-                                                    <div class="btn-circle rounded-full bg-white flex items-center justify-center">
-                                                        <span class="icon text-cyan-deep">
-                                                            {/* <FontAwesomeIcon icon={faArrowRight} /> */}
-                                                        </span>
-                                                    </div>
-                                                </button>
+                                                    <Message background="#FFFF" textcolor="#285246" />
+                                                </Link>
 
                                             </div>
                                         </div>
@@ -201,22 +195,14 @@ export default function MiniNavBar() {
                                         </div>
                                         <div class="flex pt-20">
                                             <div class=" flex flex-wrap  gap-5 pb-10">
-                                                <button class="bg-cyan-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
+                                                <Link to="/" class="bg-green-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
                                                     <span class="text-nowrap" >Commencer </span>
-                                                    <div class="btn-circle rounded-full bg-white flex items-center justify-center">
-                                                        <span class="icon text-cyan-deep">
-                                                            {/* <FontAwesomeIcon icon={faArrowRight} /> */}
-                                                        </span>
-                                                    </div>
-                                                </button>
-                                                <button class=" bg-cyan-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
+                                                    <Arrow background="#FFFF" textcolor="#285246" />
+                                                </Link>
+                                                <Link to="/" class=" bg-green-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
                                                     <span class="text-white text-nowrap pr-5">Contacter</span>
-                                                    <div class="btn-circle rounded-full bg-white flex items-center justify-center">
-                                                        <span class="icon text-cyan-deep">
-                                                            {/* <FontAwesomeIcon icon={faArrowRight} /> */}
-                                                        </span>
-                                                    </div>
-                                                </button>
+                                                    <Message background="#FFFF" textcolor="#285246" />
+                                                </Link>
 
                                             </div>
                                         </div>
@@ -287,22 +273,14 @@ export default function MiniNavBar() {
                                         </div>
                                         <div class="flex pt-20">
                                             <div class=" flex flex-wrap  gap-5 pb-10">
-                                                <button class="bg-cyan-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
+                                                <Link to="/" class="bg-green-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
                                                     <span class="text-nowrap" >Commencer </span>
-                                                    <div class="btn-circle rounded-full bg-white flex items-center justify-center">
-                                                        <span class="icon text-cyan-deep">
-                                                            {/* <FontAwesomeIcon icon={faArrowRight} /> */}
-                                                        </span>
-                                                    </div>
-                                                </button>
-                                                <button class=" bg-cyan-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
+                                                    <Arrow background="#FFFF" textcolor="#285246" />
+                                                </Link>
+                                                <Link to="/" class=" bg-green-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
                                                     <span class="text-white text-nowrap pr-5">Contacter</span>
-                                                    <div class="btn-circle rounded-full bg-white flex items-center justify-center">
-                                                        <span class="icon text-cyan-deep">
-                                                            {/* <FontAwesomeIcon icon={faArrowRight} /> */}
-                                                        </span>
-                                                    </div>
-                                                </button>
+                                                    <Message background="#FFFF" textcolor="#285246" />
+                                                </Link>
 
                                             </div>
                                         </div>
@@ -372,23 +350,15 @@ export default function MiniNavBar() {
                                             </div>
                                         </div>
                                         <div class="flex pt-20">
-                                            <div class=" flex flex-wrap  gap-5 pb-10">
-                                                <button class="bg-cyan-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
+                                        <div class=" flex flex-wrap  gap-5 pb-10">
+                                                <Link to="/" class="bg-green-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
                                                     <span class="text-nowrap" >Commencer </span>
-                                                    <div class="btn-circle rounded-full bg-white flex items-center justify-center">
-                                                        <span class="icon text-cyan-deep">
-                                                            {/* <FontAwesomeIcon icon={faArrowRight} /> */}
-                                                        </span>
-                                                    </div>
-                                                </button>
-                                                <button class=" bg-cyan-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
+                                                    <Arrow background="#FFFF" textcolor="#285246" />
+                                                </Link>
+                                                <Link to="/" class=" bg-green-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
                                                     <span class="text-white text-nowrap pr-5">Contacter</span>
-                                                    <div class="btn-circle rounded-full bg-white flex items-center justify-center">
-                                                        <span class="icon text-cyan-deep">
-                                                            {/* <FontAwesomeIcon icon={faArrowRight} /> */}
-                                                        </span>
-                                                    </div>
-                                                </button>
+                                                    <Message background="#FFFF" textcolor="#285246" />
+                                                </Link>
 
                                             </div>
                                         </div>
@@ -460,25 +430,17 @@ export default function MiniNavBar() {
                                                 </div>
                                             </div>
                                             <div class="flex pt-20">
-                                                <div class=" flex flex-wrap  gap-5 pb-10">
-                                                    <Link to="/" class="bg-green-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
-                                                        <span class="text-nowrap" >Commencer </span>
-                                                        <div class="btn-circle rounded-full bg-white flex items-center justify-center">
-                                                            <span class="icon text-cyan-deep">
-                                                                {/* <FontAwesomeIcon icon={faArrowRight} /> */}
-                                                            </span>
-                                                        </div>
-                                                    </Link>
-                                                    <Link class=" bg-green-color px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
-                                                        <span class="text-white text-nowrap pr-5">Contacter</span>
-                                                        <div class="btn-circle rounded-full bg-white flex items-center justify-center">
-                                                            <span class="icon text-cyan-deep">
-                                                                {/* <FontAwesomeIcon icon={faArrowRight} /> */}
-                                                            </span>
-                                                        </div>
-                                                    </Link>
+                                            <div class=" flex flex-wrap  gap-5 pb-10">
+                                                <Link to="/" class="bg-green-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
+                                                    <span class="text-nowrap" >Commencer </span>
+                                                    <Arrow background="#FFFF" textcolor="#285246" />
+                                                </Link>
+                                                <Link to="/" class=" bg-green-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
+                                                    <span class="text-white text-nowrap pr-5">Contacter</span>
+                                                    <Message background="#FFFF" textcolor="#285246" />
+                                                </Link>
 
-                                                </div>
+                                            </div>
                                             </div>
                                         </div>
                                     </div>

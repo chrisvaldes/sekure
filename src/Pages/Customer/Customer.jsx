@@ -4,34 +4,35 @@ import Arrow from '../../Components/Arrow'
 import CardArrow from '../../Components/CardArrow'
 import Cards from '../../Components/Cards'
 import CardSmile from '../../Components/CardSmile'
+import Card from '../../Components/customer/Card'
 import RespectReglementation from '../../Components/customer/RespectReglementation'
+import FooterAccueil from '../../Components/FooterAccueil'
 import Message from '../../Components/Message'
 import NavBar from '../../Components/NavBar'
 import SmallCheckCircle from '../../Components/SmallCheckCircle'
 import vectorBigMother from "../../images/bigMotherVector.png"
 import girlCni from "../../images/girlCni.png"
 import groupDatabases from "../../images/groupDatabases.png"
+import cote from "../../images/page-2/cote.png"
 import img1 from "../../images/page-2/img-1.png"
 import img2 from "../../images/page-2/img-2.png"
 import img3 from "../../images/page-2/img-3.png"
 import img4 from "../../images/page-2/img-4.png"
 import passportCni from "../../images/page-2/PassPortCni.png"
-import vectorDatabases from "../../images/vectorDatabases.png"
-import vector from '../../images/page-2/Vector.png'
 import takeselfie from "../../images/page-2/takePhoto.png"
-import cote from "../../images/page-2/cote.png"
-import Card from '../../Components/customer/Card'
+import vector from '../../images/page-2/Vector.png'
+import vector1 from "../../images/page-2/Vector3.png"
+import vectorDatabases from "../../images/vectorDatabases.png"
 
 
 export default function Customer() {
   return (
     <div>
       <NavBar />
-      <main>
+      <main className='accueil'>
         <section className=''>
           <div className='min-h-[90vh] py-32 bg-white relative customer-page'>
-
-            <div>
+            <div className='ml-5 sm:ml-10 md:ml-16 lg:ml-20'>
               <div className='flex items-center justify-start gap-x-5'>
 
                 <Link to="/" className='customer-btn-first text-btn text-green-color flex items-center justify-center'>
@@ -53,7 +54,7 @@ export default function Customer() {
               <div className='flex items-center justify-start gap-x-5 pt-5'>
                 <Link to="/" className='btn text-btn text-green-deep flex items-center justify-around bg-green-color'>
                   <span>Nous contacter</span>
-                  <Arrow />
+                  <Arrow background="#FFFF" textcolor="#2CE5B1" />
                 </Link>
 
                 <Link to="/" className='btn text-btn text-green-deep flex items-center justify-around  border border-green-deep '>
@@ -61,14 +62,12 @@ export default function Customer() {
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6">
                     <path fillRule="evenodd" d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" />
                   </svg>
-
                 </Link>
-
               </div>
             </div>
-            <div className='absolute flex items-center justify-center section-tree-col-selfie top-[78%] '>
+            <div className='absolute flex items-center justify-center section-tree-col-selfie top-[78%] left-4'>
               <div className='flex items-center justify-center py-10 rounded-[20px] bg-white'>
-                <div className=' gap-10  px-10 grid  items-center justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
+                <div className=' gap-10  px-10 grid  items-center justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 '>
                   <div className='flex  gap-x-10'>
                     <Cards />
                     <div className="">
@@ -179,7 +178,7 @@ export default function Customer() {
                   données internationales, nous garantissons l'authenticité et la validité de chaque <br />
                   document.
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
+                <div className="grid w-full items-center justify-center grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5">
                   <div className="flex items-center justify-start gap-3">
                     <SmallCheckCircle />
                     <div className='text-left content-small-circle-check'>
@@ -329,282 +328,285 @@ export default function Customer() {
         </section>
         {/* start section communication */}
 
-        <section className='section-choise-us bg-no-repeat bg-center bg-cover'>
-          <div className='flex flex-col items-center justify-center' >
-            <a href="#" className="btn-choice flex items-center justify-center">Pourquoi nous choisir</a>
-            <div className="title-1 text-center text-green-deep py-10">
-              Respectez la réglementation KYC et accélérez <br />
-              l'acquisition de clients
-            </div>
-            <div className="title-content-1 text-center">
-              En automatisant vos processus KYC, vous réduisez considérablement les frictions et les délais d'onboarding. Notre solution vous permet de respecter <br />
-              les normes les plus strictes tout en offrant une expérience client fluide.
-            </div>
-            <div className="card-choice-items items-center justify-center w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 py-10">
-              <RespectReglementation
-                image={img1}
-                title={
-                  <div>Respectez et évoluez <br />
-                    avec la réglementation</div>
-                }
-                content={
-                  <div>
-                    Soyez en conformité avec les <br />
-                    normes KYC/AML en vigueur dans <br />
-                    le monde entier.
-                  </div>
-                }
-              />
-              <RespectReglementation
-                image={img2}
-                title={
-                  <div>Convertissez plus <br />
-                    d’utilisateurs</div>
-                }
-                content={
-                  <div>
-                    Offrez un processus d'onboarding <br />
-                    fluide et sécurisé pour fidéliser vos <br />
-                    clients.
-                  </div>
-                }
-              />
-              <RespectReglementation
-                image={img4}
-                title={
-                  <div>Verifications flexibles avec <br />
-                    des documents locaux</div>
-                }
-                content={
-                  <div>
-                    Acceptez différents types de <br />
-                    documents adaptés selon les regions <br />
-                    des utilisateurs
-                  </div>
-                }
-              />
-              <RespectReglementation
-                image={img3}
-                title={
-                  <div>Optimisez les couts <br />
-                    des verifications </div>
-                }
-                content={
-                  <div>
-                    Réduisez les coûts liés à la <br />
-                    vérification manuelle des documents <br />
-                    d’identité de vos utilisateurs
-                  </div>
-                }
-              />
-            </div>
-          </div>
-          <div className="bg-[#D4FFDE] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 rounded-[33px] bg-no-repeat" style={{ backgroundImage: `url(${vector})`, backgroundPosition: "left center" }}>
-            <div className="relative customer-selfie-box">
-              <img src={takeselfie} alt="" className='absolute customer-selfie' />
-            </div>
-            <div className=" accueil-content flex flex-col top-[145px]  px-4 pb-5">
-              <div className="text-nowrap gap-[6px] pb-[27px]">
-                <div className='pt-10'>
-                  <Link to="/" className='flex items-center justify-center btn-verification btn-verification-text mb-5'>
-                    Know your Customer
-                  </Link>
-                </div>
-                <div className='text-wrap take-selfie-title text-left sarabun-bold text-green-deep'>
-                  Démontrez aux régulateurs votre <br />
-                  engagement indéfectible dans la lutte <br />
-                  contre la criminalité financière.
-                </div>
-                <p className='text-left text-wrap title-content py-5'>
-                  Distinguez-vous de vos concurrents en adoptant une approche proactive de la lutte contre <br />
-                  la criminalité financière. AIbiometrics vous permet non seulement de respecter les <br />
-                  réglementations en vigueur, mais aussi de renforcer la confiance de vos clients en leur <br />
-                  assurant une expérience d'onboarding sécurisée et transparente.
-                </p>
-                <p className='text-left text-wrap title-content'>
-                  Démontrez aux régulateurs que vous êtes un acteur responsable et engagé en choisissant <br />
-                  AIbiometrics pour vos verifications d’utilisateurs
-                </p>
+        <section className='section-choise-us'>
+          <div className=''>
+          <div className='flex flex-col items-center justify-center pb-20 pt-10 px-20 bg-white  bg-no-repeat bg-[110%_60%] '  style={{ backgroundImage: `url(${vector1})` }}>
+              <a href="#" className="btn-choice flex items-center justify-center">Pourquoi nous choisir</a>
+              <div className="title-1 text-center text-green-deep py-10">
+                Respectez la réglementation KYC et accélérez <br />
+                l'acquisition de clients
               </div>
-
-              <div className="text-wrap items-start gap-x-[28px]">
-                <div className='flex flex-wrap md:flex-nowrap items-center justify-center  lg:items-start lg:justify-start gap-[28px] md:gap-[10px] md:pr-2'>
-                  <div className='btn flex items-center justify-center  bg-green-color pr-2'>
-                    <button className='btn-text flex items-center text-nowrap'>
-                      Commencer gratuitement
-                      <Arrow background="#FFFF" textcolor="#2CE5B1" />
-                    </button>
-
+              <div className="title-content-1 text-center">
+                En automatisant vos processus KYC, vous réduisez considérablement les frictions et les délais d'onboarding. Notre solution vous permet de respecter <br />
+                les normes les plus strictes tout en offrant une expérience client fluide.
+              </div>
+              <div className="card-choice-items items-center justify-center w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 pt-10 pb-24">
+                <RespectReglementation
+                  image={img1}
+                  title={
+                    <div>Respectez et évoluez <br />
+                      avec la réglementation</div>
+                  }
+                  content={
+                    <div>
+                      Soyez en conformité avec les <br />
+                      normes KYC/AML en vigueur dans <br />
+                      le monde entier.
+                    </div>
+                  }
+                />
+                <RespectReglementation
+                  image={img2}
+                  title={
+                    <div>Convertissez plus <br />
+                      d’utilisateurs</div>
+                  }
+                  content={
+                    <div>
+                      Offrez un processus d'onboarding <br />
+                      fluide et sécurisé pour fidéliser vos <br />
+                      clients.
+                    </div>
+                  }
+                />
+                <RespectReglementation
+                  image={img4}
+                  title={
+                    <div>Verifications flexibles avec <br />
+                      des documents locaux</div>
+                  }
+                  content={
+                    <div>
+                      Acceptez différents types de <br />
+                      documents adaptés selon les regions <br />
+                      des utilisateurs
+                    </div>
+                  }
+                />
+                <RespectReglementation
+                  image={img3}
+                  title={
+                    <div>Optimisez les couts <br />
+                      des verifications </div>
+                  }
+                  content={
+                    <div>
+                      Réduisez les coûts liés à la <br />
+                      vérification manuelle des documents <br />
+                      d’identité de vos utilisateurs
+                    </div>
+                  }
+                />
+              </div>
+              <div className="bg-[#D4FFDE] w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 rounded-[33px] bg-no-repeat bg-[5%_50%]" style={{ backgroundImage: `url(${vector})`}}>
+                <div className="relative customer-selfie-box">
+                  <img src={takeselfie} alt="" className='absolute customer-selfie' />
+                </div>
+                <div className=" accueil-content flex flex-col top-[145px]  px-4 pb-5">
+                  <div className="text-nowrap gap-[6px] pb-[27px]">
+                    <div className='pt-10'>
+                      <Link to="/" className='flex items-center justify-center btn-verification btn-verification-text mb-5'>
+                        Know your Customer
+                      </Link>
+                    </div>
+                    <div className='text-wrap take-selfie-title text-left sarabun-bold text-green-deep'>
+                      Démontrez aux régulateurs votre <br />
+                      engagement indéfectible dans la lutte <br />
+                      contre la criminalité financière.
+                    </div>
+                    <p className='text-left text-wrap title-content py-5'>
+                      Distinguez-vous de vos concurrents en adoptant une approche proactive de la lutte contre <br />
+                      la criminalité financière. AIbiometrics vous permet non seulement de respecter les <br />
+                      réglementations en vigueur, mais aussi de renforcer la confiance de vos clients en leur <br />
+                      assurant une expérience d'onboarding sécurisée et transparente.
+                    </p>
+                    <p className='text-left text-wrap title-content'>
+                      Démontrez aux régulateurs que vous êtes un acteur responsable et engagé en choisissant <br />
+                      AIbiometrics pour vos verifications d’utilisateurs
+                    </p>
                   </div>
-                  <div className='btn flex items-center justify-around bg-white'>
-                    <button className='btn-text text-green-color'>
-                      Contacter
-                    </button>
-                    <Message background="#2CE5B1" textcolor="#FFFF" />
+
+                  <div className="text-wrap items-start gap-x-[28px]">
+                    <div className='flex flex-wrap md:flex-nowrap items-center justify-center  lg:items-start lg:justify-start gap-[28px] md:gap-[10px] md:pr-2'>
+                      <div className='btn flex items-center justify-center  bg-green-color pr-2'>
+                        <button className='btn-text flex items-center text-nowrap'>
+                          Commencer gratuitement
+                          <Arrow background="#FFFF" textcolor="#2CE5B1" />
+                        </button>
+
+                      </div>
+                      <div className='btn flex items-center justify-around bg-white'>
+                        <button className='btn-text text-green-color'>
+                          Contacter
+                        </button>
+                        <Message background="#2CE5B1" textcolor="#FFFF" />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
+            </div>
 
+            <div className=' bg-white pb-24'>
+              <div className='pb-10'>
+                <div className='w-full take-selfie-title text-center flex items-center justify-center py-10 bg-no-repeat bg-center' style={{ backgroundImage: `url(${cote})` }}>
+                  Nous réinventons la vérification d'identité en alliant la puissance de l'intelligence artificielle <br />
+                  à une approche centrée sur l'utilisateur. Nous voulons vous offrir une solution <br />
+                  simple, sécurisée et fiable pour protéger vos données sensibles et renforcer la confiance <br />
+                  dans les interactions numériques.
+                </div>
+              </div>
+              <div className='flex items-start justify-start gap-8 overflow-x-auto px-20 scrollbar-hidden'>
+                <Card
+                  btnText="Disponibilité par pays"
+                  title={
+                    <span>
+                      Est-ce-que je peux payer <br />
+                      depuis mon pays en Afrique ?
+                    </span>
+                  }
+                  content={
+                    <span>
+                      Localement ou internationalement, vos achats en <br />
+                      ligne ne connaissent plus de limite avec les <br />
+                      cartes virtuelles Visa et Mastercard de chez <br />
+                      SEKURE. En 2 minutes, créez et vérifiez votre <br />
+                      compte Sekure pour obtenir votre carte virtuelle. <br />
+                      Entre des frais d'entretien inexistants et des frais <br />
+                      de transaction amoindris, Sekure vous offre les <br />
+                      meilleurs avantages du marché bancaire africain <br />
+                      sur jusqu’à 06 cartes que vous pouvez suivre <br />
+                      individuellement dans via l'application.
+                    </span>
+                  }
+                />
+                <Card
+                  btnText="Disponibilité par pays"
+                  title={
+                    <span>
+                      Est-ce-que je peux payer <br />
+                      depuis mon pays en Afrique ?
+                    </span>
+                  }
+                  content={
+                    <span>
+                      Localement ou internationalement, vos achats en <br />
+                      ligne ne connaissent plus de limite avec les <br />
+                      cartes virtuelles Visa et Mastercard de chez <br />
+                      SEKURE. En 2 minutes, créez et vérifiez votre <br />
+                      compte Sekure pour obtenir votre carte virtuelle. <br />
+                      Entre des frais d'entretien inexistants et des frais <br />
+                      de transaction amoindris, Sekure vous offre les <br />
+                      meilleurs avantages du marché bancaire africain <br />
+                      sur jusqu’à 06 cartes que vous pouvez suivre <br />
+                      individuellement dans via l'application.
+                    </span>
+                  }
+                />
+                <Card
+                  btnText="Disponibilité par pays"
+                  title={
+                    <span>
+                      Est-ce-que je peux payer <br />
+                      depuis mon pays en Afrique ?
+                    </span>
+                  }
+                  content={
+                    <span>
+                      Localement ou internationalement, vos achats en <br />
+                      ligne ne connaissent plus de limite avec les <br />
+                      cartes virtuelles Visa et Mastercard de chez <br />
+                      SEKURE. En 2 minutes, créez et vérifiez votre <br />
+                      compte Sekure pour obtenir votre carte virtuelle. <br />
+                      Entre des frais d'entretien inexistants et des frais <br />
+                      de transaction amoindris, Sekure vous offre les <br />
+                      meilleurs avantages du marché bancaire africain <br />
+                      sur jusqu’à 06 cartes que vous pouvez suivre <br />
+                      individuellement dans via l'application.
+                    </span>
+                  }
+                />
+                <Card
+                  btnText="Disponibilité par pays"
+                  title={
+                    <span>
+                      Est-ce-que je peux payer <br />
+                      depuis mon pays en Afrique ?
+                    </span>
+                  }
+                  content={
+                    <span>
+                      Localement ou internationalement, vos achats en <br />
+                      ligne ne connaissent plus de limite avec les <br />
+                      cartes virtuelles Visa et Mastercard de chez <br />
+                      SEKURE. En 2 minutes, créez et vérifiez votre <br />
+                      compte Sekure pour obtenir votre carte virtuelle. <br />
+                      Entre des frais d'entretien inexistants et des frais <br />
+                      de transaction amoindris, Sekure vous offre les <br />
+                      meilleurs avantages du marché bancaire africain <br />
+                      sur jusqu’à 06 cartes que vous pouvez suivre <br />
+                      individuellement dans via l'application.
+                    </span>
+                  }
+                />
+                <Card
+                  btnText="Disponibilité par pays"
+                  title={
+                    <span>
+                      Est-ce-que je peux payer <br />
+                      depuis mon pays en Afrique ?
+                    </span>
+                  }
+                  content={
+                    <span>
+                      Localement ou internationalement, vos achats en <br />
+                      ligne ne connaissent plus de limite avec les <br />
+                      cartes virtuelles Visa et Mastercard de chez <br />
+                      SEKURE. En 2 minutes, créez et vérifiez votre <br />
+                      compte Sekure pour obtenir votre carte virtuelle. <br />
+                      Entre des frais d'entretien inexistants et des frais <br />
+                      de transaction amoindris, Sekure vous offre les <br />
+                      meilleurs avantages du marché bancaire africain <br />
+                      sur jusqu’à 06 cartes que vous pouvez suivre <br />
+                      individuellement dans via l'application.
+                    </span>
+                  }
+                />
+                <Card
+                  btnText="Disponibilité par pays"
+                  title={
+                    <span>
+                      Est-ce-que je peux payer <br />
+                      depuis mon pays en Afrique ?
+                    </span>
+                  }
+                  content={
+                    <span>
+                      Localement ou internationalement, vos achats en <br />
+                      ligne ne connaissent plus de limite avec les <br />
+                      cartes virtuelles Visa et Mastercard de chez <br />
+                      SEKURE. En 2 minutes, créez et vérifiez votre <br />
+                      compte Sekure pour obtenir votre carte virtuelle. <br />
+                      Entre des frais d'entretien inexistants et des frais <br />
+                      de transaction amoindris, Sekure vous offre les <br />
+                      meilleurs avantages du marché bancaire africain <br />
+                      sur jusqu’à 06 cartes que vous pouvez suivre <br />
+                      individuellement dans via l'application.
+                    </span>
+                  }
+                />
+
+              </div>
             </div>
           </div>
         </section>
         {/* end section choice us */}
 
-        {/* start section scroll cards  */}
-        <section className=' bg-white'>
-          <div className='py-10'>
-            <div className='w-full take-selfie-title text-center flex items-center justify-center py-10 bg-no-repeat bg-center' style={{ backgroundImage: `url(${cote})` }}>
-              Nous réinventons la vérification d'identité en alliant la puissance de l'intelligence artificielle <br />
-              à une approche centrée sur l'utilisateur. Nous voulons vous offrir une solution <br />
-              simple, sécurisée et fiable pour protéger vos données sensibles et renforcer la confiance <br />
-              dans les interactions numériques.
-            </div>
-          </div>
-          <div className='flex items-start justify-start gap-8 overflow-x-auto px-5 scrollbar-hidden'>
-            <Card
-              btnText="Disponibilité par pays"
-              title={
-                <span>
-                  Est-ce-que je peux payer <br />
-                  depuis mon pays en Afrique ?
-                </span>
-              }
-              content={
-                <span>
-                  Localement ou internationalement, vos achats en <br />
-                  ligne ne connaissent plus de limite avec les <br />
-                  cartes virtuelles Visa et Mastercard de chez <br />
-                  SEKURE. En 2 minutes, créez et vérifiez votre <br />
-                  compte Sekure pour obtenir votre carte virtuelle. <br />
-                  Entre des frais d'entretien inexistants et des frais <br />
-                  de transaction amoindris, Sekure vous offre les <br />
-                  meilleurs avantages du marché bancaire africain <br />
-                  sur jusqu’à 06 cartes que vous pouvez suivre <br />
-                  individuellement dans via l'application.
-                </span>
-              }
-            />
-            <Card
-              btnText="Disponibilité par pays"
-              title={
-                <span>
-                  Est-ce-que je peux payer <br />
-                  depuis mon pays en Afrique ?
-                </span>
-              }
-              content={
-                <span>
-                  Localement ou internationalement, vos achats en <br />
-                  ligne ne connaissent plus de limite avec les <br />
-                  cartes virtuelles Visa et Mastercard de chez <br />
-                  SEKURE. En 2 minutes, créez et vérifiez votre <br />
-                  compte Sekure pour obtenir votre carte virtuelle. <br />
-                  Entre des frais d'entretien inexistants et des frais <br />
-                  de transaction amoindris, Sekure vous offre les <br />
-                  meilleurs avantages du marché bancaire africain <br />
-                  sur jusqu’à 06 cartes que vous pouvez suivre <br />
-                  individuellement dans via l'application.
-                </span>
-              }
-            />
-            <Card
-              btnText="Disponibilité par pays"
-              title={
-                <span>
-                  Est-ce-que je peux payer <br />
-                  depuis mon pays en Afrique ?
-                </span>
-              }
-              content={
-                <span>
-                  Localement ou internationalement, vos achats en <br />
-                  ligne ne connaissent plus de limite avec les <br />
-                  cartes virtuelles Visa et Mastercard de chez <br />
-                  SEKURE. En 2 minutes, créez et vérifiez votre <br />
-                  compte Sekure pour obtenir votre carte virtuelle. <br />
-                  Entre des frais d'entretien inexistants et des frais <br />
-                  de transaction amoindris, Sekure vous offre les <br />
-                  meilleurs avantages du marché bancaire africain <br />
-                  sur jusqu’à 06 cartes que vous pouvez suivre <br />
-                  individuellement dans via l'application.
-                </span>
-              }
-            />
-            <Card
-              btnText="Disponibilité par pays"
-              title={
-                <span>
-                  Est-ce-que je peux payer <br />
-                  depuis mon pays en Afrique ?
-                </span>
-              }
-              content={
-                <span>
-                  Localement ou internationalement, vos achats en <br />
-                  ligne ne connaissent plus de limite avec les <br />
-                  cartes virtuelles Visa et Mastercard de chez <br />
-                  SEKURE. En 2 minutes, créez et vérifiez votre <br />
-                  compte Sekure pour obtenir votre carte virtuelle. <br />
-                  Entre des frais d'entretien inexistants et des frais <br />
-                  de transaction amoindris, Sekure vous offre les <br />
-                  meilleurs avantages du marché bancaire africain <br />
-                  sur jusqu’à 06 cartes que vous pouvez suivre <br />
-                  individuellement dans via l'application.
-                </span>
-              }
-            />
-            <Card
-              btnText="Disponibilité par pays"
-              title={
-                <span>
-                  Est-ce-que je peux payer <br />
-                  depuis mon pays en Afrique ?
-                </span>
-              }
-              content={
-                <span>
-                  Localement ou internationalement, vos achats en <br />
-                  ligne ne connaissent plus de limite avec les <br />
-                  cartes virtuelles Visa et Mastercard de chez <br />
-                  SEKURE. En 2 minutes, créez et vérifiez votre <br />
-                  compte Sekure pour obtenir votre carte virtuelle. <br />
-                  Entre des frais d'entretien inexistants et des frais <br />
-                  de transaction amoindris, Sekure vous offre les <br />
-                  meilleurs avantages du marché bancaire africain <br />
-                  sur jusqu’à 06 cartes que vous pouvez suivre <br />
-                  individuellement dans via l'application.
-                </span>
-              }
-            />
-             <Card
-              btnText="Disponibilité par pays"
-              title={
-                <span>
-                  Est-ce-que je peux payer <br />
-                  depuis mon pays en Afrique ?
-                </span>
-              }
-              content={
-                <span>
-                  Localement ou internationalement, vos achats en <br />
-                  ligne ne connaissent plus de limite avec les <br />
-                  cartes virtuelles Visa et Mastercard de chez <br />
-                  SEKURE. En 2 minutes, créez et vérifiez votre <br />
-                  compte Sekure pour obtenir votre carte virtuelle. <br />
-                  Entre des frais d'entretien inexistants et des frais <br />
-                  de transaction amoindris, Sekure vous offre les <br />
-                  meilleurs avantages du marché bancaire africain <br />
-                  sur jusqu’à 06 cartes que vous pouvez suivre <br />
-                  individuellement dans via l'application.
-                </span>
-              }
-            />
-
-          </div>
+        {/* start footer section  */}
+        <section className='z-50'>
+          <FooterAccueil />
         </section>
-
-        {/* end section scroll cards  */}
-
+        {/* end footer section  */}
       </main>
     </div>
   )

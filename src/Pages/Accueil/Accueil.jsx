@@ -1,12 +1,15 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Accordion from '../../Components/Accordion'
 import Arrow from '../../Components/Arrow'
 import CardArrow from '../../Components/CardArrow'
 import Cards from '../../Components/Cards'
 import CardSmile from '../../Components/CardSmile'
+import FooterAccueil from '../../Components/FooterAccueil'
 import Message from '../../Components/Message'
 import MiniCard from '../../Components/MiniCard'
 import MiniCardSquare from '../../Components/MiniCardSquare'
+import MiniNavBar from '../../Components/MiniNavBar'
 import NavBar from '../../Components/NavBar'
 import SmallCheckCircle from '../../Components/SmallCheckCircle'
 import bgChoice from "../../images/bg-choice.png"
@@ -20,9 +23,6 @@ import phoneBg from "../../images/phoneBg.png"
 import unionDown from "../../images/Union (1).png"
 import unionUp from "../../images/Union.png"
 import vectorDatabases from "../../images/vectorDatabases.png"
-import FooterAccueil from '../../Components/FooterAccueil'
-import { Link } from 'react-router-dom'
-import MiniNavBar from '../../Components/MiniNavBar'
 
 export default function Accueil() {
     return (
@@ -60,18 +60,18 @@ export default function Accueil() {
                                 </p>
                                 <div className='flex flex-wrap items-center justify-center md:items-start md:justify-start lg:items-start lg:justify-start gap-[28px] pt-[28px]'>
                                     <div className='btn flex items-center  bg-green-deep pr-2'>
-                                        <button className='btn-text flex items-center text-nowrap'>
-                                            Commencer gratuitement
-                                            <Arrow />
-                                        </button>
+                                        <Link to="/" className='btn-text flex items-center justify-between text-nowrap'>
+                                            <span>Commencer gratuitement</span>
+                                            <Arrow background="#FFFF" textcolor="#285246" />
+                                        </Link>
 
                                     </div>
-                                    <div className='btn flex items-center justify-around bg-green-clean'>
-                                        <button className='btn-text text-green-deep'>
+                                    <Link to="/" className='btn flex items-center justify-around bg-green-clean'>
+                                        <span className='btn-text text-green-deep'>
                                             Contacter
-                                        </button>
-                                        <Message/>
-                                    </div>
+                                        </span>
+                                        <Message background="#FFFF" textcolor="#285246" />
+                                    </Link>
                                 </div>
                                 <div className='sub-title mt-10 pb-10'>
                                     Nous vous aidons à facilement accepter <br />
@@ -427,10 +427,10 @@ export default function Accueil() {
                     </div>
                 </section>
                 {/* end section choice us */}
-                
+
                 {/* start section mini navbar  */}
                 <section>
-                    <MiniNavBar/>
+                    <MiniNavBar />
                 </section>
                 {/* end section mini navbar  */}
 
@@ -452,9 +452,9 @@ export default function Accueil() {
                         </div>
                         <div className='flex flex-wrap items-center justify-center md:items-start md:justify-start lg:items-start lg:justify-start gap-[28px] pt-[28px]'>
                             <div className='btn flex items-center  bg-green-color pr-2'>
-                                <button className='big-btn-about-us flex items-center text-nowrap text-white'>
-                                    Voir tous les pays
-                                    <Arrow />
+                                <button className='big-btn-about-us flex items-center justify-between text-nowrap text-white'>
+                                    <span>Voir tous les pays</span>
+                                    <Arrow background="#FFFF" textcolor="#285246" />
                                 </button>
 
                             </div>
@@ -462,7 +462,7 @@ export default function Accueil() {
                                 <button className='btn-text text-white'>
                                     Contacter
                                 </button>
-                                <Message />
+                                <Message background="#FFFF" textcolor="#285246" />
                             </div>
                         </div>
                     </div>
@@ -609,18 +609,18 @@ export default function Accueil() {
                                 <Accordion />
                             </div>
                             <div className='flex flex-wrap items-center justify-center md:items-start md:justify-start lg:items-start lg:justify-start gap-[28px] pt-[28px] pb-16'>
-                                <div className='btn flex items-center justify-around  bg-green-color '>
-                                    <button className='big-btn-about-us flex items-center text-nowrap text-white'>
+                                <Link to="/" className='btn flex items-center justify-around  bg-green-color '>
+                                    <span className='big-btn-about-us flex items-center text-nowrap text-white'>
                                         Voir tous les pays
-                                    </button>
-                                    <Arrow />
-                                </div>
-                                <div className='btn flex items-center justify-around bg-green-deep'>
-                                    <button className='btn-text text-white'>
+                                    </span>
+                                    <Arrow background="#FFFF" textcolor="#285246" />
+                                </Link>
+                                <Link to="/" className='btn flex items-center justify-around bg-green-deep'>
+                                    <span className='btn-text text-white'>
                                         Contacter
-                                    </button>
-                                    <Message />
-                                </div>
+                                    </span>
+                                    <Message background="#FFFF" textcolor="#285246" />
+                                </Link>
                             </div>
                         </div>
                         <div className='relative w-full bg-no-repeat bg-cover bg-left bg-phone ov' style={{ backgroundImage: `url(${phoneBg})` }}>
@@ -634,7 +634,7 @@ export default function Accueil() {
 
                 {/* start footer section  */}
                 <section className='z-50'>
-                    <FooterAccueil/>
+                    <FooterAccueil />
                 </section>
                 {/* end footer section  */}
             </main>

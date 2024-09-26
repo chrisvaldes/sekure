@@ -28,13 +28,13 @@ export default function FooterAccueil() {
                             <button className='btn-text text-white text-nowrap'>
                                 Commencer gratuitement
                             </button>
-                            <Arrow />
+                            <Arrow background="#FFFF" textcolor="#285246" />
                         </div>
                         <div className='btn flex items-center justify-around bg-white'>
                             <button className='btn-text text-green-deep'>
                                 Nous Contacter
                             </button>
-                            <Message />
+                            <Message background="#285246" textcolor="#FFFF" />
                         </div>
                     </div>
                 </div>

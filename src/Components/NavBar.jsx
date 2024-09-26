@@ -158,11 +158,11 @@ export default function NavBar() {
                       </select> 
                         <Link to='/' className="btn-nav-text  flex items-center justify-center bg-green-color btn-nav" href="#">
                           <span>Connexion</span>
-                          <Arrow />
+                          <Arrow background="#FFFF" textcolor="#285246" />
                         </Link>
                         <Link to="/" className="btn-nav-text flex items-center justify-center bg-green-deep btn-nav" href="#">
                           <span>Contacter</span>
-                          <Message />
+                          <Message background="#FFFF" textcolor="#285246" />
                         </Link> 
                     </div>
 
