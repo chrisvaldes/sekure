@@ -19,6 +19,8 @@ import passportCni from "../../images/page-2/PassPortCni.png"
 import vectorDatabases from "../../images/vectorDatabases.png"
 import vector from '../../images/page-2/Vector.png'
 import takeselfie from "../../images/page-2/takePhoto.png"
+import cote from "../../images/page-2/cote.png"
+import Card from '../../Components/customer/Card'
 
 
 export default function Customer() {
@@ -327,8 +329,8 @@ export default function Customer() {
         </section>
         {/* start section communication */}
 
-        <section className='section-choise-us bg-no-repeat bg-center bg-cover mb-32'>
-          <div className='flex flex-col items-center justify-center py-10' >
+        <section className='section-choise-us bg-no-repeat bg-center bg-cover'>
+          <div className='flex flex-col items-center justify-center' >
             <a href="#" className="btn-choice flex items-center justify-center">Pourquoi nous choisir</a>
             <div className="title-1 text-center text-green-deep py-10">
               Respectez la réglementation KYC et accélérez <br />
@@ -397,13 +399,13 @@ export default function Customer() {
               />
             </div>
           </div>
-          <div className="bg-[#D4FFDE] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 pt-7 pb-12 rounded-[33px] bg-no-repeat" style={{ backgroundImage: `url(${vector})`, backgroundPosition: "left center" }}>
-            <div className="relative">
+          <div className="bg-[#D4FFDE] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 rounded-[33px] bg-no-repeat" style={{ backgroundImage: `url(${vector})`, backgroundPosition: "left center" }}>
+            <div className="relative customer-selfie-box">
               <img src={takeselfie} alt="" className='absolute customer-selfie' />
             </div>
-            <div className=" accueil-content flex flex-col  top-[145px] ml-20 px-4">
+            <div className=" accueil-content flex flex-col top-[145px]  px-4 pb-5">
               <div className="text-nowrap gap-[6px] pb-[27px]">
-                <div className=''>
+                <div className='pt-10'>
                   <Link to="/" className='flex items-center justify-center btn-verification btn-verification-text mb-5'>
                     Know your Customer
                   </Link>
@@ -426,8 +428,8 @@ export default function Customer() {
               </div>
 
               <div className="text-wrap items-start gap-x-[28px]">
-                <div className='flex flex-wrap items-center justify-center md:items-start md:justify-start lg:items-start lg:justify-start gap-[28px]'>
-                  <div className='btn flex items-center  bg-green-color pr-2'>
+                <div className='flex flex-wrap md:flex-nowrap items-center justify-center  lg:items-start lg:justify-start gap-[28px] md:gap-[10px] md:pr-2'>
+                  <div className='btn flex items-center justify-center  bg-green-color pr-2'>
                     <button className='btn-text flex items-center text-nowrap'>
                       Commencer gratuitement
                       <Arrow background="#FFFF" textcolor="#2CE5B1" />
@@ -447,6 +449,162 @@ export default function Customer() {
           </div>
         </section>
         {/* end section choice us */}
+
+        {/* start section scroll cards  */}
+        <section className=' bg-white'>
+          <div className='py-10'>
+            <div className='w-full take-selfie-title text-center flex items-center justify-center py-10 bg-no-repeat bg-center' style={{ backgroundImage: `url(${cote})` }}>
+              Nous réinventons la vérification d'identité en alliant la puissance de l'intelligence artificielle <br />
+              à une approche centrée sur l'utilisateur. Nous voulons vous offrir une solution <br />
+              simple, sécurisée et fiable pour protéger vos données sensibles et renforcer la confiance <br />
+              dans les interactions numériques.
+            </div>
+          </div>
+          <div className='flex items-start justify-start gap-8 overflow-x-auto px-5 scrollbar-hidden'>
+            <Card
+              btnText="Disponibilité par pays"
+              title={
+                <span>
+                  Est-ce-que je peux payer <br />
+                  depuis mon pays en Afrique ?
+                </span>
+              }
+              content={
+                <span>
+                  Localement ou internationalement, vos achats en <br />
+                  ligne ne connaissent plus de limite avec les <br />
+                  cartes virtuelles Visa et Mastercard de chez <br />
+                  SEKURE. En 2 minutes, créez et vérifiez votre <br />
+                  compte Sekure pour obtenir votre carte virtuelle. <br />
+                  Entre des frais d'entretien inexistants et des frais <br />
+                  de transaction amoindris, Sekure vous offre les <br />
+                  meilleurs avantages du marché bancaire africain <br />
+                  sur jusqu’à 06 cartes que vous pouvez suivre <br />
+                  individuellement dans via l'application.
+                </span>
+              }
+            />
+            <Card
+              btnText="Disponibilité par pays"
+              title={
+                <span>
+                  Est-ce-que je peux payer <br />
+                  depuis mon pays en Afrique ?
+                </span>
+              }
+              content={
+                <span>
+                  Localement ou internationalement, vos achats en <br />
+                  ligne ne connaissent plus de limite avec les <br />
+                  cartes virtuelles Visa et Mastercard de chez <br />
+                  SEKURE. En 2 minutes, créez et vérifiez votre <br />
+                  compte Sekure pour obtenir votre carte virtuelle. <br />
+                  Entre des frais d'entretien inexistants et des frais <br />
+                  de transaction amoindris, Sekure vous offre les <br />
+                  meilleurs avantages du marché bancaire africain <br />
+                  sur jusqu’à 06 cartes que vous pouvez suivre <br />
+                  individuellement dans via l'application.
+                </span>
+              }
+            />
+            <Card
+              btnText="Disponibilité par pays"
+              title={
+                <span>
+                  Est-ce-que je peux payer <br />
+                  depuis mon pays en Afrique ?
+                </span>
+              }
+              content={
+                <span>
+                  Localement ou internationalement, vos achats en <br />
+                  ligne ne connaissent plus de limite avec les <br />
+                  cartes virtuelles Visa et Mastercard de chez <br />
+                  SEKURE. En 2 minutes, créez et vérifiez votre <br />
+                  compte Sekure pour obtenir votre carte virtuelle. <br />
+                  Entre des frais d'entretien inexistants et des frais <br />
+                  de transaction amoindris, Sekure vous offre les <br />
+                  meilleurs avantages du marché bancaire africain <br />
+                  sur jusqu’à 06 cartes que vous pouvez suivre <br />
+                  individuellement dans via l'application.
+                </span>
+              }
+            />
+            <Card
+              btnText="Disponibilité par pays"
+              title={
+                <span>
+                  Est-ce-que je peux payer <br />
+                  depuis mon pays en Afrique ?
+                </span>
+              }
+              content={
+                <span>
+                  Localement ou internationalement, vos achats en <br />
+                  ligne ne connaissent plus de limite avec les <br />
+                  cartes virtuelles Visa et Mastercard de chez <br />
+                  SEKURE. En 2 minutes, créez et vérifiez votre <br />
+                  compte Sekure pour obtenir votre carte virtuelle. <br />
+                  Entre des frais d'entretien inexistants et des frais <br />
+                  de transaction amoindris, Sekure vous offre les <br />
+                  meilleurs avantages du marché bancaire africain <br />
+                  sur jusqu’à 06 cartes que vous pouvez suivre <br />
+                  individuellement dans via l'application.
+                </span>
+              }
+            />
+            <Card
+              btnText="Disponibilité par pays"
+              title={
+                <span>
+                  Est-ce-que je peux payer <br />
+                  depuis mon pays en Afrique ?
+                </span>
+              }
+              content={
+                <span>
+                  Localement ou internationalement, vos achats en <br />
+                  ligne ne connaissent plus de limite avec les <br />
+                  cartes virtuelles Visa et Mastercard de chez <br />
+                  SEKURE. En 2 minutes, créez et vérifiez votre <br />
+                  compte Sekure pour obtenir votre carte virtuelle. <br />
+                  Entre des frais d'entretien inexistants et des frais <br />
+                  de transaction amoindris, Sekure vous offre les <br />
+                  meilleurs avantages du marché bancaire africain <br />
+                  sur jusqu’à 06 cartes que vous pouvez suivre <br />
+                  individuellement dans via l'application.
+                </span>
+              }
+            />
+             <Card
+              btnText="Disponibilité par pays"
+              title={
+                <span>
+                  Est-ce-que je peux payer <br />
+                  depuis mon pays en Afrique ?
+                </span>
+              }
+              content={
+                <span>
+                  Localement ou internationalement, vos achats en <br />
+                  ligne ne connaissent plus de limite avec les <br />
+                  cartes virtuelles Visa et Mastercard de chez <br />
+                  SEKURE. En 2 minutes, créez et vérifiez votre <br />
+                  compte Sekure pour obtenir votre carte virtuelle. <br />
+                  Entre des frais d'entretien inexistants et des frais <br />
+                  de transaction amoindris, Sekure vous offre les <br />
+                  meilleurs avantages du marché bancaire africain <br />
+                  sur jusqu’à 06 cartes que vous pouvez suivre <br />
+                  individuellement dans via l'application.
+                </span>
+              }
+            />
+
+          </div>
+        </section>
+
+        {/* end section scroll cards  */}
+
       </main>
     </div>
   )

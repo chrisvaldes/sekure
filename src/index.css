@@ -490,57 +490,7 @@
   left: 3%;
 }
 
-.passport-page2 {
-  position: absolute;
-  top: -5%;
-}
 
-.respect-grid-title {
-  font-family: Satoshi;
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 30px;
-  letter-spacing: -1px;
-  text-align: center;
-  color: #18382B;
-}
-
-.respect-grid-content {
-  font-family: Satoshi;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: center;
-  color: #285246;
-}
-
-.take-selfie-title {
-  font-family: Satoshi;
-  font-size: 29px;
-  font-weight: 700;
-  line-height: 35px;
-  letter-spacing: -1px;
-  text-align: left;
-  color: #285246;
-}
-.customer-selfie{
-  bottom: -11.5%;
-}
-@media (max-width:1241.78px) {
-  .customer-selfie{
-    bottom: -9%;
-  }
-}
-@media (max-width:1195px) {
-  .customer-selfie{
-    bottom: -8%;
-  }
-}
-@media (max-width:1082px) {
-  .customer-selfie{
-    bottom: -7%;
-  }
-}
 
 .groupDatabase {
   position: absolute;
@@ -954,6 +904,114 @@
   .accueil {
     /* background-color: #d4d723; */
     margin: 0 40rem;
+  }
+}
+
+/* page-2 customer page  */
+.passport-page2 {
+  position: absolute;
+  top: -5%;
+}
+
+.respect-grid-title {
+  font-family: Satoshi;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: -1px;
+  text-align: center;
+  color: #18382B;
+}
+
+.respect-grid-content {
+  font-family: Satoshi;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #285246;
+}
+
+.take-selfie-title {
+  font-family: Satoshi;
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: -1px;
+  text-align: left;
+  color: #285246;
+}
+
+.customer-selfie {
+  bottom: -0.2%;
+}
+
+.customer-card {
+  width: 337px;
+  height: 352px;
+  gap: 10px;
+  border-radius: 25px;
+  background: #F2F2F2;
+
+}
+
+.btn-customer-card {
+  width: 133px;
+  height: 24px;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 9px;
+
+}
+
+.btn-text-customer-card {
+  font-family: Lufga;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 8px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: left;
+
+}
+
+.customer-card-title {
+  font-family: Lufga;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -1px;
+  text-align: left;
+  color: #18382B;
+}
+
+.customer-card-content {
+  font-family: Inter;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: #767676;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none; /* Masquer la barre de défilement sur Chrome/Safari */
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none; /* Masquer la barre de défilement sur Internet Explorer et Edge */
+  scrollbar-width: none; /* Masquer la barre de défilement sur Firefox */
+}
+
+@media (max-width:1293px) {
+  .customer-selfie {
+    display: none;
+  }
+
+  .customer-selfie-box {
+    background-image: url('../src/images/page-2/takePhoto.png');
+    background-size: contain;
+    background-position: bottom center;
+    background-repeat: no-repeat;
   }
 }
 
