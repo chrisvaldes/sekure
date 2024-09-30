@@ -3,11 +3,12 @@ import Arrow from './Arrow'
 import ArrowGreen from './ArrowGreen'
 import logo from "../images/Group.png"
 import Message from './Message'
+import { Link } from 'react-router-dom'
 
 export default function FooterAccueil() {
     return (
-        <div className='bg-green-color py-20  footer-section'>
-            <div className="flex items-center justify-around">
+        <div className='bg-green-color py-10  footer-section'>
+            {/* <div className="flex items-center justify-around">
                 <div className="">
                     <div className="title text-green-deep">
                         La vérification n’est plus un <br />
@@ -39,7 +40,35 @@ export default function FooterAccueil() {
                     </div>
                 </div>
                 <div className="background-footer">
+                </div>
 
+
+            </div> */}
+            <div className='relative footer-page'>
+                <div className='flex flex-col items-start justify-center'>
+                    <div className='screening-section1-title py-5'>
+                        <span className='text-white'>Notre API Robuste</span>supportera <br />
+                        votre business et son <br />
+                        <span className='text-white'>expansion</span> sans problèmes
+                    </div>
+                    <div className='screening-section1-content pt-5'>
+                        Intégrez notre API en quelques lignes de code et concentrez-vous sur votre cœur de métier. <br />
+                        Notre solution, robuste et fiable, s'adapte à toutes vos exigences. Prêt à révolutionner votre <br />
+                        processus de vérification ? Commencez votre essai gratuit dès aujourd'hui.
+                    </div>
+                    <div class=" flex flex-wrap  gap-5 pt-10">
+                        <Link to="/" class="bg-green-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
+                            <span class="text-nowrap" >Commencer Gratuitement</span>
+                            <Arrow background="#FFFF" textcolor="#285246" />
+                        </Link>
+                        <Link to="/" class=" bg-white  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
+                            <span class="text-green-deep text-nowrap pr-5">Nous contacter</span>
+                            <Message background="#285246" textcolor="#FFFF" />
+                        </Link>
+
+                    </div>
+                </div>
+                <div className='absolute footer-absolute-bg ' >
                 </div>
             </div>
             <div className="flex flex-wrap items-center justify-around w-full">

@@ -13,6 +13,19 @@
   --sds-size-space-200: 0.5rem
 }
 
+@font-face {
+  font-family: "Satoshi";
+  src: url('./assets/fonts/Satoshi/Fonts/OTF/Satoshi-Bold.otf') format('opentype'),
+    url('./assets/fonts/Satoshi/Fonts/OTF/Satoshi-Medium.otf') format('opentype'),
+  ;
+}
+
+@font-face {
+  font-family: 'Lufga';
+  src: url('./assets/fonts/Lufga/Demo_Fonts/Fontspring-DEMO-lufga-regular.otf') format('opentype'),
+    url('./assets/fonts/Lufga/Demo_Fonts/Fontspring-DEMO-lufga-medium.otf') format('opentype');
+}
+
 @layer components {
 
   /* navbar */
@@ -23,7 +36,7 @@
   }
 
   .nav-logo {
-    font-family: Satoshi;
+    font-family: "Satoshi";
     font-size: 30px;
     font-weight: bolder;
     line-height: 47px;
@@ -33,7 +46,7 @@
   }
 
   .nav-language {
-    font-family: Inter;
+    font-family: "Inter";
     font-size: 15px;
     font-weight: 400;
     line-height: 15.13px;
@@ -42,7 +55,7 @@
   }
 
   nav ul li .text-nav {
-    font-family: Inter;
+    font-family: "Inter";
     font-size: 12.5px;
     font-weight: 400;
     line-height: 15.13px;
@@ -56,7 +69,7 @@
   }
 
   .text-nav {
-    font-family: Inter;
+    font-family: "Inter";
     font-size: 12.5px;
     font-weight: 400;
     line-height: 15.13px;
@@ -81,7 +94,7 @@
   }
 
   .btn-nav-text {
-    font-family: Satoshi;
+    font-family: "Satoshi";
     font-size: 16px;
     font-weight: 500;
     line-height: 12px;
@@ -98,7 +111,7 @@
   }
 
   .btn-verification-text {
-    font-family: Satoshi;
+    font-family: "Satoshi";
     font-size: 11px;
     font-weight: 500;
     line-height: 28px;
@@ -107,7 +120,7 @@
   }
 
   .btn-text {
-    font-family: Satoshi;
+    font-family: "Satoshi";
     font-size: 15px;
     font-weight: 700;
     line-height: 14px;
@@ -120,7 +133,7 @@
     height: 32px;
     padding: 10px 5px 10px 5px;
     gap: 10px;
-    border-radius: 31px 31px 31px 31px;
+    border-radius: 31px;
     color: #285246F5;
   }
 
@@ -134,7 +147,7 @@
   }
 
   .card-icon-title {
-    font-family: Satoshi;
+    font-family: "Satoshi";
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
@@ -144,7 +157,7 @@
 
 
   .card-icon-content {
-    font-family: Inter;
+    font-family: "Inter";
     font-size: 12px;
     font-weight: 400;
     line-height: 24px;
@@ -165,7 +178,7 @@
   }
 
   .card-choice-title {
-    font-family: Satoshi;
+    font-family: "Satoshi";
     font-size: 29px;
     font-weight: 700;
     line-height: 47px;
@@ -175,7 +188,7 @@
   }
 
   .card-choice-content {
-    font-family: Satoshi;
+    font-family: "Satoshi";
     font-size: 16px;
     font-weight: 700;
     line-height: 17px;
@@ -199,6 +212,7 @@
     align-items: center;
     justify-content: center;
     gap: 19px;
+    padding: 2rem 0 12rem 0;
   }
 
   .mini-card-square {
@@ -210,7 +224,7 @@
   }
 
   .mini-card-square-title {
-    font-family: Satoshi;
+    font-family: "Satoshi";
     font-size: 16px;
     font-weight: 700;
     line-height: 19px;
@@ -219,7 +233,7 @@
   }
 
   .mini-card-square-content {
-    font-family: Satoshi;
+    font-family: "Satoshi";
     font-size: 10px;
     font-weight: 700;
     line-height: 19px;
@@ -228,7 +242,7 @@
   }
 
   .accordion-title {
-    font-family: Satoshi;
+    font-family: "Satoshi";
     font-size: 12px;
     font-weight: 900;
     line-height: 19px;
@@ -237,7 +251,7 @@
   }
 
   .accordion-content {
-    font-family: Satoshi;
+    font-family: "Satoshi";
     font-size: 12px;
     font-weight: 500;
     line-height: 19px;
@@ -249,9 +263,9 @@
   .btn-small {
     width: 111px;
     height: 25px;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
     gap: 10px;
-    border-radius: 11px 11px 11px 11px;
+    border-radius: 11px;
     background: #2CE5B1;
   }
 
@@ -260,7 +274,7 @@
     height: 34px;
     padding: 10px 10px 10px 10px;
     gap: 10px;
-    border-radius: 11px 11px 11px 11px;
+    border-radius: 11px;
     background: #2CE5B1;
     font-family: Satoshi;
     font-size: 11px;
@@ -276,7 +290,7 @@
     padding: 10px;
     gap: 10px;
     border-radius: 50%;
-    font-family: Satoshi;
+    font-family: "Satoshi";
     font-size: 11px;
     font-weight: 700;
     line-height: 28px;
@@ -294,7 +308,7 @@
     padding: 1rem;
     gap: .5rem;
     border-radius: .5rem;
-    font-family: Satoshi;
+    font-family: "Satoshi";
     font-size: 14px;
     font-weight: 500;
     line-height: 14px;
@@ -303,13 +317,13 @@
   }
 
   /* .roboto-medium {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto";
     font-weight: 500;
     font-style: normal;
   } */
 
   .title {
-    font-family: Satoshi;
+    font-family: "Satoshi";
     font-size: 45px;
     font-weight: 700;
     line-height: 47px;
@@ -337,7 +351,7 @@
   }
 
   .title-1 {
-    font-family: Satoshi;
+    font-family: "Satoshi";
     font-size: 30px;
     font-weight: 700;
     line-height: 30px;
@@ -347,7 +361,7 @@
   }
 
   .title-content-1 {
-    font-family: Satoshi;
+    font-family: "Satoshi";
     font-size: 14px;
     font-weight: 500;
     line-height: 24px;
@@ -356,7 +370,7 @@
   }
 
   .title-content-card {
-    font-family: Satoshi;
+    font-family: "Satoshi";
     font-size: 12px;
     font-weight: 500;
     line-height: 13px;
@@ -390,7 +404,7 @@
   }
 
   .content-small-circle-check {
-    font-family: Satoshi;
+    font-family: "Satoshi";
     font-size: 12px;
     font-weight: 500;
     line-height: 13px;
@@ -435,7 +449,7 @@
 }
 
 .grid-footer-grid-title {
-  font-family: Lufga;
+  font-family: "Lufga";
   font-size: 13px;
   font-weight: 700;
   line-height: 20px;
@@ -453,7 +467,7 @@
 }
 
 .footer-grid-logo {
-  font-family: Satoshi;
+  font-family: "Satoshi";
   font-size: 20px;
   font-weight: bold;
   line-height: 47px;
@@ -509,7 +523,7 @@
 
 .mini-nav-items .mini-nav-item-active {
   border-bottom: solid 5px #5edeaf;
-  font-family: Satoshi;
+  font-family: "Satoshi";
   font-size: 14px;
   font-weight: 700;
   line-height: 30px;
@@ -526,7 +540,7 @@
 }
 
 .mini-nav-btn-text {
-  font-family: Satoshi;
+  font-family: "Satoshi";
   font-size: 11px;
   font-weight: 700;
   line-height: 28px;
@@ -535,7 +549,7 @@
 }
 
 .mini-nav-side-title {
-  font-family: Lufga;
+  font-family: "Lufga";
   font-size: 24px;
   font-weight: 400;
   line-height: 30px;
@@ -545,7 +559,7 @@
 }
 
 .mini-nav-side-content {
-  font-family: Satoshi;
+  font-family: "Satoshi";
   font-size: 12px;
   font-weight: 400;
   line-height: 19px;
@@ -554,7 +568,7 @@
 }
 
 .mini-nav-grid-title {
-  font-family: Satoshi;
+  font-family: "Satoshi";
   font-size: 12px;
   font-weight: 700;
   line-height: 13px;
@@ -563,7 +577,7 @@
 }
 
 .mini-nav-grid-content {
-  font-family: Satoshi;
+  font-family: "Satoshi";
   font-size: 12px;
   font-weight: 500;
   line-height: 13px;
@@ -572,7 +586,7 @@
 }
 
 .mini-nav-option {
-  font-family: Satoshi;
+  font-family: "Satoshi";
   font-size: 14px;
   font-weight: 700;
   line-height: 30px;
@@ -604,7 +618,7 @@
 }
 
 .text-btn {
-  font-family: Satoshi;
+  font-family: "Satoshi";
   font-size: 14px;
   font-weight: 600;
   line-height: 28px;
@@ -612,7 +626,7 @@
 }
 
 .title-page-2 {
-  font-family: Satoshi;
+  font-family: "Satoshi";
   font-size: 40px;
   font-weight: 700;
   line-height: 47px;
@@ -622,7 +636,7 @@
 }
 
 .title-content-page-2 {
-  font-family: Satoshi;
+  font-family: "Satoshi";
   font-size: 12px;
   font-weight: 400;
   line-height: 24px;
@@ -638,9 +652,15 @@
   background-size: 50%
 }
 
-.sub-title-page-2{
+
+
+.sub-title-page-2 {
   margin-left: 3rem;
   padding: 0 2rem;
+}
+
+.screening-section2-title {
+  padding: 15rem 8.5rem 0 8.5rem;
 }
 
 @media (max-width:1432px) {
@@ -770,16 +790,284 @@
   display: none;
 }
 
+/* start customer page */
+.customer-page {
+  width: 383.97px;
+  height: 387px;
+  bottom: 16%;
+  right: 15%;
+  background-size: contain;
+  background-image: url('../src/images/customer/customer-bg.png');
+  background-repeat: no-repeat;
+}
+
+/* end customer page  */
+
+/*start screening page  */
+
+.screening-page {
+  background-image: url('../src/images/screening/vector.png');
+  background-position: 90% 60%;
+  /* Ajustez la position selon vos besoins */
+  background-repeat: no-repeat;
+  /* Évite la répétition des images */
+}
+
+.screening-absolute-bg {
+  width: 383.97px;
+  height: 387px;
+  bottom: 16%;
+  right: 15%;
+  background-image: url('../src/images/screening/screening-bg.png');
+  background-repeat: no-repeat;
+}
+
+/* start footer  */
+.footer-absolute-bg {
+  width: 422px;
+  height: 449px;
+  bottom: 2%;
+  right: 10%;
+  background-image: url('../src/images/footer/footer-bg.png');
+  background-repeat: no-repeat;
+}
+
+.footer-page {
+  background-image: url('../src/images/footer/vector-white.png');
+  background-position: 100% 10%;
+  /* Ajustez la position selon vos besoins */
+  background-repeat: no-repeat;
+  /* Évite la répétition des images */
+}
+
+/* end footer  */
+
+/* start pricing */
+.pricing-input {
+  width: 277px;
+  height: 50px;
+  padding: var(--sds-size-space-300);
+  gap: var(--sds-size-space-200);
+  border-radius: var(--sds-size-radius-200);
+  opacity: 0px;
+  background: #F3F3F3;
+}
+
+.pricing-get-account-link {
+  font-family: Lufga;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: left;
+  color: #285246;
+}
+
+.pricing-contact-btn {
+  padding-top: 5rem;
+  width: 111px;
+  height: 25px;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 11px;
+  background: #2CE5B1;
+  font-family: Satoshi;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  color: white;
+}
+
+.pricing-title {
+  font-family: "Satoshi";
+  font-size: 33px;
+  font-weight: 700;
+  line-height: 41px;
+  letter-spacing: -2px;
+  text-align: left;
+  color: #285246;
+}
+
+.pricing-content {
+  font-family: "Satoshi";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: #1E1E1E;
+}
+
+.pricing-label {
+  font-family: "Satoshi";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: left;
+  color: #5B5B5B;
+}
+
+/* end pricing  */
+
+.screening-section1-title {
+  font-family: "Satoshi";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 47px;
+  letter-spacing: -2px;
+  text-align: left;
+  color: #285246;
+}
+
+.screening-section1-content {
+  font-family: "Satoshi";
+  font-size: 12px;
+  font-weight: 400;
+  text-align: left;
+  color: #285246;
+}
+
+.screening-big-btn {
+  width: 182px;
+  height: 51px;
+  padding: var(--sds-size-space-300);
+  gap: var(--sds-size-space-200);
+  border-radius: var(--sds-size-radius-200);
+  font-family: "Satoshi";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  text-align: left;
+  color: #285246;
+}
+
+.screening-big-btn-transparent {
+  width: 239px;
+  height: 51px;
+  font-family: "Satoshi";
+  border-radius: var(--sds-size-radius-200);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 37px;
+  text-align: left;
+  color: #285246;
+}
+
+.screening-section1-card-title {
+  font-family: "Satoshi";
+  font-size: 14px;
+  font-weight: 700;
+  text-align: left;
+  color: #285246;
+}
+
+.screening-section1-card-content {
+  font-family: "Satoshi";
+  font-size: 11px;
+  text-align: left;
+  color: #285246;
+}
+
+.screening-card-absolute {
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  /* Ajustez cette valeur selon vos besoins */
+  max-width: 1500px;
+  /* Limite la largeur maximale si nécessaire */
+  top: 80%;
+  /* Optionnel si vous souhaitez centrer verticalement */
+  margin: 0 auto;
+}
+
+.screening-section2-title {
+  font-family: "Satoshi";
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 37px;
+  text-align: left;
+  color: #285246;
+}
+
+.screening-horiz-vert-title {
+  font-family: "Satoshi";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: -1px;
+  text-align: left;
+  color: #285246;
+}
+
+.screening-horiz-vert-content {
+  font-family: "Satoshi";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #285246;
+}
+
+.screening-grid-title {
+  font-family: "Satoshi";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  text-align: left;
+  color: #285246;
+}
+
+.screening-grid-content {
+  font-family: "Satoshi";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  text-align: left;
+  color: #285246;
+}
+
+.sreening-demo-absolute {
+  left: 50%;
+  transform: translateX(-50%);
+  top: 80%;
+}
+
+@media (min-width:1400) {
+  .screening-section2-title {
+    padding-top: 15rem;
+  }
+
+  .screening-section2-title {
+    padding: 15rem 8.5rem 0 8.5rem;
+  }
+}
+
+@media (min-width:1500px) {
+  .screening-section2-title {
+    padding-top: 13rem;
+  }
+}
+
+
+/* end screening page */
+
 
 @media (max-width:1540px) {
   .sub-title-page-2 {
     padding-top: 12rem;
+  }
+
+  .screening-section2-title {
+    padding: 17rem 8.5rem 0 8.5rem;
   }
 }
 
 @media (max-width:1416px) {
   .sub-title-page-2 {
     padding-top: 16rem;
+  }
+
+  .screening-section2-title {
+    padding: 21rem 8.5rem 0 8.5rem;
   }
 }
 
@@ -793,17 +1081,30 @@
   .sub-title-page-2 {
     padding-top: 24rem;
   }
+
+  .screening-section2-title {
+    padding: 22rem 8.5rem 0 8.5rem;
+  }
 }
 
 @media (max-width:960px) {
   .sub-title-page-2 {
-    padding-top: 27rem;
+    padding-top: 24rem;
+  }
+
+  .screening-section2-title {
+
+    padding: 27rem 8.5rem 0 8.5rem;
   }
 }
 
 @media (max-width:936px) {
   .sub-title-page-2 {
-    padding-top: 30rem;
+    padding-top: 25rem;
+  }
+
+  .screening-section2-title {
+    padding: 30rem 8.5rem 0 8.5rem;
   }
 }
 
@@ -811,13 +1112,21 @@
   .sub-title-page-2 {
     padding-top: 35rem;
   }
+
+  .screening-section2-title {
+    padding: 32rem 8.5rem 0 8.5rem;
+  }
 }
 
 @media (max-width:778px) {
   .sub-title-page-2 {
     padding-top: 40rem;
   }
-} 
+
+  .screening-section2-title {
+    padding: 40rem 8.5rem 0 8.5rem;
+  }
+}
 
 @media (max-width:768px) {
   .section-tree-col-selfie {
@@ -877,6 +1186,7 @@
     width: 100%;
   }
 }
+
 /* customer side  */
 @media (min-width:1500px) {
   .sub-title-page-2 {
@@ -889,8 +1199,17 @@
     /* background-color: #c04949; */
     margin: 0 6rem;
   }
+
   .sub-title-page-2 {
     padding-top: 10rem;
+  }
+
+  .screening {
+    margin: 0 6rem;
+  }
+
+  .screening-card-absolute {
+    top: 83%;
   }
 }
 
@@ -899,6 +1218,11 @@
     /* background-color: #256695; */
     margin: 0 10rem;
   }
+
+  .screening {
+    margin: 0 10rem;
+  }
+
   .sub-title-page-2 {
     padding-top: 12rem;
   }
@@ -909,6 +1233,11 @@
     /* background-color: #a6166c; */
     margin: 0 13rem;
   }
+
+  .screening {
+    margin: 0 13rem;
+  }
+
   .sub-title-page-2 {
     padding-top: 13rem;
   }
@@ -919,12 +1248,18 @@
     /* background-color: #33a616; */
     margin: 0 20rem;
   }
-  .sub-title-page-2 {
-    padding-top: 10rem; 
-    
+
+  .screening {
+    margin: 0 20rem;
   }
-  .section-tree-col-selfie{
-    left: 4%; 
+
+  .sub-title-page-2 {
+    padding-top: 10rem;
+
+  }
+
+  .section-tree-col-selfie {
+    left: 4%;
   }
 }
 
@@ -932,7 +1267,15 @@
   .accueil {
     /* background-color: #d4d723; */
     margin: 0 40rem;
-    
+
+  }
+
+  .screening {
+    margin: 0 40rem;
+  }
+
+  .screening-card-absolute {
+    top: 90%;
   }
 }
 
@@ -943,7 +1286,7 @@
 }
 
 .respect-grid-title {
-  font-family: Satoshi;
+  font-family: "Satoshi";
   font-size: 22px;
   font-weight: 700;
   line-height: 30px;
@@ -953,7 +1296,7 @@
 }
 
 .respect-grid-content {
-  font-family: Satoshi;
+  font-family: "Satoshi";
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -962,7 +1305,7 @@
 }
 
 .take-selfie-title {
-  font-family: Satoshi;
+  font-family: "Satoshi";
   font-size: 29px;
   font-weight: 700;
   line-height: 35px;
@@ -994,7 +1337,7 @@
 }
 
 .btn-text-customer-card {
-  font-family: Lufga;
+  font-family: "Lufga";
   font-size: 11px;
   font-weight: 700;
   line-height: 8px;
@@ -1004,7 +1347,7 @@
 }
 
 .customer-card-title {
-  font-family: Lufga;
+  font-family: "Lufga";
   font-size: 20px;
   font-weight: 600;
   line-height: 24px;
@@ -1014,7 +1357,7 @@
 }
 
 .customer-card-content {
-  font-family: Inter;
+  font-family: "Inter";
   font-size: 11px;
   font-weight: 400;
   line-height: 18px;
@@ -1023,12 +1366,15 @@
 }
 
 .scrollbar-hidden::-webkit-scrollbar {
-  display: none; /* Masquer la barre de défilement sur Chrome/Safari */
+  display: none;
+  /* Masquer la barre de défilement sur Chrome/Safari */
 }
 
 .scrollbar-hidden {
-  -ms-overflow-style: none; /* Masquer la barre de défilement sur Internet Explorer et Edge */
-  scrollbar-width: none; /* Masquer la barre de défilement sur Firefox */
+  -ms-overflow-style: none;
+  /* Masquer la barre de défilement sur Internet Explorer et Edge */
+  scrollbar-width: none;
+  /* Masquer la barre de défilement sur Firefox */
 }
 
 @media (max-width:1293px) {

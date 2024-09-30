@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Arrow from '../../Components/Arrow'
-import CardArrow from '../../Components/CardArrow'
-import Cards from '../../Components/Cards'
 import CardSmile from '../../Components/CardSmile'
 import Card from '../../Components/customer/Card'
 import RespectReglementation from '../../Components/customer/RespectReglementation'
@@ -11,18 +9,23 @@ import Message from '../../Components/Message'
 import NavBar from '../../Components/NavBar'
 import SmallCheckCircle from '../../Components/SmallCheckCircle'
 import vectorBigMother from "../../images/bigMotherVector.png"
-import girlCni from "../../images/girlCni.png"
-import groupDatabases from "../../images/groupDatabases.png"
+import { default as img1, default as img5 } from '../../images/customer/custImg1.png'
+import img2 from '../../images/customer/custImg2.png'
+import img3 from '../../images/customer/custImg3.png'
+import img4 from '../../images/customer/custImg4.png'
+import imgC1 from '../../images/customer/img-1.png'
+import imgC2 from '../../images/customer/img-2.png'
+import imgC3 from '../../images/customer/img-3.png'
+import imgC4 from '../../images/customer/img-4.png'
 import cote from "../../images/page-2/cote.png"
-import img1 from "../../images/page-2/img-1.png"
-import img2 from "../../images/page-2/img-2.png"
-import img3 from "../../images/page-2/img-3.png"
-import img4 from "../../images/page-2/img-4.png"
-import passportCni from "../../images/page-2/PassPortCni.png"
 import takeselfie from "../../images/page-2/takePhoto.png"
 import vector from '../../images/page-2/Vector.png'
 import vector1 from "../../images/page-2/Vector3.png"
 import vectorDatabases from "../../images/vectorDatabases.png"
+
+import screenImg1 from "../../images/customer/custCard1.png"
+import screenImg2 from "../../images/customer/custCard2.png"
+import screenImg3 from "../../images/customer/custCard3.png"
 
 
 export default function Customer() {
@@ -30,9 +33,9 @@ export default function Customer() {
     <div>
       <NavBar />
       <main className='accueil'>
-        <section className=''>
-          <div className='min-h-[90vh] py-32 bg-white relative customer-page'>
-            <div className='ml-5 sm:ml-10 md:ml-16 lg:ml-20'>
+        <section>
+          <div className=' py-32 bg-white relative screening-page'>
+            <div className='flex flex-col items-start justify-center  px-20'>
               <div className='flex items-center justify-start gap-x-5'>
 
                 <Link to="/" className='customer-btn-first text-btn text-green-color flex items-center justify-center'>
@@ -40,103 +43,109 @@ export default function Customer() {
                 </Link>
 
                 <Link to="/" className='customer-btn-second text-btn text-green-color flex items-center justify-center'>
-                  Know your Customer
+                  Contrôle AML
                 </Link>
               </div>
-              <div className='title-page-2 pt-2'>
-                KYC Rapide et flexible pour +180 <br />
-                pays d'Afrique et du monde
+              <div className='screening-section1-title py-5'>
+                Minimisez les risques de fraude et <br />
+                de blanchiment gràce à l'IA
               </div>
-              <div className='title-content-page-2 pt-10'>
-                Notre solution KYC s'adapte aux spécificités de chaque marché, tout en offrant une couverture mondiale <br />
-                inégalée qui prend en charge une multitude de documents d'identité et de normes réglementaires.
+              <div className='screening-section1-content pt-5'>
+                Grâce à des algorithme avancés, notre solution AML alimentée par l'IA vous permet de détecter les<br />
+                activités suspectes en temps réel pour identifier les transactions et les entités à haut risque.
               </div>
               <div className='flex items-center justify-start gap-x-5 pt-5'>
-                <Link to="/" className='btn text-btn text-green-deep flex items-center justify-around bg-green-color'>
+                <Link to="/" className='screening-big-btn flex items-center justify-around bg-green-color'>
                   <span>Nous contacter</span>
                   <Arrow background="#FFFF" textcolor="#2CE5B1" />
                 </Link>
 
-                <Link to="/" className='btn text-btn text-green-deep flex items-center justify-around  border border-green-deep '>
-                  <span className=''>Commencez gratuitement</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6">
-                    <path fillRule="evenodd" d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" />
-                  </svg>
+                <Link to="/" className='screening-big-btn-transparent text-green-deep flex items-center justify-around  border border-green-deep '>
+                  <span className='text-nowrap'>Commencez gratuitement</span>
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6">
+                      <path fillRule="evenodd" d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" />
+                    </svg>
+                  </span>
                 </Link>
               </div>
             </div>
-            <div className='absolute flex items-center justify-center section-tree-col-selfie top-[78%] left-4'>
-              <div className='flex items-center justify-center py-10 rounded-[20px] bg-white'>
-                <div className=' gap-10  px-10 grid  items-center justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 '>
-                  <div className='flex  gap-x-10'>
-                    <Cards />
-                    <div className="">
-                      <div className="text-left card-icon-title pb-2">
-                        Verifiez les documents d’identité
-                      </div>
-                      <div className="text-left card-icon-content">
-                        Assurez-vous de la conformité des pièces <br />
-                        d’identité de vos clients
-                      </div>
-                    </div>
-                  </div>
-                  <div className='flex  gap-x-10'>
-                    <CardArrow />
-                    <div className="">
-                      <div className="text-left card-icon-title pb-2">
-                        Verifiez les correspondances faciales
-                      </div>
-                      <div className="text-left card-icon-content">
-                        Prévenez les usurpations d'identité grâce à <br />
-                        notre vérification faciale en temps réel.
+            <div className='absolute customer-page ' >
+            </div>
+            <div className='absolute  screening-card-absolute w-full px-20'>
+              <div className=' flex items-center justify-center'>
+                <div className='flex items-center justify-center py-10 rounded-[20px] bg-white w-full'>
+                  <div className=' gap-10  px-10 grid  items-center justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 '>
+                    <div className='flex  gap-x-10'>
+                      <CardSmile logo={img1} />
+                      <div className="">
+                        <div className="screening-section1-card-title pb-2">
+                          Diligence raisonnable du client :
+                        </div>
+                        <div className="screening-section1-card-content">
+                          Mettez en place un processus KYC robuste<br />
+                          pour respecter les réglementations.
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div className='flex  gap-x-10'>
-                    <CardSmile />
-                    <div className="">
-                      <div className="text-left card-icon-title pb-2">
-                        Vérifiez l’adresse physique et numérique
-                      </div>
-                      <div className="text-left card-icon-content">
-                        Confirmez l'adresse de résidence de vos <br />
-                        clients pour une meilleure sécurité.
-                      </div>
-                    </div>
-                  </div>
-                  <div className='flex  gap-x-10'>
-                    <CardSmile />
-                    <div className="">
-                      <div className="text-left card-icon-title pb-2">
-                        Verifiez les visages
-                      </div>
-                      <div className="text-left card-icon-content">
-                        Confirmez l'identité de vos utilisateurs grâce <br />
-                        la reconnaissance faciale
+                    <div className='flex  gap-x-10'>
+                      <CardSmile logo={img2} />
+                      <div className="">
+                        <div className="screening-section1-card-title pb-2">
+                          Contrôle des sanctions :
+                        </div>
+                        <div className="screening-section1-card-content">
+                          Vérifiez si vos clients figurent sur des listes <br />
+                          de sactions internationales.
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div className='flex  gap-x-10'>
-                    <CardSmile />
-                    <div className="">
-                      <div className="text-left card-icon-title pb-2">
-                        Verifiez les types d’appareils
-                      </div>
-                      <div className="text-left card-icon-content">
-                        Renforcez la sécurité de vos comptes en <br />
-                        vérifiant les appareils utilisés
+                    <div className='flex  gap-x-10'>
+                      <CardSmile logo={img3} />
+                      <div className="">
+                        <div className="screening-section1-card-title pb-2">
+                          Contrôle des médias négatifs :
+                        </div>
+                        <div className="screening-section1-card-content">
+                          Recherchez des informations négatives sur<br />
+                          vos clients dans les médias.
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div className='flex  gap-x-10'>
-                    <CardSmile />
-                    <div className="">
-                      <div className="text-left card-icon-title pb-2">
-                        Acceptez plus d’utilisateurs
+                    <div className='flex  gap-x-10'>
+                      <CardSmile logo={img4} />
+                      <div className="">
+                        <div className="screening-section1-card-title pb-2">
+                          Diligences raisonnable renforcée :
+                        </div>
+                        <div className="screening-section1-card-content">
+                          Renforcez la vérification pour les clients à<br />
+                          risque élevé
+                        </div>
                       </div>
-                      <div className="text-left card-icon-content">
-                        Evitez de perdre des utilisateurs à cause des <br />
-                        vérifications trop longues et fastidieuses
+                    </div>
+                    <div className='flex  gap-x-10'>
+                      <CardSmile logo={img5} />
+                      <div className="">
+                        <div className="screening-section1-card-title pb-2">
+                          Contrôle des PEP :
+                        </div>
+                        <div className="screening-section1-card-content">
+                          Identifiez et gérez les risques liés aux<br />
+                          personnes politiquement exposées (PEP).
+                        </div>
+                      </div>
+                    </div>
+                    <div className='flex  gap-x-10'>
+                      <CardSmile logo={img1} />
+                      <div className="">
+                        <div className="screening-section1-card-title pb-2">
+                          Surveillance continue :
+                        </div>
+                        <div className="screening-section1-card-content">
+                          Surveillez en continu vos clients pour <br />
+                          détecter les changements de situation.
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -148,9 +157,10 @@ export default function Customer() {
 
         <section>
           <div>
-            <div className='sub-title sub-title-page-2'>
-              Couvrez facilement l’afrique et les autres <br />
-              pays avec la verification de documents
+            <div className='screening-section2-title'>
+              Au-delà de la conformité, une protection <br />
+              proactive : nous anticipons et neutralisons <br />
+              les risques AML
             </div>
           </div>
         </section>
@@ -158,61 +168,66 @@ export default function Customer() {
         {/* start section with big mother */}
         <section>
           <div className='group-card-horiz grid grid-cols-1 items-center justify-center bg-no-repeat  md:grid-cols-1 lg:grid-cols-2 lg:pt-32 gap-x-8 gap-y-32 mt-10' style={{ backgroundImage: `url(${vectorBigMother})` }}>
-            <div className=" order-img flex items-center justify-center">
-              <div className='relative flex gap-5'>
-                <div className=" card-horiz"></div>
-                <div className="card-horiz"></div>
-                <img src={passportCni} alt="" className=' passport-page2' />
+            <div className=" flex items-center justify-center">
+              <div className=''>
+                <img src={screenImg1} alt="" />
               </div>
             </div>
             <div className=" order-text group-card-horiz-content flex flex-col items-center gap-y-5">
               <div className="">
-                <div className="title-1">
-                  Prendre des photos de vos pièces <br />
-                  d’identité
+                <div className="screening-horiz-vert-title">
+                  Protégez votre entreprise contre les <br />
+                  risques liés aux PEP et aux sanctions
                 </div>
-                <div className="title-content-1 py-5">
-                  Notre solution vous permet de vérifier de manière exhaustive l'identité de vos <br />
-                  utilisateurs en analysant une large gamme de documents officiels. Grâce à notre <br />
-                  technologie de reconnaissance optique de caractères (OCR) et à nos bases de <br />
-                  données internationales, nous garantissons l'authenticité et la validité de chaque <br />
-                  document.
+                <div className="screening-horiz-vert-content py-5">
+                  Notre solution de screening des PEP et des sanction vour permet de vérifier si <br />
+                  vos clients figure sur la liste de personnes politiquement exposées ou sous <br />
+                  sanction. En identifiant rapidement les risques liés à ces individus, vous vous <br />
+                  protégez contre les amendes et les dommages réputationnels.
                 </div>
-                <div className="grid w-full items-center justify-center grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5">
-                  <div className="flex items-center justify-start gap-3">
-                    <SmallCheckCircle />
-                    <div className='text-left content-small-circle-check'>
-                      Cartes Nationales d’identité
+                <div className='w-full'>
+                  <div class="w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-start justify-start gap-5">
+                    <div className="flex gap-3">
+                      <SmallCheckCircle />
+                      <div className='flex flex-col'>
+                        <p className='screening-grid-title pb-2'>Bases de données complètes:</p>
+                        <p className='screening-grid-content'>
+                          Accèdez à des bases de données mises à<br />
+                          jour en continu pour une couverture <br />
+                          mondiale.
+                        </p>
+                      </div>
                     </div>
-
-                  </div>
-                  <div className="flex items-center justify-start gap-3">
-                    <SmallCheckCircle />
-                    <div className='text-left content-small-circle-check'>
-                      Permis de conduire
+                    <div className="flex gap-3">
+                      <SmallCheckCircle />
+                      <div className='flex flex-col'>
+                        <p className='screening-grid-title pb-2'>Personnalisation des règles:</p>
+                        <p className='screening-grid-content'>
+                          Adaptez les critère de recherche à vos<br />
+                          besoins spécifiques.
+                        </p>
+                      </div>
                     </div>
-
-                  </div>
-                  <div className="flex items-center justify-start gap-3">
-                    <SmallCheckCircle />
-                    <div className='text-left content-small-circle-check'>
-                      Cartes de sejour
+                    <div className="flex gap-3 ">
+                      <SmallCheckCircle />
+                      <div className='flex flex-col'>
+                        <p className='screening-grid-title pb-2'>Vérifications en temps réel:</p>
+                        <p className='screening-grid-content'>
+                          Optenez des résultats instantanés pour une <br />
+                          prise de décision rapide.
+                        </p>
+                      </div>
                     </div>
-
-                  </div>
-                  <div className="flex items-center justify-start gap-3">
-                    <SmallCheckCircle />
-                    <div className='text-left content-small-circle-check'>
-                      Passeports
+                    <div className="flex gap-3 ">
+                      <SmallCheckCircle />
+                      <div className='flex flex-col'>
+                        <p className='screening-grid-title pb-2'>Intégration facile:</p>
+                        <p className='screening-grid-content'>
+                          Intégrez notre solution à votre flux de travail<br />
+                          existant.
+                        </p>
+                      </div>
                     </div>
-
-                  </div>
-                  <div className="flex items-center justify-start gap-3">
-                    <SmallCheckCircle />
-                    <div className='text-left content-small-circle-check'>
-                      Cartes temporaires d’identité
-                    </div>
-
                   </div>
                 </div>
               </div>
@@ -224,43 +239,67 @@ export default function Customer() {
         {/* start section girl */}
         <section>
           <div className='group-card-vert grid grid-cols-1 items-center justify-center md:grid-cols-1 lg:grid-cols-2 gap-y-10 py-20'>
-            <div className="flex flex-col items-center gap-y-5">
+            <div className="order-2 lg:order-1 flex flex-col items-center gap-y-5">
               <div className="">
-                <div className="title-1">
-                  Prendre des selfies pour verifier <br />
-                  l’authenticité
+                <div className="screening-horiz-vert-title">
+                  Accédez à une information exhaustive <br />
+                  sur vos clients
                 </div>
-                <div className="title-content-1 py-5">
-                  Assurez-vous de l'identité de vos utilisateurs en temps réel grâce à notre <br />
-                  technologie de reconnaissance faciale. En comparant un selfie en direct avec une <br />
-                  photo d'identité officielle, nous confirmons l'identité de l'utilisateur avec une <br />
-                  précision exceptionnelle.
+                <div className="screening-horiz-vert-content py-5">
+                  Notre solution vous permet d'accéder à une multitude de sources d'information<br />
+                  Pour mieux connaitre vos clients. En analysant les médias, les registres publics et<br />
+                  d'autre sources pertinentes, nous vous aidons à prendre des décisions éclairées<br />
+                  et à réduire les risques.
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
-                  <div className="flex gap-3">
-                    <SmallCheckCircle />
-                    <div className='text-left content-small-circle-check'>
-                      Analyse des caractéristiques faciales: <br />
-                      Comparaison de points clés du visage pour <br />
-                      une identification précise.
+                <div className='w-full'>
+                  <div class="w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-start justify-start gap-5">
+                    <div className="flex gap-3">
+                      <SmallCheckCircle />
+                      <div className='flex flex-col'>
+                        <p className='screening-grid-title pb-2'>Analyse des médias sociaux:</p>
+                        <p className='screening-grid-content'>
+                          Identifiez les signaux faibles qui<br />
+                          pourraient indiquer un risque.
+                        </p>
+                      </div>
                     </div>
-
-                  </div>
-                  <div className="flex gap-3">
-                    <SmallCheckCircle />
-                    <div className='text-left content-small-circle-check'>
-                      Vérification de la vivacité: <br />
-                      Détection des présentations de photos ou de vidéos.
+                    <div className="flex gap-3">
+                      <SmallCheckCircle />
+                      <div className='flex flex-col'>
+                        <p className='screening-grid-title pb-2'>Recherche dans les registres public:</p>
+                        <p className='screening-grid-content'>
+                          Vérifiez les antécédents judiciaire et les<br />
+                          affiliations politiques.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex gap-3 ">
+                      <SmallCheckCircle />
+                      <div className='flex flex-col'>
+                        <p className='screening-grid-title pb-2'>Surveillance continue:</p>
+                        <p className='screening-grid-content'>
+                          Soyez alerté en cas de nouveaux évènements<br />
+                          susceptibles d'affecter votre risque.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex gap-3 ">
+                      <SmallCheckCircle />
+                      <div className='flex flex-col'>
+                        <p className='screening-grid-title pb-2'>Rapports personnalisés:</p>
+                        <p className='screening-grid-content'>
+                          Obtenez des Rapports détaillés pour une<br />
+                          meilleure compréhension de vos clients.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="flex items-center justify-center pt-10">
-              <div className='relative flex flex-col gap-5'>
-                <div className=" card-vert"></div>
-                <div className="card-vert"></div>
-                <img src={girlCni} alt="" className='absolute -top-7 -left-1' />
+            <div className="order-1 lg:order-2 flex items-center justify-center pt-10">
+              <div className=''>
+                <img src={screenImg2} alt="" />
               </div>
             </div>
           </div>
@@ -270,56 +309,64 @@ export default function Customer() {
         {/* start section communication */}
         <section className="group-card-vert bg-no-repeat bg-right" style={{ backgroundImage: `url(${vectorDatabases})` }}>
           <div className='grid grid-cols-1 items-center justify-center md:grid-cols-1 lg:grid-cols-2 pb-20 gap-x-8 gap-y-20'>
-            <div className="order-img flex items-center justify-center h-[120%]">
-              <div className='relative flex items-center gap-5  h-[120%]'>
-                <div className=" card-horiz"></div>
-                <div className="card-horiz"></div>
-                <img src={groupDatabases} alt="" className='groupDatabase' />
+            <div className=" flex items-center justify-center h-[120%]">
+              <div className=''>
+                <img src={screenImg3} alt="" />
               </div>
             </div>
-            <div className="flex flex-col items-center gap-y-5 bg-no-repeat">
+            <div className=" group-card-horiz-content flex flex-col items-center gap-y-5">
               <div className="">
-                <div className="title-1">
-                  Verification en quelques secondes <br />
-                  et connexion
+                <div className="screening-horiz-vert-title">
+                  Surveillez en continu vos clients<br />
+                  pour une protection optimale
                 </div>
-                <div className="title-content-1 py-5">
-                  Offrez à vos utilisateurs une expérience d'inscription simple et rapide. Notre <br />
-                  solution permet de vérifier l'identité en quelques secondes seulement, grâce à des <br />
-                  processus automatisés et optimisés.
+                <div className="screening-horiz-vert-content py-5">
+                  Notre solution de Surveillance contine Analyse les transaction, les<br />
+                  comportement et les informations publiques de vos clients en temps réel, pour<br />
+                  vous aider à identifier les activités suspectes et à prendre des mesures correctives
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
-                  <div className="flex gap-3">
-                    <SmallCheckCircle />
-                    <div className='text-left content-small-circle-check'>
-                      Vérification en temps réel: Résultats <br />
-                      instantanés pour une expérience utilisateur fluide.
+                <div className='w-full'>
+                  <div class="w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-start justify-start gap-5">
+                    <div className="flex gap-3">
+                      <SmallCheckCircle />
+                      <div className='flex flex-col'>
+                        <p className='screening-grid-title pb-2'>Alertes en temps réel:</p>
+                        <p className='screening-grid-content'>
+                          Soyez informé immédiatement des évènements<br />
+                          importants.
+                        </p>
+                      </div>
                     </div>
-
-                  </div>
-                  <div className="flex gap-3">
-                    <SmallCheckCircle />
-                    <div className='text-left content-small-circle-check'>
-                      Vérification en temps réel: Résultats <br />
-                      instantanés pour une expérience utilisateur fluide.
+                    <div className="flex gap-3">
+                      <SmallCheckCircle />
+                      <div className='flex flex-col'>
+                        <p className='screening-grid-title pb-2'>Adaptation aux changements réglémentaires:</p>
+                        <p className='screening-grid-content'>
+                          Restez conforme aux dernières exigences en<br />
+                          matière de Surveillance continue.
+                        </p>
+                      </div>
                     </div>
-
-                  </div>
-                  <div className="flex gap-3">
-                    <SmallCheckCircle />
-                    <div className='text-left content-small-circle-check'>
-                      Verification des appareils et systemes <br />
-                      d’exploitation utilisés
+                    <div className="flex gap-3 ">
+                      <SmallCheckCircle />
+                      <div className='flex flex-col'>
+                        <p className='screening-grid-title pb-2'>Analyse comportementale:</p>
+                        <p className='screening-grid-content'>
+                          Identifiez les anomalies dans les habitudes <br />
+                          des transactions.
+                        </p>
+                      </div>
                     </div>
-
-                  </div>
-                  <div className="flex gap-3">
-                    <SmallCheckCircle />
-                    <div className='text-left content-small-circle-check'>
-                      Verifications et confirmations des adresses <br />
-                      physiques et Adresses IP (numeriques)
+                    <div className="flex gap-3 ">
+                      <SmallCheckCircle />
+                      <div className='flex flex-col'>
+                        <p className='screening-grid-title pb-2'>Intégration avec d'autres systèmes:</p>
+                        <p className='screening-grid-content'>
+                          Combinez notre solution avec vos outils<br />
+                          existants pour une vision globale.
+                        </p>
+                      </div>
                     </div>
-
                   </div>
                 </div>
               </div>
@@ -328,9 +375,10 @@ export default function Customer() {
         </section>
         {/* start section communication */}
 
+        {/* start choice us */}
         <section className='section-choise-us'>
           <div className=''>
-          <div className='flex flex-col items-center justify-center pb-20 pt-10 px-20 bg-white  bg-no-repeat bg-[110%_60%] '  style={{ backgroundImage: `url(${vector1})` }}>
+            <div className='flex flex-col items-center justify-center pb-20 pt-10 px-20 bg-white  bg-no-repeat bg-[110%_60%] ' style={{ backgroundImage: `url(${vector1})` }}>
               <a href="#" className="btn-choice flex items-center justify-center">Pourquoi nous choisir</a>
               <div className="title-1 text-center text-green-deep py-10">
                 Respectez la réglementation KYC et accélérez <br />
@@ -342,7 +390,7 @@ export default function Customer() {
               </div>
               <div className="card-choice-items items-center justify-center w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 pt-10 pb-24">
                 <RespectReglementation
-                  image={img1}
+                  image={imgC1}
                   title={
                     <div>Respectez et évoluez <br />
                       avec la réglementation</div>
@@ -356,7 +404,7 @@ export default function Customer() {
                   }
                 />
                 <RespectReglementation
-                  image={img2}
+                  image={imgC2}
                   title={
                     <div>Convertissez plus <br />
                       d’utilisateurs</div>
@@ -370,7 +418,7 @@ export default function Customer() {
                   }
                 />
                 <RespectReglementation
-                  image={img4}
+                  image={imgC4}
                   title={
                     <div>Verifications flexibles avec <br />
                       des documents locaux</div>
@@ -384,7 +432,7 @@ export default function Customer() {
                   }
                 />
                 <RespectReglementation
-                  image={img3}
+                  image={imgC3}
                   title={
                     <div>Optimisez les couts <br />
                       des verifications </div>
@@ -398,7 +446,7 @@ export default function Customer() {
                   }
                 />
               </div>
-              <div className="bg-[#D4FFDE] w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 rounded-[33px] bg-no-repeat bg-[5%_50%]" style={{ backgroundImage: `url(${vector})`}}>
+              <div className="bg-[#D4FFDE] w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 rounded-[33px] bg-no-repeat bg-[5%_50%]" style={{ backgroundImage: `url(${vector})` }}>
                 <div className="relative customer-selfie-box">
                   <img src={takeselfie} alt="" className='absolute customer-selfie' />
                 </div>
