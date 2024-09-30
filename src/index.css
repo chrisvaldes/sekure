@@ -849,7 +849,6 @@
   padding: var(--sds-size-space-300);
   gap: var(--sds-size-space-200);
   border-radius: var(--sds-size-radius-200);
-  opacity: 0px;
   background: #F3F3F3;
 }
 
