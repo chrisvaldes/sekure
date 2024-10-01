@@ -905,7 +905,151 @@
   color: #5B5B5B;
 }
 
+@media (min-width:1200px) {
+  .pricingCard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 18rem);
+    /* Utilisez minmax pour une meilleure flexibilité */
+    align-items: center;
+    justify-content: center;
+    gap: 19px;
+  }
+}
+
 /* end pricing  */
+
+/* start about  */
+
+.about-btn-title {
+  width: 111px;
+  height: 25px;
+  top: 118px;
+  left: 721px;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 11px;
+  background: #2CE5B1;
+  font-family: "Satoshi";
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.about-title {
+  font-family: "Satoshi";
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 47px;
+  letter-spacing: -2px;
+  text-align: center;
+  color: #285246;
+}
+
+.about-content {
+  font-family: "Satoshi";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+  color: #285246;
+}
+
+.about-subtitle {
+  font-family: "Satoshi";
+  font-size: 31px;
+  font-weight: 400;
+  line-height: 37px;
+  text-align: center;
+  color: #285246;
+}
+
+.about-cart-title {
+  font-family: "Satoshi";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: -1px;
+  text-align: left;
+  color: #18382B;
+}
+
+.about-cart-content {
+  font-family: "Satoshi";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #285246;
+}
+
+.about-box {
+  width: 219px;
+  height: 131px;
+  padding: 16px 13px 16px 13px;
+  gap: 10px;
+  border-radius: 7px;
+  background: #DFFCE3;
+}
+
+.about-box-title {
+  font-family: "Satoshi";
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 47px;
+  letter-spacing: -2px;
+  text-align: center;
+  color: #2CE5B1;
+}
+
+.about-box-content {
+  font-family: "Satoshi";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17px;
+  text-align: center;
+  color: #285246;
+}
+
+.about-dotted-title {
+  font-family: "Satoshi";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 37px;
+  text-align: left;
+  color: #B9FFC4;
+}
+
+.about-dotted-content {
+  font-family: "Lufga";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.about-process-title {
+  font-family: "Satoshi";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: -1px;
+  text-align: center;
+  color: #285246;
+}
+
+.about-process-content {
+  font-family: "Satoshi";
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: center;
+  color: #285246;
+}
+
+/* end about  */
 
 .screening-section1-title {
   font-family: "Satoshi";
@@ -1207,6 +1351,10 @@
     margin: 0 6rem;
   }
 
+  .pricing {
+    margin: 0 6rem;
+  }
+
   .screening-card-absolute {
     top: 83%;
   }
@@ -1219,6 +1367,10 @@
   }
 
   .screening {
+    margin: 0 10rem;
+  }
+
+  .pricing {
     margin: 0 10rem;
   }
 
@@ -1237,6 +1389,10 @@
     margin: 0 13rem;
   }
 
+  .pricing {
+    margin: 0 13rem;
+  }
+
   .sub-title-page-2 {
     padding-top: 13rem;
   }
@@ -1249,6 +1405,10 @@
   }
 
   .screening {
+    margin: 0 20rem;
+  }
+
+  .pricing {
     margin: 0 20rem;
   }
 
@@ -1270,6 +1430,10 @@
   }
 
   .screening {
+    margin: 0 40rem;
+  }
+
+  .pricing {
     margin: 0 40rem;
   }
 
