@@ -1130,6 +1130,56 @@
 
 /* end about  */
 
+/* start connexion  */
+.connexion-side2-title {
+  font-family: "Satoshi";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 27px;
+  text-align: left;
+  color: #285246;
+}
+
+.connexion-side2-content {
+  font-family: "Satoshi";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: #285246;
+}
+
+.connexion-picture {
+  bottom: 0;
+}
+
+.connexion-connect {
+  font-family: "Satoshi";
+  font-size: 33px;
+  font-weight: 700;
+  line-height: 41px;
+  letter-spacing: -2px;
+  text-align: left;
+  color: #285246;
+}
+
+.connexion-side3-logo{
+  text-align: left;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.connexion-side3-content {
+  font-family: "Lufga";
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: left;
+  color: #B7B7B7;
+}
+
+/* end connexion  */
+
 .screening-section1-title {
   font-family: "Satoshi";
   font-size: 40px;

@@ -14,6 +14,8 @@ import Customer from './Pages/Customer/Customer';
 import Screening from './Pages/Screening/Screening';
 import Pricing from './Pages/Pricing/Pricing';
 import About from './Pages/About/About';
+import Connexion from './Pages/connection/Connexion';
+import OTPVerification from './Pages/OTPVerification/OTPVerification';
 
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
           <Route path='/screening' Component={Screening} />
           <Route path='/pricing' Component={Pricing}/>
           <Route path='/about' Component={About}/>
+          <Route path='/connexion' Component={Connexion}/>
+          <Route path='/verification' Component={OTPVerification}/>
         </Routes>
       </BrowserRouter>
     </div>

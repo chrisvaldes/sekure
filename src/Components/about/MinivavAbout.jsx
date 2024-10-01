@@ -25,7 +25,7 @@ export default function MinivavAbout() {
     return (
         <section>
             <div className="not-accordion bg-white pl-20 w-full">
-                <div className="flex flex-col pt-10" style={{backgroundImage : `url(${vectorMininav})`, backgroundRepeat : "no-repeat", backgroundPosition : "100% 100%"}}>
+                <div className="flex flex-col pt-10" style={{ backgroundImage: `url(${vectorMininav})`, backgroundRepeat: "no-repeat", backgroundPosition: "100% 100%" }}>
                     <Link to="/" className='bg-green-color flex items-center justify-center mini-nav-btn mini-nav-btn-text '>
                         Nos Outils
                     </Link>
@@ -58,51 +58,169 @@ export default function MinivavAbout() {
                     </ul>
 
                     <div className="flex flex-wrap items-center justify-center gap-16 pb-10 lg:pb-16">
+
+
                         {content === "Afrique" && (
-                            <div className="bg-cyan-200 w-full">
-                                <table>
-                                    <tr className=''>
-                                        <td>
-                                            <div className='flex items-center justify-between'>
-                                                <img src={cmr} alt="" className='pr-5'/>
-                                                <span>Cameroun</span>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div className='flex items-center justify-between'>
-                                                <img src={cmr} alt="" className='pr-5'/>
-                                                <span>Cameroun</span>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div className='flex items-center justify-between'>
-                                                <img src={cmr} alt="" className='pr-5'/>
-                                                <span>Cameroun</span>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div className='flex items-center justify-between'>
-                                                <img src={cmr} alt="" className='pr-5'/>
-                                                <span>Cameroun</span>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div className='flex items-center justify-between'>
-                                                <img src={cmr} alt="" className='pr-5'/>
-                                                <span>Cameroun</span>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div className='flex items-center justify-between'>
-                                                <img src={cmr} alt="" className='pr-5'/>
-                                                <span>Cameroun</span>
-                                            </div>
-                                        </td>
-                                        
-                                    </tr>
-                                </table>
-                            </div>
+
+                            <table className=' w-full'>
+                                <tr className=''>
+                                    <td className='py-5 pl-5'>
+                                        <div className='flex items-center justify-start'>
+                                            <img src={cmr} alt="" className='pr-5' />
+                                            <span>Cameroun</span>
+                                        </div>
+                                    </td>
+                                    <td className='py-5'>
+                                        <div className='flex items-center justify-start'>
+                                            <img src={cmr} alt="" className='pr-5' />
+                                            <span>Cameroun</span>
+                                        </div>
+                                    </td>
+                                    <td className='py-5'>
+                                        <div className='flex items-center justify-start'>
+                                            <img src={cmr} alt="" className='pr-5' />
+                                            <span>Cameroun</span>
+                                        </div>
+                                    </td>
+                                    <td className='py-5'>
+                                        <div className='flex items-center justify-start'>
+                                            <img src={cmr} alt="" className='pr-5' />
+                                            <span>Cameroun</span>
+                                        </div>
+                                    </td>
+                                    <td className='py-5'>
+                                        <div className='flex items-center justify-start'>
+                                            <img src={cmr} alt="" className='pr-5' />
+                                            <span>Cameroun</span>
+                                        </div>
+                                    </td>
+                                    <td className='py-5'>
+                                        <div className='flex items-center justify-start'>
+                                            <img src={cmr} alt="" className='pr-5' />
+                                            <span>Cameroun</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr className=''>
+                                    <td className='py-5 pl-5'>
+                                        <div className='flex items-center justify-start'>
+                                            <img src={cmr} alt="" className='pr-5' />
+                                            <span>Cameroun</span>
+                                        </div>
+                                    </td>
+                                    <td className='py-5'>
+                                        <div className='flex items-center justify-start'>
+                                            <img src={cmr} alt="" className='pr-5' />
+                                            <span>Cameroun</span>
+                                        </div>
+                                    </td>
+                                    <td className='py-5'>
+                                        <div className='flex items-center justify-start'>
+                                            <img src={cmr} alt="" className='pr-5' />
+                                            <span>Cameroun</span>
+                                        </div>
+                                    </td>
+                                    <td className='py-5'>
+                                        <div className='flex items-center justify-start'>
+                                            <img src={cmr} alt="" className='pr-5' />
+                                            <span>Cameroun</span>
+                                        </div>
+                                    </td>
+                                    <td className='py-5'>
+                                        <div className='flex items-center justify-start'>
+                                            <img src={cmr} alt="" className='pr-5' />
+                                            <span>Cameroun</span>
+                                        </div>
+                                    </td>
+                                    <td className='py-5'>
+                                        <div className='flex items-center justify-start'>
+                                            <img src={cmr} alt="" className='pr-5' />
+                                            <span>Cameroun</span>
+                                        </div>
+                                    </td>
+
+                                </tr>
+                                <tr className=''>
+                                    <td className='py-5 pl-5'>
+                                        <div className='flex items-center justify-start'>
+                                            <img src={cmr} alt="" className='pr-5' />
+                                            <span>Cameroun</span>
+                                        </div>
+                                    </td>
+                                    <td className='py-5'>
+                                        <div className='flex items-center justify-start'>
+                                            <img src={cmr} alt="" className='pr-5' />
+                                            <span>Cameroun</span>
+                                        </div>
+                                    </td>
+                                    <td className='py-5'>
+                                        <div className='flex items-center justify-start'>
+                                            <img src={cmr} alt="" className='pr-5' />
+                                            <span>Cameroun</span>
+                                        </div>
+                                    </td>
+                                    <td className='py-5'>
+                                        <div className='flex items-center justify-start'>
+                                            <img src={cmr} alt="" className='pr-5' />
+                                            <span>Cameroun</span>
+                                        </div>
+                                    </td>
+                                    <td className='py-5'>
+                                        <div className='flex items-center justify-start'>
+                                            <img src={cmr} alt="" className='pr-5' />
+                                            <span>Cameroun</span>
+                                        </div>
+                                    </td>
+                                    <td className='py-5'>
+                                        <div className='flex items-center justify-start'>
+                                            <img src={cmr} alt="" className='pr-5' />
+                                            <span>Cameroun</span>
+                                        </div>
+                                    </td>
+
+                                </tr>
+                                <tr className=''>
+                                    <td className='py-5 pl-5'>
+                                        <div className='flex items-center justify-start'>
+                                            <img src={cmr} alt="" className='pr-5' />
+                                            <span>Cameroun</span>
+                                        </div>
+                                    </td>
+                                    <td className='py-5'>
+                                        <div className='flex items-center justify-start'>
+                                            <img src={cmr} alt="" className='pr-5' />
+                                            <span>Cameroun</span>
+                                        </div>
+                                    </td>
+                                    <td className='py-5'>
+                                        <div className='flex items-center justify-start'>
+                                            <img src={cmr} alt="" className='pr-5' />
+                                            <span>Cameroun</span>
+                                        </div>
+                                    </td>
+                                    <td className='py-5'>
+                                        <div className='flex items-center justify-start'>
+                                            <img src={cmr} alt="" className='pr-5' />
+                                            <span>Cameroun</span>
+                                        </div>
+                                    </td>
+                                    <td className='py-5'>
+                                        <div className='flex items-center justify-start'>
+                                            <img src={cmr} alt="" className='pr-5' />
+                                            <span>Cameroun</span>
+                                        </div>
+                                    </td>
+                                    <td className='py-5'>
+                                        <div className='flex items-center justify-start'>
+                                            <img src={cmr} alt="" className='pr-5' />
+                                            <span>Cameroun</span>
+                                        </div>
+                                    </td>
+
+                                </tr>
+                            </table>
                         )}
+
                         {content === "Europe" && (
                             <div className="">
 
