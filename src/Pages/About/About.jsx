@@ -17,6 +17,9 @@ import processVector from "../../images/about/processVector.png"
 import womenSelfie from '../../images/about/woman-selfie.png'
 import rectangle from "../../images/about/Rectangle.png"
 import WomenCard from '../../Components/about/WomenCard'
+import frameSelfie from "../../images/about/Frameselfie.png"
+import Card from '../../Components/customer/Card'
+import MinivavAbout from '../../Components/about/MinivavAbout'
 
 export default function About() {
   return (
@@ -231,7 +234,7 @@ export default function About() {
             </div>
 
             <div className='lg:col-span-2'>
-              <div className="gap-5 pricingCard">
+              <div className="gap-5 pricingCard flex flex-wrap items-center justify-center">
                 <CardAbout
                   fichier={fichier}
                   textBnt="Disponible par pays"
@@ -344,14 +347,16 @@ export default function About() {
       </section>
 
       <section className=' pt-20 bg-[#EFFFF3]'>
-        <div className='flex flex-col items-center justify-center' style={{ backgroundImage: `url(${processVector})`, backgroundRepeat: "no-repeat", backgroundPosition: "bottom left" }}>
-          <Link to="/" className='about-btn-title flex items-center justify-center'>à propos de nous</Link>
-          <span className='about-process-title py-5'>
-            Un parcours utilisateur fluide et intuitif qui ne laisse pas <br />
-            vos utilisateurs perdre du temps
-          </span>
-          <div className='about-process-content pb-5'>
-            Offrez à vos utilisateurs une expérience fluide et personnalisée. Notre parcours utilisateur intuitif est conçu pour les satisfaire dès le premier clic.
+        <div style={{ backgroundImage: `url(${processVector})`, backgroundRepeat: "no-repeat", backgroundPosition: "bottom left" }}>
+          <div className='flex flex-col items-center justify-center'>
+            <Link to="/" className='about-btn-title flex items-center justify-center'>à propos de nous</Link>
+            <span className='about-process-title py-5'>
+              Un parcours utilisateur fluide et intuitif qui ne laisse pas <br />
+              vos utilisateurs perdre du temps
+            </span>
+            <div className='about-process-content pb-5'>
+              Offrez à vos utilisateurs une expérience fluide et personnalisée. Notre parcours utilisateur intuitif est conçu pour les satisfaire dès le premier clic.
+            </div>
           </div>
           <div className='flex items-center justify-center'>
             <img src={database} alt="" />
@@ -360,7 +365,7 @@ export default function About() {
       </section>
 
 
-      <section>
+      <section style={{ backgroundImage: `url(${frameSelfie})`, backgroundPosition: "bottom right", backgroundRepeat: "no-repeat" }} >
         <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
           <div className="pt-24">
             <div className=' py-20'>
@@ -370,150 +375,186 @@ export default function About() {
             </div>
           </div>
           <div className="flex flex-col items-center justify-center px-5">
-            <div className='about-womenselfie-title'>
+            <div className='about-womenselfie-title w-full'>
               Ce qui nous distingue ? Notre engagement à <br />
               vous offrir des solutions innovantes, fiables et <br />
               adaptées à vos enjeux. Nous croyons en une <br />
               relation de partenariat basée sur la confiance <br />
               et la transparence.
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2'>
-                  <WomenCard/>
-                  <WomenCard/>
-                  <WomenCard/>
-                  <WomenCard/>
-                  <WomenCard/>
-                  <WomenCard/>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-y-7 pt-5'>
+              <WomenCard />
+              <WomenCard />
+              <WomenCard />
+              <WomenCard />
+              <WomenCard />
+              <WomenCard />
             </div>
           </div>
 
         </div>
       </section>
+      <section className='pt-20 pb-20 bg-[#EAFFF1]'>
+        <div>
+          <div className='flex flex-col items-center justify-center'>
+            <Link to="/" className='about-btn-title flex items-center justify-center'>à propos de nous</Link>
+            <div className='about-process-title py-5'>
+              Tout ce que vous avez toujours voulu savoir sur Aibiomerics (et <br />
+              ce que vous n'osiez pas demander).
+            </div>
+          </div>
+          <div className='flex items-start justify-start gap-8 overflow-x-auto px-20 scrollbar-hidden'>
+            <Card
+              btnText="Disponibilité par pays"
+              title={
+                <span>
+                  Est-ce-que je peux payer <br />
+                  depuis mon pays en Afrique ?
+                </span>
+              }
+              content={
+                <span>
+                  Localement ou internationalement, vos achats en <br />
+                  ligne ne connaissent plus de limite avec les <br />
+                  cartes virtuelles Visa et Mastercard de chez <br />
+                  SEKURE. En 2 minutes, créez et vérifiez votre <br />
+                  compte Sekure pour obtenir votre carte virtuelle. <br />
+                  Entre des frais d'entretien inexistants et des frais <br />
+                  de transaction amoindris, Sekure vous offre les <br />
+                  meilleurs avantages du marché bancaire africain <br />
+                  sur jusqu’à 06 cartes que vous pouvez suivre <br />
+                  individuellement dans via l'application.
+                </span>
+              }
+              bgColor="white"
+            />
+            <Card
+              btnText="Disponibilité par pays"
+              title={
+                <span>
+                  Est-ce-que je peux payer <br />
+                  depuis mon pays en Afrique ?
+                </span>
+              }
+              content={
+                <span>
+                  Localement ou internationalement, vos achats en <br />
+                  ligne ne connaissent plus de limite avec les <br />
+                  cartes virtuelles Visa et Mastercard de chez <br />
+                  SEKURE. En 2 minutes, créez et vérifiez votre <br />
+                  compte Sekure pour obtenir votre carte virtuelle. <br />
+                  Entre des frais d'entretien inexistants et des frais <br />
+                  de transaction amoindris, Sekure vous offre les <br />
+                  meilleurs avantages du marché bancaire africain <br />
+                  sur jusqu’à 06 cartes que vous pouvez suivre <br />
+                  individuellement dans via l'application.
+                </span>
+              }
+              bgColor="white"
+            />
+            <Card
+              btnText="Disponibilité par pays"
+              title={
+                <span>
+                  Est-ce-que je peux payer <br />
+                  depuis mon pays en Afrique ?
+                </span>
+              }
+              content={
+                <span>
+                  Localement ou internationalement, vos achats en <br />
+                  ligne ne connaissent plus de limite avec les <br />
+                  cartes virtuelles Visa et Mastercard de chez <br />
+                  SEKURE. En 2 minutes, créez et vérifiez votre <br />
+                  compte Sekure pour obtenir votre carte virtuelle. <br />
+                  Entre des frais d'entretien inexistants et des frais <br />
+                  de transaction amoindris, Sekure vous offre les <br />
+                  meilleurs avantages du marché bancaire africain <br />
+                  sur jusqu’à 06 cartes que vous pouvez suivre <br />
+                  individuellement dans via l'application.
+                </span>
+              }
+              bgColor="white"
+            />
+            <Card
+              btnText="Disponibilité par pays"
+              title={
+                <span>
+                  Est-ce-que je peux payer <br />
+                  depuis mon pays en Afrique ?
+                </span>
+              }
+              content={
+                <span>
+                  Localement ou internationalement, vos achats en <br />
+                  ligne ne connaissent plus de limite avec les <br />
+                  cartes virtuelles Visa et Mastercard de chez <br />
+                  SEKURE. En 2 minutes, créez et vérifiez votre <br />
+                  compte Sekure pour obtenir votre carte virtuelle. <br />
+                  Entre des frais d'entretien inexistants et des frais <br />
+                  de transaction amoindris, Sekure vous offre les <br />
+                  meilleurs avantages du marché bancaire africain <br />
+                  sur jusqu’à 06 cartes que vous pouvez suivre <br />
+                  individuellement dans via l'application.
+                </span>
+              }
+              bgColor="white"
+            />
+            <Card
+              btnText="Disponibilité par pays"
+              title={
+                <span>
+                  Est-ce-que je peux payer <br />
+                  depuis mon pays en Afrique ?
+                </span>
+              }
+              content={
+                <span>
+                  Localement ou internationalement, vos achats en <br />
+                  ligne ne connaissent plus de limite avec les <br />
+                  cartes virtuelles Visa et Mastercard de chez <br />
+                  SEKURE. En 2 minutes, créez et vérifiez votre <br />
+                  compte Sekure pour obtenir votre carte virtuelle. <br />
+                  Entre des frais d'entretien inexistants et des frais <br />
+                  de transaction amoindris, Sekure vous offre les <br />
+                  meilleurs avantages du marché bancaire africain <br />
+                  sur jusqu’à 06 cartes que vous pouvez suivre <br />
+                  individuellement dans via l'application.
+                </span>
+              }
+              bgColor="white"
+            />
+            <Card
+              btnText="Disponibilité par pays"
+              title={
+                <span>
+                  Est-ce-que je peux payer <br />
+                  depuis mon pays en Afrique ?
+                </span>
+              }
+              content={
+                <span>
+                  Localement ou internationalement, vos achats en <br />
+                  ligne ne connaissent plus de limite avec les <br />
+                  cartes virtuelles Visa et Mastercard de chez <br />
+                  SEKURE. En 2 minutes, créez et vérifiez votre <br />
+                  compte Sekure pour obtenir votre carte virtuelle. <br />
+                  Entre des frais d'entretien inexistants et des frais <br />
+                  de transaction amoindris, Sekure vous offre les <br />
+                  meilleurs avantages du marché bancaire africain <br />
+                  sur jusqu’à 06 cartes que vous pouvez suivre <br />
+                  individuellement dans via l'application.
+                </span>
+              }
+              bgColor="white"
+            />
 
-
-      <section>
-        <div class='px-20'>
-          <div class="content-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 rounded-2xl items-center justify-center gap-y-5 py-10 px-5">
-            <div class="flex items-center justify-center gap-x-5  ">
-              <div class="flex items-center justify-center bg-gray-200 p-3 sm:p-3 lg:p-5 rounded-full">
-                <div class="rounded-full bg-cyan-color px-1 sm:px-1 md:px-1 lg:px-2 lg:py-1 flex items-center justify-center">
-                  <span class="icon text-white">
-                    {/* <FontAwesomeIcon icon={faCheck} /> */}
-                  </span>
-                </div>
-              </div>
-              <div class="text-left">
-                <div class="title-4 font-semibold text-title-4 font-weight-title-4 font-family-title-4">Large Couverture en Afrique</div>
-                <div class="title-content text-content-title-4"> The only AI-powered identity verification</div>
-              </div>
-            </div>
-            <div class="flex items-center justify-center gap-x-5   ">
-              <div class="flex items-center justify-center bg-gray-200 p-3 sm:p-3 lg:p-5 rounded-full">
-                <div class="  rounded-full bg-cyan-color px-1 sm:px-1 md:px-1 lg:px-2 lg:py-1 bg-cyan-color flex items-center justify-center">
-                  <span class="icon text-white">
-                    {/* <FontAwesomeIcon icon={faCheck} /> */}
-                  </span>
-                </div>
-              </div>
-              <div class="text-left">
-                <div class="font-semibold title-4 text-title-4 font-weight-title-4 font-family-title-4">Adverse media screening</div>
-                <div class="title-content text-content-title-4">The only AI-powered identity verification</div>
-              </div>
-            </div>
-            <div class="flex items-center justify-center gap-x-5  ">
-              <div class="flex items-center justify-center bg-gray-200 p-3 sm:p-3 lg:p-5 rounded-full">
-                <div class="  rounded-full bg-cyan-color px-1 sm:px-1 md:px-1 lg:px-2 lg:py-1 bg-cyan-color flex items-center justify-center">
-                  <span class="icon text-white">
-                    {/* <FontAwesomeIcon icon={faCheck} /> */}
-                  </span>
-                </div>
-              </div>
-              <div class="text-left">
-                <div class="font-semibold title-4 text-title-4 font-weight-title-4 font-family-title-4">Enhanced due diligence (EDD) : </div>
-                <div class="title-content text-content-title-4">The only AI-powered identity verification</div>
-              </div>
-            </div>
-            <div class="flex items-center justify-center gap-x-5  ">
-              <div class="flex items-center justify-center bg-gray-200 p-3 sm:p-3 lg:p-5 rounded-full">
-                <div class="  rounded-full bg-cyan-color px-1 sm:px-1 md:px-1 lg:px-2 lg:py-1 bg-cyan-color flex items-center justify-center">
-                  <span class="icon text-white">
-                    {/* <FontAwesomeIcon icon={faCheck} /> */}
-                  </span>
-                </div>
-              </div>
-              <div class="text-left">
-                <div class="font-semibold title-4 text-title-4 font-weight-title-4 font-family-title-4">PEP Screening</div>
-                <div class="title-content text-content-title-4">The only AI-powered identity verification</div>
-              </div>
-            </div>
-            <div class="flex items-center justify-center gap-x-5  ">
-              <div class="flex items-center justify-center bg-gray-200 p-3 sm:p-3 lg:p-5 rounded-full">
-                <div class="  rounded-full bg-cyan-color px-1 sm:px-1 md:px-1 lg:px-2 lg:py-1 bg-cyan-color flex items-center justify-center">
-                  <span class="icon text-white">
-                    {/* <FontAwesomeIcon icon={faCheck} /> */}
-                  </span>
-                </div>
-              </div>
-              <div class="text-left">
-                <div class="font-semibold title-4 text-title-4 font-weight-title-4 font-family-title-4">Ongoing monitoring</div>
-                <div class="title-content text-content-title-4">The only AI-powered identity verification</div>
-              </div>
-            </div>
-            <div class="flex items-center justify-center gap-x-5  ">
-              <div class="flex items-center justify-center bg-gray-200 p-3 sm:p-3 lg:p-5 rounded-full">
-                <div class="  rounded-full bg-cyan-color px-1 sm:px-1 md:px-1 lg:px-2 lg:py-1 bg-cyan-color flex items-center justify-center">
-                  <span class="icon text-white">
-                    {/* <FontAwesomeIcon icon={faCheck} /> */}
-                  </span>
-                </div>
-              </div>
-              <div class="text-left">
-                <div class="font-semibold title-4 text-title-4 font-weight-title-4 font-family-title-4">Sanction screening</div>
-                <div class="title-content text-content-title-4">The only AI-powered identity verification</div>
-              </div>
-            </div>
-            <div class="flex items-center justify-center gap-x-5  ">
-              <div class="flex items-center justify-center bg-gray-200 p-3 sm:p-3 lg:p-5 rounded-full">
-                <div class="  rounded-full bg-cyan-color px-1 sm:px-1 md:px-1 lg:px-2 lg:py-1 bg-cyan-color flex items-center justify-center">
-                  <span class="icon text-white">
-                    {/* <FontAwesomeIcon icon={faCheck} /> */}
-                  </span>
-                </div>
-              </div>
-              <div class="text-left">
-                <div class="font-semibold title-4 text-title-4 font-weight-title-4 font-family-title-4">Sanction screening</div>
-                <div class="title-content text-content-title-4">The only AI-powered identity verification</div>
-              </div>
-            </div>
-            <div class="flex items-center justify-center gap-x-5  ">
-              <div class="flex items-center justify-center bg-gray-200 p-3 sm:p-3 lg:p-5 rounded-full">
-                <div class="  rounded-full bg-cyan-color px-1 sm:px-1 md:px-1 lg:px-2 lg:py-1 bg-cyan-color flex items-center justify-center">
-                  <span class="icon text-white">
-                    {/* <FontAwesomeIcon icon={faCheck} /> */}
-                  </span>
-                </div>
-              </div>
-              <div class="text-left">
-                <div class="font-semibold title-4 text-title-4 font-weight-title-4 font-family-title-4">Sanction screening</div>
-                <div class="title-content text-content-title-4">The only AI-powered identity verification</div>
-              </div>
-            </div>
-            <div class="flex items-center justify-center gap-x-5  ">
-              <div class="flex items-center justify-center bg-gray-200 p-3 sm:p-3 lg:p-5 rounded-full">
-                <div class="  rounded-full bg-cyan-color px-1 sm:px-1 md:px-1 lg:px-2 lg:py-1 bg-cyan-color flex items-center justify-center">
-                  <span class="icon text-white">
-                    {/* <FontAwesomeIcon icon={faCheck} /> */}
-                  </span>
-                </div>
-              </div>
-              <div class="text-left">
-                <div class="font-semibold title-4 text-title-4 font-weight-title-4 font-family-title-4">Sanction screening</div>
-                <div class="title-content text-content-title-4">The only AI-powered identity verification</div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
+
+      <MinivavAbout/>
+
       <section>
         <FooterAccueil />
       </section>
