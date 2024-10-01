@@ -14,6 +14,9 @@ import database from "../../images/about/process.png"
 import fichier from "../../images/about/fichier.png"
 import vectorBg from "../../images/about/Vector.png"
 import processVector from "../../images/about/processVector.png"
+import womenSelfie from '../../images/about/woman-selfie.png'
+import rectangle from "../../images/about/Rectangle.png"
+import WomenCard from '../../Components/about/WomenCard'
 
 export default function About() {
   return (
@@ -357,7 +360,35 @@ export default function About() {
       </section>
 
 
-      
+      <section>
+        <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+          <div className="pt-24">
+            <div className=' py-20'>
+              <img src={rectangle} alt="" className='pb-10' />
+              <img src={rectangle} alt="" />
+              <img src={womenSelfie} alt="" className='absolute womenSelfie' />
+            </div>
+          </div>
+          <div className="flex flex-col items-center justify-center px-5">
+            <div className='about-womenselfie-title'>
+              Ce qui nous distingue ? Notre engagement à <br />
+              vous offrir des solutions innovantes, fiables et <br />
+              adaptées à vos enjeux. Nous croyons en une <br />
+              relation de partenariat basée sur la confiance <br />
+              et la transparence.
+            </div>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2'>
+                  <WomenCard/>
+                  <WomenCard/>
+                  <WomenCard/>
+                  <WomenCard/>
+                  <WomenCard/>
+                  <WomenCard/>
+            </div>
+          </div>
+
+        </div>
+      </section>
 
 
       <section>
