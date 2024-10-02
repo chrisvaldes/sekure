@@ -7,10 +7,10 @@ import man from "../../images/connexion/man.png"
 
 export default function Enregistrement() {
     return (
-        <div className='otp-verification flex items-center justify-center min-h-screen'>
+        <div className='otp-verification flex items-center justify-center min-h-screen bg-white'>
             <div className='w-full grid grid-col-1 md:grid-cols-2 lg:grid-cols-12'>
                 <div className="w-full col-span-1"></div>
-                <div className="w-full bg-white col-span-4">
+                <div className="w-full col-span-4">
                     <div className='flex flex-col items-center justify-center px-10 pt-10 sm:px-20 md:px-20 lg:px-8'>
                         <form action="" className=''>
                             <div className='connexion-connect py-5'>
@@ -74,8 +74,8 @@ export default function Enregistrement() {
                     <div className='grid grid-cols-1 lg:grid-cols-7'>
                         <div className="w-full col-span-2">
                         </div>
-                        <div className="w-full col-span-5">
-                            <div className="col-span-3 pt-16 pb-10 flex flex-col items-start justify-center gap-y-7 bg-white">
+                        <div className="w-full col-span-5 ">
+                            <div className="col-span-3 pt-16 pb-10 flex flex-col items-start justify-center gap-y-7 bg-[#EFFFF3]">
                                 <ConnexionCard
                                     title="Verifiez les documents d’identité"
                                     content={
