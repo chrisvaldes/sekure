@@ -1,28 +1,30 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Accordion from '../../Components/Accordion'
-import Arrow from '../../Components/Arrow'
-import CardArrow from '../../Components/CardArrow'
-import Cards from '../../Components/Cards'
-import CardSmile from '../../Components/CardSmile'
-import FooterAccueil from '../../Components/FooterAccueil'
-import Message from '../../Components/Message'
+import CardAccueil from '../../Components/accueil/CardAccueil'
 import MiniCard from '../../Components/MiniCard'
 import MiniCardSquare from '../../Components/MiniCardSquare'
 import MiniNavBar from '../../Components/MiniNavBar'
 import NavBar from '../../Components/NavBar'
 import SmallCheckCircle from '../../Components/SmallCheckCircle'
+import cardArrow from "../../images/accueil/card-arrow.png"
+import cardIcon from "../../images/accueil/card-icon.png"
+import cardSmile from "../../images/accueil/card-smile.png"
 import bgChoice from "../../images/bg-choice.png"
 import bigMother from '../../images/bigMother.png'
 import vectorBigMother from "../../images/bigMotherVector.png"
 import cniPassport from "../../images/cniPassport.png"
 import girlCni from "../../images/girlCni.png"
-import groupDatabases from "../../images/groupDatabases.png"
+import groupDatabases from "../../images/accueil/dataBase.png"
+import arrowWhite from "../../images/icons/arrowWhite.png"
+import message from "../../images/icons/messageWhite.png"
 import phone from "../../images/phone.png"
 import phoneBg from "../../images/phoneBg.png"
 import unionDown from "../../images/Union (1).png"
 import unionUp from "../../images/Union.png"
 import vectorDatabases from "../../images/vectorDatabases.png"
+import Footer from '../../Components/Footer'
+
 
 export default function Accueil() {
     return (
@@ -45,7 +47,7 @@ export default function Accueil() {
                                         VERIFICATION D'UTILISATEURS
                                     </Link>
                                 </div>
-                                <div className='text-wrap title sarabun-bold text-green-deep'>
+                                <div className='text-wrap title text-green-deep'>
                                     <span>Construisez une base <br />
                                         d'utilisateur fiables grâce à la <br /></span>
                                     <span className='text-green-color'>vérification d'identité facile et <br />rapide</span>
@@ -59,18 +61,18 @@ export default function Accueil() {
                                     confiance, améliorez l'expérience utilisateur et stimulez la croissance de votre entreprise
                                 </p>
                                 <div className='flex flex-wrap items-center justify-center md:items-start md:justify-start lg:items-start lg:justify-start gap-[28px] pt-[28px]'>
-                                    <div className='btn flex items-center  bg-green-deep pr-2'>
-                                        <Link to="/" className='btn-text flex items-center justify-between text-nowrap'>
-                                            <span>Commencer gratuitement</span>
-                                            <Arrow background="#FFFF" textcolor="#285246" />
-                                        </Link>
 
-                                    </div>
+                                    <Link to="/" className='accueil-btn flex items-center justify-between text-nowrap'>
+                                        <div className='flex items-center justify-around w-full'>
+                                            <span className=''>Commencer gratuitement</span>
+                                            <img src={arrowWhite} alt="" />
+                                        </div>
+                                    </Link>
                                     <Link to="/" className='btn flex items-center justify-around bg-green-clean'>
                                         <span className='btn-text text-green-deep'>
                                             Contacter
                                         </span>
-                                        <Message background="#FFFF" textcolor="#285246" />
+                                        <img src={message} alt="" />
                                     </Link>
                                 </div>
                                 <div className='sub-title mt-10 pb-10'>
@@ -92,58 +94,71 @@ export default function Accueil() {
                 <section className=' section-tree-col-selfie'>
                     <div className='flex items-center justify-center py-10 rounded-[20px] bg-white '>
                         <div className=' gap-10  px-10 grid  items-center justify-between grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
-                            <div className='flex  gap-x-10'>
-                                <Cards />
-                                <div className="">
-                                    <div className="text-left card-icon-title pb-2">
-                                        Rendez la vérification facile et <br />
-                                        rapide pour vas utilisateurs
-                                    </div>
-                                    <div className="text-left card-icon-content">
-                                        Offrez à vos utilisateurs une expérience de <br />
-                                        vérification fluide et sans tracas. Grâce à notre <br />
-                                        technologie de pointe, la vérification d'identité <br />
-                                        devient un processus simple et rapide.
-                                    </div>
-                                </div>
+                            <div className='flex'>
+                                <CardAccueil
+                                    img={cardIcon}
+                                    title={
+                                        <span>
+                                            Rendez la vérification facile et <br />
+                                            rapide pour vas utilisateurs
+                                        </span>
+                                    }
+                                    content={
+                                        <span>
+                                            Offrez à vos utilisateurs une expérience de <br />
+                                            vérification fluide et sans tracas. Grâce à notre <br />
+                                            technologie de pointe, la vérification d'identité <br />
+                                            devient un processus simple et rapide.
+                                        </span>
+                                    }
+                                />
                             </div>
-                            <div className='flex  gap-x-10'>
-                                <CardArrow />
-                                <div className="">
-                                    <div className="text-left card-icon-title pb-2">
-                                        Rendez la vérification facile et <br />
-                                        rapide pour vas utilisateurs
-                                    </div>
-                                    <div className="text-left card-icon-content">
-                                        Offrez à vos utilisateurs une expérience de <br />
-                                        vérification fluide et sans tracas. Grâce à notre <br />
-                                        technologie de pointe, la vérification d'identité <br />
-                                        devient un processus simple et rapide.
-                                    </div>
-                                </div>
+                            <div className='flex'>
+                                <CardAccueil
+                                    img={cardArrow}
+                                    title={
+                                        <span>
+                                            Rendez la vérification facile et <br />
+                                            rapide pour vas utilisateurs
+                                        </span>
+                                    }
+                                    content={
+                                        <span>
+                                            Offrez à vos utilisateurs une expérience de <br />
+                                            vérification fluide et sans tracas. Grâce à notre <br />
+                                            technologie de pointe, la vérification d'identité <br />
+                                            devient un processus simple et rapide.
+                                        </span>
+                                    }
+                                />
                             </div>
-                            <div className='flex  gap-x-10'>
-                                <CardSmile />
-                                <div className="">
-                                    <div className="text-left card-icon-title pb-2">
-                                        Rendez la vérification facile et <br />
-                                        rapide pour vas utilisateurs
-                                    </div>
-                                    <div className="text-left card-icon-content">
-                                        Offrez à vos utilisateurs une expérience de <br />
-                                        vérification fluide et sans tracas. Grâce à notre <br />
-                                        technologie de pointe, la vérification d'identité <br />
-                                        devient un processus simple et rapide.
-                                    </div>
-                                </div>
+                            <div className='flex'>
+                                <CardAccueil
+                                    img={cardSmile}
+                                    title={
+                                        <span>
+                                            Rendez la vérification facile et <br />
+                                            rapide pour vas utilisateurs
+                                        </span>
+                                    }
+                                    content={
+                                        <span>
+                                            Offrez à vos utilisateurs une expérience de <br />
+                                            vérification fluide et sans tracas. Grâce à notre <br />
+                                            technologie de pointe, la vérification d'identité <br />
+                                            devient un processus simple et rapide.
+                                        </span>
+                                    }
+                                />
                             </div>
+                             
                         </div>
                     </div>
                 </section>
                 {/* end div with 3 cols */}
 
                 {/* start section cni and passport */}
-                <section>
+                <section> 
                     <div className='group-card-vert grid grid-cols-1 items-center justify-center md:grid-cols-1 lg:grid-cols-2 pt-20 gap-8'>
                         <div className="group-card-vert-content flex flex-col items-center gap-y-5">
                             <div className="">
@@ -323,11 +338,7 @@ export default function Accueil() {
                 <section className="group-card-vert bg-no-repeat bg-right" style={{ backgroundImage: `url(${vectorDatabases})` }}>
                     <div className='grid grid-cols-1 items-center justify-center md:grid-cols-1 lg:grid-cols-2 pb-20 gap-x-8 gap-y-20'>
                         <div className="order-img flex items-center justify-center h-[120%]">
-                            <div className='relative flex items-center gap-5  h-[120%]'>
-                                <div className=" card-horiz"></div>
-                                <div className="card-horiz"></div>
-                                <img src={groupDatabases} alt="" className='groupDatabase' />
-                            </div>
+                             <img src={groupDatabases} alt="" />
                         </div>
                         <div className="flex flex-col items-center gap-y-5 bg-no-repeat">
                             <div className="">
@@ -452,17 +463,17 @@ export default function Accueil() {
                         </div>
                         <div className='flex flex-wrap items-center justify-center md:items-start md:justify-start lg:items-start lg:justify-start gap-[28px] pt-[28px]'>
                             <div className='btn flex items-center  bg-green-color pr-2'>
-                                <button className='big-btn-about-us flex items-center justify-between text-nowrap text-white'>
+                                <Link to="/" className='big-btn-about-us flex items-center justify-between text-nowrap text-white'>
                                     <span>Voir tous les pays</span>
-                                    <Arrow background="#FFFF" textcolor="#285246" />
-                                </button>
+                                    <img src={arrowWhite} alt="" />
+                                </Link>
 
                             </div>
                             <div className='btn flex items-center justify-around bg-green-deep'>
                                 <button className='btn-text text-white'>
                                     Contacter
                                 </button>
-                                <Message background="#FFFF" textcolor="#285246" />
+                                <img src={message} alt="" />
                             </div>
                         </div>
                     </div>
@@ -613,13 +624,13 @@ export default function Accueil() {
                                     <span className='big-btn-about-us flex items-center text-nowrap text-white'>
                                         Voir tous les pays
                                     </span>
-                                    <Arrow background="#FFFF" textcolor="#285246" />
+                                    <img src={arrowWhite} alt="" />
                                 </Link>
                                 <Link to="/" className='btn flex items-center justify-around bg-green-deep'>
                                     <span className='btn-text text-white'>
                                         Contacter
                                     </span>
-                                    <Message background="#FFFF" textcolor="#285246" />
+                                    <img src={message} alt="" />
                                 </Link>
                             </div>
                         </div>
@@ -634,7 +645,7 @@ export default function Accueil() {
 
                 {/* start footer section  */}
                 <section className='z-50'>
-                    <FooterAccueil />
+                    <Footer />
                 </section>
                 {/* end footer section  */}
             </main>

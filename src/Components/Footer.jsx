@@ -1,48 +1,13 @@
-import React from 'react' 
+import React from 'react'
 import logo from "../images/Group.png"
 import Message from './Message'
 import { Link } from 'react-router-dom'
 import arrowWhite from '../images/icons/arrowWhite.png'
 
-export default function FooterAccueil() {
+
+export default function Footer() {
     return (
         <div className='bg-green-color py-10  footer-section'>
-            {/* <div className="flex items-center justify-around">
-                <div className="">
-                    <div className="title text-green-deep">
-                        La vérification n’est plus un <br />
-                        obstacle pour votre business, <br />
-                        <span className='text-white'>
-                            Acceptez plus facilement vos <br />
-                            utilisateurs
-                        </span>
-                    </div>
-                    <div className="title-content-1 py-4">
-                        Prêt à simplifier votre processus d'onboarding et à réduire le taux d'abandon ? Notre <br />
-                        solution de vérification d'identité vous permet d'accélérer la croissance de votre entreprise <br />
-                        tout en renforçant la sécurité. Essayez notre plateforme gratuitement dès aujourd'hui et <br />
-                        découvrez l'impact positif sur votre business.
-                    </div>
-                    <div className='flex flex-wrap items-center justify-center md:items-start md:justify-start lg:items-start lg:justify-start gap-[28px] pt-[28px] pb-16'>
-                        <div className='btn flex items-center justify-center  bg-green-deep '>
-                            <button className='btn-text text-white text-nowrap'>
-                                Commencer gratuitement
-                            </button>
-                            <img src={arrowWhite} alt="" />
-                        </div>
-                        <div className='btn flex items-center justify-around bg-white'>
-                            <button className='btn-text text-green-deep'>
-                                Nous Contacter
-                            </button>
-                            <Message background="#285246" textcolor="#FFFF" />
-                        </div>
-                    </div>
-                </div>
-                <div className="background-footer">
-                </div>
-
-
-            </div> */}
             <div className='relative footer-page'>
                 <div className='flex flex-col items-start justify-center'>
                     <div className='screening-section1-title py-5'>
@@ -67,7 +32,7 @@ export default function FooterAccueil() {
 
                     </div>
                 </div>
-                <div className='absolute footer-absolute-bg ' >
+                <div className='absolute footer-accueil-absolute-bg ' >
                 </div>
             </div>
             <div className="flex flex-wrap items-center justify-around w-full">
@@ -111,13 +76,15 @@ export default function FooterAccueil() {
                             <div className='footer-grid-logo'>AIBIOMETRICS</div>
                             <img src={logo} alt="" className='logo' />
                         </div>
-                        <textarea name="" id="" placeholder='Recevoir Newsletter
-                        Enter your address mail' className="p-2"></textarea>
-                        <div className='btn flex items-center justify-around bg-green-deep'>
-                            <button className='btn-text text-white'>
-                                Recevoir NewsLetter
-                            </button>
-                        </div>
+                        <form action="">
+                            <textarea name="" id="" placeholder='Recevoir Newsletter
+                                Enter your address mail' className="p-2"></textarea>
+                            <div className='btn flex items-center justify-around bg-green-deep'>
+                                <button className='btn-send-letter text-white'>
+                                    Recevoir NewsLetter
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

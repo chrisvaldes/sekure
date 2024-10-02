@@ -122,7 +122,7 @@ export default function MiniNavBar() {
                                                     <span class="text-nowrap" >Commencer </span>
                                                     <Arrow background="#FFFF" textcolor="#285246" />
                                                 </Link>
-                                                <Link to="/" class=" bg-green-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
+                                                <Link to="/pricing" class=" bg-green-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
                                                     <span class="text-white text-nowrap pr-5">Contacter</span>
                                                     <Message background="#FFFF" textcolor="#285246" />
                                                 </Link>
@@ -199,7 +199,7 @@ export default function MiniNavBar() {
                                                     <span class="text-nowrap" >Commencer </span>
                                                     <Arrow background="#FFFF" textcolor="#285246" />
                                                 </Link>
-                                                <Link to="/" class=" bg-green-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
+                                                <Link to="/pricing" class=" bg-green-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
                                                     <span class="text-white text-nowrap pr-5">Contacter</span>
                                                     <Message background="#FFFF" textcolor="#285246" />
                                                 </Link>
@@ -277,7 +277,7 @@ export default function MiniNavBar() {
                                                     <span class="text-nowrap" >Commencer </span>
                                                     <Arrow background="#FFFF" textcolor="#285246" />
                                                 </Link>
-                                                <Link to="/" class=" bg-green-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
+                                                <Link to="/pricing" class=" bg-green-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
                                                     <span class="text-white text-nowrap pr-5">Contacter</span>
                                                     <Message background="#FFFF" textcolor="#285246" />
                                                 </Link>
@@ -286,14 +286,16 @@ export default function MiniNavBar() {
                                         </div>
                                     </div>
                                 </div>
-                                <div></div>
+                                <div>
+
+                                </div>
                             </div>
                         )}
                         {/** END REFERENCE ....... */}
                         {content === "Détection d'appareil" && (
                             <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center w-full mx-auto gap-10 ">
-                                <div className="hand-div2 h-[25rem] md:h-[30rem] lg:h-[30rem] w-full">
-                                    <img src={detectionApp} alt="" className='hand contain' />
+                                <div className="hand-div2 flex items-center justify-center">
+                                    <img src={detectionApp} alt="" className='hand object-contain w-4/6' />
                                 </div>
                                 <div className='flex flex-col items-center justify-center w-full'>
                                     <h2 className="mini-nav-side-title mb-5 w-full">
@@ -355,7 +357,7 @@ export default function MiniNavBar() {
                                                     <span class="text-nowrap" >Commencer </span>
                                                     <Arrow background="#FFFF" textcolor="#285246" />
                                                 </Link>
-                                                <Link to="/" class=" bg-green-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
+                                                <Link to="/pricing" class=" bg-green-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
                                                     <span class="text-white text-nowrap pr-5">Contacter</span>
                                                     <Message background="#FFFF" textcolor="#285246" />
                                                 </Link>
@@ -364,7 +366,9 @@ export default function MiniNavBar() {
                                         </div>
                                     </div>
                                 </div>
-                                <div></div>
+                                <div>
+
+                                </div>
                             </div>
                         )}
                         {content === "Sanctions" && (
@@ -435,7 +439,7 @@ export default function MiniNavBar() {
                                                     <span class="text-nowrap" >Commencer </span>
                                                     <Arrow background="#FFFF" textcolor="#285246" />
                                                 </Link>
-                                                <Link to="/" class=" bg-green-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
+                                                <Link to="/pricing" class=" bg-green-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
                                                     <span class="text-white text-nowrap pr-5">Contacter</span>
                                                     <Message background="#FFFF" textcolor="#285246" />
                                                 </Link>
@@ -445,7 +449,9 @@ export default function MiniNavBar() {
                                         </div>
                                     </div>
                                 </div>
-                                <div></div>
+                                <div>
+
+                                </div>
                             </div>
                         )}
 

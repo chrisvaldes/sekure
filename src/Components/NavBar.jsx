@@ -4,6 +4,8 @@ import logo from "../images/logo-cyan.png";
 import union from "../images/Union (2).png";
 import Arrow from "./Arrow";
 import Message from "./Message";
+import arrowWhite from '../images/arrowfontWhite.png'
+import iconMessage from '../images/icon-message-fontWhite.png'
 
 export default function NavBar() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -45,13 +47,14 @@ export default function NavBar() {
           <div className="sm:px-6 lg:px-8 w-full">
             <div className="flex h-16 items-center justify-between">
               <div className="md:flex md:items-center md:gap-12">
-                <a className="block text-teal-600" href="#">
-                  <div className="nav-logo flex items-center justify-center">
+                <a className="block" href="#">
+                  <div className="AI-logo flex items-center justify-center">
                     <Link to="/" className="logo-title cursor-pointer py-1.5 pr-1">
                       AIBIOMETRICS
                     </Link>
-                    <img src={logo} alt="" className="logo object-cover pt-2" />
-
+                    <div>
+                      <img src={logo} alt="" className="logo bg-contain pt-2" />
+                    </div>
                   </div>
                 </a>
               </div>
@@ -60,7 +63,7 @@ export default function NavBar() {
                 <nav aria-label="Global">
                   <ul className="flex items-center gap-6 text-sm">
                     <li class="flex items-center justify-center gap-2">
-                      <Link className="text-nowrap text-nav" to="/">
+                      <Link className="text-nowrap text-nav" to="/accueil">
                         Accueil
                       </Link>
                     </li>
@@ -126,15 +129,15 @@ export default function NavBar() {
                             </div>
                           </div>
                         </option>
-                      </select> 
-                        <Link to='/' className="btn-nav-text  flex items-center justify-center bg-green-color btn-nav" href="#">
-                          <span>Connexion</span>
-                          <Arrow background="#FFFF" textcolor="#285246" />
-                        </Link>
-                        <Link to="/" className="btn-nav-text flex items-center justify-center bg-green-deep btn-nav" href="#">
-                          <span>Contacter</span>
-                          <Message background="#FFFF" textcolor="#285246" />
-                        </Link> 
+                      </select>
+                      <Link to='/' className="navbar-btn  flex items-center justify-center bg-green-color">
+                        <span>Connexion</span>
+                        <img src={arrowWhite} alt="" />
+                      </Link>
+                      <Link to="/pricing" className="navbar-btn flex items-center justify-center bg-green-deep" href="#">
+                        <span>Contacter</span>
+                        <img src={iconMessage} alt="" />
+                      </Link>
                     </div>
 
 
@@ -214,18 +217,18 @@ export default function NavBar() {
             <div className="flex items-center gap-4">
               <div className="sidebar-group-btn">
                 <div className="flex flex-wrap items-center justify-center gap-10 pt-10 z-10 gap-x-3">
-                  <div className="flex items-center justify-center bg-green-clean btn-nav">
-                    <a className="btn-nav-text" href="#">
+                  <Link to="/connexion" className="flex items-center justify-center bg-green-clean btn-nav">
+                    <span className="btn-nav-text">
                       Connexion
-                    </a>
+                    </span>
                     <Arrow />
-                  </div>
-                  <div className=" flex items-center justify-center bg-green-deep btn-nav">
-                    <a className="btn-nav-text" href="#">
+                  </Link>
+                  <Link to="/pricing" className=" flex items-center justify-center bg-green-deep btn-nav">
+                    <span className="btn-nav-text" href="#">
                       Contacter
-                    </a>
+                    </span>
                     <Message />
-                  </div>
+                  </Link>
                 </div>
               </div>
             </div>

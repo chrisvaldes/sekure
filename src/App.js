@@ -16,6 +16,7 @@ import Pricing from './Pages/Pricing/Pricing';
 import About from './Pages/About/About';
 import Connexion from './Pages/connection/Connexion';
 import OTPVerification from './Pages/OTPVerification/OTPVerification';
+import Enregistrement from './Pages/enregistrer/Enregistrement';
 
 
 function App() {
@@ -23,13 +24,14 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path='/' Component={Accueil}/>
+          <Route path='/' Component={Connexion}/>
+          <Route path='/verification' Component={OTPVerification}/>
+          <Route path='/creation-compte' Component={Enregistrement}/>
+          <Route path='/accueil' Component={Accueil}/>
           <Route path='/customer' Component={Customer}/>
           <Route path='/screening' Component={Screening} />
           <Route path='/pricing' Component={Pricing}/>
           <Route path='/about' Component={About}/>
-          <Route path='/connexion' Component={Connexion}/>
-          <Route path='/verification' Component={OTPVerification}/>
         </Routes>
       </BrowserRouter>
     </div>
