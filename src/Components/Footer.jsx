@@ -78,7 +78,7 @@ export default function Footer() {
                         </div>
                         <form action="">
                             <textarea name="" id="" placeholder='Recevoir Newsletter
-                                Enter your address mail' className="p-2"></textarea>
+                                Enter your address mail' className="w-full p-2"></textarea>
                             <div className='btn flex items-center justify-around bg-green-deep'>
                                 <button className='btn-send-letter text-white'>
                                     Recevoir NewsLetter
