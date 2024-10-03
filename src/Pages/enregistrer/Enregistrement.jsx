@@ -8,9 +8,9 @@ import man from "../../images/connexion/man.png"
 export default function Enregistrement() {
     return (
         <div className='otp-verification flex items-center justify-center min-h-screen bg-white'>
-            <div className='w-full grid grid-col-1 md:grid-cols-2 lg:grid-cols-12'>
-                <div className="w-full col-span-1"></div>
-                <div className="w-full col-span-4">
+            <div className='w-full grid grid-col-1 md:grid-cols-3 lg:grid-cols-12'>
+                <div className="w-full col-span-1 md:hidden lg:block"></div>
+                <div className="w-full md:col-span-3 col-span-4 lg:col-span-4">
                     <div className='flex flex-col items-center justify-center px-10 pt-10 sm:px-20 md:px-20 lg:px-8'>
                         <form action="" className=''>
                             <div className='connexion-connect py-5'>
@@ -26,20 +26,14 @@ export default function Enregistrement() {
                                     <input type="text" name="" id="" placeholder='Your company' className='pricing-input w-full' />
                                 </div>
                             </div>
-                            <div className='flex items-center justify-center gap-x-7 pt-5'>
-                                <div className='flex flex-col text-left w-full'>
-                                    <label htmlFor="name" className='pricing-label'>Company name*</label>
-                                    <input type="text" name="" id="" placeholder='Your company' className='pricing-input w-full' />
-                                </div>
-                            </div>
                             <div className='flex flex-col text-left w-full pt-5'>
                                 <label htmlFor="" className='pricing-label'>Adresse Mail</label>
                                 <input type="email" name="" id="" placeholder='Your company' className='pricing-input w-full' />
                             </div>
 
                             <div className='flex flex-col text-left w-full pt-5'>
-                                <label htmlFor="" className='pricing-label'>Adresse Mail</label>
-                                <input type="password" name="" id="" placeholder='Your company' className='pricing-input w-full' />
+                                <label htmlFor="" className='pricing-label'>Mot de passe</label>
+                                <input type="password" name="" id="" placeholder='Mot de passe' className='pricing-input w-full' />
                             </div>
                             <div class="pt-8">
                                 <div class="flex items-center justify-between gap-5 ">
@@ -70,12 +64,12 @@ export default function Enregistrement() {
                     </div>
                     </div>
                 </div>
-                <div className="relative w-full col-span-7">
-                    <div className='grid grid-cols-1 lg:grid-cols-7'>
-                        <div className="w-full col-span-2">
+                <div className="relative w-full md:hidden lg:block lg:col-span-7">
+                    <div className='grid grid-cols-1 md:grid-cols-5 lg:grid-cols-7'>
+                        <div className="w-full col-span-2 md:hidden lg:block lg:col-span-2">
                         </div>
-                        <div className="w-full col-span-5 ">
-                            <div className="col-span-3 pt-16 pb-10 flex flex-col items-start justify-center gap-y-7 bg-[#EFFFF3]">
+                        <div className="w-full col-span-5 lg:col-span-5 ">
+                            <div className="col-span-3 pt-10 pb-10 flex flex-col items-start justify-center bg-[#EFFFF3]">
                                 <ConnexionCard
                                     title="Verifiez les documents d’identité"
                                     content={
@@ -156,7 +150,6 @@ export default function Enregistrement() {
                         <img src={man} alt="" className='w-11/12'/>
                     </div>
                 </div>
-
             </div>
         </div>
     )

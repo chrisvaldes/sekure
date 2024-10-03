@@ -29,7 +29,7 @@
 @layer components {
 
   /* navbar */
-  .AI-logo {
+  .logo {
     text-align: left;
     font-weight: 800;
     font-size: 28px;
@@ -37,7 +37,7 @@
     color: #285246;
   }
 
-  .logo {
+  .logo-icon {
     width: 45px;
     height: 45px;
   }
@@ -1196,8 +1196,7 @@ textarea {
 .connexion-side2-title {
   font-family: "Satoshi";
   font-size: 14px;
-  font-weight: 700;
-  line-height: 27px;
+  font-weight: 700; 
   text-align: left;
   color: #285246;
 }
@@ -1434,6 +1433,14 @@ textarea {
   left: 50%;
   transform: translateX(-50%);
   top: 80%;
+}
+
+@media (max-width:1231.20px) {
+  .btn-accounts{
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+ 
 }
 
 @media (min-width:1400) {
@@ -1875,9 +1882,26 @@ textarea {
 
 /* start query connexion  */
 
+.AI-logo {
+  display: none;
+}
+
 @media (max-width : 1442px) {
   .connexion-picture{
     display: none;
+  }
+  .creation-picture{
+    display: none;
+  }
+  .AI-logo {
+    display: block;
+    transform: rotate(-90deg);
+    text-align: left;
+    font-weight: 800;
+    font-size: 28px;
+    letter-spacing: -1px;
+    color: #285246;
+    letter-spacing: 2px;
   }
 }
 /* @media (max-width : 1170px) {

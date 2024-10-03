@@ -48,12 +48,12 @@ export default function NavBar() {
             <div className="flex h-16 items-center justify-between">
               <div className="md:flex md:items-center md:gap-12">
                 <a className="block" href="#">
-                  <div className="AI-logo flex items-center justify-center">
+                  <div className="logo flex items-center justify-center">
                     <Link to="/" className="logo-title cursor-pointer py-1.5 pr-1">
                       AIBIOMETRICS
                     </Link>
                     <div>
-                      <img src={logo} alt="" className="logo bg-contain pt-2" />
+                      <img src={logo} alt="" className="logo-icon bg-contain pt-2" />
                     </div>
                   </div>
                 </a>

@@ -4,17 +4,26 @@ import Arrow from '../../Components/Arrow'
 import ConnexionCard from '../../Components/connexion/ConnexionCard'
 import man from "../../images/connexion/man.png"
 import vectorLogo from '../../images/connexion/Vector-connexion-logo.png'
+import logo from "../../images/Group.png"
+
+
 export default function OTPVerification() {
     return (
         <section className='otp-verification flex items-center justify-center min-h-screen'>
             <div className='w-full relative'>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-7 lg:grid-cols-9">
-                    <div className="col-span-2 h-full bg-green-color">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 lg:grid-cols-9">
+                    <div className="col-span-2 hidden lg:block h-full bg-green-color">
                         <div className='absolute connexion-picture'>
                             <img src={man} alt="" />
                         </div>
+                        <div className="AI-logo flex items-center justify-center h-full">
+                            <span>
+                                AIBIOMETRICS
+                            </span>
+                            <img src={logo} alt="" className="pl-2" />
+                        </div>
                     </div>
-                    <div className="col-span-3 pt-16 pb-10 flex flex-col gap-y-10 bg-white">
+                    <div className="col-span-3 hidden md:hidden lg:block pt-16 pb-10 flex-col bg-white">
                         <ConnexionCard
                             title="Verifiez les documents d’identité"
                             content={
@@ -80,8 +89,8 @@ export default function OTPVerification() {
                         />
                         {/* Répétez pour les autres ConnexionCard */}
                     </div>
-                    <div className="col-span-4 h-full bg-white">
-                        <div className='px-20'>
+                    <div className="col-span-6 lg:col-span-4 md:px-20 sm:px-10 lg:px-1 h-full bg-white">
+                        <div className=' px-5 md:px-20 lg:px-20'>
                             <div className='flex items-center justify-center pt-10'>
                                 <form action="" className='w-full'>
                                     <div className='connexion-connect py-5'>
@@ -90,7 +99,7 @@ export default function OTPVerification() {
                                     <div className='flex items-center justify-center gap-[27px]'>
                                         <div className='flex flex-col text-left w-full'>
                                             <label htmlFor="name" className='pricing-label pb-5'>Entrez le code OTP envoyé à l’adresse aib______@gmail.com</label>
-                                            <div className='flex items-center justify-center gap-5'>
+                                            <div className='flex items-center justify-center gap-2'>
 
                                                 <input type="text" name="" id="" placeholder='0' className='verification-input w-full text-center' />
 
@@ -111,7 +120,7 @@ export default function OTPVerification() {
                                         <span className="pricing-get-account-link text-[#898989]">Vous n'avez pas reçu de code? <Link href="" className='text-green-color'>Renvoyez le code</Link></span>
                                     </div>
                                     <div className="pt-8 pb-36">
-                                        <div className="flex items-center justify-center gap-5">
+                                        <div className="flex items-center justify-center gap-5 btn-accounts">
                                             <Link to="/accueil" className="btn-nav-text flex items-center justify-center bg-green-deep btn-nav" href="#">
                                                 <span>Connexion</span>
                                                 <Arrow background="#FFFF" textcolor="#285246" />
