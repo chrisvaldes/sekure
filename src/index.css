@@ -1873,6 +1873,21 @@ textarea {
   /* Masquer la barre de défilement sur Firefox */
 }
 
+/* start query connexion  */
+
+@media (max-width : 1442px) {
+  .connexion-picture{
+    display: none;
+  }
+}
+/* @media (max-width : 1170px) {
+  .connexion-col-2{
+    display: none;
+  }
+} */
+
+/* end query connexion  */
+
 @media (max-width:1293px) {
   .customer-selfie {
     display: none;
