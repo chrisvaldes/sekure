@@ -126,15 +126,7 @@ export default function Enregistrement() {
                             </div>
                             <div className="w-full col-span-5 lg:col-span-5 ">
                                 <div className="col-span-3 pt-10 pb-10 flex flex-col items-start justify-center bg-[#EFFFF3]">
-                                    <ConnexionCard
-                                        title="Verifiez les documents d’identité"
-                                        content={
-                                            <div>
-                                                Assurez-vous de la conformité des pièces d’identité <br />
-                                                de vos clients
-                                            </div>
-                                        }
-                                    />
+                                     
                                     <ConnexionCard
                                         title="Verifiez les documents d’identité"
                                         content={

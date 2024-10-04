@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Arrow from '../../Components/Arrow'
-import CardArrow from '../../Components/CardArrow'
-import Cards from '../../Components/Cards'
+import Arrow from '../../Components/Arrow' 
 import CardSmile from '../../Components/CardSmile'
 import Card from '../../Components/customer/Card'
 import RespectReglementation from '../../Components/customer/RespectReglementation'
@@ -11,9 +9,7 @@ import Message from '../../Components/Message'
 import NavBar from '../../Components/NavBar'
 import SmallCheckCircle from '../../Components/SmallCheckCircle'
 import vectorBigMother from "../../images/bigMotherVector.png"
-import girlCni from "../../images/girlCni.png"
-import groupDatabases from "../../images/groupDatabases.png"
-import passportCni from "../../images/page-2/PassPortCni.png"
+import vector2 from "../../images/screening/Vector-1.png"
 import takeselfie from "../../images/page-2/takePhoto.png"
 import vector from '../../images/page-2/Vector.png'
 import vector1 from "../../images/page-2/Vector3.png"
@@ -522,8 +518,8 @@ export default function Screening() {
                 />
               </div>
               <div className="absolute sreening-demo-absolute w-full px-20">
-                <div className="bg-[#D4FFDE]  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 rounded-[33px] bg-no-repeat bg-[5%_50%]" style={{ backgroundImage: `url(${vector})` }}>
-                  <div className="relative customer-selfie-box">
+                <div className="bg-green-color py-16 px-5  grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 rounded-[33px] bg-no-repeat bg-[5%_50%]" style={{ backgroundImage: `url(${vector2})` }}>
+                  <div className=" h-full customer-selfie-box ">
                     <img src={takeselfie} alt="" className='absolute customer-selfie' />
                   </div>
                   <div className=" accueil-content flex flex-col top-[145px]  px-4 pb-5">
@@ -547,11 +543,11 @@ export default function Screening() {
 
                     <div className="text-wrap items-start gap-x-[28px]">
                       <div className='flex flex-wrap md:flex-nowrap items-center justify-center  lg:items-start lg:justify-start gap-[28px] md:gap-[10px] md:pr-2'>
-                        <div className='btn flex items-center justify-center  bg-green-color pr-2'>
-                          <button className='btn-text flex items-center text-nowrap'>
+                        <div className='btn flex items-center justify-center  bg-green-deep pr-2'>
+                          <Link to="/" className='btn-text flex items-center text-nowrap'>
                             Commencer gratuitement
                             <Arrow background="#FFFF" textcolor="#2CE5B1" />
-                          </button>
+                          </Link>
 
                         </div>
                         <div className='btn flex items-center justify-around bg-white'>
@@ -569,7 +565,7 @@ export default function Screening() {
           </div>
         </section>
 
-        <section className='pt-80 pb-20'>
+        <section className='pt-96 pb-20'>
           <div>
             <div className='flex items-start justify-start gap-8 overflow-x-auto px-20 scrollbar-hidden'>
               <Card

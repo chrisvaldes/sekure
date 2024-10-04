@@ -446,7 +446,7 @@ export default function Customer() {
                   }
                 />
               </div>
-              <div className="bg-[#D4FFDE] w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 rounded-[33px] bg-no-repeat bg-[5%_50%]" style={{ backgroundImage: `url(${vector})` }}>
+              <div className="bg-[#D4FFDE] w-full grid grid-cols-1 md:grid-cols-1 md:px-8 lg:grid-cols-2 rounded-[33px] bg-no-repeat bg-[5%_50%]" style={{ backgroundImage: `url(${vector})` }}>
                 <div className="relative customer-selfie-box">
                   <img src={takeselfie} alt="" className='absolute customer-selfie' />
                 </div>
