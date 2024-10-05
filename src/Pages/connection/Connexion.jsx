@@ -9,6 +9,7 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { ConnexionValidationSchema } from '../../validation/connexion-validation'
 import { useForm } from 'react-hook-form'
 import Input from '../../Components/Input'
+import vector from '../../images/connexion/Vector.png'
  
 
 
@@ -30,7 +31,7 @@ export default function Connexion() {
   return (
     <section className='connexion flex items-center justify-center min-h-screen'>
       <div className='w-full relative'>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-9">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-9" >
           <div className="col-span-2 hidden items-center justify-center md:hidden lg:block h-full connexion-col-2 bg-green-color">
             <div className='absolute connexion-picture'>
               <img src={man} alt="" />
@@ -107,7 +108,7 @@ export default function Connexion() {
               }
             />
           </div>
-          <div className="col-span-4 md:col-span-3 lg:col-span-4 h-full bg-white">
+          <div className="col-span-4 md:col-span-3 lg:col-span-4 h-full bg-white" style={{backgroundImage : `url(${vector})`, backgroundRepeat : "no-repeat", backgroundPosition : "center bottom"}}>
             <div className='px-10'>
               <div className='flex flex-col items-center justify-center pt-10 sm:px-20 md:px-20 lg:px-8'>
                 <form action="" className='w-full' onSubmit={handleSubmit(handleConnexion)}>

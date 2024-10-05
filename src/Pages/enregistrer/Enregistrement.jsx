@@ -98,7 +98,7 @@ export default function Enregistrement() {
                                             <img src={iconArrow} alt="" />
                                         </button>
                                         <Link to="/" class="btn-has-account bg-gray-100  px-5 py-3.5 flex items-center justify-between gap-5">
-                                            <span class="btn-has-account-grey-text">Déjà un compte? <Link href="" className='btn-has-account-black-text'>Connectez-vous</Link></span>
+                                            <span class="btn-has-account-grey-text">Déjà un compte? <span className='btn-has-account-black-text'>Connectez-vous</span></span>
                                         </Link>
                                     </div>
                                 </div>

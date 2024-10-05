@@ -166,6 +166,28 @@
     color: #285246F5;
   }
 
+  /* end navbar  */
+
+  /* start sidebard  */
+  .sidebar-li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem 0;
+    width: 100%;
+    border-bottom: 1px solid #C1B8B6;
+  }
+
+  .sidebar-li-about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem 0;
+    width: 100%;
+  }
+
+  /* end sidebard  */
+
   /* section-1  */
   .btn-icon-cart {
     width: 70px;
@@ -1458,7 +1480,6 @@ textarea {
     padding-top: 13rem;
   }
 }
-
 
 /* end screening page */
 
