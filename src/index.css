@@ -478,6 +478,10 @@
   display: none;
 }
 
+.menu-bars-md{
+  display: none;
+}
+
 .accueil .women-selfie {
   background-image: url("../src/images/women--background-accueil.png");
   background-repeat: no-repeat;
@@ -1585,6 +1589,15 @@ textarea {
   }
 }
 
+@media (max-width:1400px) {
+  .nav-items {
+    display: none;
+  }
+
+  .menu-bars-md{
+    display: block;
+  }
+}
 
 @media (max-width:920px) {
   .sidebar-group-btn {
@@ -1594,15 +1607,14 @@ textarea {
   .nav-group-btn {
     display: none;
   }
-}
 
-@media (max-width:1400px) {
-  .nav-items {
-    display: none;
-  }
-
+  
   .menu-bars {
     display: block;
+  }
+
+  .menu-bars-md{
+    display: none;
   }
 }
 
