@@ -24,6 +24,8 @@ import unionDown from "../../images/Union (1).png"
 import unionUp from "../../images/Union.png"
 import vectorDatabases from "../../images/vectorDatabases.png"
 import Footer from '../../Components/Footer'
+import vector from "../../images/accueil/vectors.png"
+import women from "../../images/accueil/women-selfie.png"
 
 
 export default function Accueil() {
@@ -37,43 +39,46 @@ export default function Accueil() {
             {/* end navbar */}
 
             <main className='accueil'>
-                <section className='women-selfie w-full bg-contain '>
+                {/* women-selfie  */}
+                <section className='w-full mt-20'>
                     {/*start  div with women selfie  */}
-                    <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2  mt-32">
-                        <div className=" accueil-content  top-[145px] ml-20">
-                            <div className="text-nowrap gap-[6px] pb-[27px]">
-                                <div className=''>
-                                    <Link to="/" className='flex items-center justify-center btn-verification btn-verification-text mb-5'>
+                    <div className="relative grid items-center justify-center grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
+                        <div className="accueil-content  top-[145px] ml-20">
+                            <div className=" gap-[6px] pb-[27px]">
+                                <div className='verification-btn'>
+                                    <Link to="/" className='text-nowrap flex items-center justify-center btn-verification btn-verification-text mb-5'>
                                         VERIFICATION D'UTILISATEURS
                                     </Link>
                                 </div>
-                                <div className='text-wrap title text-green-deep'>
+                                <div className=' title text-green-deep'>
                                     <span>Construisez une base <br />
                                         d'utilisateur fiables grâce à la <br /></span>
                                     <span className='text-green-color'>vérification d'identité facile et <br />rapide</span>
                                 </div>
                             </div>
 
-                            <div className="text-wrap items-start gap-[28px]">
-                                <p className='text-left title-content'>
+                            <div className=" gap-[28px]">
+                                <p className='title-content'>
                                     Votre plateforme de vérification d'identité alimentée par l'IA pour la prévention des fraudes, <br />
                                     la conformité et la protection de vos clients. Construisez des communautés numériques de<br />
                                     confiance, améliorez l'expérience utilisateur et stimulez la croissance de votre entreprise
                                 </p>
-                                <div className='flex flex-wrap items-center justify-center md:items-start md:justify-start lg:items-start lg:justify-start gap-[28px] pt-[28px]'>
+                                <div className="flex items-center justify-center">
+                                    <div className='accueil-section1-btn flex flex-wrap items-center justify-center md:justify-start md:items-center lg:items-start lg:justify-start gap-[28px] pt-[28px] w-full'>
 
-                                    <Link to="/" className='accueil-btn flex items-center justify-between text-nowrap'>
-                                        <div className='flex items-center justify-around w-full'>
-                                            <span className=''>Commencer gratuitement</span>
-                                            <img src={arrowWhite} alt="" />
-                                        </div>
-                                    </Link>
-                                    <Link to="/" className='btn flex items-center justify-around bg-green-clean'>
-                                        <span className='btn-text text-green-deep'>
-                                            Contacter
-                                        </span>
-                                        <img src={message} alt="" />
-                                    </Link>
+                                        <Link to="/" className='accueil-btn flex items-center justify-between text-nowrap'>
+                                            <div className='flex items-center justify-around w-full'>
+                                                <span className=''>Commencer gratuitement</span>
+                                                <img src={arrowWhite} alt="" />
+                                            </div>
+                                        </Link>
+                                        <Link to="/" className='btn flex items-center justify-around bg-green-clean'>
+                                            <span className='btn-text text-green-deep'>
+                                                Contacter
+                                            </span>
+                                            <img src={message} alt="" />
+                                        </Link>
+                                    </div>
                                 </div>
                                 <div className='sub-title mt-10 pb-10'>
                                     Nous vous aidons à facilement accepter <br />
@@ -82,7 +87,11 @@ export default function Accueil() {
 
                                 </div>
                             </div>
-
+                        </div>
+                        <div className=" flex items-center justify-center" style={{ backgroundImage: `url(${vector})`, backgroundRepeat: "no-repeat", backgroundSize: "720.54px", backgroundPosition: "center", width: "100%", height: "680px" }}>
+                            <div className="absolute bottom-0">
+                                <img src={women} alt="" />
+                            </div>
                         </div>
                     </div>
                     {/* end div with women selfie  */}
@@ -151,14 +160,14 @@ export default function Accueil() {
                                     }
                                 />
                             </div>
-                             
+
                         </div>
                     </div>
                 </section>
                 {/* end div with 3 cols */}
 
                 {/* start section cni and passport */}
-                <section> 
+                <section>
                     <div className='group-card-vert grid grid-cols-1 items-center justify-center md:grid-cols-1 lg:grid-cols-2 pt-20 gap-8'>
                         <div className="group-card-vert-content flex flex-col items-center gap-y-5">
                             <div className="">
@@ -338,7 +347,7 @@ export default function Accueil() {
                 <section className="group-card-vert bg-no-repeat bg-right" style={{ backgroundImage: `url(${vectorDatabases})` }}>
                     <div className='grid grid-cols-1 items-center justify-center md:grid-cols-1 lg:grid-cols-2 pb-20 gap-x-8 gap-y-20'>
                         <div className="order-img flex items-center justify-center h-[120%]">
-                             <img src={groupDatabases} alt="" />
+                            <img src={groupDatabases} alt="" />
                         </div>
                         <div className="flex flex-col items-center gap-y-5 bg-no-repeat">
                             <div className="">

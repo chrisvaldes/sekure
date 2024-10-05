@@ -478,15 +478,17 @@
   display: none;
 }
 
-.menu-bars-md{
+/* .menu-bars-md{
   display: none;
-}
+} */
 
+ 
+/* 
 .accueil .women-selfie {
   background-image: url("../src/images/women--background-accueil.png");
   background-repeat: no-repeat;
   background-position: 100% 10%;
-}
+} */
 
 .world-section {
   background-image: url("../src/images/world.png");
@@ -746,14 +748,14 @@
 }
 
 @media (max-width : 736px) {
-  .accueil .women-selfie {
+  /* .accueil .women-selfie {
     background-image: none;
-  }
+  } */
 
   /* .accueil .women-selfie .title{
     text-align: justify;
   } */
-  .accueil .women-selfie .accueil-content {
+  .accueil .accueil-content {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1583,18 +1585,18 @@ textarea {
   }
 }
 
-@media (max-width:1116px) {
+/* @media (max-width:1116px) {
   .accueil .women-selfie {
     background-image: none;
   }
-}
+} */
 
 @media (max-width:1400px) {
   .nav-items {
     display: none;
   }
 
-  .menu-bars-md{
+  .menu-bars{
     display: block;
   }
 }
@@ -1609,13 +1611,13 @@ textarea {
   }
 
   
-  .menu-bars {
+  /* .menu-bars {
     display: block;
-  }
+  } */
 
-  .menu-bars-md{
+  /* .menu-bars-md{
     display: none;
-  }
+  } */
 }
 
 @media (max-width:1000px) {
@@ -1629,6 +1631,42 @@ textarea {
     justify-content: center;
     flex-direction: column;
     width: 100%;
+  }
+}
+
+@media (max-width:1023.20px) {
+  .title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .sub-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .title-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .verification-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .accueil-section1-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
