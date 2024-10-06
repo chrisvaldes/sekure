@@ -50,7 +50,7 @@ export default function MiniNavBar() {
 
     return (
         <section>
-            <div className=" bg-white extra px-20">
+            <div className=" bg-white extra px-10">
                 <div className="text-left flex flex-col text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-cyan-deep pt-10">
                     <Link to="/" className='bg-green-color flex items-center justify-center mini-nav-btn mini-nav-btn-text '>
                         Nos Outils
