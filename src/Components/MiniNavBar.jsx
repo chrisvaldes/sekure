@@ -51,11 +51,11 @@ export default function MiniNavBar() {
     return (
         <section>
             <div className=" bg-white extra px-10">
-                <div className="text-left flex flex-col text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-cyan-deep pt-10">
+                <div className="text-center flex flex-col items-center justify-center text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-cyan-deep pt-10">
                     <Link to="/" className='bg-green-color flex items-center justify-center mini-nav-btn mini-nav-btn-text '>
                         Nos Outils
                     </Link>
-                    <span className='title-1 pt-5'>
+                    <span className='title-1 text-center pt-5'>
                         Tous les outils qu'il vous faut pour protéger <br />
                         votre plateforme de la fraude
                     </span>
