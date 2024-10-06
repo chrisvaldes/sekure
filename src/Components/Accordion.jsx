@@ -1,13 +1,6 @@
 import React, { useState } from 'react';
 import poly1 from "../images/Polygon 1.png"
 import poly2 from "../images/Polygon 2.png"
-import preuveAddress from '../images/preuveAddress.png';
-import verificationBiomet from '../images/verificationBiometric.png';
-import verificatiIdentite from '../images/verificationIdentite.png';
-import sactions from "../images/sanction.png"
-import detectionApp from "../images/detectionAppareil.png"
-import SmallCheckCircle from './SmallCheckCircle';
-import { Link } from 'react-router-dom';
 
 const Accordion = () => {
     const [open, setOpen] = useState(null);

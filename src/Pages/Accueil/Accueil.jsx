@@ -27,6 +27,7 @@ import Footer from '../../Components/Footer'
 import vector from "../../images/accueil/vectors.png"
 import women from "../../images/accueil/women-selfie.png"
 import mobileLogo from "../../images/accueil/mobile-bg.png"
+import AccordionMiniCardSquare from '../../Components/accueil/AccordionMiniCardSquare'
 
 
 export default function Accueil() {
@@ -606,6 +607,9 @@ export default function Accueil() {
                                 />
                             </div>
                         </div>
+                    </div>
+                    <div>
+                        <AccordionMiniCardSquare/>
                     </div>
                 </section>
                 {/* end experience utilisateur  */}
