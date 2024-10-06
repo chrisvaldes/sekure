@@ -65,7 +65,7 @@ export default function Accueil() {
                                     confiance, améliorez l'expérience utilisateur et stimulez la croissance de votre entreprise
                                 </p>
                                 <div className="flex items-center justify-center">
-                                    <div className='accueil-section1-btn flex flex-wrap items-center justify-center md:justify-start md:items-center lg:items-start lg:justify-start gap-[28px] pt-[28px] w-full'>
+                                    <div className='accueil-section1-btn flex flex-wrap items-center justify-center md:justify-center md:items-center lg:items-start lg:justify-start gap-[28px] pt-[28px] w-full'>
 
                                         <Link to="/" className='accueil-btn flex items-center justify-between text-nowrap'>
                                             <div className='flex items-center justify-around w-full'>
@@ -89,11 +89,13 @@ export default function Accueil() {
                                 </div>
                             </div>
                         </div>
-                        <div className=" flex items-center justify-center h-[500px] sm:h-[680px] md:h-[680px]  lg:h-[680px]" style={{ backgroundImage: `url(${vector})`, backgroundRepeat: "no-repeat", backgroundSize: "720.54px", backgroundPosition: "center", width: "100%"}}>
+                        <div className="women-accueil-bg flex items-center justify-center sm:h-[650px] lg:h-[650px]  bg-fuchsia-200" style={{ backgroundImage: `url(${vector})`, backgroundRepeat: "no-repeat", backgroundSize: "720.54px", backgroundPosition: "center", width: "100%"}}>
                             <div className="absolute bottom-0">
-                                <img src={women} alt="" />
+                                <img src={women} alt="" className='' />
                             </div>
-
+                            {/* <div className="bg-fuchsia-100 w-full">
+                                <img src={mobileLogo} alt="" className='object-cover' />
+                            </div> */}
                         </div>
                     </div>
                     {/* end div with women selfie  */}
