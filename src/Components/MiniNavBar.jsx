@@ -501,10 +501,7 @@ export default function MiniNavBar() {
 
                         <div className="flex flex-wrap items-center justify-center gap-16 pb-10 lg:pb-16">
                             {currentIndex === 0 && (
-                                <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center w-full mx-auto gap-10 ">
-                                    <div className="hand-div2 flex items-center justify-center h-[25rem] md:h-[30rem] lg:h-[30rem] w-full">
-                                        <img src={verificatiIdentite} alt="" className='hand contain' />
-                                    </div>
+                                <div className=" flex items-center justify-center w-full mx-auto gap-10 ">
                                     <div className='flex flex-col items-center justify-center w-full'>
                                         <h2 className="mini-nav-side-title text-center mb-5 w-full">
                                             Identifications et Vérifications par scan <br />
@@ -516,6 +513,11 @@ export default function MiniNavBar() {
                                             vérifiez votre compte Sekure pour obtenir votre carte virtuelle. Entre des frais d'entretien <br />
                                             inexistants et des frais de
                                         </div>
+
+                                        <div className="hand-div2 flex items-center justify-center h-[25rem] md:h-[30rem] lg:h-[30rem] w-full">
+                                            <img src={verificatiIdentite} alt="" className='hand contain' />
+                                        </div>
+
                                         <div className='w-full'>
                                             <div class="w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center justify-centergap-5">
                                                 <div className="flex gap-3 justify-center">
@@ -560,7 +562,7 @@ export default function MiniNavBar() {
                                                 </div>
                                             </div>
                                             <div class="flex pt-20">
-                                                <div class=" flex flex-wrap w-full items-center justify-center gap-5 pb-10">
+                                                <div class=" flex w-full items-center justify-center gap-5 pb-10">
                                                     <Link to="/" class="bg-green-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
                                                         <span class="text-nowrap" >Commencer </span>
                                                         <Arrow background="#FFFF" textcolor="#285246" />
@@ -573,7 +575,7 @@ export default function MiniNavBar() {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div> 
+                                    </div>
                                 </div>
                             )}
                             {currentIndex === 1 && (
@@ -649,7 +651,7 @@ export default function MiniNavBar() {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div> 
+                                    </div>
                                 </div>
                             )}
                             {/* REFERENCE ....... */}
@@ -726,7 +728,7 @@ export default function MiniNavBar() {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div> 
+                                    </div>
                                 </div>
                             )}
                             {/** END REFERENCE ....... */}
@@ -803,7 +805,7 @@ export default function MiniNavBar() {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div> 
+                                    </div>
                                 </div>
                             )}
                             {currentIndex === 4 && (
@@ -868,7 +870,7 @@ export default function MiniNavBar() {
                                                 </div>
                                             </div>
                                             <div class="flex pt-20">
-                                                <div class=" flex flex-wrap w-full items-center justify-center gap-5 pb-10">
+                                                <div class=" flex flex-wrap items-center justify-center gap-5 pb-10">
                                                     <Link to="/" class="bg-green-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
                                                         <span class="text-nowrap" >Commencer </span>
                                                         <Arrow background="#FFFF" textcolor="#285246" />
@@ -881,7 +883,7 @@ export default function MiniNavBar() {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div> 
+                                    </div>
                                 </div>
                             )}
 

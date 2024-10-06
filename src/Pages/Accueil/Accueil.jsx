@@ -26,7 +26,7 @@ import vectorDatabases from "../../images/vectorDatabases.png"
 import Footer from '../../Components/Footer'
 import vector from "../../images/accueil/vectors.png"
 import women from "../../images/accueil/women-selfie.png"
-import mobileLogo from "../../images/accueil/mobile-bg.png"
+import phoneMobile from "../../images/accueil/full-img-phone.png"
 import AccordionMiniCardSquare from '../../Components/accueil/AccordionMiniCardSquare'
 
 
@@ -462,14 +462,14 @@ export default function Accueil() {
                 {/* start world section  */}
                 <section className='world-section bg-no-repeat bg-[100%_10%] bg-contain'>
                     <div className=' world-section-content sm:pl-[2rem] md:pl-[4rem] lg:pl-[8rem]'>
-                        <div className="btn-about w-full">
+                        <div className="btn-about flex md:items-center md:justify-center lg:items-start lg:justify-start w-full">
                             <Link to="/about" className="btn-choice flex items-center justify-center">A propos de nous</Link>
                         </div>
-                        <div className="title-1 py-5">
+                        <div className="title-1 flex md:items-center md:justify-center lg:items-start lg:justify-start py-5">
                             Des méthodes de vérification d’identité <br />
                             adaptées à l'Afrique et du  monde entier
                         </div>
-                        <div className='title-content-1'>
+                        <div className='title-content-1 flex md:items-center md:justify-center lg:items-start lg:justify-start text-center'>
                             Notre plateforme de vérification d'identité est conçue pour s'adapter aux spécificités de <br />
                             chaque marché, tout en offrant une couverture mondiale inégalée. Que vous opériez en <br />
                             Afrique, en Europe, en Asie ou en Amérique, nous vous proposons une solution flexible <br />
@@ -477,7 +477,7 @@ export default function Accueil() {
                             expertise locale, nous prenons en charge une multitude de documents d'identité et de <br />
                             normes réglementaires.
                         </div>
-                        <div className='flex flex-wrap items-center justify-center md:items-start md:justify-start lg:items-start lg:justify-start gap-[28px] pt-[28px]'>
+                        <div className='flex flex-wrap items-center justify-center md:items-center md:justify-center lg:items-start lg:justify-start gap-[28px] pt-[28px]'>
                             <div className='btn flex items-center  bg-green-color pr-2'>
                                 <Link to="/about" className='big-btn-about-us flex items-center justify-between text-nowrap text-white'>
                                     <span>Voir tous les pays</span>
@@ -514,7 +514,7 @@ export default function Accueil() {
                             </div>
                         </div>
 
-                        <div className="mini-card-connexion hidden md:flex flex-wrap items-center justify-center w-full gap-y-5 sm:gap-y-5 md:gap-y-20 lg:gap-y-20">
+                        <div className="mini-card-connexion  flex-wrap items-center justify-center w-full gap-y-5 sm:gap-y-5 md:gap-y-20 lg:gap-y-20">
                             <div className="relative">
                                 <MiniCardSquare title="Sign In"
                                     content={
@@ -609,61 +609,73 @@ export default function Accueil() {
                             </div>
                         </div>
 
-                        <div className='mini-card-connexion-mobile w-full flex md:hidden flex-col items-center justify-center gap-y-5'>
-                            <AccordionMiniCardSquare title="Sign Up"
-                                content={
-                                    <div>
-                                        Notre plateforme est conçue pour être accessible à <br />
-                                        tous, quel que soit votre niveau de compétence <br />
-                                        technique. Grâce à une interface intuitive et à une
-                                    </div>
-                                }
-                            />
-                            <AccordionMiniCardSquare title="Vérification de l'utilisateur"
-                                content={
-                                    <div>
-                                        Notre plateforme est conçue pour être accessible à <br />
-                                        tous, quel que soit votre niveau de compétence <br />
-                                        technique. Grâce à une interface intuitive et à une
-                                    </div>
-                                }
-                            />
-                            <AccordionMiniCardSquare title="Vérification AML"
-                                content={
-                                    <div>
-                                        Notre plateforme est conçue pour être accessible à <br />
-                                        tous, quel que soit votre niveau de compétence <br />
-                                        technique. Grâce à une interface intuitive et à une
-                                    </div>
-                                }
-                            />
-                            <AccordionMiniCardSquare title="Connexion"
-                                content={
-                                    <div>
-                                        Notre plateforme est conçue pour être accessible à <br />
-                                        tous, quel que soit votre niveau de compétence <br />
-                                        technique. Grâce à une interface intuitive et à une
-                                    </div>
-                                }
-                            />
-                            <AccordionMiniCardSquare title="Détection de fraudes"
-                                content={
-                                    <div>
-                                        Notre plateforme est conçue pour être accessible à <br />
-                                        tous, quel que soit votre niveau de compétence <br />
-                                        technique. Grâce à une interface intuitive et à une
-                                    </div>
-                                }
-                            />
-                            <AccordionMiniCardSquare title="Transaction"
-                                content={
-                                    <div>
-                                        Notre plateforme est conçue pour être accessible à <br />
-                                        tous, quel que soit votre niveau de compétence <br />
-                                        technique. Grâce à une interface intuitive et à une
-                                    </div>
-                                }
-                            />
+                        <div className='mini-card-connexion-mobile w-full flex-col items-center justify-center gap-5'>
+                            <div className=" mb-5">
+                                <AccordionMiniCardSquare title="Sign Up"
+                                    content={
+                                        <div>
+                                            Notre plateforme est conçue pour être accessible à <br />
+                                            tous, quel que soit votre niveau de compétence <br />
+                                            technique. Grâce à une interface intuitive et à une
+                                        </div>
+                                    }
+                                />
+                            </div>
+                            <div className=" mb-5">
+                                <AccordionMiniCardSquare title="Vérification de l'utilisateur"
+                                    content={
+                                        <div>
+                                            Notre plateforme est conçue pour être accessible à <br />
+                                            tous, quel que soit votre niveau de compétence <br />
+                                            technique. Grâce à une interface intuitive et à une
+                                        </div>
+                                    }
+                                />
+                            </div>
+                            <div className=" mb-5">
+                                <AccordionMiniCardSquare title="Vérification AML"
+                                    content={
+                                        <div>
+                                            Notre plateforme est conçue pour être accessible à <br />
+                                            tous, quel que soit votre niveau de compétence <br />
+                                            technique. Grâce à une interface intuitive et à une
+                                        </div>
+                                    }
+                                />
+                            </div>
+                            <div className=" mb-5">
+                                <AccordionMiniCardSquare title="Connexion"
+                                    content={
+                                        <div>
+                                            Notre plateforme est conçue pour être accessible à <br />
+                                            tous, quel que soit votre niveau de compétence <br />
+                                            technique. Grâce à une interface intuitive et à une
+                                        </div>
+                                    }
+                                />
+                            </div>
+                            <div className=" mb-5">
+                                <AccordionMiniCardSquare title="Détection de fraudes"
+                                    content={
+                                        <div>
+                                            Notre plateforme est conçue pour être accessible à <br />
+                                            tous, quel que soit votre niveau de compétence <br />
+                                            technique. Grâce à une interface intuitive et à une
+                                        </div>
+                                    }
+                                />
+                            </div>
+                            <div className="">
+                                <AccordionMiniCardSquare title="Transaction"
+                                    content={
+                                        <div>
+                                            Notre plateforme est conçue pour être accessible à <br />
+                                            tous, quel que soit votre niveau de compétence <br />
+                                            technique. Grâce à une interface intuitive et à une
+                                        </div>
+                                    }
+                                />
+                            </div>
                         </div>
                     </div>
 
@@ -692,6 +704,11 @@ export default function Accueil() {
                                     œuvre de notre solution.
                                 </div>
                             </div>
+                                
+                            <div className="  lg:hidden flex items-center justify-center w-full object-contain">
+                                <img src={phoneMobile} alt="" />
+                            </div>
+
                             <div className='w-full'>
                                 <Accordion />
                             </div>

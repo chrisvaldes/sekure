@@ -470,6 +470,10 @@
   }
 }
 
+.mini-card-connexion-mobile{
+  display: none;
+}
+
 .sidebar-group-btn {
   display: none;
 }
@@ -1637,6 +1641,12 @@ textarea {
 
   .mini-nav-without-arrow {
     display: none;
+  }
+  .mini-card-connexion{
+    display: none;
+  }
+  .mini-card-connexion-mobile{
+    display: block;
   }
 }
 
