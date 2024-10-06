@@ -560,7 +560,7 @@ export default function MiniNavBar() {
                                                 </div>
                                             </div>
                                             <div class="flex pt-20">
-                                                <div class=" flex flex-wrap items-center justify-center gap-5 pb-10">
+                                                <div class=" flex flex-wrap w-full items-center justify-center gap-5 pb-10">
                                                     <Link to="/" class="bg-green-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
                                                         <span class="text-nowrap" >Commencer </span>
                                                         <Arrow background="#FFFF" textcolor="#285246" />
@@ -636,7 +636,7 @@ export default function MiniNavBar() {
                                                 </div>
                                             </div>
                                             <div class="flex pt-20">
-                                                <div class=" flex flex-wrap  items-center justify-center gap-5 pb-10">
+                                                <div class=" flex flex-wrap w-full items-center justify-center gap-5 pb-10">
                                                     <Link to="/" class="bg-green-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
                                                         <span class="text-nowrap" >Commencer </span>
                                                         <Arrow background="#FFFF" textcolor="#285246" />
@@ -713,7 +713,7 @@ export default function MiniNavBar() {
                                                 </div>
                                             </div>
                                             <div class="flex pt-20">
-                                                <div class=" flex flex-wrap  items-center justify-center gap-5 pb-10">
+                                                <div class=" flex flex-wrap w-full items-center justify-center gap-5 pb-10">
                                                     <Link to="/" class="bg-green-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
                                                         <span class="text-nowrap" >Commencer </span>
                                                         <Arrow background="#FFFF" textcolor="#285246" />
@@ -790,7 +790,7 @@ export default function MiniNavBar() {
                                                 </div>
                                             </div>
                                             <div class="flex pt-20">
-                                                <div class=" flex flex-wrap  items-center justify-center gap-5 pb-10">
+                                                <div class=" flex flex-wrap w-full items-center justify-center gap-5 pb-10">
                                                     <Link to="/" class="bg-green-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
                                                         <span class="text-nowrap" >Commencer </span>
                                                         <Arrow background="#FFFF" textcolor="#285246" />
@@ -868,7 +868,7 @@ export default function MiniNavBar() {
                                                 </div>
                                             </div>
                                             <div class="flex pt-20">
-                                                <div class=" flex flex-wrap  items-center justify-center gap-5 pb-10">
+                                                <div class=" flex flex-wrap w-full items-center justify-center gap-5 pb-10">
                                                     <Link to="/" class="bg-green-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
                                                         <span class="text-nowrap" >Commencer </span>
                                                         <Arrow background="#FFFF" textcolor="#285246" />
