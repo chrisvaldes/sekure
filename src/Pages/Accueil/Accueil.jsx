@@ -90,7 +90,7 @@ export default function Accueil() {
                                 </div>
                             </div>
                         </div>
-                        <div className="women-accueil-bg flex items-center justify-center sm:h-[650px] lg:h-[680px]" style={{ backgroundImage: `url(${vector})`, backgroundRepeat: "no-repeat", backgroundSize: "720.54px", backgroundPosition: "center", width: "100%"}}>
+                        <div className="women-accueil-bg flex items-center justify-center sm:h-[650px] lg:h-[680px]" style={{ backgroundImage: `url(${vector})`, backgroundRepeat: "no-repeat", backgroundSize: "720.54px", backgroundPosition: "center", width: "100%" }}>
                             <div className="absolute bottom-0">
                                 <img src={women} alt="" className='' />
                             </div>
@@ -463,7 +463,7 @@ export default function Accueil() {
                 <section className='world-section bg-no-repeat bg-[100%_10%] bg-contain'>
                     <div className=' world-section-content sm:pl-[2rem] md:pl-[4rem] lg:pl-[8rem]'>
                         <div className="btn-about w-full">
-                        <Link to="/about" className="btn-choice flex items-center justify-center">A propos de nous</Link>
+                            <Link to="/about" className="btn-choice flex items-center justify-center">A propos de nous</Link>
                         </div>
                         <div className="title-1 py-5">
                             Des méthodes de vérification d’identité <br />
@@ -513,7 +513,8 @@ export default function Accueil() {
                                 </div>
                             </div>
                         </div>
-                        <div className="mini-card-connexion flex flex-wrap items-center justify-center w-full gap-y-5 sm:gap-y-5 md:gap-y-20 lg:gap-y-20">
+
+                        <div className="mini-card-connexion hidden md:flex flex-wrap items-center justify-center w-full gap-y-5 sm:gap-y-5 md:gap-y-20 lg:gap-y-20">
                             <div className="relative">
                                 <MiniCardSquare title="Sign In"
                                     content={
@@ -607,10 +608,66 @@ export default function Accueil() {
                                 />
                             </div>
                         </div>
+
+                        <div className='mini-card-connexion-mobile w-full flex md:hidden flex-col items-center justify-center gap-y-5'>
+                            <AccordionMiniCardSquare title="Sign Up"
+                                content={
+                                    <div>
+                                        Notre plateforme est conçue pour être accessible à <br />
+                                        tous, quel que soit votre niveau de compétence <br />
+                                        technique. Grâce à une interface intuitive et à une
+                                    </div>
+                                }
+                            />
+                            <AccordionMiniCardSquare title="Vérification de l'utilisateur"
+                                content={
+                                    <div>
+                                        Notre plateforme est conçue pour être accessible à <br />
+                                        tous, quel que soit votre niveau de compétence <br />
+                                        technique. Grâce à une interface intuitive et à une
+                                    </div>
+                                }
+                            />
+                            <AccordionMiniCardSquare title="Vérification AML"
+                                content={
+                                    <div>
+                                        Notre plateforme est conçue pour être accessible à <br />
+                                        tous, quel que soit votre niveau de compétence <br />
+                                        technique. Grâce à une interface intuitive et à une
+                                    </div>
+                                }
+                            />
+                            <AccordionMiniCardSquare title="Connexion"
+                                content={
+                                    <div>
+                                        Notre plateforme est conçue pour être accessible à <br />
+                                        tous, quel que soit votre niveau de compétence <br />
+                                        technique. Grâce à une interface intuitive et à une
+                                    </div>
+                                }
+                            />
+                            <AccordionMiniCardSquare title="Détection de fraudes"
+                                content={
+                                    <div>
+                                        Notre plateforme est conçue pour être accessible à <br />
+                                        tous, quel que soit votre niveau de compétence <br />
+                                        technique. Grâce à une interface intuitive et à une
+                                    </div>
+                                }
+                            />
+                            <AccordionMiniCardSquare title="Transaction"
+                                content={
+                                    <div>
+                                        Notre plateforme est conçue pour être accessible à <br />
+                                        tous, quel que soit votre niveau de compétence <br />
+                                        technique. Grâce à une interface intuitive et à une
+                                    </div>
+                                }
+                            />
+                        </div>
                     </div>
-                    <div>
-                        <AccordionMiniCardSquare/>
-                    </div>
+
+
                 </section>
                 {/* end experience utilisateur  */}
 
