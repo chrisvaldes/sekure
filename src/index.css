@@ -378,7 +378,7 @@
     font-family: "Satoshi";
     font-size: 45px;
     font-weight: 700;
-    line-height: 47px;
+    line-height: 40px;
     letter-spacing: -2px;
     text-align: left;
     color: #285246;
@@ -388,7 +388,7 @@
     font-family: "Satoshi";
     font-size: 14px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 20px;
     text-align: left;
     color: #285246;
   }
@@ -397,7 +397,7 @@
     font-family: "Satoshi";
     font-size: 35px;
     font-weight: 500;
-    line-height: 37px;
+    line-height: 32px;
     text-align: left;
     color: #285246
   }
@@ -1587,22 +1587,32 @@ textarea {
 
 @media (max-width:639.20px) {
   .women-accueil-bg {
-    height: 630px;
-    /* background-color: fuchsia; */
+    height: 630px; 
   }
 }
 @media (max-width:544px) {
   .women-accueil-bg {
-    height: 550px;
-    /* background-color: fuchsia; */
+    height: 550px; 
   }
 }
 @media (max-width:400px) {
   .women-accueil-bg {
-    height: 400px;
-    /* background-color: fuchsia; */
+    height: 400px; 
   }
 }
+.mini-nav-arrows{
+  display: none;
+}
+@media (max-width:1023.20px) {
+  .mini-nav-arrows{
+    display: block;
+  }
+  .mini-nav-without-arrow{
+    display: none;
+  }
+}
+
+
 
 /* @media (max-width:1116px) {
   .accueil .women-selfie {

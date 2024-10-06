@@ -89,7 +89,7 @@ export default function Accueil() {
                                 </div>
                             </div>
                         </div>
-                        <div className="women-accueil-bg flex items-center justify-center sm:h-[650px] lg:h-[650px]  bg-fuchsia-200" style={{ backgroundImage: `url(${vector})`, backgroundRepeat: "no-repeat", backgroundSize: "720.54px", backgroundPosition: "center", width: "100%"}}>
+                        <div className="women-accueil-bg flex items-center justify-center sm:h-[650px] lg:h-[680px]" style={{ backgroundImage: `url(${vector})`, backgroundRepeat: "no-repeat", backgroundSize: "720.54px", backgroundPosition: "center", width: "100%"}}>
                             <div className="absolute bottom-0">
                                 <img src={women} alt="" className='' />
                             </div>
