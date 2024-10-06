@@ -490,6 +490,11 @@
   background-position: 100% 10%;
 } */
 
+.world-section-content{
+  margin-top: 180px;
+  /* background-color: fuchsia; */
+}
+
 .world-section {
   background-image: url("../src/images/world.png");
   background-repeat: no-repeat;
@@ -1568,9 +1573,23 @@ textarea {
 }
 
 @media (max-width:768px) {
+  .world-section-content{
+    margin-top: 30px;
+  }
   .section-tree-col-selfie {
     width: 100%;
     margin: 0 auto;
+  }
+  .title-1{
+    text-align: center;
+  }
+  .title-content-1{
+    text-align: center;
+  }
+  .btn-about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 

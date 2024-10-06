@@ -460,8 +460,10 @@ export default function Accueil() {
 
                 {/* start world section  */}
                 <section className='world-section bg-no-repeat bg-[100%_10%] bg-contain'>
-                    <div className='pt-[180px] world-section-content sm:pl-[2rem] md:pl-[4rem] lg:pl-[8rem]'>
-                        <a href="#" className="btn-choice flex items-center justify-center">A propos de nous</a>
+                    <div className=' world-section-content sm:pl-[2rem] md:pl-[4rem] lg:pl-[8rem]'>
+                        <div className="btn-about w-full">
+                        <Link to="/about" className="btn-choice flex items-center justify-center">A propos de nous</Link>
+                        </div>
                         <div className="title-1 py-5">
                             Des méthodes de vérification d’identité <br />
                             adaptées à l'Afrique et du  monde entier
@@ -476,16 +478,16 @@ export default function Accueil() {
                         </div>
                         <div className='flex flex-wrap items-center justify-center md:items-start md:justify-start lg:items-start lg:justify-start gap-[28px] pt-[28px]'>
                             <div className='btn flex items-center  bg-green-color pr-2'>
-                                <Link to="/" className='big-btn-about-us flex items-center justify-between text-nowrap text-white'>
+                                <Link to="/about" className='big-btn-about-us flex items-center justify-between text-nowrap text-white'>
                                     <span>Voir tous les pays</span>
                                     <img src={arrowWhite} alt="" />
                                 </Link>
 
                             </div>
                             <div className='btn flex items-center justify-around bg-green-deep'>
-                                <button className='btn-text text-white'>
+                                <Link to="/pricing" className='btn-text text-white'>
                                     Contacter
-                                </button>
+                                </Link>
                                 <img src={message} alt="" />
                             </div>
                         </div>
