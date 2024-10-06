@@ -26,6 +26,7 @@ import vectorDatabases from "../../images/vectorDatabases.png"
 import Footer from '../../Components/Footer'
 import vector from "../../images/accueil/vectors.png"
 import women from "../../images/accueil/women-selfie.png"
+import mobileLogo from "../../images/accueil/mobile-bg.png"
 
 
 export default function Accueil() {
@@ -88,10 +89,11 @@ export default function Accueil() {
                                 </div>
                             </div>
                         </div>
-                        <div className=" flex items-center justify-center" style={{ backgroundImage: `url(${vector})`, backgroundRepeat: "no-repeat", backgroundSize: "720.54px", backgroundPosition: "center", width: "100%", height: "680px" }}>
+                        <div className=" flex items-center justify-center h-[500px] sm:h-[680px] md:h-[680px]  lg:h-[680px]" style={{ backgroundImage: `url(${vector})`, backgroundRepeat: "no-repeat", backgroundSize: "720.54px", backgroundPosition: "center", width: "100%"}}>
                             <div className="absolute bottom-0">
                                 <img src={women} alt="" />
                             </div>
+
                         </div>
                     </div>
                     {/* end div with women selfie  */}

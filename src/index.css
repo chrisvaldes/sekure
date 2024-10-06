@@ -1996,6 +1996,62 @@ textarea {
   }
 }
 
+/* Animation */
+
+.cni-img {
+  animation-name: slideInFromBottom;
+  animation-duration: .5s;
+  animation-timing-function: ease-in;
+  /* animation-delay: .5s; */
+}
+
+@keyframes slideInFromBottom {
+  /* 0% {
+      transform: translateY(100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  } */
+   from {top: 0px}
+   to {bottom: 100px}
+}
+/* @keyframes slideInFromLeft {
+  0% {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+      transform: translateX(100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes arcIn {
+  0% {
+      transform: translate(50px, 50px) rotate(45deg);
+      opacity: 0;
+  }
+  100% {
+      transform: translate(0, 0) rotate(0);
+      opacity: 1;
+  }
+} */
+
+
+
 @tailwind utilities;
 
 body {
