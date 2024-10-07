@@ -933,7 +933,14 @@ textarea {
 
 .footer-page {
   background-image: url('../src/images/footer/vector-white.png');
-  background-position: 100% 10%;
+  background-position: bottom right;
+  /* Ajustez la position selon vos besoins */
+  background-repeat: no-repeat;
+  /* Évite la répétition des images */
+}
+.footer-page-order {
+  background-image: url('../src/images/footer/vector-white.png');
+  background-position: bottom center;
   /* Ajustez la position selon vos besoins */
   background-repeat: no-repeat;
   /* Évite la répétition des images */
@@ -1358,8 +1365,25 @@ textarea {
   text-align: left;
   color: #285246;
 }
+.footer-title {
+  font-family: "Satoshi";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 47px;
+  letter-spacing: -2px;
+  text-align: left;
+  color: #285246;
+}
+
 
 .screening-section1-content {
+  font-family: "Satoshi";
+  font-size: 12px;
+  font-weight: 400;
+  text-align: left;
+  color: #285246;
+}
+.footer-content {
   font-family: "Satoshi";
   font-size: 12px;
   font-weight: 400;
@@ -1647,6 +1671,18 @@ textarea {
   }
   .mini-card-connexion-mobile{
     display: block;
+  }
+  .footer-page {
+    background-image: none;
+  }
+  .footer-title{
+    text-align: center;
+  }
+  .footer-content{
+    text-align: center;
+  }
+  .btn-footer{
+    align-items: center;
   }
 }
 

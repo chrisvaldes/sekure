@@ -728,7 +728,7 @@ export default function Accueil() {
                             </div>
                         </div>
                         <div className='relative w-full bg-no-repeat bg-cover bg-left bg-phone ov' style={{ backgroundImage: `url(${phoneBg})` }}>
-                            <div className='absolute w-[9rem] h-[18rem] -bottom-[3%] -left-8 z-20'>
+                            <div className='absolute w-[9rem] h-[18rem] -bottom-2 -left-8'>
                                 <img src={phone} alt="" className='' />
                             </div>
                         </div>

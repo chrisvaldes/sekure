@@ -3,37 +3,49 @@ import logo from "../images/Group.png"
 import Message from './Message'
 import { Link } from 'react-router-dom'
 import arrowWhite from '../images/icons/arrowWhite.png'
+import vectorWhite from "../images/footer/vector-white.png"
+import womenFooter from '../images/footer/women-footer.png'
 
 
 export default function Footer() {
     return (
         <div className='bg-green-color py-10  footer-section'>
-            <div className='relative footer-page'>
-                <div className='flex flex-col items-start justify-center'>
-                    <div className='screening-section1-title py-5'>
+            <div className='relative footer-page grid grid-cols-1 lg:grid-cols-2'>
+                <div className='flex order-2 lg:order-1 flex-col items-start justify-center z-20 w-full'>
+                    <div className='footer-title py-5 md:text-nowrap w-full'>
                         <span className='text-white'>Notre API Robuste</span>supportera <br />
                         votre business et son <br />
                         <span className='text-white'>expansion</span> sans problèmes
                     </div>
-                    <div className='screening-section1-content pt-5'>
+                    <div className='footer-content pt-5 md:text-nowrap w-full'>
                         Intégrez notre API en quelques lignes de code et concentrez-vous sur votre cœur de métier. <br />
                         Notre solution, robuste et fiable, s'adapte à toutes vos exigences. Prêt à révolutionner votre <br />
                         processus de vérification ? Commencez votre essai gratuit dès aujourd'hui.
                     </div>
-                    <div class=" flex flex-wrap  gap-5 pt-10">
+                    <div class="btn-footer flex flex-wrap items-center justify-center lg:justify-start md:flex-nowrap  gap-5 pt-10 w-full">
                         <Link to="/" class="bg-green-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
-                            <span class="text-nowrap" >Commencer Gratuitement</span>
-                            <img src={arrowWhite} alt="" />
+                            <div className="flex items-center justify-center gap-x-2">
+                                <span class="text-nowrap" >Commencer Gratuitement</span>
+                                <img src={arrowWhite} alt="" />
+                            </div>
                         </Link>
                         <Link to="/pricing" class=" bg-white  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
-                            <span class="text-green-deep text-nowrap pr-5">Nous contacter</span>
-                            <Message background="#285246" textcolor="#FFFF" />
+                            <div className="flex items-center justify-center">
+                                <span class="text-green-deep text-nowrap pr-5">Nous contacter</span>
+                                <Message background="#285246" textcolor="#FFFF" />
+                            </div>
                         </Link>
 
                     </div>
                 </div>
-                <div className='absolute footer-accueil-absolute-bg ' >
+                <div className="relative lg:hidden footer-page-order flex items-center justify-center order-1 lg:order-2  w-full h-[444px]">
+                    <div className="flex items-center justify-center absolute bottom-0 w-full">
+                        <img src={womenFooter} alt="" className='w-[380px] h-[380px] sm:w-[482.12px] sm:h-[444px]' />
+                    </div>
                 </div>
+                {/* <div className='absolute footer-accueil-absolute-bg ' >
+                </div> */}
+                <img src={womenFooter} alt="" className='womenFooter hidden lg:block absolute bottom-0 right-28 w-[482.12px] h-[444px] z-10' />
             </div>
             <div className="flex flex-wrap items-center justify-around w-full">
                 <div className="flex w-full  gap-10 flex-wrap items-center justify-between">

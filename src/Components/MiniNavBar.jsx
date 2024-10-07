@@ -499,7 +499,7 @@ export default function MiniNavBar() {
                             </li>
                         </ul>
 
-                        <div className="flex flex-wrap items-center justify-center gap-16 pb-10 lg:pb-16">
+                        <div className="flex flex-wrap items-center justify-center gap-16 pb-5 lg:pb-16">
                             {currentIndex === 0 && (
                                 <div className=" flex items-center justify-center w-full mx-auto gap-10 ">
                                     <div className='flex flex-col items-center justify-center w-full'>
@@ -507,14 +507,14 @@ export default function MiniNavBar() {
                                             Identifications et Vérifications par scan <br />
                                             facial intelligent et rapide
                                         </h2>
-                                        <div className="mini-nav-side-content text-center mb-10 w-full">
+                                        <div className="mini-nav-side-content text-center lg:mb-10 w-full">
                                             Localement ou internationalement, vos achats en ligne ne connaissent plus de limite <br />
                                             avec les cartes virtuelles Visa MasterCard de chez SEKURE. En 2 minutes, créez et <br />
                                             vérifiez votre compte Sekure pour obtenir votre carte virtuelle. Entre des frais d'entretien <br />
                                             inexistants et des frais de
                                         </div>
 
-                                        <div className="hand-div2 flex items-center justify-center h-[25rem] md:h-[30rem] lg:h-[30rem] w-full">
+                                        <div className="hand-div2 py-10 flex items-center justify-center md:h-[30rem] lg:h-[30rem] w-full">
                                             <img src={verificatiIdentite} alt="" className='hand contain' />
                                         </div>
 
@@ -561,8 +561,8 @@ export default function MiniNavBar() {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="flex pt-20">
-                                                <div class=" flex w-full items-center justify-center gap-5 pb-10">
+                                            <div class="flex pt-10 lg:pt-20">
+                                                <div class=" flex flex-wrap w-full items-center justify-center gap-5 pb-10">
                                                     <Link to="/" class="bg-green-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
                                                         <span class="text-nowrap" >Commencer </span>
                                                         <Arrow background="#FFFF" textcolor="#285246" />
@@ -580,9 +580,6 @@ export default function MiniNavBar() {
                             )}
                             {currentIndex === 1 && (
                                 <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center w-full mx-auto gap-10 ">
-                                    <div className="flex items-center justify-center  hand-div2 h-[25rem] md:h-[30rem] lg:h-[30rem] w-full">
-                                        <img src={verificationBiomet} alt="" className='hand contain' />
-                                    </div>
                                     <div className='flex flex-col items-center justify-center w-full'>
                                         <h2 className="mini-nav-side-title text-center mb-5 w-full">
                                             Identifications et Vérifications par scan <br />
@@ -593,6 +590,9 @@ export default function MiniNavBar() {
                                             avec les cartes virtuelles Visa MasterCard de chez SEKURE. En 2 minutes, créez et <br />
                                             vérifiez votre compte Sekure pour obtenir votre carte virtuelle. Entre des frais d'entretien <br />
                                             inexistants et des frais de
+                                        </div>
+                                        <div className="flex items-center justify-center  hand-div2 h-[25rem] md:h-[30rem] lg:h-[30rem] w-full">
+                                            <img src={verificationBiomet} alt="" className='hand contain' />
                                         </div>
                                         <div className='w-full'>
                                             <div class="w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center justify-centergap-5">
@@ -657,9 +657,7 @@ export default function MiniNavBar() {
                             {/* REFERENCE ....... */}
                             {currentIndex === 2 && (
                                 <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center w-full mx-auto gap-10 ">
-                                    <div className="flex items-center justify-center  hand-div2 h-[25rem] md:h-[30rem] lg:h-[30rem] w-full">
-                                        <img src={preuveAddress} alt="" className='hand contain' />
-                                    </div>
+
                                     <div className='flex flex-col items-center justify-center w-full'>
                                         <h2 className="mini-nav-side-title text-center mb-5 w-full">
                                             Identifications et Vérifications par scan <br />
@@ -670,6 +668,9 @@ export default function MiniNavBar() {
                                             avec les cartes virtuelles Visa MasterCard de chez SEKURE. En 2 minutes, créez et <br />
                                             vérifiez votre compte Sekure pour obtenir votre carte virtuelle. Entre des frais d'entretien <br />
                                             inexistants et des frais de
+                                        </div>
+                                        <div className="flex items-center justify-center  hand-div2 h-[25rem] md:h-[30rem] lg:h-[30rem] w-full">
+                                            <img src={preuveAddress} alt="" className='hand contain' />
                                         </div>
                                         <div className='w-full'>
                                             <div class="w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center justify-centergap-5">
@@ -734,9 +735,7 @@ export default function MiniNavBar() {
                             {/** END REFERENCE ....... */}
                             {currentIndex === 3 && (
                                 <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center w-full mx-auto gap-10 ">
-                                    <div className="hand-div2 flex items-center justify-center">
-                                        <img src={detectionApp} alt="" className='hand object-contain w-4/6' />
-                                    </div>
+
                                     <div className='flex flex-col items-center justify-center w-full'>
                                         <h2 className="mini-nav-side-title text-center mb-5 w-full">
                                             Identifications et Vérifications par scan <br />
@@ -748,6 +747,11 @@ export default function MiniNavBar() {
                                             vérifiez votre compte Sekure pour obtenir votre carte virtuelle. Entre des frais d'entretien <br />
                                             inexistants et des frais de
                                         </div>
+
+                                        <div className="hand-div2 flex items-center justify-center">
+                                            <img src={detectionApp} alt="" className='hand object-contain w-4/6' />
+                                        </div>
+
                                         <div className='w-full'>
                                             <div class="w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center justify-centergap-5">
                                                 <div className="flex gap-3 justify-center">
@@ -810,11 +814,7 @@ export default function MiniNavBar() {
                             )}
                             {currentIndex === 4 && (
                                 <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center w-full mx-auto gap-10 ">
-                                    <div className='w-full flex items-center justify-center'>
-                                        <div className="hand-div2 h-[25rem] md:w-1/2 lg:w-[25rem] w-full">
-                                            <img src={sactions} alt="" className='hand contain' />
-                                        </div>
-                                    </div>
+
                                     <div className='flex flex-col items-center justify-center w-full'>
                                         <h2 className="mini-nav-side-title text-center mb-5 w-full">
                                             Identifications et Vérifications par scan <br />
@@ -826,6 +826,13 @@ export default function MiniNavBar() {
                                             vérifiez votre compte Sekure pour obtenir votre carte virtuelle. Entre des frais d'entretien <br />
                                             inexistants et des frais de
                                         </div>
+
+                                        <div className='w-full flex items-center justify-center'>
+                                            <div className="hand-div2 h-[25rem] md:w-1/2 lg:w-[25rem] w-full">
+                                                <img src={sactions} alt="" className='hand contain' />
+                                            </div>
+                                        </div>
+
                                         <div className='w-full'>
                                             <div class="w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center justify-centergap-5">
                                                 <div className="flex gap-3 justify-center">
