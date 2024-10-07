@@ -39,7 +39,7 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="relative lg:hidden footer-page-order flex items-center justify-center order-1 lg:order-2  w-full h-[350px]">
-                    <div className="flex items-center justify-center absolute bottom-0 -left-5 lg:left-0 w-full">
+                    <div className="flex items-center justify-center absolute bottom-0 -left-3 lg:left-0 w-full">
                         <img src={womenFooter} alt="" className='w-[380px] h-[380px] sm:w-[482.12px] sm:h-[444px]' />
                     </div>
                 </div>

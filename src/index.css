@@ -470,7 +470,7 @@
   }
 }
 
-.mini-card-connexion-mobile{
+.mini-card-connexion-mobile {
   display: none;
 }
 
@@ -784,6 +784,7 @@
   .footer-section {
     padding: 0 0rem;
   }
+
   .footer-section-text {
     padding: 0 2rem;
   }
@@ -941,6 +942,7 @@ textarea {
   background-repeat: no-repeat;
   /* Évite la répétition des images */
 }
+
 .footer-page-order {
   background-image: url('../src/images/footer/vector-white.png');
   background-position: bottom center;
@@ -1368,6 +1370,7 @@ textarea {
   text-align: left;
   color: #285246;
 }
+
 .footer-title {
   font-family: "Satoshi";
   font-size: 40px;
@@ -1386,6 +1389,7 @@ textarea {
   text-align: left;
   color: #285246;
 }
+
 .footer-content {
   font-family: "Satoshi";
   font-size: 12px;
@@ -1649,6 +1653,66 @@ textarea {
   .women-accueil-bg {
     height: 550px;
   }
+
+  .footer-page-order {
+    background-image: url('../src/images/footer/vector-white.png');
+    background-position: bottom center;
+    /* Ajustez la position selon vos besoins */
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* Évite la répétition des images */
+  }
+
+  .title {
+    font-family: "Satoshi";
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: -2px;
+    text-align: center;
+
+  }
+
+  .accueil-btn {
+    width: 186px;
+    height: 58px;
+    top: 454px;
+    left: 17px;
+    padding: var(--sds-size-space-300);
+    gap: var(--sds-size-space-200);
+    border-radius: var(--sds-size-radius-200);
+    border: var(--sds-size-stroke-border);
+    font-family: "Satoshi";
+    font-size: var(--BodyMediumSize);
+    font-weight: 500;
+    line-height: 14px;
+    text-align: left;
+  }
+
+  .btn {
+    width: 162px;
+    height: 61px;
+    top: 453px;
+    left: 218px;
+    padding: var(--sds-size-space-300);
+    gap: var(--sds-size-space-200);
+    border-radius: var(--sds-size-radius-200);
+    font-family: "Satoshi";
+    font-size: var(--BodyMediumSize);
+    font-weight: 700;
+    line-height: 14px;
+    text-align: center;
+  }
+
+  .sub-title {
+    font-family: "Satoshi";
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 37px;
+    text-align: left;
+
+  }
+
 }
 
 @media (max-width:400px) {
@@ -1669,22 +1733,28 @@ textarea {
   .mini-nav-without-arrow {
     display: none;
   }
-  .mini-card-connexion{
+
+  .mini-card-connexion {
     display: none;
   }
-  .mini-card-connexion-mobile{
+
+  .mini-card-connexion-mobile {
     display: block;
   }
+
   .footer-page {
     background-image: none;
   }
-  .footer-title{
+
+  .footer-title {
     text-align: center;
   }
-  .footer-content{
+
+  .footer-content {
     text-align: center;
   }
-  .btn-footer{
+
+  .btn-footer {
     align-items: center;
   }
 }

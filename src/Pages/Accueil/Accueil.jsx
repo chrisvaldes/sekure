@@ -66,11 +66,14 @@ export default function Accueil() {
                                     confiance, améliorez l'expérience utilisateur et stimulez la croissance de votre entreprise
                                 </p>
                                 <div className="flex items-center justify-center">
-                                    <div className='accueil-section1-btn flex flex-wrap items-center justify-center md:justify-center md:items-center lg:items-start lg:justify-start gap-[28px] pt-[28px] w-full'>
+                                    <div className='accueil-section1-btn flex items-center justify-center md:justify-center md:items-center lg:items-start lg:justify-start gap-x-4 sm:gap-[28px] pt-[28px] w-full'>
 
                                         <Link to="/" className='accueil-btn flex items-center justify-between text-nowrap'>
                                             <div className='flex items-center justify-around w-full'>
-                                                <span className=''>Commencer gratuitement</span>
+                                                <div className='flex items-center justify-center gap-x-2'>
+                                                    <span className="">Commencer</span>
+                                                    <span className="hidden sm:block"> gratuitement</span>
+                                                    </div>
                                                 <img src={arrowWhite} alt="" />
                                             </div>
                                         </Link>
