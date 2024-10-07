@@ -782,6 +782,9 @@
   }
 
   .footer-section {
+    padding: 0 0rem;
+  }
+  .footer-section-text {
     padding: 0 2rem;
   }
 

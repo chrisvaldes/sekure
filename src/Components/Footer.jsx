@@ -9,9 +9,9 @@ import womenFooter from '../images/footer/women-footer.png'
 
 export default function Footer() {
     return (
-        <div className='bg-green-color py-10  footer-section'>
+        <div className='bg-green-color sm:py-10  footer-section'>
             <div className='relative footer-page grid grid-cols-1 lg:grid-cols-2'>
-                <div className='flex order-2 lg:order-1 flex-col items-start justify-center z-20 w-full'>
+                <div className='flex order-2 lg:order-1 footer-section-text flex-col items-start justify-center z-20 w-full'>
                     <div className='footer-title py-5 md:text-nowrap w-full'>
                         <span className='text-white'>Notre API Robuste</span>supportera <br />
                         votre business et son <br />
@@ -38,8 +38,8 @@ export default function Footer() {
 
                     </div>
                 </div>
-                <div className="relative lg:hidden footer-page-order flex items-center justify-center order-1 lg:order-2  w-full h-[444px]">
-                    <div className="flex items-center justify-center absolute bottom-0 w-full">
+                <div className="relative lg:hidden footer-page-order flex items-center justify-center order-1 lg:order-2  w-full h-[350px]">
+                    <div className="flex items-center justify-center absolute bottom-0 -left-5 lg:left-0 w-full">
                         <img src={womenFooter} alt="" className='w-[380px] h-[380px] sm:w-[482.12px] sm:h-[444px]' />
                     </div>
                 </div>
