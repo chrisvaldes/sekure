@@ -13,7 +13,7 @@ export default function Footer() {
             <div className='relative footer-page grid grid-cols-1 lg:grid-cols-2'>
                 <div className='flex order-2 lg:order-1 footer-section-text flex-col items-start justify-center z-20 w-full'>
                     <div className='footer-title py-5 md:text-nowrap w-full'>
-                        <span className='text-white'>Notre API Robuste</span>supportera <br />
+                        <span className='text-white'>Notre API Robuste</span> supportera <br />
                         votre business et son <br />
                         <span className='text-white'>expansion</span> sans problèmes
                     </div>
@@ -22,16 +22,19 @@ export default function Footer() {
                         Notre solution, robuste et fiable, s'adapte à toutes vos exigences. Prêt à révolutionner votre <br />
                         processus de vérification ? Commencez votre essai gratuit dès aujourd'hui.
                     </div>
-                    <div class="btn-footer flex flex-wrap items-center justify-center lg:justify-start md:flex-nowrap  gap-5 pt-10 w-full">
-                        <Link to="/" class="bg-green-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
+                    <div class="  flex items-center justify-center lg:justify-start md:flex-nowrap  gap-5 pt-10 w-full">
+                        <Link to="/" class="btn-footer-deep bg-color-deep flex items-center justify-around">
                             <div className="flex items-center justify-center gap-x-2">
-                                <span class="text-nowrap" >Commencer Gratuitement</span>
+                                <div class="text-nowrap flex items-center justify-center gap-x-2" >
+                                    <span className="">Commencer</span>
+                                    <span className="hidden sm:block">Gratuitement</span>
+                                </div>
                                 <img src={arrowWhite} alt="" />
                             </div>
                         </Link>
-                        <Link to="/pricing" class=" bg-white  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
+                        <Link to="/pricing" class=" btn-footer-white flex items-center justify-center sm:justify-around gap-x-2">
                             <div className="flex items-center justify-center">
-                                <span class="text-green-deep text-nowrap pr-5">Nous contacter</span>
+                                <span class="text-green-deep text-nowrap ">Nous contacter</span>
                                 <Message background="#285246" textcolor="#FFFF" />
                             </div>
                         </Link>
@@ -47,7 +50,7 @@ export default function Footer() {
                 </div> */}
                 <img src={womenFooter} alt="" className='womenFooter hidden lg:block absolute bottom-0 right-28 w-[482.12px] h-[444px] z-10' />
             </div>
-            <div className="flex flex-wrap items-center justify-around w-full">
+            <div className="flex flex-wrap items-center justify-around w-full px-10">
                 <div className="flex w-full  gap-10 flex-wrap items-center justify-between">
                     <div className="flex flex-col">
                         <span className='grid-footer-grid-title'>Explorer</span>
@@ -83,7 +86,7 @@ export default function Footer() {
                         <span className='grid-footer-grid-content'>Se Connecter</span>
                         <span className='grid-footer-grid-content'>Voir Demo</span>
                     </div>
-                    <div className="flex flex-col gap-2 pb-5">
+                    <div className="flex-col gap-2 pb-5 hidden sm:block">
                         <div className='flex items-center justify-start'>
                             <div className='footer-grid-logo'>AIBIOMETRICS</div>
                             <img src={logo} alt="" className='logo' />

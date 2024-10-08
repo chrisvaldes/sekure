@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import arrowLeft from "../images/accueil/VectorLeft.png";
 import arrowRight from "../images/accueil/VectorRight.png";
 import detectionApp from "../images/detectionAppareil.png";
+import arrowWhite from '../images/icons/arrowWhite.png';
 import preuveAddress from '../images/preuveAddress.png';
 import sactions from "../images/sanction.png";
 import verificationBiomet from '../images/verificationBiometric.png';
@@ -141,17 +142,22 @@ export default function MiniNavBar() {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="flex pt-20">
-                                                <div class=" flex flex-wrap  gap-5 pb-10">
-                                                    <Link to="/" class="bg-green-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
-                                                        <span class="text-nowrap" >Commencer </span>
-                                                        <Arrow background="#FFFF" textcolor="#285246" />
+                                            <div class="flex sm:pt-5">
+                                                <div class="  flex items-center justify-center lg:justify-start md:flex-nowrap  gap-5 pt-10 w-full">
+                                                    <Link to="/" class="btn-footer-deep bg-green-color flex items-center justify-around">
+                                                        <div className="flex items-center justify-center gap-x-2">
+                                                            <div class="text-nowrap flex items-center justify-center gap-x-2" >
+                                                                <span className="">Commencer</span>
+                                                            </div>
+                                                            <img src={arrowWhite} alt="" />
+                                                        </div>
                                                     </Link>
-                                                    <Link to="/pricing" class=" bg-green-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
-                                                        <span class="text-white text-nowrap pr-5">Contacter</span>
-                                                        <Message background="#FFFF" textcolor="#285246" />
+                                                    <Link to="/pricing" class=" btn-footer-white bg-green-deep flex items-center justify-center sm:justify-around gap-x-2">
+                                                        <div className="flex items-center justify-around">
+                                                            <span class="text-white text-nowrap ">Contacter</span>
+                                                            <Message background="#FFFF" textcolor="#285246" />
+                                                        </div>
                                                     </Link>
-
                                                 </div>
                                             </div>
                                         </div>
@@ -219,14 +225,20 @@ export default function MiniNavBar() {
                                                 </div>
                                             </div>
                                             <div class="flex pt-20">
-                                                <div class=" flex flex-wrap  gap-5 pb-10">
-                                                    <Link to="/" class="bg-green-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
-                                                        <span class="text-nowrap" >Commencer </span>
-                                                        <Arrow background="#FFFF" textcolor="#285246" />
+                                                <div class="  flex items-center justify-center lg:justify-start md:flex-nowrap  gap-5 pt-10 w-full">
+                                                    <Link to="/" class="btn-footer-deep bg-green-color flex items-center justify-around">
+                                                        <div className="flex items-center justify-center gap-x-2">
+                                                            <div class="text-nowrap flex items-center justify-center gap-x-2" >
+                                                                <span className="">Commencer</span>
+                                                            </div>
+                                                            <img src={arrowWhite} alt="" />
+                                                        </div>
                                                     </Link>
-                                                    <Link to="/pricing" class=" bg-green-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
-                                                        <span class="text-white text-nowrap pr-5">Contacter</span>
-                                                        <Message background="#FFFF" textcolor="#285246" />
+                                                    <Link to="/pricing" class=" btn-footer-white bg-green-deep flex items-center justify-center sm:justify-around gap-x-2">
+                                                        <div className="flex items-center justify-around">
+                                                            <span class="text-white text-nowrap ">Contacter</span>
+                                                            <Message background="#FFFF" textcolor="#285246" />
+                                                        </div>
                                                     </Link>
 
                                                 </div>
@@ -297,14 +309,20 @@ export default function MiniNavBar() {
                                                 </div>
                                             </div>
                                             <div class="flex pt-20">
-                                                <div class=" flex flex-wrap  gap-5 pb-10">
-                                                    <Link to="/" class="bg-green-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
-                                                        <span class="text-nowrap" >Commencer </span>
-                                                        <Arrow background="#FFFF" textcolor="#285246" />
+                                                <div class="  flex items-center justify-center lg:justify-start md:flex-nowrap  gap-5 pt-10 w-full">
+                                                    <Link to="/" class="btn-footer-deep bg-green-color flex items-center justify-around">
+                                                        <div className="flex items-center justify-center gap-x-2">
+                                                            <div class="text-nowrap flex items-center justify-center gap-x-2" >
+                                                                <span className="">Commencer</span>
+                                                            </div>
+                                                            <img src={arrowWhite} alt="" />
+                                                        </div>
                                                     </Link>
-                                                    <Link to="/pricing" class=" bg-green-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
-                                                        <span class="text-white text-nowrap pr-5">Contacter</span>
-                                                        <Message background="#FFFF" textcolor="#285246" />
+                                                    <Link to="/pricing" class=" btn-footer-white bg-green-deep flex items-center justify-center sm:justify-around gap-x-2">
+                                                        <div className="flex items-center justify-around">
+                                                            <span class="text-white text-nowrap ">Contacter</span>
+                                                            <Message background="#FFFF" textcolor="#285246" />
+                                                        </div>
                                                     </Link>
 
                                                 </div>
@@ -377,14 +395,20 @@ export default function MiniNavBar() {
                                                 </div>
                                             </div>
                                             <div class="flex pt-20">
-                                                <div class=" flex flex-wrap  gap-5 pb-10">
-                                                    <Link to="/" class="bg-green-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
-                                                        <span class="text-nowrap" >Commencer </span>
-                                                        <Arrow background="#FFFF" textcolor="#285246" />
+                                                <div class="  flex items-center justify-center lg:justify-start md:flex-nowrap  gap-5 pt-10 w-full">
+                                                    <Link to="/" class="btn-footer-deep bg-green-color flex items-center justify-around">
+                                                        <div className="flex items-center justify-center gap-x-2">
+                                                            <div class="text-nowrap flex items-center justify-center gap-x-2" >
+                                                                <span className="">Commencer</span>
+                                                            </div>
+                                                            <img src={arrowWhite} alt="" />
+                                                        </div>
                                                     </Link>
-                                                    <Link to="/pricing" class=" bg-green-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
-                                                        <span class="text-white text-nowrap pr-5">Contacter</span>
-                                                        <Message background="#FFFF" textcolor="#285246" />
+                                                    <Link to="/pricing" class=" btn-footer-white bg-green-deep flex items-center justify-center sm:justify-around gap-x-2">
+                                                        <div className="flex items-center justify-around">
+                                                            <span class="text-white text-nowrap ">Contacter</span>
+                                                            <Message background="#FFFF" textcolor="#285246" />
+                                                        </div>
                                                     </Link>
 
                                                 </div>
@@ -459,16 +483,21 @@ export default function MiniNavBar() {
                                                     </div>
                                                 </div>
                                                 <div class="flex pt-20">
-                                                    <div class=" flex flex-wrap  gap-5 pb-10">
-                                                        <Link to="/" class="bg-green-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
-                                                            <span class="text-nowrap" >Commencer </span>
-                                                            <Arrow background="#FFFF" textcolor="#285246" />
+                                                    <div class="  flex items-center justify-center lg:justify-start md:flex-nowrap  gap-5 pt-10 w-full">
+                                                        <Link to="/" class="btn-footer-deep bg-green-color flex items-center justify-around">
+                                                            <div className="flex items-center justify-center gap-x-2">
+                                                                <div class="text-nowrap flex items-center justify-center gap-x-2" >
+                                                                    <span className="">Commencer</span>
+                                                                </div>
+                                                                <img src={arrowWhite} alt="" />
+                                                            </div>
                                                         </Link>
-                                                        <Link to="/pricing" class=" bg-green-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
-                                                            <span class="text-white text-nowrap pr-5">Contacter</span>
-                                                            <Message background="#FFFF" textcolor="#285246" />
+                                                        <Link to="/pricing" class=" btn-footer-white bg-green-deep flex items-center justify-center sm:justify-around gap-x-2">
+                                                            <div className="flex items-center justify-around">
+                                                                <span class="text-white text-nowrap ">Contacter</span>
+                                                                <Message background="#FFFF" textcolor="#285246" />
+                                                            </div>
                                                         </Link>
-
                                                     </div>
                                                 </div>
                                             </div>
@@ -561,19 +590,23 @@ export default function MiniNavBar() {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="flex pt-10 lg:pt-20">
-                                                <div class=" flex flex-wrap w-full items-center justify-center gap-5 pb-10">
-                                                    <Link to="/" class="bg-green-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
-                                                        <span class="text-nowrap" >Commencer </span>
-                                                        <Arrow background="#FFFF" textcolor="#285246" />
+                                            <div class="  flex items-center justify-center lg:justify-start md:flex-nowrap  gap-5 pt-10 w-full">
+                                                    <Link to="/" class="btn-footer-deep bg-green-color flex items-center justify-around">
+                                                        <div className="flex items-center justify-center gap-x-2">
+                                                            <div class="text-nowrap flex items-center justify-center gap-x-2" >
+                                                                <span className="">Commencer</span>
+                                                            </div>
+                                                            <img src={arrowWhite} alt="" />
+                                                        </div>
                                                     </Link>
-                                                    <Link to="/pricing" class=" bg-green-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
-                                                        <span class="text-white text-nowrap pr-5">Contacter</span>
-                                                        <Message background="#FFFF" textcolor="#285246" />
+                                                    <Link to="/pricing" class=" btn-footer-white bg-green-deep flex items-center justify-center sm:justify-around gap-x-2">
+                                                        <div className="flex items-center justify-around">
+                                                            <span class="text-white text-nowrap ">Contacter</span>
+                                                            <Message background="#FFFF" textcolor="#285246" />
+                                                        </div>
                                                     </Link>
 
                                                 </div>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>

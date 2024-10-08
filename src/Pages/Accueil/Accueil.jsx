@@ -73,7 +73,7 @@ export default function Accueil() {
                                                 <div className='flex items-center justify-center gap-x-2'>
                                                     <span className="">Commencer</span>
                                                     <span className="hidden sm:block"> gratuitement</span>
-                                                    </div>
+                                                </div>
                                                 <img src={arrowWhite} alt="" />
                                             </div>
                                         </Link>
@@ -420,7 +420,7 @@ export default function Accueil() {
                             Nos clients sont au cœur de nos préoccupations. Grâce à notre solution, 98% de nos utilisateurs ont déclaré être satisfaits de <br />
                             l'expérience de vérification. De plus, nous avons réduit de 50% le taux d'abandon lors du processus d'inscription.
                         </div>
-                        <div className="card-choice-items flex flex-wrap items-center justify-center w-full py-10">
+                        <div className="card-choice-items flex items-center justify-center w-full py-10">
                             <MiniCard title="6 s"
                                 content={
                                     <>
@@ -463,7 +463,7 @@ export default function Accueil() {
                 {/* end section mini navbar  */}
 
                 {/* start world section  */}
-                <section className='world-section bg-no-repeat bg-[100%_10%] bg-contain'>
+                <section className='world-section bg-no-repeat pb-40 sm:pb-2 sm:bg-[100%_10%] bg-contain'>
                     <div className=' world-section-content sm:pl-[2rem] md:pl-[4rem] lg:pl-[8rem]'>
                         <div className="btn-about flex md:items-center md:justify-center lg:items-start lg:justify-start w-full">
                             <Link to="/about" className="btn-choice flex items-center justify-center">A propos de nous</Link>
@@ -480,21 +480,20 @@ export default function Accueil() {
                             expertise locale, nous prenons en charge une multitude de documents d'identité et de <br />
                             normes réglementaires.
                         </div>
-                        <div className='flex flex-wrap items-center justify-center md:items-center md:justify-center lg:items-start lg:justify-start gap-[28px] pt-[28px]'>
-                            <div className='btn flex items-center  bg-green-color pr-2'>
-                                <Link to="/about" className='big-btn-about-us flex items-center justify-between text-nowrap text-white'>
-                                    <span>Voir tous les pays</span>
-                                    <img src={arrowWhite} alt="" />
+                        <div className='flex items-center justify-center md:items-center md:justify-center lg:items-start lg:justify-start gap-[28px] pt-[28px] pb-16 w-full'>
+                                <Link to="/" className='big-btn-about-us voir-tout-pays-phone-color flex items-center justify-between bg-green-color '>
+                                        <span className=' flex items-center text-nowrap text-white'>
+                                            Voir les pays
+                                        </span>
+                                        <img src={arrowWhite} alt="" />
                                 </Link>
-
-                            </div>
-                            <div className='btn flex items-center justify-around bg-green-deep'>
-                                <Link to="/pricing" className='btn-text text-white'>
-                                    Contacter
+                                <Link to="/" className='btn-contacter-phone voir-tout-pays-phone-deep flex items-center justify-center bg-green-deep'>
+                                    <span className='btn-text text-white'>
+                                        Contacter
+                                    </span>
+                                    <img src={message} alt="" />
                                 </Link>
-                                <img src={message} alt="" />
                             </div>
-                        </div>
                     </div>
                 </section>
                 {/* end world section  */}
@@ -688,7 +687,7 @@ export default function Accueil() {
 
                 {/* start section phone  */}
                 <section className=''>
-                    <div className=' flex pt-28'>
+                    <div className=' flex pt-10 lg:pt-28'>
                         <div className=" flex flex-col  w-full items-start phone-accordion gap-x-10 ">
                             <div className='top-accordion'>
                                 <div className='flex items-start justify-start py-5'>
@@ -707,7 +706,7 @@ export default function Accueil() {
                                     œuvre de notre solution.
                                 </div>
                             </div>
-                                
+
                             <div className="  lg:hidden flex items-center justify-center w-full object-contain">
                                 <img src={phoneMobile} alt="" />
                             </div>
@@ -715,14 +714,14 @@ export default function Accueil() {
                             <div className='w-full'>
                                 <Accordion />
                             </div>
-                            <div className='flex flex-wrap items-center justify-center md:items-start md:justify-start lg:items-start lg:justify-start gap-[28px] pt-[28px] pb-16'>
-                                <Link to="/" className='btn flex items-center justify-around  bg-green-color '>
-                                    <span className='big-btn-about-us flex items-center text-nowrap text-white'>
-                                        Voir tous les pays
-                                    </span>
-                                    <img src={arrowWhite} alt="" />
+                            <div className='flex items-center justify-center md:items-center md:justify-center lg:items-start lg:justify-start gap-[28px] pt-[28px] pb-16 w-full'>
+                                <Link to="/" className='btn big-btn-about-us voir-tout-pays-phone-color flex items-center justify-between bg-green-color '>
+                                        <span className=' flex items-center text-nowrap text-white'>
+                                            Voir les pays
+                                        </span>
+                                        <img src={arrowWhite} alt="" />
                                 </Link>
-                                <Link to="/" className='btn flex items-center justify-around bg-green-deep'>
+                                <Link to="/" className='btn-contacter-phone voir-tout-pays-phone-deep flex items-center justify-center bg-green-deep'>
                                     <span className='btn-text text-white'>
                                         Contacter
                                     </span>

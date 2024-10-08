@@ -112,6 +112,21 @@
     border-radius: .5rem;
   }
 
+  .btn-contacter-phone {
+    width: 182px;
+    height: 49px;
+    padding: 0px var(--sds-size-space-300) 0px var(--sds-size-space-300);
+    gap: var(--sds-size-space-200);
+    border-radius: var(--sds-size-radius-200);
+    font-family: "Satoshi";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    text-align: left;
+
+
+  }
+
   .btn-nav {
     width: 160px;
     height: 45px;
@@ -197,6 +212,38 @@
     background: #B9FFC469;
   }
 
+  .btn-footer-deep {
+    width: 228px;
+    height: 58px;
+    padding: var(--sds-size-space-300);
+    gap: var(--sds-size-space-200);
+    border-radius: var(--sds-size-radius-200);
+    background: #285246;
+    font-family: "Satoshi";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    text-align: left;
+    color: white;
+
+  }
+
+  .btn-footer-white {
+    width: 228px;
+    height: 58px;
+    padding: var(--sds-size-space-300) 11px var(--sds-size-space-300) 11px;
+    gap: var(--sds-size-space-200);
+    border-radius: var(--sds-size-radius-200);
+    color: #285246;
+    font-family: "Satoshi";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    text-align: left;
+    background-color: white;
+
+  }
+
   .card-icon-title {
     font-family: "Satoshi";
     font-size: 16px;
@@ -262,6 +309,7 @@
     /* Utilisez minmax pour une meilleure flexibilité */
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 19px;
     padding: 2rem 0 12rem 0;
   }
@@ -354,11 +402,9 @@
   .big-btn-about-us {
     width: 182px;
     height: 51px;
-    top: 4717px;
-    left: 190px;
     padding: 1rem;
     gap: .5rem;
-    border-radius: .5rem;
+    border-radius: var(--sds-size-radius-200);
     font-family: "Satoshi";
     font-size: 14px;
     font-weight: 500;
@@ -835,15 +881,6 @@
 
   .img-arrow {
     display: none;
-  }
-
-  .card-choice {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 300px;
-    height: 160px;
   }
 
   .card-choice-items {
@@ -1711,6 +1748,111 @@ textarea {
     line-height: 37px;
     text-align: left;
 
+  }
+
+  .voir-tout-pays-phone-color {
+    width: 182px;
+    height: 51px;
+    padding: var(--sds-size-space-300);
+    gap: var(--sds-size-space-200);
+    border-radius: var(--sds-size-radius-200);
+    border: var(--sds-size-stroke-border);
+    font-family: "Satoshi";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    text-align: left;
+
+  }
+
+  .voir-tout-pays-phone-deep {
+    width: 182px;
+    height: 51px;
+    padding: var(--sds-size-space-300);
+    gap: var(--sds-size-space-200);
+    border-radius: var(--sds-size-radius-200);
+    border: var(--sds-size-stroke-border);
+    font-family: "Satoshi";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    text-align: left;
+
+  }
+
+  .footer-title {
+    font-family: "Satoshi";
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -1px;
+    text-align: center;
+
+  }
+
+  .btn-footer-deep {
+    width: 182px;
+    height: 51px;
+    padding: var(--sds-size-space-300);
+    gap: var(--sds-size-space-200);
+    border-radius: var(--sds-size-radius-200);
+    font-family: "Satoshi";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    text-align: left;
+    color: white;
+  }
+
+  .btn-footer-white {
+    width: 182px;
+    height: 49px;
+    padding: 12px;
+    gap: var(--sds-size-space-200);
+    border-radius: var(--sds-size-radius-200);
+    color: #285246;
+    font-family: "Satoshi";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    text-align: left;
+    background-color: white;
+
+  }
+
+  .world-section {
+    background-image: url("../src/images/world.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+  }
+
+
+  .card-choice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 185px;
+    height: 111px;
+  }
+
+  .card-choice-title {
+    font-family: "Satoshi";
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: -2px;
+    text-align: center;
+  }
+
+  .card-choice-content{
+    font-family: "Satoshi";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    text-align: center;
+    
   }
 
 }
