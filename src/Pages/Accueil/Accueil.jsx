@@ -420,7 +420,7 @@ export default function Accueil() {
                             Nos clients sont au cœur de nos préoccupations. Grâce à notre solution, 98% de nos utilisateurs ont déclaré être satisfaits de <br />
                             l'expérience de vérification. De plus, nous avons réduit de 50% le taux d'abandon lors du processus d'inscription.
                         </div>
-                        <div className="card-choice-items flex items-center justify-center w-full py-10">
+                        <div className="card-choice-items flex items-center justify-start w-full py-10">
                             <MiniCard title="6 s"
                                 content={
                                     <>

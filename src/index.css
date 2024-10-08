@@ -307,8 +307,8 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, 15rem);
     /* Utilisez minmax pour une meilleure flexibilité */
-    align-items: center;
-    justify-content: center;
+    align-items: start;
+    justify-content: start;
     flex-wrap: wrap;
     gap: 19px;
     padding: 2rem 0 12rem 0;
