@@ -55,7 +55,7 @@ export default function Accueil() {
                                 <div className=' title text-green-deep'>
                                     <span>Construisez une base <br />
                                         d'utilisateur fiables grâce à la <br /></span>
-                                    <span className='text-green-color'>vérification d'identité facile et <br />rapide</span>
+                                    <span className='text-green-color'>vérification d'identité facile et rapide</span>
                                 </div>
                             </div>
 
