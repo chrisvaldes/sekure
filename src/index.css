@@ -45,13 +45,13 @@
   .accueil-btn {
     width: 236px;
     height: 50px;
-    padding: var(--sds-size-space-300);
+    /* padding: var(--sds-size-space-300); */
     gap: var(--sds-size-space-200);
     border-radius: var(--sds-size-radius-200);
     border: var(--sds-size-stroke-border);
     background: #285246;
     font-family: "Satoshi";
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 700;
     line-height: 14px;
     text-align: center;
@@ -1711,34 +1711,30 @@ textarea {
   }
 
   .accueil-btn {
-    width: 186px;
-    height: 58px;
-    top: 454px;
-    left: 17px;
+    width: 182px;
+    height: 51px;
     padding: var(--sds-size-space-300);
     gap: var(--sds-size-space-200);
     border-radius: var(--sds-size-radius-200);
     border: var(--sds-size-stroke-border);
     font-family: "Satoshi";
-    font-size: var(--BodyMediumSize);
+    font-size: 14px;
     font-weight: 500;
     line-height: 14px;
     text-align: left;
   }
-
-  .btn {
-    width: 162px;
-    height: 61px;
-    top: 453px;
-    left: 218px;
+  .accueil-btn-clean {
+    width: 182px;
+    height: 51px;
     padding: var(--sds-size-space-300);
     gap: var(--sds-size-space-200);
     border-radius: var(--sds-size-radius-200);
+    border: var(--sds-size-stroke-border);
     font-family: "Satoshi";
-    font-size: var(--BodyMediumSize);
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 500;
     line-height: 14px;
-    text-align: center;
+    text-align: left;
   }
 
   .sub-title {

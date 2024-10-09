@@ -66,18 +66,17 @@ export default function Accueil() {
                                     confiance, améliorez l'expérience utilisateur et stimulez la croissance de votre entreprise
                                 </p>
                                 <div className="flex items-center justify-center">
-                                    <div className='accueil-section1-btn flex items-center justify-center md:justify-center md:items-center lg:items-start lg:justify-start gap-x-4 sm:gap-[28px] pt-[28px] w-full'>
-
-                                        <Link to="/" className='accueil-btn flex items-center justify-between text-nowrap'>
-                                            <div className='flex items-center justify-around w-full'>
-                                                <div className='flex items-center justify-center gap-x-2'>
-                                                    <span className="">Commencer</span>
-                                                    <span className="hidden sm:block"> gratuitement</span>
+                                    <div className='accueil-section1-btn flex lg:flex-wrap items-center justify-center md:justify-center md:items-center lg:items-start lg:justify-start gap-x-4 sm:gap-[28px] pt-[28px] w-full pr-4'>
+                                        <Link to="/" className='flex  accueil-btn items-center justify-around '>
+                                            <div className='flex text-nowrap items-center justify-around w-full px-2'>
+                                                <div className='flex btn-text items-center'>
+                                                    Commencer
+                                                    <span className="hidden sm:block pl-1"> gratuitement</span>
                                                 </div>
                                                 <img src={arrowWhite} alt="" />
                                             </div>
                                         </Link>
-                                        <Link to="/" className='btn flex items-center justify-around bg-green-clean'>
+                                        <Link to="/" className=' accueil-btn-clean btn flex items-center justify-around bg-green-clean'>
                                             <span className='btn-text text-green-deep'>
                                                 Contacter
                                             </span>
@@ -105,10 +104,10 @@ export default function Accueil() {
                     {/* end div with women selfie  */}
 
 
-                </section>
+                </section >
 
                 {/* start section with 3 cols */}
-                <section className=' section-tree-col-selfie'>
+                <section section className=' section-tree-col-selfie' >
                     <div className='flex items-center justify-center py-10 rounded-[20px] bg-white '>
                         <div className=' gap-10  px-10 grid  items-center justify-between grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
                             <div className='flex'>
@@ -171,7 +170,7 @@ export default function Accueil() {
 
                         </div>
                     </div>
-                </section>
+                </section >
                 {/* end div with 3 cols */}
 
                 {/* start section cni and passport */}
@@ -481,19 +480,19 @@ export default function Accueil() {
                             normes réglementaires.
                         </div>
                         <div className='flex items-center justify-center md:items-center md:justify-center lg:items-start lg:justify-start gap-[28px] pt-[28px] pb-16 w-full'>
-                                <Link to="/" className='big-btn-about-us voir-tout-pays-phone-color flex items-center justify-between bg-green-color '>
-                                        <span className=' flex items-center text-nowrap text-white'>
-                                            Voir les pays
-                                        </span>
-                                        <img src={arrowWhite} alt="" />
-                                </Link>
-                                <Link to="/" className='btn-contacter-phone voir-tout-pays-phone-deep flex items-center justify-center bg-green-deep'>
-                                    <span className='btn-text text-white'>
-                                        Contacter
-                                    </span>
-                                    <img src={message} alt="" />
-                                </Link>
-                            </div>
+                            <Link to="/" className='big-btn-about-us voir-tout-pays-phone-color flex items-center justify-between bg-green-color '>
+                                <span className=' flex items-center text-nowrap text-white'>
+                                    Voir les pays
+                                </span>
+                                <img src={arrowWhite} alt="" />
+                            </Link>
+                            <Link to="/" className='btn-contacter-phone voir-tout-pays-phone-deep flex items-center justify-center bg-green-deep'>
+                                <span className='btn-text text-white'>
+                                    Contacter
+                                </span>
+                                <img src={message} alt="" />
+                            </Link>
+                        </div>
                     </div>
                 </section>
                 {/* end world section  */}
@@ -716,10 +715,10 @@ export default function Accueil() {
                             </div>
                             <div className='flex items-center justify-center md:items-center md:justify-center lg:items-start lg:justify-start gap-[28px] pt-[28px] pb-16 w-full'>
                                 <Link to="/" className='btn big-btn-about-us voir-tout-pays-phone-color flex items-center justify-between bg-green-color '>
-                                        <span className=' flex items-center text-nowrap text-white'>
-                                            Voir les pays
-                                        </span>
-                                        <img src={arrowWhite} alt="" />
+                                    <span className=' flex items-center text-nowrap text-white'>
+                                        Voir les pays
+                                    </span>
+                                    <img src={arrowWhite} alt="" />
                                 </Link>
                                 <Link to="/" className='btn-contacter-phone voir-tout-pays-phone-deep flex items-center justify-center bg-green-deep'>
                                     <span className='btn-text text-white'>
@@ -743,7 +742,7 @@ export default function Accueil() {
                     <Footer />
                 </section>
                 {/* end footer section  */}
-            </main>
-        </div>
+            </main >
+        </div >
     )
 }
