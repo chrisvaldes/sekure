@@ -890,7 +890,7 @@ export default function MiniNavBar() {
                                                 </div>
                                                 {/* <img src={sactions} alt="" className='hand contain' /> */}
                                             </div>
-                                        </div>
+                                        </div> 57444552
 
                                         <div className='w-full'>
                                             <div class="w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center justify-centergap-5">
