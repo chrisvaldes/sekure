@@ -52,17 +52,16 @@ export default function MiniNavBar() {
     return (
         <section>
             <div className=" bg-white extra px-10">
-                <div className="text-center flex flex-col items-center justify-center text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-cyan-deep pt-10">
-                    <Link to="/" className='bg-green-color flex items-center justify-center mini-nav-btn mini-nav-btn-text '>
+                <div className=" w-full flex flex-col items-center justify-center lg:items-start text-cyan-deep pt-10">
+                    <Link to="/" className='bg-green-color flex items-center justify-center mini-nav-btn mini-nav-btn-text'>
                         Nos Outils
                     </Link>
-                    <span className='title-1 text-center pt-5'>
+                    <span className='title-1 text-justify lg:text-left pt-5'>
                         Tous les outils qu'il vous faut pour protéger <br />
                         votre plateforme de la fraude
                     </span>
                 </div>
                 <div className=''>
-
                     <div className="mini-nav-without-arrow">
                         <ul className="flex mini-nav-items items-center justify-around bg-[#DFFCE3] h-[54px] rounded-xl my-10 gap-x-5 px-5">
                             <li className={`mini-nav-option ${content === "Vérification d'identité" ? 'mini-nav-item-active ' : ''}`} onClick={(event) => handleNavClick(event, "Vérification d'identité")}>
@@ -86,7 +85,10 @@ export default function MiniNavBar() {
                             {content === "Vérification d'identité" && (
                                 <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center w-full mx-auto gap-10 ">
                                     <div className="hand-div2 flex items-center justify-center h-[25rem] md:h-[30rem] lg:h-[30rem] w-full">
-                                        <img src={verificatiIdentite} alt="" className='hand contain' />
+                                        <div className='verification-identiter'>
+
+                                        </div>
+                                        {/* <img src={verificatiIdentite} alt="" className='hand contain' /> */}
                                     </div>
                                     <div className='flex flex-col items-center justify-center w-full'>
                                         <h2 className="mini-nav-side-title mb-5 w-full">
@@ -168,7 +170,10 @@ export default function MiniNavBar() {
                             {content === "Vérification biométrique" && (
                                 <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center w-full mx-auto gap-10 ">
                                     <div className="flex items-center justify-center  hand-div2 h-[25rem] md:h-[30rem] lg:h-[30rem] w-full">
-                                        <img src={verificationBiomet} alt="" className='hand contain' />
+                                        <div className='verification-biometrique'>
+
+                                        </div>
+                                        {/* <img src={verificationBiomet} alt="" className='hand contain' /> */}
                                     </div>
                                     <div className='flex flex-col items-center justify-center w-full'>
                                         <h2 className="mini-nav-side-title mb-5 w-full">
@@ -224,23 +229,22 @@ export default function MiniNavBar() {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="flex pt-20">
-                                                <div class="  flex items-center justify-center lg:justify-start md:flex-nowrap  gap-5 pt-10 w-full">
+                                            <div class="flex pt-10">
+                                                <div class="  flex items-center justify-center lg:justify-start md:flex-nowrap  gap-5 pt-5 w-full">
                                                     <Link to="/" class="btn-footer-deep bg-green-color flex items-center justify-around">
-                                                        <div className="flex items-center justify-center gap-x-2">
-                                                            <div class="text-nowrap flex items-center justify-center gap-x-2" >
+                                                        <div className="flex items-center justify-around gap-x-2 w-full">
+                                                            <div class="text-nowrap flex items-center justify-around gap-x-2" >
                                                                 <span className="">Commencer</span>
                                                             </div>
                                                             <img src={arrowWhite} alt="" />
                                                         </div>
                                                     </Link>
                                                     <Link to="/pricing" class=" btn-footer-white bg-green-deep flex items-center justify-center sm:justify-around gap-x-2">
-                                                        <div className="flex items-center justify-around">
+                                                        <div className="flex items-center justify-around w-full">
                                                             <span class="text-white text-nowrap ">Contacter</span>
                                                             <Message background="#FFFF" textcolor="#285246" />
                                                         </div>
                                                     </Link>
-
                                                 </div>
                                             </div>
                                         </div>
@@ -252,7 +256,10 @@ export default function MiniNavBar() {
                             {content === "Preuve d'adresse" && (
                                 <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center w-full mx-auto gap-10 ">
                                     <div className="flex items-center justify-center  hand-div2 h-[25rem] md:h-[30rem] lg:h-[30rem] w-full">
-                                        <img src={preuveAddress} alt="" className='hand contain' />
+                                        <div className="preuve-adresse">
+
+                                        </div>
+                                        {/* <img src={preuveAddress} alt="" className='hand contain' /> */}
                                     </div>
                                     <div className='flex flex-col items-center justify-center w-full'>
                                         <h2 className="mini-nav-side-title mb-5 w-full">
@@ -308,23 +315,22 @@ export default function MiniNavBar() {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="flex pt-20">
-                                                <div class="  flex items-center justify-center lg:justify-start md:flex-nowrap  gap-5 pt-10 w-full">
+                                            <div class="flex pt-10">
+                                                <div class="  flex items-center justify-center lg:justify-start md:flex-nowrap  gap-5 pt-5 w-full">
                                                     <Link to="/" class="btn-footer-deep bg-green-color flex items-center justify-around">
-                                                        <div className="flex items-center justify-center gap-x-2">
-                                                            <div class="text-nowrap flex items-center justify-center gap-x-2" >
+                                                        <div className="flex items-center justify-around gap-x-2 w-full">
+                                                            <div class="text-nowrap flex items-center justify-around gap-x-2" >
                                                                 <span className="">Commencer</span>
                                                             </div>
                                                             <img src={arrowWhite} alt="" />
                                                         </div>
                                                     </Link>
                                                     <Link to="/pricing" class=" btn-footer-white bg-green-deep flex items-center justify-center sm:justify-around gap-x-2">
-                                                        <div className="flex items-center justify-around">
+                                                        <div className="flex items-center justify-around w-full">
                                                             <span class="text-white text-nowrap ">Contacter</span>
                                                             <Message background="#FFFF" textcolor="#285246" />
                                                         </div>
                                                     </Link>
-
                                                 </div>
                                             </div>
                                         </div>
@@ -338,7 +344,10 @@ export default function MiniNavBar() {
                             {content === "Détection d'appareil" && (
                                 <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center w-full mx-auto gap-10 ">
                                     <div className="hand-div2 flex items-center justify-center">
-                                        <img src={detectionApp} alt="" className='hand object-contain w-4/6' />
+                                        <div className="detection-appareil">
+
+                                        </div>
+                                        {/* <img src={detectionApp} alt="" className='hand object-contain w-4/6' /> */}
                                     </div>
                                     <div className='flex flex-col items-center justify-center w-full'>
                                         <h2 className="mini-nav-side-title mb-5 w-full">
@@ -394,23 +403,22 @@ export default function MiniNavBar() {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="flex pt-20">
-                                                <div class="  flex items-center justify-center lg:justify-start md:flex-nowrap  gap-5 pt-10 w-full">
+                                            <div class="flex pt-10">
+                                                <div class="  flex items-center justify-center lg:justify-start md:flex-nowrap  gap-5 pt-5 w-full">
                                                     <Link to="/" class="btn-footer-deep bg-green-color flex items-center justify-around">
-                                                        <div className="flex items-center justify-center gap-x-2">
-                                                            <div class="text-nowrap flex items-center justify-center gap-x-2" >
+                                                        <div className="flex items-center justify-around gap-x-2 w-full">
+                                                            <div class="text-nowrap flex items-center justify-around gap-x-2" >
                                                                 <span className="">Commencer</span>
                                                             </div>
                                                             <img src={arrowWhite} alt="" />
                                                         </div>
                                                     </Link>
                                                     <Link to="/pricing" class=" btn-footer-white bg-green-deep flex items-center justify-center sm:justify-around gap-x-2">
-                                                        <div className="flex items-center justify-around">
+                                                        <div className="flex items-center justify-around w-full">
                                                             <span class="text-white text-nowrap ">Contacter</span>
                                                             <Message background="#FFFF" textcolor="#285246" />
                                                         </div>
                                                     </Link>
-
                                                 </div>
                                             </div>
                                         </div>
@@ -424,7 +432,10 @@ export default function MiniNavBar() {
                                 <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center w-full mx-auto gap-10 ">
                                     <div className='w-full flex items-center justify-center'>
                                         <div className="hand-div2 h-[25rem] md:w-1/2 lg:w-[25rem] w-full">
-                                            <img src={sactions} alt="" className='hand contain' />
+                                            <div className="sactions">
+
+                                            </div>
+                                            {/* <img src={sactions} alt="" className='hand contain' /> */}
                                         </div>
                                     </div>
                                     <div className="w-full items-center justify-center">
@@ -482,18 +493,18 @@ export default function MiniNavBar() {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="flex pt-20">
-                                                    <div class="  flex items-center justify-center lg:justify-start md:flex-nowrap  gap-5 pt-10 w-full">
+                                                <div class="flex pt-10">
+                                                    <div class="  flex items-center justify-center lg:justify-start md:flex-nowrap  gap-5 pt-5 w-full">
                                                         <Link to="/" class="btn-footer-deep bg-green-color flex items-center justify-around">
-                                                            <div className="flex items-center justify-center gap-x-2">
-                                                                <div class="text-nowrap flex items-center justify-center gap-x-2" >
+                                                            <div className="flex items-center justify-around gap-x-2 w-full">
+                                                                <div class="text-nowrap flex items-center justify-around gap-x-2" >
                                                                     <span className="">Commencer</span>
                                                                 </div>
                                                                 <img src={arrowWhite} alt="" />
                                                             </div>
                                                         </Link>
                                                         <Link to="/pricing" class=" btn-footer-white bg-green-deep flex items-center justify-center sm:justify-around gap-x-2">
-                                                            <div className="flex items-center justify-around">
+                                                            <div className="flex items-center justify-around w-full">
                                                                 <span class="text-white text-nowrap ">Contacter</span>
                                                                 <Message background="#FFFF" textcolor="#285246" />
                                                             </div>
@@ -543,8 +554,11 @@ export default function MiniNavBar() {
                                             inexistants et des frais de
                                         </div>
 
-                                        <div className="hand-div2 py-10 flex items-center justify-center md:h-[30rem] lg:h-[30rem] w-full">
-                                            <img src={verificatiIdentite} alt="" className='hand contain' />
+                                        <div className="hand-div2 py-10 flex items-center justify-center w-full">
+                                            <div className='verification-identiter'>
+
+                                            </div>
+                                            {/* <img src={verificatiIdentite} alt="" className='hand contain' /> */}
                                         </div>
 
                                         <div className='w-full'>
@@ -591,22 +605,22 @@ export default function MiniNavBar() {
                                                 </div>
                                             </div>
                                             <div class="  flex items-center justify-center lg:justify-start md:flex-nowrap  gap-5 pt-10 w-full">
-                                                    <Link to="/" class="btn-footer-deep bg-green-color flex items-center justify-around">
-                                                        <div className="flex items-center justify-center gap-x-2">
-                                                            <div class="text-nowrap flex items-center justify-center gap-x-2" >
-                                                                <span className="">Commencer</span>
-                                                            </div>
-                                                            <img src={arrowWhite} alt="" />
+                                                <Link to="/" class="btn-footer-deep bg-green-color flex items-center justify-around">
+                                                    <div className="flex items-center justify-center gap-x-2">
+                                                        <div class="text-nowrap flex items-center justify-center gap-x-2" >
+                                                            <span className="">Commencer</span>
                                                         </div>
-                                                    </Link>
-                                                    <Link to="/pricing" class=" btn-footer-white bg-green-deep flex items-center justify-center sm:justify-around gap-x-2">
-                                                        <div className="flex items-center justify-around">
-                                                            <span class="text-white text-nowrap ">Contacter</span>
-                                                            <Message background="#FFFF" textcolor="#285246" />
-                                                        </div>
-                                                    </Link>
+                                                        <img src={arrowWhite} alt="" />
+                                                    </div>
+                                                </Link>
+                                                <Link to="/pricing" class=" btn-footer-white bg-green-deep flex items-center justify-center sm:justify-around gap-x-2">
+                                                    <div className="flex items-center justify-around">
+                                                        <span class="text-white text-nowrap ">Contacter</span>
+                                                        <Message background="#FFFF" textcolor="#285246" />
+                                                    </div>
+                                                </Link>
 
-                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -624,8 +638,11 @@ export default function MiniNavBar() {
                                             vérifiez votre compte Sekure pour obtenir votre carte virtuelle. Entre des frais d'entretien <br />
                                             inexistants et des frais de
                                         </div>
-                                        <div className="flex items-center justify-center  hand-div2 h-[25rem] md:h-[30rem] lg:h-[30rem] w-full">
-                                            <img src={verificationBiomet} alt="" className='hand contain' />
+                                        <div className="flex items-center justify-center w-full pb-10">
+                                            <div className='verification-biometrique'>
+
+                                            </div>
+                                            {/* <img src={verificationBiomet} alt="" className='hand contain' /> */}
                                         </div>
                                         <div className='w-full'>
                                             <div class="w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center justify-centergap-5">
@@ -702,8 +719,11 @@ export default function MiniNavBar() {
                                             vérifiez votre compte Sekure pour obtenir votre carte virtuelle. Entre des frais d'entretien <br />
                                             inexistants et des frais de
                                         </div>
-                                        <div className="flex items-center justify-center  hand-div2 h-[25rem] md:h-[30rem] lg:h-[30rem] w-full">
-                                            <img src={preuveAddress} alt="" className='hand contain' />
+                                        <div className="flex items-center pb-10 justify-center w-full">
+                                            <div className="preuve-adresse">
+
+                                            </div>
+                                            {/* <img src={preuveAddress} alt="" className='hand contain' /> */}
                                         </div>
                                         <div className='w-full'>
                                             <div class="w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center justify-centergap-5">
@@ -781,8 +801,11 @@ export default function MiniNavBar() {
                                             inexistants et des frais de
                                         </div>
 
-                                        <div className="hand-div2 flex items-center justify-center">
-                                            <img src={detectionApp} alt="" className='hand object-contain w-4/6' />
+                                        <div className="flex items-center justify-center pb-10 w-full">
+                                            <div className="detection-appareil">
+
+                                            </div>
+                                            {/* <img src={detectionApp} alt="" className='hand object-contain w-4/6' /> */}
                                         </div>
 
                                         <div className='w-full'>
@@ -861,8 +884,11 @@ export default function MiniNavBar() {
                                         </div>
 
                                         <div className='w-full flex items-center justify-center'>
-                                            <div className="hand-div2 h-[25rem] md:w-1/2 lg:w-[25rem] w-full">
-                                                <img src={sactions} alt="" className='hand contain' />
+                                            <div className="flex items-center justify-center w-full pb-10">
+                                                <div className="sactions">
+
+                                                </div>
+                                                {/* <img src={sactions} alt="" className='hand contain' /> */}
                                             </div>
                                         </div>
 

@@ -58,6 +58,42 @@
     color: #F5F5F5;
   }
 
+  .verification-identiter {
+    width: 441px;
+    height: 405px;
+    border-radius: 17px;
+    background: #EEEEEE;
+  }
+
+  .verification-biometrique {
+    width: 441px;
+    height: 405px;
+    border-radius: 17px;
+    background: #B9FFC4;
+
+  }
+
+  .preuve-adresse {
+    width: 441px;
+    height: 405px;
+    border-radius: 17px;
+    background: #EEEEEE;
+  }
+
+  .detection-appareil {
+    width: 441px;
+    height: 405px;
+    border-radius: 17px;
+    background: #B9FFC4;
+  }
+
+  .sactions {
+    width: 441px;
+    height: 405px;
+    border-radius: 17px;
+    background: #EEEEEE;
+  }
+
   .nav-language {
     font-family: "Inter";
     font-size: 15px;
@@ -1655,11 +1691,11 @@ textarea {
   }
 
   .title-1 {
-    text-align: center;
+    text-align: left;
   }
 
   .title-content-1 {
-    text-align: center;
+    text-align: left;
   }
 
   .btn-about {
@@ -1711,8 +1747,22 @@ textarea {
   }
 
   .accueil-btn {
-    width: 182px;
-    height: 51px;
+    width: 160px;
+    height: 48px;
+    padding: .3rem;
+    gap: var(--sds-size-space-200);
+    border-radius: var(--sds-size-radius-200);
+    border: var(--sds-size-stroke-border);
+    font-family: "Satoshi";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    text-align: left;
+  }
+
+  .accueil-btn-clean {
+    width: 160px;
+    height: 48px;
     padding: var(--sds-size-space-300);
     gap: var(--sds-size-space-200);
     border-radius: var(--sds-size-radius-200);
@@ -1723,18 +1773,41 @@ textarea {
     line-height: 14px;
     text-align: left;
   }
-  .accueil-btn-clean {
-    width: 182px;
-    height: 51px;
-    padding: var(--sds-size-space-300);
-    gap: var(--sds-size-space-200);
-    border-radius: var(--sds-size-radius-200);
-    border: var(--sds-size-stroke-border);
-    font-family: "Satoshi";
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 14px;
-    text-align: left;
+
+  .verification-identiter {
+    width: 404px;
+    height: 270px;
+    border-radius: 17px;
+    background: #EEEEEE;
+  }
+
+  .verification-biometrique {
+    width: 404px;
+    height: 270px;
+    border-radius: 17px;
+    background: #B9FFC4;
+
+  }
+
+  .preuve-adresse {
+    width: 441px;
+    height: 270px;
+    border-radius: 17px;
+    background: #EEEEEE;
+  }
+
+  .detection-appareil {
+    width: 441px;
+    height: 270px;
+    border-radius: 17px;
+    background: #B9FFC4;
+  }
+
+  .sactions {
+    width: 441px;
+    height: 270px;
+    border-radius: 17px;
+    background: #EEEEEE;
   }
 
   .sub-title {
@@ -1743,7 +1816,6 @@ textarea {
     font-weight: 500;
     line-height: 37px;
     text-align: left;
-
   }
 
   .voir-tout-pays-phone-color {
@@ -1842,13 +1914,13 @@ textarea {
     text-align: center;
   }
 
-  .card-choice-content{
+  .card-choice-content {
     font-family: "Satoshi";
     font-size: 14px;
     font-weight: 700;
     line-height: 14px;
     text-align: center;
-    
+
   }
 
 }
@@ -1962,7 +2034,7 @@ textarea {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
   }
 
   .title-content {
@@ -1981,11 +2053,11 @@ textarea {
     text-align: center;
   }
 
-  .accueil-section1-btn {
+  /* .accueil-section1-btn {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
+  } */
 }
 
 
