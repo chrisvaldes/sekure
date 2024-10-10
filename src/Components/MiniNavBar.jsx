@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import detectionApp from '../images/accueil/DetectionAppareil.png';
+import sanctions from "../images/accueil/sanctions.png";
 import arrowLeft from "../images/accueil/VectorLeft.png";
 import arrowRight from "../images/accueil/VectorRight.png";
 import arrowWhite from '../images/icons/arrowWhite.png';
@@ -9,6 +10,7 @@ import message from "../images/icons/messageWhite.png";
 import Arrow from './Arrow';
 import Message from './Message';
 import SmallCheckCircle from './SmallCheckCircle';
+
 
 export default function MiniNavBar() {
     const [content, setContent] = useState("Vérification d'identité");
@@ -408,10 +410,9 @@ export default function MiniNavBar() {
                                 <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center w-full mx-auto gap-10 ">
                                     <div className='w-full flex items-center justify-center'>
                                         <div className="hand-div2 h-[25rem] md:w-1/2 lg:w-[25rem] w-full">
-                                            <div className="sactions">
-
+                                            <div className="sactions flex items-center justify-center">
+                                                <img src={sanctions} alt="" className='hand contain' />
                                             </div>
-                                            {/* <img src={sactions} alt="" className='hand contain' /> */}
                                         </div>
                                     </div>
                                     <div className="w-full items-center justify-center">
@@ -812,7 +813,7 @@ export default function MiniNavBar() {
 
                                         <div className="flex items-center justify-center pb-10 w-full">
                                             <div className="detection-appareil flex items-center justify-center">
-                                                <img src={detectionApp} alt="" className='img-detection-appareil w-[85%]' />
+                                                <img src={detectionApp} alt="" className='img-detection-appareil w-[80%]' />
                                             </div>
                                             {/* <img src={detectionApp} alt="" className='hand object-contain w-4/6' /> */}
                                         </div>
@@ -908,10 +909,9 @@ export default function MiniNavBar() {
 
                                         <div className='w-full flex items-center justify-center'>
                                             <div className="flex items-center justify-center w-full pb-10">
-                                                <div className="sactions">
-
+                                                <div className="sactions flex justify-center items-center">
+                                                    <img src={sanctions} alt="" className='w-[90%]' />
                                                 </div>
-                                                {/* <img src={sactions} alt="" className='hand contain' /> */}
                                             </div>
                                         </div>
 
