@@ -51,7 +51,7 @@ export default function Footer() {
                 <img src={womenFooter} alt="" className='womenFooter hidden lg:block absolute bottom-0 right-28 w-[482.12px] h-[444px] z-10' />
             </div>
             <div className="flex flex-wrap items-center justify-around w-full py-10">
-                <div className="flex w-full  gap-10 flex-wrap items-center mx-10 md:mx-0 md:justify-between">
+                <div className="flex w-full  gap-10 flex-wrap items-center mx-8 md:mx-0 md:justify-between">
                     <div className="flex flex-col">
                         <span className='grid-footer-grid-title'>Explorer</span>
                         <span className='grid-footer-grid-content'>Documentation</span>
