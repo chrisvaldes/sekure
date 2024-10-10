@@ -3,12 +3,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import arrowLeft from "../images/accueil/VectorLeft.png";
 import arrowRight from "../images/accueil/VectorRight.png";
-import detectionApp from "../images/detectionAppareil.png";
 import arrowWhite from '../images/icons/arrowWhite.png';
-import preuveAddress from '../images/preuveAddress.png';
-import sactions from "../images/sanction.png";
-import verificationBiomet from '../images/verificationBiometric.png';
-import verificatiIdentite from '../images/verificationIdentite.png';
+import message from "../images/icons/messageWhite.png";
 import Arrow from './Arrow';
 import Message from './Message';
 import SmallCheckCircle from './SmallCheckCircle';
@@ -51,12 +47,12 @@ export default function MiniNavBar() {
 
     return (
         <section>
-            <div className=" bg-white extra px-10">
+            <div className=" bg-white extra px-5 sm:px-10">
                 <div className=" w-full flex flex-col items-center justify-center lg:items-start text-cyan-deep pt-10">
                     <Link to="/" className='bg-green-color flex items-center justify-center mini-nav-btn mini-nav-btn-text'>
                         Nos Outils
                     </Link>
-                    <span className='title-1 text-justify lg:text-left pt-5'>
+                    <span className='title-1 text-left lg:text-left pt-5'>
                         Tous les outils qu'il vous faut pour protéger <br />
                         votre plateforme de la fraude
                     </span>
@@ -537,41 +533,41 @@ export default function MiniNavBar() {
                                         </div>
 
                                         <div className='w-full'>
-                                            <div class="w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center justify-center gap-y-5">
-                                                <div className="flex gap-3 justify-center">
+                                            <div class="w-full grid grid-cols-2 items-center justify-center gap-5">
+                                                <div className="flex gap-2 justify-center">
                                                     <SmallCheckCircle />
                                                     <div className='flex flex-col justify-center'>
-                                                        <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                                        <p className='mini-nav-grid-title text-nowrap pb-2'>Document acceptés :</p>
                                                         <p className='mini-nav-grid-content'>
                                                             Passeports, permis de conduire, cartes, <br />
                                                             d'identity nationales, etc
                                                         </p>
                                                     </div>
                                                 </div>
-                                                <div className="flex gap-3 justify-center">
+                                                <div className="flex gap-2 justify-center">
                                                     <SmallCheckCircle />
                                                     <div className='flex flex-col'>
-                                                        <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                                        <p className='mini-nav-grid-title text-nowrap pb-2'>Document acceptés :</p>
                                                         <p className='mini-nav-grid-content'>
                                                             Passeports, permis de conduire, cartes, <br />
                                                             d'identity nationales, etc
                                                         </p>
                                                     </div>
                                                 </div>
-                                                <div className="flex gap-3 justify-center">
+                                                <div className="flex gap-2 justify-center">
                                                     <SmallCheckCircle />
-                                                    <div className='flex flex-col'>
-                                                        <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                                    <div className='flex flex-col justify-center'>
+                                                        <p className='mini-nav-grid-title text-nowrap pb-2'>Document acceptés :</p>
                                                         <p className='mini-nav-grid-content'>
                                                             Passeports, permis de conduire, cartes, <br />
                                                             d'identity nationales, etc
                                                         </p>
                                                     </div>
                                                 </div>
-                                                <div className="flex gap-3 justify-center">
+                                                <div className="flex gap-2 justify-center">
                                                     <SmallCheckCircle />
-                                                    <div className='flex flex-col'>
-                                                        <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                                    <div className='flex flex-col justify-center'>
+                                                        <p className='mini-nav-grid-title text-nowrap pb-2'>Document acceptés :</p>
                                                         <p className='mini-nav-grid-content'>
                                                             Passeports, permis de conduire, cartes, <br />
                                                             d'identity nationales, etc
@@ -579,8 +575,22 @@ export default function MiniNavBar() {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="flex pt-10">
-                                                <div class=" flex flex-wrap w-full items-center justify-center gap-5 pb-10">
+                                            <div className='flex items-center justify-center md:items-center md:justify-center lg:items-start lg:justify-start gap-x-2 md:gap-[28px] pt-[28px] pb-16 w-full'>
+                                                <Link to="/" className='btn big-btn-about-us voir-tout-pays-phone-color flex items-center justify-center bg-green-color '>
+                                                    <span className=' flex items-center text-nowrap text-white'>
+                                                        Commencer
+                                                    </span>
+                                                    <img src={arrowWhite} alt="" />
+                                                </Link>
+                                                <Link to="/" className='btn-contacter-phone voir-tout-pays-phone-deep flex items-center justify-center bg-green-deep'>
+                                                    <span className='btn-text text-white'>
+                                                        Contacter
+                                                    </span>
+                                                    <img src={message} alt="" />
+                                                </Link>
+                                            </div>
+                                            {/* <div class="flex pt-10">
+                                                <div class=" flex w-full items-center justify-center gap-5 pb-10">
                                                     <Link to="/" class="bg-green-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
                                                         <span class="text-nowrap" >Commencer </span>
                                                         <Arrow background="#FFFF" textcolor="#285246" />
@@ -591,7 +601,7 @@ export default function MiniNavBar() {
                                                     </Link>
 
                                                 </div>
-                                            </div>
+                                            </div> */}
                                         </div>
                                     </div>
                                 </div>
@@ -627,30 +637,30 @@ export default function MiniNavBar() {
                                                         </p>
                                                     </div>
                                                 </div>
-                                                <div className="flex gap-3 justify-center">
+                                                <div className="flex gap-2 justify-center">
                                                     <SmallCheckCircle />
-                                                    <div className='flex flex-col'>
-                                                        <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                                    <div className='flex flex-col justify-center'>
+                                                        <p className='mini-nav-grid-title text-nowrap pb-2'>Document acceptés :</p>
                                                         <p className='mini-nav-grid-content'>
                                                             Passeports, permis de conduire, cartes, <br />
                                                             d'identity nationales, etc
                                                         </p>
                                                     </div>
                                                 </div>
-                                                <div className="flex gap-3 justify-center">
+                                                <div className="flex gap-2 justify-center">
                                                     <SmallCheckCircle />
-                                                    <div className='flex flex-col'>
-                                                        <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                                    <div className='flex flex-col justify-center'>
+                                                        <p className='mini-nav-grid-title text-nowrap pb-2'>Document acceptés :</p>
                                                         <p className='mini-nav-grid-content'>
                                                             Passeports, permis de conduire, cartes, <br />
                                                             d'identity nationales, etc
                                                         </p>
                                                     </div>
                                                 </div>
-                                                <div className="flex gap-3 justify-center">
+                                                <div className="flex gap-2 justify-center">
                                                     <SmallCheckCircle />
-                                                    <div className='flex flex-col'>
-                                                        <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                                    <div className='flex flex-col justify-center'>
+                                                        <p className='mini-nav-grid-title text-nowrap pb-2'>Document acceptés :</p>
                                                         <p className='mini-nav-grid-content'>
                                                             Passeports, permis de conduire, cartes, <br />
                                                             d'identity nationales, etc
@@ -658,18 +668,19 @@ export default function MiniNavBar() {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="flex pt-10">
-                                                <div class=" flex flex-wrap w-full items-center justify-center gap-5 pb-10">
-                                                    <Link to="/" class="bg-green-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
-                                                        <span class="text-nowrap" >Commencer </span>
-                                                        <Arrow background="#FFFF" textcolor="#285246" />
-                                                    </Link>
-                                                    <Link to="/pricing" class=" bg-green-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
-                                                        <span class="text-white text-nowrap pr-5">Contacter</span>
-                                                        <Message background="#FFFF" textcolor="#285246" />
-                                                    </Link>
-
-                                                </div>
+                                            <div className='flex items-center justify-center md:items-center md:justify-center lg:items-start lg:justify-start gap-x-2 md:gap-[28px] pt-[28px] pb-16 w-full'>
+                                                <Link to="/" className='btn big-btn-about-us voir-tout-pays-phone-color flex items-center justify-center bg-green-color '>
+                                                    <span className=' flex items-center text-nowrap text-white'>
+                                                        Commencer
+                                                    </span>
+                                                    <img src={arrowWhite} alt="" />
+                                                </Link>
+                                                <Link to="/" className='btn-contacter-phone voir-tout-pays-phone-deep flex items-center justify-center bg-green-deep'>
+                                                    <span className='btn-text text-white'>
+                                                        Contacter
+                                                    </span>
+                                                    <img src={message} alt="" />
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>
@@ -708,30 +719,30 @@ export default function MiniNavBar() {
                                                         </p>
                                                     </div>
                                                 </div>
-                                                <div className="flex gap-3 justify-center">
+                                                <div className="flex gap-2 justify-center">
                                                     <SmallCheckCircle />
-                                                    <div className='flex flex-col'>
-                                                        <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                                    <div className='flex flex-col justify-center'>
+                                                        <p className='mini-nav-grid-title text-nowrap pb-2'>Document acceptés :</p>
                                                         <p className='mini-nav-grid-content'>
                                                             Passeports, permis de conduire, cartes, <br />
                                                             d'identity nationales, etc
                                                         </p>
                                                     </div>
                                                 </div>
-                                                <div className="flex gap-3 justify-center">
+                                                <div className="flex gap-2 justify-center">
                                                     <SmallCheckCircle />
-                                                    <div className='flex flex-col'>
-                                                        <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                                    <div className='flex flex-col justify-center'>
+                                                        <p className='mini-nav-grid-title text-nowrap pb-2'>Document acceptés :</p>
                                                         <p className='mini-nav-grid-content'>
                                                             Passeports, permis de conduire, cartes, <br />
                                                             d'identity nationales, etc
                                                         </p>
                                                     </div>
                                                 </div>
-                                                <div className="flex gap-3 justify-center">
+                                                <div className="flex gap-2 justify-center">
                                                     <SmallCheckCircle />
-                                                    <div className='flex flex-col'>
-                                                        <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                                    <div className='flex flex-col justify-center'>
+                                                        <p className='mini-nav-grid-title text-nowrap pb-2'>Document acceptés :</p>
                                                         <p className='mini-nav-grid-content'>
                                                             Passeports, permis de conduire, cartes, <br />
                                                             d'identity nationales, etc
@@ -739,17 +750,19 @@ export default function MiniNavBar() {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="flex pt-10">
-                                                <div class=" flex flex-wrap w-full items-center justify-center gap-5 pb-10">
-                                                    <Link to="/" class="bg-green-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
-                                                        <span class="text-nowrap" >Commencer </span>
-                                                        <Arrow background="#FFFF" textcolor="#285246" />
-                                                    </Link>
-                                                    <Link to="/pricing" class=" bg-green-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
-                                                        <span class="text-white text-nowrap pr-5">Contacter</span>
-                                                        <Message background="#FFFF" textcolor="#285246" />
-                                                    </Link>
-                                                </div>
+                                            <div className='flex items-center justify-center md:items-center md:justify-center lg:items-start lg:justify-start gap-x-2 md:gap-[28px] pt-[28px] pb-16 w-full'>
+                                                <Link to="/" className='btn big-btn-about-us voir-tout-pays-phone-color flex items-center justify-center bg-green-color '>
+                                                    <span className=' flex items-center text-nowrap text-white'>
+                                                        Commencer
+                                                    </span>
+                                                    <img src={arrowWhite} alt="" />
+                                                </Link>
+                                                <Link to="/" className='btn-contacter-phone voir-tout-pays-phone-deep flex items-center justify-center bg-green-deep'>
+                                                    <span className='btn-text text-white'>
+                                                        Contacter
+                                                    </span>
+                                                    <img src={message} alt="" />
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>
@@ -790,30 +803,30 @@ export default function MiniNavBar() {
                                                         </p>
                                                     </div>
                                                 </div>
-                                                <div className="flex gap-3 justify-center">
+                                                <div className="flex gap-2 justify-center">
                                                     <SmallCheckCircle />
-                                                    <div className='flex flex-col'>
-                                                        <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                                    <div className='flex flex-col justify-center'>
+                                                        <p className='mini-nav-grid-title text-nowrap pb-2'>Document acceptés :</p>
                                                         <p className='mini-nav-grid-content'>
                                                             Passeports, permis de conduire, cartes, <br />
                                                             d'identity nationales, etc
                                                         </p>
                                                     </div>
                                                 </div>
-                                                <div className="flex gap-3 justify-center">
+                                                <div className="flex gap-2 justify-center">
                                                     <SmallCheckCircle />
-                                                    <div className='flex flex-col'>
-                                                        <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                                    <div className='flex flex-col justify-center'>
+                                                        <p className='mini-nav-grid-title text-nowrap pb-2'>Document acceptés :</p>
                                                         <p className='mini-nav-grid-content'>
                                                             Passeports, permis de conduire, cartes, <br />
                                                             d'identity nationales, etc
                                                         </p>
                                                     </div>
                                                 </div>
-                                                <div className="flex gap-3 justify-center">
+                                                <div className="flex gap-2 justify-center">
                                                     <SmallCheckCircle />
-                                                    <div className='flex flex-col'>
-                                                        <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                                    <div className='flex flex-col justify-center'>
+                                                        <p className='mini-nav-grid-title text-nowrap pb-2'>Document acceptés :</p>
                                                         <p className='mini-nav-grid-content'>
                                                             Passeports, permis de conduire, cartes, <br />
                                                             d'identity nationales, etc
@@ -821,18 +834,19 @@ export default function MiniNavBar() {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="flex pt-10">
-                                                <div class=" flex flex-wrap w-full items-center justify-center gap-5 pb-10">
-                                                    <Link to="/" class="bg-green-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
-                                                        <span class="text-nowrap" >Commencer </span>
-                                                        <Arrow background="#FFFF" textcolor="#285246" />
-                                                    </Link>
-                                                    <Link to="/pricing" class=" bg-green-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
-                                                        <span class="text-white text-nowrap pr-5">Contacter</span>
-                                                        <Message background="#FFFF" textcolor="#285246" />
-                                                    </Link>
-
-                                                </div>
+                                            <div className='flex items-center justify-center md:items-center md:justify-center lg:items-start lg:justify-start gap-x-2 md:gap-[28px] pt-[28px] pb-16 w-full'>
+                                                <Link to="/" className='btn big-btn-about-us voir-tout-pays-phone-color flex items-center justify-center bg-green-color '>
+                                                    <span className=' flex items-center text-nowrap text-white'>
+                                                        Commencer
+                                                    </span>
+                                                    <img src={arrowWhite} alt="" />
+                                                </Link>
+                                                <Link to="/" className='btn-contacter-phone voir-tout-pays-phone-deep flex items-center justify-center bg-green-deep'>
+                                                    <span className='btn-text text-white'>
+                                                        Contacter
+                                                    </span>
+                                                    <img src={message} alt="" />
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>
@@ -874,30 +888,30 @@ export default function MiniNavBar() {
                                                         </p>
                                                     </div>
                                                 </div>
-                                                <div className="flex gap-3 justify-center">
+                                                <div className="flex gap-2 justify-center">
                                                     <SmallCheckCircle />
-                                                    <div className='flex flex-col'>
-                                                        <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                                    <div className='flex flex-col justify-center'>
+                                                        <p className='mini-nav-grid-title text-nowrap pb-2'>Document acceptés :</p>
                                                         <p className='mini-nav-grid-content'>
                                                             Passeports, permis de conduire, cartes, <br />
                                                             d'identity nationales, etc
                                                         </p>
                                                     </div>
                                                 </div>
-                                                <div className="flex gap-3 justify-center">
+                                                <div className="flex gap-2 justify-center">
                                                     <SmallCheckCircle />
-                                                    <div className='flex flex-col'>
-                                                        <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                                    <div className='flex flex-col justify-center'>
+                                                        <p className='mini-nav-grid-title text-nowrap pb-2'>Document acceptés :</p>
                                                         <p className='mini-nav-grid-content'>
                                                             Passeports, permis de conduire, cartes, <br />
                                                             d'identity nationales, etc
                                                         </p>
                                                     </div>
                                                 </div>
-                                                <div className="flex gap-3 justify-center">
+                                                <div className="flex gap-2 justify-center">
                                                     <SmallCheckCircle />
-                                                    <div className='flex flex-col'>
-                                                        <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                                    <div className='flex flex-col justify-center'>
+                                                        <p className='mini-nav-grid-title text-nowrap pb-2'>Document acceptés :</p>
                                                         <p className='mini-nav-grid-content'>
                                                             Passeports, permis de conduire, cartes, <br />
                                                             d'identity nationales, etc
@@ -905,18 +919,19 @@ export default function MiniNavBar() {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="flex pt-10">
-                                                <div class=" flex flex-wrap w-full items-center justify-center gap-5 pb-10">
-                                                    <Link to="/" class="bg-green-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
-                                                        <span class="text-nowrap" >Commencer </span>
-                                                        <Arrow background="#FFFF" textcolor="#285246" />
-                                                    </Link>
-                                                    <Link to="/pricing" class=" bg-green-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
-                                                        <span class="text-white text-nowrap pr-5">Contacter</span>
-                                                        <Message background="#FFFF" textcolor="#285246" />
-                                                    </Link>
-
-                                                </div>
+                                            <div className='flex items-center justify-center md:items-center md:justify-center lg:items-start lg:justify-start gap-x-2 md:gap-[28px] pt-[28px] pb-16 w-full'>
+                                                <Link to="/" className='btn big-btn-about-us voir-tout-pays-phone-color flex items-center justify-center bg-green-color '>
+                                                    <span className=' flex items-center text-nowrap text-white'>
+                                                        Commencer
+                                                    </span>
+                                                    <img src={arrowWhite} alt="" />
+                                                </Link>
+                                                <Link to="/" className='btn-contacter-phone voir-tout-pays-phone-deep flex items-center justify-center bg-green-deep'>
+                                                    <span className='btn-text text-white'>
+                                                        Contacter
+                                                    </span>
+                                                    <img src={message} alt="" />
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>

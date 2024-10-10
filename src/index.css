@@ -1923,6 +1923,24 @@ textarea {
 
   }
 
+  .mini-nav-grid-title {
+    font-family: "Satoshi";
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 13px;
+    text-align: left;
+
+  }
+
+  .mini-nav-grid-content {
+    font-family: "Satoshi";
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 13px;
+    text-align: left;
+
+  }
+
 }
 
 @media (max-width:400px) {

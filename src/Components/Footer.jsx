@@ -12,10 +12,11 @@ export default function Footer() {
         <div className='bg-green-color sm:py-10  footer-section'>
             <div className='relative footer-page grid grid-cols-1 lg:grid-cols-2'>
                 <div className='flex order-2 lg:order-1 footer-section-text flex-col items-start justify-center z-20 w-full'>
-                    <div className='footer-title py-5 md:text-nowrap w-full'>
-                        <span className='text-white'>Notre API Robuste</span> supportera <br />
-                        votre business et son <br />
-                        <span className='text-white'>expansion</span> sans problèmes
+                    <div className='footer-title py-5 text-nowrap w-full'>
+                        <span className='text-green-deep'>La vérification n'est plus un <br />
+                        obstacle pour votre business,<br /></span>
+                        <span className='text-green-deep md:text-white'>Acceptez plus facilement vos <br />
+                        utilisateurs</span>
                     </div>
                     <div className='footer-content pt-5 md:text-nowrap w-full'>
                         Intégrez notre API en quelques lignes de code et concentrez-vous sur votre cœur de métier. <br />

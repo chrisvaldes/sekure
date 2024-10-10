@@ -482,7 +482,7 @@ export default function Accueil() {
                             expertise locale, nous prenons en charge une multitude de documents d'identité et de <br />
                             normes réglementaires.
                         </div>
-                        <div className='flex items-center justify-center md:items-center md:justify-center lg:items-start lg:justify-start gap-[28px] pt-[28px] pb-16 w-full'>
+                        <div className='flex items-center justify-center md:items-center md:justify-center lg:items-start lg:justify-start gap-x-2 md:gap-[28px] pt-[28px] pb-16 w-full'>
                             <Link to="/" className='big-btn-about-us voir-tout-pays-phone-color flex items-center justify-between bg-green-color '>
                                 <span className=' flex items-center text-nowrap text-white'>
                                     Voir les pays
@@ -716,7 +716,7 @@ export default function Accueil() {
                             <div className='w-full'>
                                 <Accordion />
                             </div>
-                            <div className='flex items-center justify-center md:items-center md:justify-center lg:items-start lg:justify-start gap-[28px] pt-[28px] pb-16 w-full'>
+                            <div className='flex items-center justify-center md:items-center md:justify-center lg:items-start lg:justify-start gap-x-2 md:gap-[28px] pt-[28px] pb-16 w-full'>
                                 <Link to="/" className='btn big-btn-about-us voir-tout-pays-phone-color flex items-center justify-between bg-green-color '>
                                     <span className=' flex items-center text-nowrap text-white'>
                                         Voir les pays
