@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import detectionApp from '../images/accueil/DetectionAppareil.png';
+import preuveAddress from '../images/accueil/preveuAdresse.png';
 import sanctions from "../images/accueil/sanctions.png";
 import arrowLeft from "../images/accueil/VectorLeft.png";
 import arrowRight from "../images/accueil/VectorRight.png";
@@ -245,10 +246,9 @@ export default function MiniNavBar() {
                             {content === "Preuve d'adresse" && (
                                 <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center w-full mx-auto gap-10 ">
                                     <div className="flex items-center justify-center  hand-div2 h-[25rem] md:h-[30rem] lg:h-[30rem] w-full">
-                                        <div className="preuve-adresse">
-
+                                        <div className="preuve-adresse flex items-center justify-center">
+                                            <img src={preuveAddress} alt="" className='hand contain' />
                                         </div>
-                                        {/* <img src={preuveAddress} alt="" className='hand contain' /> */}
                                     </div>
                                     <div className='flex flex-col items-center justify-center w-full'>
                                         <h2 className="mini-nav-side-title mb-5 w-full">
@@ -716,10 +716,9 @@ export default function MiniNavBar() {
                                             inexistants et des frais de
                                         </div>
                                         <div className="flex items-center pb-10 justify-center w-full">
-                                            <div className="preuve-adresse">
-
+                                            <div className="preuve-adresse flex items-center justify-center">
+                                                <img src={preuveAddress} alt="" className='w-[85%]' />
                                             </div>
-                                            {/* <img src={preuveAddress} alt="" className='hand contain' /> */}
                                         </div>
                                         <div className='w-full'>
                                             <div class="w-full grid grid-cols-2 items-center justify-center gap-5">

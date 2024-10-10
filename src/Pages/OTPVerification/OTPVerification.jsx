@@ -120,14 +120,16 @@ export default function OTPVerification() {
                                         <span className="pricing-get-account-link text-[#898989]">Vous n'avez pas reçu de code? <Link href="" className='text-green-color'>Renvoyez le code</Link></span>
                                     </div>
                                     <div className="pt-8 pb-36">
-                                        <div className="flex items-center justify-center gap-5 btn-accounts">
-                                            <Link to="/accueil" className="btn-nav-text flex items-center justify-center bg-green-deep btn-nav" href="#">
-                                                <span>Connexion</span>
+                                        <div class="flex  flex-wrap lg:flex-nowrap items-center justify-center gap-5 btn-accounts">
+                                            <Link to="/accueil" type='submit' className="btn-connect btn-nav-text flex items-center justify-around bg-green-color btn-nav  w-full" href="#">
+                                                <div className="w-full flex items-center justify-center">
+                                                    <span>continuer</span>
+                                                </div>
                                                 <Arrow background="#FFFF" textcolor="#285246" />
                                             </Link>
-                                            <Link to="/creation-compte" className="bg-gray-100 px-5 py-3.5 rounded-xl flex items-center justify-between gap-5 w-full">
-                                                <span className="btn-has-account-grey-text">Pas encore de compte? <span className='btn-has-account-black-text'>Inscrivez vous</span></span>
-                                            </Link>
+                                            {/* <Link to="/creation-compte" class=" bg-gray-100  px-5 py-3.5 text-center flex items-center justify-center lg:justify-start gap-5 w-full">
+                                                <span class="btn-has-account-grey-text ">Pas de compte? <span className='btn-has-account-black-text'>Inscrivez vous</span></span>
+                                            </Link> */}
                                         </div>
                                     </div>
                                 </form>

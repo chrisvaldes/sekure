@@ -10,15 +10,15 @@ import { ConnexionValidationSchema } from '../../validation/connexion-validation
 import { useForm } from 'react-hook-form'
 import Input from '../../Components/Input'
 import vector from '../../images/connexion/Vector.png'
- 
+
 
 
 export default function Connexion() {
 
   const navigate = useNavigate();
 
-  const {register, handleSubmit, formState : {errors}} = useForm({
-    resolver : zodResolver(ConnexionValidationSchema)
+  const { register, handleSubmit, formState: { errors } } = useForm({
+    resolver: zodResolver(ConnexionValidationSchema)
   })
 
   const handleConnexion = async (data, e) => {
@@ -108,7 +108,7 @@ export default function Connexion() {
               }
             />
           </div>
-          <div className="col-span-4 md:col-span-3 lg:col-span-4 h-full bg-white" style={{backgroundImage : `url(${vector})`, backgroundRepeat : "no-repeat", backgroundPosition : "center bottom"}}>
+          <div className="col-span-4 md:col-span-3 lg:col-span-4 h-full bg-white bg-[center_left] lg:[center_bottom]" style={{ backgroundImage: `url(${vector})`, backgroundRepeat: "no-repeat" }}>
             <div className='px-10'>
               <div className='flex flex-col items-center justify-center pt-10 sm:px-20 md:px-20 lg:px-8'>
                 <form action="" className='w-full' onSubmit={handleSubmit(handleConnexion)}>
@@ -133,7 +133,7 @@ export default function Connexion() {
                   <div className='flex items-center justify-center gap-x-7 pt-5'>
                     <div className='flex flex-col text-left w-full'>
                       <label htmlFor="password" className='pricing-label pb-1'>Mot de passe</label>
-                      <Input 
+                      <Input
                         type="password"
                         name="password"
                         register={register}
@@ -146,13 +146,15 @@ export default function Connexion() {
                     </div>
                   </div>
                   <div class="pt-8 pb-16">
-                    <div class="flex items-center justify-center gap-5 btn-accounts">
-                      <button type='submit' className="btn-connect btn-nav-text flex items-center justify-around bg-green-deep btn-nav " href="#">
-                        <span>Envoyer</span>
+                    <div class="flex  flex-wrap lg:flex-nowrap items-center justify-center gap-5 btn-accounts">
+                      <button type='submit' className="btn-connect btn-nav-text flex items-center justify-around bg-green-color btn-nav  w-full" href="#">
+                        <div className="w-full flex items-center justify-center">
+                          <span>continuer</span>
+                        </div>
                         <Arrow background="#FFFF" textcolor="#285246" />
                       </button>
-                      <Link to="/creation-compte" class=" bg-gray-100  px-5 py-3.5 rounded-xl flex items-center justify-between gap-5 w-full">
-                        <span class="btn-has-account-grey-text">Pas encore de compte? <span className='btn-has-account-black-text'>Inscrivez vous</span></span>
+                      <Link to="/creation-compte" class=" bg-gray-100  px-5 py-3.5 text-center flex items-center justify-center lg:justify-start gap-5 w-full">
+                        <span class="btn-has-account-grey-text ">Pas de compte? <span className='btn-has-account-black-text'>Inscrivez vous</span></span>
                       </Link>
                     </div>
                   </div>
