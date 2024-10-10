@@ -45,8 +45,8 @@ export default function Accueil() {
                 <section className='w-full mt-20'>
                     {/*start  div with women selfie  */}
                     <div className="relative grid items-center justify-center grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
-                        <div className="accueil-content  top-[145px] mx-5 md:ml-10 lg:ml-20">
-                            <div className=" gap-[6px] pb-[27px]">
+                        <div className="accueil-content  top-[145px]  md:ml-10 lg:ml-20">
+                            <div className=" gap-[6px] pb-[27px] mx-5 sm:mx-0">
                                 <div className='verification-btn'>
                                     <Link to="/" className='text-nowrap flex items-center justify-center btn-verification btn-verification-text mb-5'>
                                         VERIFICATION D'UTILISATEURS
@@ -60,13 +60,13 @@ export default function Accueil() {
                             </div>
 
                             <div className="">
-                                <p className='title-content px-6'>
+                                <p className='title-content mx-5 sm:mx-0'>
                                     Votre plateforme de vérification d'identité alimentée par l'IA pour la prévention des fraudes, <br />
                                     la conformité et la protection de vos clients. Construisez des communautés numériques de<br />
                                     confiance, améliorez l'expérience utilisateur et stimulez la croissance de votre entreprise
                                 </p>
-                                <div className="flex items-center justify-center">
-                                    <div className='flex lg:flex-wrap items-center justify-center md:justify-center md:items-center lg:items-start lg:justify-start gap-x-4 sm:gap-[28px] pt-[28px] '>
+                                <div className="flex items-center justify-center w-full">
+                                    <div className='flex lg:flex-wrap items-center justify-center md:justify-center md:items-center lg:items-start lg:justify-start gap-x-4 sm:gap-[28px] pt-[28px] w-full'>
                                         <Link to="/" className='flex  accueil-btn'>
                                             <div className='flex text-nowrap items-center justify-around w-full px-2'>
                                                 <div className='flex items-center'>
@@ -91,7 +91,7 @@ export default function Accueil() {
                                     </div>
                                 </div>
 
-                                <div className='sub-title mt-10 pb-10'>
+                                <div className='sub-title mt-10 pb-10 mx-5 sm:mx-0'>
                                     Nous vous aidons à facilement accepter <br />
                                     des utilisateurs fiables et à repousser les <br />
                                     fraudeurs pour votre entreprise

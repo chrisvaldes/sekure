@@ -851,8 +851,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: auto;
-    margin: 0 1rem;
+    /* padding: auto;
+    margin: 0 1rem; */
   }
 
   .background-footer {
