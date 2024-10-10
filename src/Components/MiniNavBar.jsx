@@ -812,7 +812,7 @@ export default function MiniNavBar() {
 
                                         <div className="flex items-center justify-center pb-10 w-full">
                                             <div className="detection-appareil flex items-center justify-center">
-                                                <img src={detectionApp} alt="" className='' />
+                                                <img src={detectionApp} alt="" className='img-detection-appareil w-[85%]' />
                                             </div>
                                             {/* <img src={detectionApp} alt="" className='hand object-contain w-4/6' /> */}
                                         </div>
