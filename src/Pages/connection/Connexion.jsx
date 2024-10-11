@@ -1,15 +1,15 @@
+import { zodResolver } from '@hookform/resolvers/zod'
 import React from 'react'
+import { useForm } from 'react-hook-form'
 import { Link, useNavigate } from 'react-router-dom'
 import Arrow from '../../Components/Arrow'
 import ConnexionCard from '../../Components/connexion/ConnexionCard'
+import Input from '../../Components/Input'
 import man from "../../images/connexion/man.png"
 import vectorLogo from '../../images/connexion/Vector-connexion-logo.png'
-import logo from "../../images/Group.png"
-import { zodResolver } from '@hookform/resolvers/zod'
-import { ConnexionValidationSchema } from '../../validation/connexion-validation'
-import { useForm } from 'react-hook-form'
-import Input from '../../Components/Input'
 import vector from '../../images/connexion/Vector.png'
+import logo from "../../images/Group.png"
+import { ConnexionValidationSchema } from '../../validation/connexion-validation'
 
 
 
@@ -29,7 +29,7 @@ export default function Connexion() {
   }
 
   return (
-    <section className='connexion flex items-center justify-center min-h-screen'>
+    <section className='connexion flex items-center justify-center min-h-screen bg-white lg:bg-none'>
       <div className='w-full relative'>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-9" >
           <div className="col-span-2 hidden items-center justify-center md:hidden lg:block h-full connexion-col-2 bg-green-color">
@@ -108,7 +108,7 @@ export default function Connexion() {
               }
             />
           </div>
-          <div className="col-span-4 md:col-span-3 lg:col-span-4 h-full bg-white bg-[center_left] lg:[center_bottom]" style={{ backgroundImage: `url(${vector})`, backgroundRepeat: "no-repeat" }}>
+          <div className="col-span-4 md:col-span-3 lg:col-span-4 h-full bg-white bg-[-2%_35%] lg:bg-[center_bottom]" style={{ backgroundImage: `url(${vector})`, backgroundRepeat: "no-repeat" }}>
             <div className='px-10'>
               <div className='flex flex-col items-center justify-center pt-10 sm:px-20 md:px-20 lg:px-8'>
                 <form action="" className='w-full' onSubmit={handleSubmit(handleConnexion)}>

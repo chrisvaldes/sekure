@@ -27,11 +27,11 @@ export default function Enregistrement() {
 
 
     return (
-        <div className="flex items-center justify-center min-h-screen">
+        <div className="flex items-center justify-center min-h-screen bg-white">
             <div className='otp-verification bg-white'>
                 <div className='w-full grid grid-col-1 md:grid-cols-3 lg:grid-cols-12'>
                     <div className="w-full col-span-1 md:hidden lg:block"></div>
-                    <div className="w-full md:col-span-3 col-span-4 lg:col-span-4 bg-[center_left] lg:[center_top]" style={{ backgroundImage: `url(${vector})`, backgroundRepeat: "no-repeat" }}>
+                    <div className="w-full md:col-span-3 col-span-4 lg:col-span-4 bg-[-2%_10%] lg:bg-[center_bottom] lg:bg-none" style={{ backgroundImage: `url(${vector})`, backgroundRepeat: "no-repeat" }}>
                         <div className=' flex flex-col items-center justify-center px-10 pt-10 sm:px-20 md:px-20 lg:px-8 w-full'>
                             <form action="" className='' onSubmit={handleSubmit(handleCreationCompte)}>
                                 <div className='connexion-connect py-5'>
@@ -126,7 +126,7 @@ export default function Enregistrement() {
                                             <span className='w-full text-center'>Créer mon compte</span>
                                             <img src={iconArrow} alt="" />
                                         </button>
-                                        <Link to="/" class="btn-has-account bg-gray-100  px-5 py-3.5 flex items-center justify-between gap-5 text-nowrap w-full">
+                                        <Link to="/" class="btn-has-account  px-5 py-3.5 flex items-center justify-center lg:justify-start gap-5 text-nowrap w-full">
                                             <span class="btn-has-account-grey-text">Déjà un compte? <span className='btn-has-account-black-text'>Connectez-vous</span></span>
                                         </Link>
                                     </div>
