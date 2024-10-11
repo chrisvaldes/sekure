@@ -8,6 +8,7 @@ import man from "../../images/connexion/man.png"
 import vectorLogo from '../../images/connexion/Vector-connexion-logo.png'
 import iconArrow from "../../images/icons/arrowWhite.png"
 import { CreationCompteValidationSchema } from '../../validation/creation-compte-validate'
+import vector from "../../images/connexion/Vector.png"
 
 export default function Enregistrement() {
 
@@ -30,14 +31,14 @@ export default function Enregistrement() {
             <div className='otp-verification bg-white'>
                 <div className='w-full grid grid-col-1 md:grid-cols-3 lg:grid-cols-12'>
                     <div className="w-full col-span-1 md:hidden lg:block"></div>
-                    <div className="w-full md:col-span-3 col-span-4 lg:col-span-4">
-                        <div className='flex flex-col items-center justify-center px-10 pt-10 sm:px-20 md:px-20 lg:px-8'>
+                    <div className="w-full md:col-span-3 col-span-4 lg:col-span-4 bg-[center_left] lg:[center_top]" style={{ backgroundImage: `url(${vector})`, backgroundRepeat: "no-repeat" }}>
+                        <div className=' flex flex-col items-center justify-center px-10 pt-10 sm:px-20 md:px-20 lg:px-8 w-full'>
                             <form action="" className='' onSubmit={handleSubmit(handleCreationCompte)}>
                                 <div className='connexion-connect py-5'>
                                     Créer un compte
                                 </div>
                                 <div className='flex items-center justify-center  gap-[27px]'>
-                                    <div className='flex flex-col text-left w-full'>
+                                    <div className=' flex-col text-left w-full hidden lg:block'>
                                         <label htmlFor="nom" className='pricing-label'>Nom</label>
                                         <Input
                                             type="text"
@@ -48,9 +49,8 @@ export default function Enregistrement() {
                                             error={errors.nom}
                                             className='pricing-input w-full'
                                         />
-                                        {/* <input type="text" name="" id="" placeholder='Your company' className='pricing-input w-full' /> */}
                                     </div>
-                                    <div className='flex flex-col text-left w-full'>
+                                    <div className='flex-col text-left w-full hidden lg:block'>
                                         <label htmlFor="prenom" className='pricing-label'>Prenom</label>
                                         <Input
                                             type="text"
@@ -64,6 +64,35 @@ export default function Enregistrement() {
                                         {/* <input type="text" name="" id="" placeholder='Your company' className='pricing-input w-full' /> */}
                                     </div>
                                 </div>
+
+                                {/* nom  */}
+                                <div className='flex-col text-left w-full block lg:hidden'>
+                                    <label htmlFor="nom" className='pricing-label'>Nom</label>
+                                    <Input
+                                        type="text"
+                                        name="nom"
+                                        placeholder='Votre nom'
+                                        id="name"
+                                        register={register}
+                                        error={errors.nom}
+                                        className='pricing-input w-full'
+                                    />
+                                </div>
+
+                                {/* prenom  */}
+                                <div className='flex-col text-left w-full block lg:hidden'>
+                                    <label htmlFor="prenom" className='pricing-label'>Prenom</label>
+                                    <Input
+                                        type="text"
+                                        name="prenom"
+                                        placeholder='Votre prenom'
+                                        id="prenom"
+                                        register={register}
+                                        error={errors.prenom}
+                                        className='pricing-input w-full'
+                                    />
+                                </div>
+
                                 <div className='flex flex-col text-left w-full pt-5'>
                                     <label htmlFor="email" className='pricing-label'>Adresse Mail</label>
                                     <Input
@@ -92,41 +121,44 @@ export default function Enregistrement() {
                                     {/* <input type="password" name="" id="" placeholder='Mot de passe' className='pricing-input w-full' /> */}
                                 </div>
                                 <div class="pt-8">
-                                    <div class="flex items-center justify-between gap-5 ">
-                                        <button type='submit' className="btn-account flex items-center justify-center text-nowrap" href="#">
-                                            <span>Créer mon compte</span>
+                                    <div class="flex items-center justify-between gap-5 flex-wrap lg:flex-nowrap">
+                                        <button type='submit' className="btn-account flex items-center justify-center text-nowrap w-full" href="#">
+                                            <span className='w-full text-center'>Créer mon compte</span>
                                             <img src={iconArrow} alt="" />
                                         </button>
-                                        <Link to="/" class="btn-has-account bg-gray-100  px-5 py-3.5 flex items-center justify-between gap-5">
+                                        <Link to="/" class="btn-has-account bg-gray-100  px-5 py-3.5 flex items-center justify-between gap-5 text-nowrap w-full">
                                             <span class="btn-has-account-grey-text">Déjà un compte? <span className='btn-has-account-black-text'>Connectez-vous</span></span>
                                         </Link>
                                     </div>
                                 </div>
+
+
+                                <div className=' w-full flex items-center justify-start text-[#D9D9D9] pt-20 pb-3'>
+                                    <span className='connexion-side3-logo pr-2'>AIBIOMETRICS</span>
+                                    <img src={vectorLogo} alt="" />
+                                </div>
+                                <div className="connexion-side3-content w-full pb-10">
+                                    Pionniers de la biométrie par Intelligence Artificielle. Des solutions innovantes <br />
+                                    d'identification biométrique pour une sécurité renforcée. Sécurisez vos établissements <br />
+                                    financiers avec nos solutions biométriques de pointe. Authentification forte, lutte contre la <br />
+                                    fraude. Contactez nos experts pour une démonstration. © AIbiometrics. Tous droits réservés.
+                                </div>
                             </form>
-                            <div className="">
-                                <div >
-                                    <div className=' w-full flex items-center justify-start text-[#D9D9D9] pt-20 pb-3'>
-                                        <span className='connexion-side3-logo pr-2'>AIBIOMETRICS</span>
-                                        <img src={vectorLogo} alt="" />
-                                    </div>
-                                    <div className="connexion-side3-content">
-                                        Pionniers de la biométrie par Intelligence Artificielle. Des solutions innovantes <br />
-                                        d'identification biométrique pour une sécurité renforcée. Sécurisez vos établissements <br />
-                                        financiers avec nos solutions biométriques de pointe. Authentification forte, lutte contre la <br />
-                                        fraude. Contactez nos experts pour une démonstration. © AIbiometrics. Tous droits réservés.
-                                    </div>
+                            {/* <div className="w-full">
+                                <div className='w-full'>
+                                    
                                 </div>
 
-                            </div>
+                            </div> */}
                         </div>
                     </div>
-                    <div className="relative w-full md:hidden lg:block lg:col-span-7">
+                    <div className="relative w-full hidden lg:block lg:col-span-7">
                         <div className='grid grid-cols-1 md:grid-cols-5 lg:grid-cols-7'>
                             <div className="w-full col-span-2 md:hidden lg:block lg:col-span-2">
                             </div>
-                            <div className="w-full col-span-5 lg:col-span-5 ">
+                            <div className="w-full col-span-5 hidden lg:block lg:col-span-5 ">
                                 <div className="col-span-3 pt-10 pb-10 flex flex-col items-start justify-center bg-[#EFFFF3]">
-                                     
+
                                     <ConnexionCard
                                         title="Verifiez les documents d’identité"
                                         content={

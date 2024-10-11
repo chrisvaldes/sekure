@@ -153,15 +153,15 @@ export default function Connexion() {
                         </div>
                         <Arrow background="#FFFF" textcolor="#285246" />
                       </button>
-                      <Link to="/creation-compte" class=" bg-gray-100  px-5 py-3.5 text-center flex items-center justify-center lg:justify-start gap-5 w-full">
+                      <Link to="/creation-compte" class="btn-has-account px-5 py-3.5 text-center flex items-center justify-center lg:justify-start gap-5 w-full">
                         <span class="btn-has-account-grey-text ">Pas de compte? <span className='btn-has-account-black-text'>Inscrivez vous</span></span>
                       </Link>
                     </div>
                   </div>
                 </form>
-                <div className="w-full">
+                <div className="w-full pb-10 ">
                   <div >
-                    <div className=' w-full flex items-center justify-start gap-x-2 text-[#D9D9D9] pt-20 pb-3'>
+                    <div className=' w-full flex items-center justify-start gap-x-2 text-[#D9D9D9] lg:pt-20 pb-3'>
                       <span className='connexion-side3-logo'>AIBIOMETRICS</span>
                       <img src={vectorLogo} alt="" />
                     </div>

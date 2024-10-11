@@ -1627,7 +1627,11 @@ textarea {
   .sub-title-page-2 {
     padding-top: 20rem;
   }
+  .registration-middle{
+    display: none;
+  }
 }
+
 
 @media (max-width:1070px) {
   .sub-title-page-2 {
