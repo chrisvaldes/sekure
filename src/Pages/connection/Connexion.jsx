@@ -127,7 +127,6 @@ export default function Connexion() {
                         error={errors.email}
                         className='pricing-input w-full'
                       />
-                      {/* <input type="email" name="" id="email" placeholder='Your company' className='pricing-input w-full' /> */}
                     </div>
                   </div>
                   <div className='flex items-center justify-center gap-x-7 pt-5'>
@@ -141,17 +140,13 @@ export default function Connexion() {
                         placeholder='Mot de passe'
                         className='pricing-input w-full'
                       />
-
-                      {/* <input type="password" name="" id="password" placeholder='Mot de passe' className='pricing-input w-full' /> */}
                     </div>
                   </div>
                   <div class="pt-8 pb-16">
                     <div class="flex  flex-wrap lg:flex-nowrap items-center justify-center gap-5 btn-accounts">
-                      <button type='submit' className="btn-connect btn-nav-text flex items-center justify-around bg-green-color btn-nav  w-full" href="#">
-                        <div className="w-full flex items-center justify-center">
-                          <span>continuer</span>
-                        </div>
-                        <Arrow background="#FFFF" textcolor="#285246" />
+                      <button type='submit' className="btn-account flex items-center justify-center text-nowrap w-full" href="#">
+                        <span className='w-full text-center'>Créer mon compte</span>
+                        <img src={iconArrow} alt="" />
                       </button>
                       <Link to="/creation-compte" class="btn-has-account px-5 py-3.5 text-center flex items-center justify-center lg:justify-start gap-5 w-full">
                         <span class="btn-has-account-grey-text ">Pas de compte? <span className='btn-has-account-black-text'>Inscrivez vous</span></span>
