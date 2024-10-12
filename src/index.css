@@ -2455,6 +2455,24 @@ textarea {
       opacity: 1;
   }
 }
+.img-detection-appareil{
+  animation-name: slideInFromTop;
+  animation-duration: .5s;
+  animation-timing-function: ease-in-out;
+  /* animation-delay: .2s; */
+}
+
+@keyframes slideInFromTop {
+
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+  0% {
+      transform: translateY(-50%);
+      opacity: 0;
+  }
+}
 
 /* @keyframes slideInFromLeft {
   0% {

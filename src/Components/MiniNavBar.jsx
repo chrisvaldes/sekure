@@ -329,7 +329,7 @@ export default function MiniNavBar() {
                                 <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center w-full mx-auto gap-10 ">
                                     <div className="hand-div2 flex items-center justify-center relative">
                                         <div className="detection-appareil absolute flex items-center justify-center">
-                                            <img src={detectionApp} alt="" className='' />
+                                            <img src={detectionApp} alt="" className='img-detection-appareil' />
                                         </div>
                                     </div>
                                     <div className='flex flex-col items-center justify-center w-full'>
@@ -411,7 +411,7 @@ export default function MiniNavBar() {
                                     <div className='w-full flex items-center justify-center'>
                                         <div className="hand-div2 h-[25rem] md:w-1/2 lg:w-[25rem] w-full">
                                             <div className="sactions flex items-center justify-center">
-                                                <img src={sanctions} alt="" className='hand contain' />
+                                                <img src={sanctions} alt="" className='img-sanction' />
                                             </div>
                                         </div>
                                     </div>

@@ -108,8 +108,8 @@ export default function Connexion() {
               }
             />
           </div>
-          <div className="col-span-4 md:col-span-3 lg:col-span-4 h-full bg-white bg-[-2%_35%] lg:bg-[center_bottom]" style={{ backgroundImage: `url(${vector})`, backgroundRepeat: "no-repeat" }}>
-            <div className='px-10'>
+          <div className="col-span-4 md:col-span-3 lg:col-span-4 h-full bg-white bg-[-2%_35%] lg:bg-[left_center]" style={{ backgroundImage: `url(${vector})`, backgroundRepeat: "no-repeat" }}>
+            <div className='px-5'>
               <div className='flex flex-col items-center justify-center pt-10 sm:px-20 md:px-20 lg:px-8'>
                 <form action="" className='w-full' onSubmit={handleSubmit(handleConnexion)}>
                   <div className='connexion-connect py-5'>

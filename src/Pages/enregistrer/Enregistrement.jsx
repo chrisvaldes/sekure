@@ -31,7 +31,7 @@ export default function Enregistrement() {
             <div className='otp-verification bg-white'>
                 <div className='w-full grid grid-col-1 md:grid-cols-3 lg:grid-cols-12'>
                     <div className="w-full col-span-1 md:hidden lg:block"></div>
-                    <div className="w-full md:col-span-3 col-span-4 lg:col-span-4 bg-[-2%_10%] lg:bg-[center_bottom] lg:bg-none" style={{ backgroundImage: `url(${vector})`, backgroundRepeat: "no-repeat" }}>
+                    <div className="w-full md:col-span-3 col-span-4 lg:col-span-4 bg-[-2%_10%] lg:bg-[left-center] lg:bg-none" style={{ backgroundImage: `url(${vector})`, backgroundRepeat: "no-repeat" }}>
                         <div className=' flex flex-col items-center justify-center px-10 pt-10 sm:px-20 md:px-20 lg:px-8 w-full'>
                             <form action="" className='' onSubmit={handleSubmit(handleCreationCompte)}>
                                 <div className='connexion-connect py-5'>
