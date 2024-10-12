@@ -10,7 +10,7 @@ import vectorLogo from '../../images/connexion/Vector-connexion-logo.png'
 import vector from '../../images/connexion/Vector.png'
 import logo from "../../images/Group.png"
 import { ConnexionValidationSchema } from '../../validation/connexion-validation'
-
+import iconArrow from "../../images/icons/arrowWhite.png"
 
 
 export default function Connexion() {

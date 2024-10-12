@@ -1,10 +1,9 @@
 import React from 'react'
-import logo from "../images/Group.png"
-import Message from './Message'
 import { Link } from 'react-router-dom'
-import arrowWhite from '../images/icons/arrowWhite.png'
-import vectorWhite from "../images/footer/vector-white.png"
 import womenFooter from '../images/footer/women-footer.png'
+import logo from "../images/Group.png"
+import arrowWhite from '../images/icons/arrowWhite.png'
+import Message from './Message'
 
 
 export default function Footer() {
@@ -14,30 +13,47 @@ export default function Footer() {
                 <div className='flex order-2 lg:order-1 footer-section-text flex-col items-start justify-center z-20 w-full'>
                     <div className='footer-title py-5 text-nowrap w-full'>
                         <span className='text-green-deep'>La vérification n'est plus un <br />
-                        obstacle pour votre business,<br /></span>
+                            obstacle pour votre business,<br /></span>
                         <span className='text-green-deep md:text-white'>Acceptez plus facilement vos <br />
-                        utilisateurs</span>
+                            utilisateurs</span>
                     </div>
                     <div className='footer-content pt-5 md:text-nowrap w-full'>
                         Intégrez notre API en quelques lignes de code et concentrez-vous sur votre cœur de métier. <br />
                         Notre solution, robuste et fiable, s'adapte à toutes vos exigences. Prêt à révolutionner votre <br />
                         processus de vérification ? Commencez votre essai gratuit dès aujourd'hui.
                     </div>
+                    {/* <div className="flex items-center justify-center w-full">
+                        <div className='flex lg:flex-wrap items-center justify-center md:justify-center md:items-center lg:items-start lg:justify-start gap-x-4 sm:gap-[28px] pt-[28px] w-full'>
+                            <Link to="/" className='flex  accueil-btn'>
+                                <div className='flex text-nowrap items-center justify-around w-full px-2'>
+                                    <div className='flex items-center'>
+                                        Commencer
+                                        <span className="hidden sm:block pl-1"> gratuitement</span>
+                                    </div>
+                                    <img src={arrowWhite} alt="" />
+                                </div>
+                            </Link>
+                            <Link to="/" className=' accueil-btn-clean btn flex items-center justify-around bg-green-clean'>
+                                <span className='btn-text text-green-deep text-nowrap'>
+                                    Nous Contacter
+                                </span>
+                                <img src={message} alt="" />
+                            </Link>
+                        </div>
+                    </div> */}
                     <div class="  flex items-center justify-center lg:justify-start md:flex-nowrap  gap-5 pt-10 w-full">
-                        <Link to="/" class="btn-footer-deep bg-color-deep flex items-center justify-around">
-                            <div className="flex items-center justify-center gap-x-2">
-                                <div class="text-nowrap flex items-center justify-center gap-x-2" >
-                                    <span className="">Commencer</span>
-                                    <span className="hidden sm:block">Gratuitement</span>
+                        <Link to="/" class="flex  accueil-btn w-1/2">
+                            <div className="flex text-nowrap items-center justify-around w-full">
+                                <div className='flex items-center'>
+                                    Commencer
+                                    <span className="hidden sm:block pl-1"> gratuitement</span>
                                 </div>
                                 <img src={arrowWhite} alt="" />
                             </div>
                         </Link>
-                        <Link to="/pricing" class=" btn-footer-white flex items-center justify-center sm:justify-around gap-x-2">
-                            <div className="flex items-center justify-center">
-                                <span class="text-green-deep text-nowrap ">Nous contacter</span>
+                        <Link to="/pricing" class=" accueil-btn-clean btn bg-white flex items-center justify-around w-1/2 gap-x-2">
+                                <div class="btn-text flex text-green-deep text-nowrap "><span className='hidden sm:block pr-1'>Nous </span> contacter</div>
                                 <Message background="#285246" textcolor="#FFFF" />
-                            </div>
                         </Link>
 
                     </div>
