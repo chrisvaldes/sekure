@@ -140,8 +140,9 @@ export default function OTPVerification() {
                                             </Link> */}
                                         </div>
                                     </div>
+
                                 </form>
-                                <div>
+                                <div className='w-full'>
                                     <div className='w-full flex items-center justify-start text-[#D9D9D9] lg:pt-20 pb-3'>
                                         <span className='connexion-side3-logo pr-2'>AIBIOMETRICS</span>
                                         <img src={vectorLogo} alt="" />

@@ -52,8 +52,8 @@ export default function NavBar() {
                 </button>
               </div> */}
 
-              <div className="flex items-center justify-center md:flex md:items-center md:gap-12">
-                
+              <div className="flex items-center justify-between lg:justify-center md:flex md:items-center md:gap-12">
+
                 <div className="menu-bars" ref={menuButtonRef} onClick={toggleSidebar}>
                   <button className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
                     <svg xmlns="http://www.w3.org/2000/svg" className="size-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
@@ -69,10 +69,18 @@ export default function NavBar() {
                   </button>
                 </div> */}
 
-                <div className="block pl-5">
+                {/* logo AIBIOMETRICS */}
+                <div className="hidden lg:block">
                   <div className="logo flex items-center justify-center">
                     <img src={logo} alt="" />
                   </div>
+                </div>
+
+              </div>
+
+              <div className="block px-4 sm:px-0 lg:hidden">
+                <div className="logo flex items-center justify-center">
+                  <img src={logo} alt="" />
                 </div>
               </div>
 
@@ -113,8 +121,8 @@ export default function NavBar() {
               </div>
 
               <div className="flex items-center justify-center">
-                <img src={union} alt="" className="" />
-                <select name="" id="">
+                <img src={union} alt="" className="world-icon" />
+                <select name="" id="" className="nav-select">
                   <option value="">
                     <div className="flex items-center justify-center gap-x-2">
                       <div class="nav-language">
