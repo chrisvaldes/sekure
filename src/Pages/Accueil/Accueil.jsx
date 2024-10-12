@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import Accordion from '../../Components/Accordion'
+import AccordionMiniCardSquare from '../../Components/accueil/AccordionMiniCardSquare'
 import CardAccueil from '../../Components/accueil/CardAccueil'
+import Footer from '../../Components/Footer'
 import MiniCard from '../../Components/MiniCard'
 import MiniCardSquare from '../../Components/MiniCardSquare'
 import MiniNavBar from '../../Components/MiniNavBar'
@@ -10,12 +12,15 @@ import SmallCheckCircle from '../../Components/SmallCheckCircle'
 import cardArrow from "../../images/accueil/card-arrow.png"
 import cardIcon from "../../images/accueil/card-icon.png"
 import cardSmile from "../../images/accueil/card-smile.png"
+import groupDatabases from "../../images/accueil/dataBase.png"
+import phoneMobile from "../../images/accueil/full-img-phone.png"
+import vector from "../../images/accueil/vectors.png"
+import women from "../../images/accueil/women-selfie.png"
 import bgChoice from "../../images/bg-choice.png"
 import bigMother from '../../images/bigMother.png'
 import vectorBigMother from "../../images/bigMotherVector.png"
 import cniPassport from "../../images/cniPassport.png"
 import girlCni from "../../images/girlCni.png"
-import groupDatabases from "../../images/accueil/dataBase.png"
 import arrowWhite from "../../images/icons/arrowWhite.png"
 import message from "../../images/icons/messageWhite.png"
 import phone from "../../images/phone.png"
@@ -23,14 +28,38 @@ import phoneBg from "../../images/phoneBg.png"
 import unionDown from "../../images/Union (1).png"
 import unionUp from "../../images/Union.png"
 import vectorDatabases from "../../images/vectorDatabases.png"
-import Footer from '../../Components/Footer'
-import vector from "../../images/accueil/vectors.png"
-import women from "../../images/accueil/women-selfie.png"
-import phoneMobile from "../../images/accueil/full-img-phone.png"
-import AccordionMiniCardSquare from '../../Components/accueil/AccordionMiniCardSquare'
 
 
 export default function Accueil() {
+
+    const cniRef = useRef()
+    const bigMotherRef = useRef()
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    if (entry.target === cniRef.current) {
+                        cniRef.current.classList.add("active");
+                        observer.unobserve(cniRef.current);
+                    } else if (entry.target === bigMotherRef.current) {
+                        bigMotherRef.current.classList.add("active");
+                        observer.unobserve(bigMotherRef.current);
+                    }
+                }
+            });
+        });
+
+        if (cniRef.current) {
+            observer.observe(cniRef.current);
+        }
+        if (bigMotherRef.current) {
+            observer.observe(bigMotherRef.current);
+        }
+
+    }, [])
+
+
     return (
         <div className=''>
 
@@ -87,7 +116,7 @@ export default function Accueil() {
 
                                 <div className="women-accueil-bg block lg:hidden relative items-center justify-center h-[611px]" style={{ backgroundImage: `url(${vector})`, backgroundRepeat: "no-repeat", backgroundPosition: "bottom left", width: "100%" }}>
                                     <div className="absolute bottom-0 object-contain  h-[611px]" style={{ backgroundImage: `url(${women})`, backgroundRepeat: "no-repeat", backgroundSize: "500px", backgroundPosition: "bottom center", width: "100%" }}>
-                                        
+
                                     </div>
                                 </div>
 
@@ -225,7 +254,7 @@ export default function Accueil() {
                             <div className='relative flex flex-col gap-5'>
                                 <div className=" card-vert"></div>
                                 <div className="card-vert"></div>
-                                <img src={cniPassport} alt="" className='cni-img' />
+                                <img ref={cniRef} src={cniPassport} alt="" className='cni-img' />
                             </div>
                         </div>
                     </div>
@@ -239,7 +268,7 @@ export default function Accueil() {
                             <div className='relative flex gap-5'>
                                 <div className=" card-horiz"></div>
                                 <div className="card-horiz"></div>
-                                <img src={bigMother} alt="" className=' bigMother' />
+                                <img ref={bigMotherRef} src={bigMother} alt="" className=' bigMother' />
                             </div>
                         </div>
                         <div className=" order-text group-card-horiz-content flex flex-col items-center gap-y-5">

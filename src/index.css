@@ -656,12 +656,28 @@
   position: absolute;
   top: -23%;
   left: 0;
+  transform: translateX(10%);
+  opacity: 0;
+  transition: transform 1.5s ease-out, opacity .4s ease-out;
+}
+
+.cni-img.active{
+  transform: translateX(0);
+  opacity: 1;
 }
 
 .bigMother {
   position: absolute;
   top: -45.5%;
   left: 3%;
+  transform: translateX(-10%);
+  opacity: 0;
+  transition: transform 1.5s ease-out, opacity .4s ease-out;
+}
+
+.bigMother.active{
+  transform: translateX(0);
+  opacity: 1;
 }
 
 
