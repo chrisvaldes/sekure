@@ -909,7 +909,7 @@ export default function MiniNavBar() {
                                         <div className='w-full flex items-center justify-center'>
                                             <div className="flex items-center justify-center w-full pb-10">
                                                 <div className="sactions flex justify-center items-center">
-                                                    <img src={sanctions} alt="" className='w-[90%]' />
+                                                    <img src={sanctions} alt="" className='w-[90%] img-sanction' />
                                                 </div>
                                             </div>
                                         </div>

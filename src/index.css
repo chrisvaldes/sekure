@@ -1791,30 +1791,30 @@ textarea {
   }
 
   .verification-identiter {
-    width: 404px;
-    height: 270px;
+    width: 290px;
+    height: 380px;
     border-radius: 17px;
     background: #EEEEEE;
   }
 
   .verification-biometrique {
-    width: 404px;
-    height: 270px;
+    width: 290px;
+    height: 380px;
     border-radius: 17px;
     background: #B9FFC4;
 
   }
 
   .preuve-adresse {
-    width: 441px;
-    height: 270px;
+    width: 290px;
+    height: 380px;
     border-radius: 17px;
     background: #EEEEEE;
   }
 
   .detection-appareil {
-    width: 441px;
-    height: 270px;
+    width: 290px;
+    height: 380px;
     border-radius: 17px;
     background: #B9FFC4;
   }
@@ -1825,8 +1825,8 @@ textarea {
   } */
 
   .sactions {
-    width: 441px;
-    height: 270px;
+    width: 290px;
+    height: 380px;
     border-radius: 17px;
     background: #EEEEEE;
   }
@@ -2435,31 +2435,24 @@ textarea {
   }
 }
 
-/* Animation */
+/* Animation keyframes*/
 
-.cni-img {
+.img-sanction {
   animation-name: slideInFromBottom;
   animation-duration: .5s;
-  animation-timing-function: ease-in;
-  /* animation-delay: .5s; */
+  animation-timing-function: ease-in-out;
+  /* animation-delay: .2s; */
 }
 
 @keyframes slideInFromBottom {
 
-  /* 0% {
+  0% {
       transform: translateY(100%);
       opacity: 0;
   }
   100% {
       transform: translateY(0);
       opacity: 1;
-  } */
-  from {
-    top: 0px
-  }
-
-  to {
-    bottom: 100px
   }
 }
 
