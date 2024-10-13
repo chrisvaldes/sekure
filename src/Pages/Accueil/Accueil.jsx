@@ -35,6 +35,7 @@ export default function Accueil() {
     const cniRef = useRef()
     const bigMotherRef = useRef()
     const bigMotherWrapRef = useRef()
+    const girlCniRef = useRef()
 
     useEffect(() => {
         const observer = new IntersectionObserver(entries => {
@@ -49,6 +50,9 @@ export default function Accueil() {
                     } else if (entry.target === bigMotherWrapRef.current) {
                         bigMotherWrapRef.current.classList.add("active");
                         observer.unobserve(bigMotherWrapRef.current);
+                    } else if (entry.target === girlCniRef.current) {
+                        girlCniRef.current.classList.add("active");
+                        observer.unobserve(girlCniRef.current);
                     }
                 }
             });
@@ -62,6 +66,9 @@ export default function Accueil() {
         }
         if (bigMotherWrapRef.current) {
             observer.observe(bigMotherWrapRef.current);
+        }
+        if (girlCniRef.current) {
+            observer.observe(girlCniRef.current);
         }
 
     }, [])
@@ -262,7 +269,7 @@ export default function Accueil() {
                                 <div className=" card-vert"></div>
                                 <div className="card-vert"></div>
                                 <div className="absolute flex items-center justify-center w-[325px] h-[251px] lg:w-full lg:h-full ">
-                                    <img ref={cniRef} src={cniPassport} alt="" className='cni-img ' />
+                                    <img ref={cniRef} src={cniPassport} alt="" className='cni-img' />
                                 </div>
                             </div>
                         </div>
@@ -396,7 +403,7 @@ export default function Accueil() {
                                 <div className=" card-vert"></div>
                                 <div className="card-vert"></div>
                                 <div className="absolute w-full h-full flex items-center justify-center lg:bottom-3  lg:left-0">
-                                    <img src={girlCni} alt="" className='w-[300px] h-[190px] lg:w-[420px] lg:h-[260px]' />
+                                    <img ref={girlCniRef} src={girlCni} alt="" className='girl-cni w-[300px] h-[190px] lg:w-[420px] lg:h-[260px]' />
                                 </div>
                             </div>
                         </div>

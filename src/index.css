@@ -653,9 +653,6 @@
 }
 
 .cni-img {
-  /* position: absolute; */
-  /* top: -23%;
-  left: 0; */
   transform: translateX(10%);
   opacity: 0;
   transition: transform 1.5s ease-out, opacity .4s ease-out;
@@ -679,6 +676,7 @@
   transform: translateX(0);
   opacity: 1;
 }
+
 .bigMother-wrap {
   transform: translateX(-10%);
   opacity: 0;
@@ -686,6 +684,17 @@
 }
 
 .bigMother-wrap.active{
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.girl-cni{
+  transform: translateX(10%);
+  opacity: 0;
+  transition: transform 1.5s ease-out, opacity .4s ease-out;
+}
+
+.girl-cni.active{
   transform: translateX(0);
   opacity: 1;
 }
