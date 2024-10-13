@@ -558,8 +558,8 @@ export default function Accueil() {
                 {/* end section mini navbar  */}
 
                 {/* start world section  */}
-                <section className='world-section bg-no-repeat pb-40 sm:pb-2 sm:bg-[100%_10%] bg-contain'>
-                    <div className=' world-section-content sm:pl-[2rem] md:pl-[4rem] lg:pl-[8rem]'>
+                <section className='world-section bg-no-repeat pb-40 sm:pb-2 lg:pt-1 sm:bg-[100%_10%] bg-contain'>
+                    <div className=' world-section-content lg:pl-[8rem]'>
                         <div className="btn-about flex md:items-center md:justify-center lg:items-start lg:justify-start w-full">
                             <Link to="/about" className="btn-choice flex items-center justify-center">A propos de nous</Link>
                         </div>
