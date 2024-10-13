@@ -699,14 +699,23 @@
   opacity: 1;
 }
 
+.group-database{
+  transform: translateX(-10%);
+  opacity: 0;
+  transition: transform 1.5s ease-out, opacity .4s ease-out;
+}
 
+.group-database.active{
+  transform: translateX(0);
+  opacity: 1;
+}
 
-.groupDatabase {
+/* .groupDatabase {
   position: absolute;
   top: 5%;
   left: 0;
   height: 90%;
-}
+} */
 
 .group-card-vert {
   padding: 0 3rem;

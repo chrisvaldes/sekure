@@ -12,7 +12,6 @@ import SmallCheckCircle from '../../Components/SmallCheckCircle'
 import cardArrow from "../../images/accueil/card-arrow.png"
 import cardIcon from "../../images/accueil/card-icon.png"
 import cardSmile from "../../images/accueil/card-smile.png"
-import groupDatabases from "../../images/accueil/dataBase.png"
 import phoneMobile from "../../images/accueil/full-img-phone.png"
 import vector from "../../images/accueil/vectors.png"
 import women from "../../images/accueil/women-selfie.png"
@@ -21,6 +20,7 @@ import bigMother from '../../images/bigMother.png'
 import vectorBigMother from "../../images/bigMotherVector.png"
 import cniPassport from "../../images/cniPassport.png"
 import girlCni from "../../images/girlCni.png"
+import groupDatabases from "../../images/groupDatabases.png"
 import arrowWhite from "../../images/icons/arrowWhite.png"
 import message from "../../images/icons/messageWhite.png"
 import phone from "../../images/phone.png"
@@ -36,6 +36,9 @@ export default function Accueil() {
     const bigMotherRef = useRef()
     const bigMotherWrapRef = useRef()
     const girlCniRef = useRef()
+    const groupDatabasesRef = useRef()
+    const groupDatabaseRef = useRef()
+    const groupDatabaseWrapRef = useRef()
 
     useEffect(() => {
         const observer = new IntersectionObserver(entries => {
@@ -53,6 +56,12 @@ export default function Accueil() {
                     } else if (entry.target === girlCniRef.current) {
                         girlCniRef.current.classList.add("active");
                         observer.unobserve(girlCniRef.current);
+                    }else if (entry.target === groupDatabaseRef.current) {
+                        groupDatabaseRef.current.classList.add("active");
+                        observer.unobserve(groupDatabaseRef.current);
+                    } else if (entry.target === groupDatabaseWrapRef.current) {
+                        groupDatabaseWrapRef.current.classList.add("active");
+                        observer.unobserve(groupDatabaseWrapRef.current);
                     }
                 }
             });
@@ -69,6 +78,12 @@ export default function Accueil() {
         }
         if (girlCniRef.current) {
             observer.observe(girlCniRef.current);
+        }
+        if (groupDatabaseRef.current) {
+            observer.observe(groupDatabaseRef.current);
+        }
+        if (groupDatabaseWrapRef.current) {
+            observer.observe(groupDatabaseWrapRef.current);
         }
 
     }, [])
@@ -134,7 +149,7 @@ export default function Accueil() {
                                     </div>
                                 </div>
 
-                                <div className='sub-title mt-10 pb-10 mx-5 sm:mx-0'>
+                                <div className='sub-title mt-10 pb-10 mx-5 sm:mx-5 md:mx-0'>
                                     Nous vous aidons à facilement accepter <br />
                                     des utilisateurs fiables et à repousser les <br />
                                     fraudeurs pour votre entreprise
@@ -413,9 +428,29 @@ export default function Accueil() {
 
                 {/* start section communication */}
                 <section className="group-card-vert bg-no-repeat bg-right" style={{ backgroundImage: `url(${vectorDatabases})` }}>
-                    <div className='grid grid-cols-1 items-center justify-center md:grid-cols-1 lg:grid-cols-2 pb-20 gap-x-8 gap-y-20'>
-                        <div className="order-img flex items-center justify-center h-[120%]">
+                    <div className='grid grid-cols-1 items-center justify-center md:grid-cols-1 lg:grid-cols-2 py-20 gap-x-8 gap-y-20'>
+                        {/* <div className="order-img flex items-center justify-center h-[120%]">
                             <img src={groupDatabases} alt="" />
+                        </div> */}
+                        <div className='order-img'>
+                            <div className="hidden lg:block items-center justify-center">
+                                <div className='relative flex items-center justify-center gap-5'>
+                                    <div className=" card-horiz"></div>
+                                    <div className="card-horiz"></div>
+                                    <div className="absolute flex items-center justify-center">
+                                        <img ref={groupDatabaseRef} src={groupDatabases} alt="" className='group-database' />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="lg:hidden w-full h-full flex items-center justify-center">
+                                <div className='relative flex items-center justify-center flex-col gap-y-5'>
+                                    <div className=" card-vert"></div>
+                                    <div className="card-vert"></div>
+                                    <div className="absolute w-[300px] h-[200px] md:w-[329px] md:h-[214px] flex items-center justify-center">
+                                        <img ref={groupDatabaseWrapRef} src={groupDatabases} alt="" className='group-database' />
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div className="flex flex-col items-center gap-y-5 bg-no-repeat">
                             <div className="">
