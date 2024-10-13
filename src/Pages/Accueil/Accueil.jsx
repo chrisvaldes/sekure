@@ -34,6 +34,7 @@ export default function Accueil() {
 
     const cniRef = useRef()
     const bigMotherRef = useRef()
+    const bigMotherWrapRef = useRef()
 
     useEffect(() => {
         const observer = new IntersectionObserver(entries => {
@@ -45,6 +46,9 @@ export default function Accueil() {
                     } else if (entry.target === bigMotherRef.current) {
                         bigMotherRef.current.classList.add("active");
                         observer.unobserve(bigMotherRef.current);
+                    } else if (entry.target === bigMotherWrapRef.current) {
+                        bigMotherWrapRef.current.classList.add("active");
+                        observer.unobserve(bigMotherWrapRef.current);
                     }
                 }
             });
@@ -55,6 +59,9 @@ export default function Accueil() {
         }
         if (bigMotherRef.current) {
             observer.observe(bigMotherRef.current);
+        }
+        if (bigMotherWrapRef.current) {
+            observer.observe(bigMotherWrapRef.current);
         }
 
     }, [])
@@ -251,10 +258,12 @@ export default function Accueil() {
                             </div>
                         </div>
                         <div className="flex items-center justify-center">
-                            <div className='relative flex flex-col gap-5'>
+                            <div className='relative flex flex-col items-center justify-center gap-5'>
                                 <div className=" card-vert"></div>
                                 <div className="card-vert"></div>
-                                <img ref={cniRef} src={cniPassport} alt="" className='cni-img' />
+                                <div className="absolute flex items-center justify-center w-[325px] h-[251px] lg:w-full lg:h-full ">
+                                    <img ref={cniRef} src={cniPassport} alt="" className='cni-img ' />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -264,14 +273,25 @@ export default function Accueil() {
                 {/* start section with big mother */}
                 <section>
                     <div className='group-card-horiz grid grid-cols-1 items-center justify-center bg-no-repeat  md:grid-cols-1 lg:grid-cols-2 lg:pt-32 gap-x-8 gap-y-32 mt-10' style={{ backgroundImage: `url(${vectorBigMother})` }}>
-                        <div className=" order-img flex items-center justify-center">
-                            <div className='relative flex gap-5'>
-                                <div className=" card-horiz"></div>
-                                <div className="card-horiz"></div>
-                                <img ref={bigMotherRef} src={bigMother} alt="" className=' bigMother' />
+                        <div className='order-img'>
+                            <div className="hidden lg:block items-center justify-center">
+                                <div className='relative flex gap-5'>
+                                    <div className=" card-horiz"></div>
+                                    <div className="card-horiz"></div>
+                                    <img ref={bigMotherRef} src={bigMother} alt="" className=' bigMother' />
+                                </div>
+                            </div>
+                            <div className="lg:hidden flex items-center justify-center">
+                                <div className='relative flex flex-col gap-y-5'>
+                                    <div className=" card-vert"></div>
+                                    <div className="card-vert"></div>
+                                    <div className="absolute w-[326px] h-[295px] flex items-center justify-center bottom-0 left-1 sm:left-5 md:left-10">
+                                        <img ref={bigMotherWrapRef} src={bigMother} alt="" className='bigMother-wrap' />
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div className=" order-text group-card-horiz-content flex flex-col items-center gap-y-5">
+                        <div className=" order-text flex flex-col items-center gap-y-5">
                             <div className="">
                                 <div className="title-1">
                                     Identifications et Vérifications par scan <br />
@@ -375,7 +395,9 @@ export default function Accueil() {
                             <div className='relative flex flex-col gap-5'>
                                 <div className=" card-vert"></div>
                                 <div className="card-vert"></div>
-                                <img src={girlCni} alt="" className='absolute -top-7 -left-1' />
+                                <div className="absolute w-full h-full flex items-center justify-center lg:bottom-3  lg:left-0">
+                                    <img src={girlCni} alt="" className='w-[300px] h-[190px] lg:w-[420px] lg:h-[260px]' />
+                                </div>
                             </div>
                         </div>
                     </div>
