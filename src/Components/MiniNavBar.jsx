@@ -84,8 +84,8 @@ export default function MiniNavBar() {
                         <div className="flex flex-wrap items-center justify-center gap-16 pb-10 lg:pb-16">
                             {content === "Vérification d'identité" && (
                                 <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center w-full mx-auto gap-10 ">
-                                    <div className="hand-div2 flex items-center justify-center h-[25rem] md:h-[30rem] lg:h-[30rem] w-full">
-                                        <div className='verification-identiter'>
+                                    <div className="flex items-center justify-center h-[25rem] md:h-[30rem] lg:h-[30rem] w-full">
+                                        <div className='relative verification-identiter'>
 
                                         </div>
                                         {/* <img src={verificatiIdentite} alt="" className='hand contain' /> */}

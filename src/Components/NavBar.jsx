@@ -185,27 +185,27 @@ export default function NavBar() {
           >
 
             <li className="sidebar-li hover:text-white hover:bg-green-deep">
-              <Link className="w-full" to="/">
+              <Link className="w-full" to="/accueil">
                 <span className="flex-grow">Accueil</span>
               </Link>
             </li>
             <li className="sidebar-li hover:text-white hover:bg-green-deep">
-              <Link className="w-full" to="/">
+              <Link className="w-full" to="/customer">
                 <span className="flex-grow">Know your customer</span>
               </Link>
             </li>
             <li className="sidebar-li hover:text-white hover:bg-green-deep">
-              <Link className="w-full" to="/">
+              <Link className="w-full" to="/screening">
                 <span className="flex-grow">AML Screening</span>
               </Link>
             </li>
             <li className="sidebar-li hover:text-white hover:bg-green-deep">
-              <Link className="w-full" to="/">
+              <Link className="w-full" to="/pricing">
                 <span className="flex-grow">Pricing</span>
               </Link>
             </li>
             <li className="sidebar-li-about hover:text-white hover:bg-green-deep">
-              <Link className="w-full" to="/">
+              <Link className="w-full" to="/about">
                 <span className="flex-grow">About us</span>
               </Link>
             </li>
