@@ -22,25 +22,6 @@ export default function Footer() {
                         Notre solution, robuste et fiable, s'adapte à toutes vos exigences. Prêt à révolutionner votre <br />
                         processus de vérification ? Commencez votre essai gratuit dès aujourd'hui.
                     </div>
-                    {/* <div className="flex items-center justify-center w-full">
-                        <div className='flex lg:flex-wrap items-center justify-center md:justify-center md:items-center lg:items-start lg:justify-start gap-x-4 sm:gap-[28px] pt-[28px] w-full'>
-                            <Link to="/" className='flex  accueil-btn'>
-                                <div className='flex text-nowrap items-center justify-around w-full px-2'>
-                                    <div className='flex items-center'>
-                                        Commencer
-                                        <span className="hidden sm:block pl-1"> gratuitement</span>
-                                    </div>
-                                    <img src={arrowWhite} alt="" />
-                                </div>
-                            </Link>
-                            <Link to="/" className=' accueil-btn-clean btn flex items-center justify-around bg-green-clean'>
-                                <span className='btn-text text-green-deep text-nowrap'>
-                                    Nous Contacter
-                                </span>
-                                <img src={message} alt="" />
-                            </Link>
-                        </div>
-                    </div> */}
                     <div class="  flex items-center justify-center lg:justify-start md:flex-nowrap  gap-5 pt-10 w-full">
                         <Link to="/" class="flex  accueil-btn w-1/2">
                             <div className="flex text-nowrap items-center justify-around w-full">
@@ -63,8 +44,6 @@ export default function Footer() {
                         <img src={womenFooter} alt="" className='w-[380px] h-[380px] sm:w-[482.12px] sm:h-[444px]' />
                     </div>
                 </div>
-                {/* <div className='absolute footer-accueil-absolute-bg ' >
-                </div> */}
                 <img src={womenFooter} alt="" className='womenFooter hidden lg:block absolute bottom-0 right-28 w-[482.12px] h-[444px] z-10' />
             </div>
             <div className="flex flex-wrap items-center justify-around w-full py-10">

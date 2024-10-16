@@ -54,7 +54,7 @@ export default function Customer() {
                     Grâce à des algorithme avancés, notre solution AML alimentée par l'IA vous permet de détecter les<br />
                     activités suspectes en temps réel pour identifier les transactions et les entités à haut risque.
                   </div>
-                  <div className='flex w-full items-center justify-start lg:justify-center gap-x-2'>
+                  <div className='flex w-full items-center justify-center lg:justify-start gap-x-2 py-8'>
                     <Link to="/" className='screening-big-btn flex items-center justify-around bg-green-color'>
                       <span>Nous contacter</span>
                       <Arrow background="#FFFF" textcolor="#2CE5B1" />
@@ -260,7 +260,7 @@ export default function Customer() {
 
         {/* start section with big mother */}
         <section>
-          <div className='group-card-horiz grid grid-cols-1 items-center justify-center bg-no-repeat  md:grid-cols-1 lg:grid-cols-2 lg:pt-32 gap-x-8 gap-y-32 mt-10' style={{ backgroundImage: `url(${vectorBigMother})` }}>
+          <div className='group-card-horiz grid grid-cols-1 items-center justify-center bg-no-repeat  md:grid-cols-1 lg:grid-cols-2 lg:pt-32 gap-x-8 gap-y-12 lg:gap-y-32' style={{ backgroundImage: `url(${vectorBigMother})` }}>
             <div className="order-2 lg:order-1 flex items-center justify-center">
               <div className=''>
                 <div className="hidden lg:block items-center justify-center">
@@ -283,7 +283,7 @@ export default function Customer() {
                 </div>
               </div>
             </div>
-            <div className="order-1 lg:order-2 group-card-horiz-content flex flex-col items-center gap-y-5">
+            <div className="order-1 lg:order-2 flex flex-col items-center gap-y-5">
               <div className="">
                 <div className="screening-horiz-vert-title">
                   Protégez votre entreprise contre les <br />
@@ -515,11 +515,11 @@ export default function Customer() {
                 Respectez la réglementation KYC et accélérez <br />
                 l'acquisition de clients
               </div>
-              <div className="title-content-1 text-center">
-                En automatisant vos processus KYC, vous réduisez considérablement les frictions et les délais d'onboarding. Notre solution vous permet de respecter <br />
+              <div className="title-content-1 text-justify px-5">
+                En automatisant vos processus KYC, vous réduisez considérablement les frictions et les délais d'onboarding. Notre solution vous permet de respecter
                 les normes les plus strictes tout en offrant une expérience client fluide.
               </div>
-              <div className="card-choice-items items-center justify-center w-full grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 pt-10 pb-24">
+              <div className="card-choice-items items-center justify-center w-full grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 pt-10 pb-24 px-2">
                 <RespectReglementation
                   image={imgC1}
                   title={
@@ -658,14 +658,14 @@ export default function Customer() {
 
             <div className=' bg-white pb-24'>
               <div className='pb-10'>
-                <div className='w-full take-selfie-title-screening text-center flex items-center justify-center py-10 bg-no-repeat bg-center' style={{ backgroundImage: `url(${cote})` }}>
-                  Nous réinventons la vérification d'identité en alliant la puissance de l'intelligence artificielle <br />
-                  à une approche centrée sur l'utilisateur. Nous voulons vous offrir une solution <br />
-                  simple, sécurisée et fiable pour protéger vos données sensibles et renforcer la confiance <br />
+                <div className='w-full take-selfie-title-screening text-justify flex items-center justify-center py-10 bg-no-repeat bg-center px-5' style={{ backgroundImage: `url(${cote})` }}>
+                  Nous réinventons la vérification d'identité en alliant la puissance de l'intelligence artificielle
+                  à une approche centrée sur l'utilisateur. Nous voulons vous offrir une solution
+                  simple, sécurisée et fiable pour protéger vos données sensibles et renforcer la confiance
                   dans les interactions numériques.
                 </div>
               </div>
-              <div className='flex items-start justify-start gap-8 overflow-x-auto px-20 scrollbar-hidden'>
+              <div className='flex items-start justify-start gap-8 overflow-x-auto px-5 scrollbar-hidden'>
                 <Card
                   btnText="Disponibilité par pays"
                   title={

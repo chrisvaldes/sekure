@@ -1824,7 +1824,16 @@ textarea {
     background-size: contain;
     /* Évite la répétition des images */
   }
-
+  
+  .footer-page-order-other {
+    background-image: url('../src/images/footer/vector-white.png');
+    background-position: 10% 100%;
+    /* Ajustez la position selon vos besoins */
+    background-repeat: no-repeat;
+    background-size: 412px 250px;
+    /* background-color: cadetblue; */
+    /* Évite la répétition des images */
+  }
   .title {
     font-family: "Satoshi";
     font-size: 35px;
