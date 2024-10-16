@@ -486,6 +486,24 @@
     color: #285246;
   }
 
+  .title-content-selfie-screening {
+    font-family: "Satoshi";
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 19px;
+    text-align: left;
+    color: #285246;
+  }
+
+  .title-content-selfie-screening-span {
+    font-family: "Satoshi";
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 19px;
+    text-align: left;
+    color: #285246;
+  }
+
   .sub-title {
     font-family: "Satoshi";
     font-size: 35px;
@@ -1019,7 +1037,7 @@
   background-repeat: no-repeat;
 }
 
-.customer-selfie-section{
+.customer-selfie-section {
   background-image: url("../src/images/page-2/Vector.png");
   background-repeat: no-repeat;
   background-position: 5% 50%;
@@ -2100,6 +2118,15 @@ textarea {
   .customer-selfie-img {
     height: 450px;
   }
+
+  .take-selfie-title-screening {
+    font-family: "Satoshi";
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 37px;
+    text-align: center;
+    color: #285246;
+  }
 }
 
 @media (max-width:400px) {
@@ -2182,8 +2209,16 @@ textarea {
     color: #18382B;
   }
 
-  .customer-selfie-section{
+  .customer-selfie-section {
     background-image: none;
+  }
+
+  .title-content {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    text-align: left;
   }
 }
 
@@ -2493,6 +2528,15 @@ textarea {
   line-height: 35px;
   letter-spacing: -1px;
   text-align: left;
+  color: #285246;
+}
+
+.take-selfie-title-screening {
+  font-family: "Satoshi";
+  font-size: 31px;
+  font-weight: 700;
+  line-height: 37px;
+  text-align: center;
   color: #285246;
 }
 

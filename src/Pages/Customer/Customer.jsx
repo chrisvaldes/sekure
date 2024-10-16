@@ -582,8 +582,8 @@ export default function Customer() {
                   <img src={takeselfie} alt="" className='absolute customer-selfie' />
                 </div>
                 <div className="">
-                  <div className=" accueil-content flex flex-col top-[145px]  px-4 pb-5">
-                    <div className="text-nowrap gap-[6px] pb-[27px]">
+                  <div className=" accueil-content flex flex-col top-[145px]  px-8 pb-5">
+                    <div className="text-nowrap gap-[6px] pb-[27px] w-full">
                       <div className='pt-10'>
                         <Link to="/" className='flex items-center justify-center btn-verification btn-verification-text mb-5'>
                           Know your Customer
@@ -594,16 +594,18 @@ export default function Customer() {
                         engagement indéfectible dans la lutte <br />
                         contre la criminalité financière.
                       </div>
-                      <p className='text-left text-wrap title-content py-5'>
-                        Distinguez-vous de vos concurrents en adoptant une approche proactive de la lutte contre <br />
-                        la criminalité financière. AIbiometrics vous permet non seulement de respecter les <br />
-                        réglementations en vigueur, mais aussi de renforcer la confiance de vos clients en leur <br />
-                        assurant une expérience d'onboarding sécurisée et transparente.
-                      </p>
-                      <p className='text-left text-wrap title-content'>
-                        Démontrez aux régulateurs que vous êtes un acteur responsable et engagé en choisissant <br />
-                        AIbiometrics pour vos verifications d’utilisateurs
-                      </p>
+                      <div className="">
+                        <div className=' text-wrap title-content-selfie-screening  text-left py-5 w-full'>
+                          Distinguez-vous de vos concurrents en adoptant une approche proactive de la lutte contre <br />
+                          la criminalité financière. AIbiometrics vous permet non seulement de respecter les <br />
+                          réglementations en vigueur, mais aussi de renforcer la confiance de vos clients en leur <br />
+                          assurant une expérience d'onboarding sécurisée et transparente.
+                        </div>
+                        <div className='text-left text-wrap title-content-selfie-screening '>
+                          Démontrez aux régulateurs que vous êtes un acteur responsable et engagé en choisissant <br />
+                          <span className='title-content-selfie-creening-span'>AIbiometrics pour vos verifications d’utilisateurs</span>
+                        </div>
+                      </div>
                     </div>
 
                     <div className="">
@@ -625,8 +627,8 @@ export default function Customer() {
                         </div>
                       </div>
 
-                      <div className='block items-center justify-center gap-x-5 py-5 lg:hidden'>
-                        <div className="flex items-center justify-center gap-x-5">
+                      <div className='block items-center justify-start gap-x-5 py-5 lg:hidden'>
+                        <div className="flex items-center justify-start gap-x-5">
                           <Link to="/" className='screening-big-btn flex items-center justify-around bg-green-color'>
                             <span>Nous contacter</span>
                             <Arrow background="#FFFF" textcolor="#2CE5B1" />
@@ -643,9 +645,8 @@ export default function Customer() {
                         </div>
                       </div>
                     </div>
-
-
                   </div>
+
                   <div className="relative customer-selfie-img sm:h-[560px] block lg:hidden items-center justify-center w-full">
                     <div className="absolute bottom-0 customer-selfie-box w-full bg-[100%_80%]" style={{ backgroundImage: `url(${vector})` }}>
                       <img src={takeselfie} alt="" className=' ' />
@@ -657,7 +658,7 @@ export default function Customer() {
 
             <div className=' bg-white pb-24'>
               <div className='pb-10'>
-                <div className='w-full take-selfie-title text-center flex items-center justify-center py-10 bg-no-repeat bg-center' style={{ backgroundImage: `url(${cote})` }}>
+                <div className='w-full take-selfie-title-screening text-center flex items-center justify-center py-10 bg-no-repeat bg-center' style={{ backgroundImage: `url(${cote})` }}>
                   Nous réinventons la vérification d'identité en alliant la puissance de l'intelligence artificielle <br />
                   à une approche centrée sur l'utilisateur. Nous voulons vous offrir une solution <br />
                   simple, sécurisée et fiable pour protéger vos données sensibles et renforcer la confiance <br />
