@@ -2074,8 +2074,25 @@ textarea {
     background: #DFFCE3;
   }
 
-  .screening-big-btn-transparent {
+  .screening-big-btn {
     width: 180px;
+    height: 51px;
+    padding: var(--sds-size-space-300);
+    gap: var(--sds-size-space-200);
+    border-radius: var(--sds-size-radius-200);
+    border: var(--sds-size-stroke-border);
+    text-wrap: nowrap;
+    font-family: "Satoshi";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    text-align: left;
+    color: #285246;
+
+  }
+
+  .screening-big-btn-transparent {
+    width: 170px;
     height: 51px;
     border-radius: 11px;
     border: 1px solid;

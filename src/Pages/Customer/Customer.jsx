@@ -54,7 +54,7 @@ export default function Customer() {
                     Grâce à des algorithme avancés, notre solution AML alimentée par l'IA vous permet de détecter les<br />
                     activités suspectes en temps réel pour identifier les transactions et les entités à haut risque.
                   </div>
-                  <div className='flex items-center justify-start gap-x-5 py-5'>
+                  <div className='flex w-full items-center justify-start lg:justify-center gap-x-2'>
                     <Link to="/" className='screening-big-btn flex items-center justify-around bg-green-color'>
                       <span>Nous contacter</span>
                       <Arrow background="#FFFF" textcolor="#2CE5B1" />
@@ -581,9 +581,9 @@ export default function Customer() {
                 <div className="relative customer-selfie-box">
                   <img src={takeselfie} alt="" className='absolute customer-selfie' />
                 </div>
-                <div className="">
-                  <div className=" accueil-content flex flex-col top-[145px]  px-8 pb-5">
-                    <div className="text-nowrap gap-[6px] pb-[27px] w-full">
+                <div className="w-full">
+                  <div className=" accueil-content flex flex-col top-[145px] pb-5 w-full">
+                    <div className="text-nowrap gap-[6px] pb-[27px] px-8 w-full">
                       <div className='pt-10'>
                         <Link to="/" className='flex items-center justify-center btn-verification btn-verification-text mb-5'>
                           Know your Customer
@@ -608,7 +608,7 @@ export default function Customer() {
                       </div>
                     </div>
 
-                    <div className="">
+                    <div className="w-full px-5">
                       <div className="text-wrap items-start gap-x-[28px] hidden lg:block">
                         <div className='flex flex-wrap md:flex-nowrap items-center justify-center  lg:items-start lg:justify-start gap-[28px] md:gap-[10px] md:pr-2'>
                           <div className='btn flex items-center justify-center  bg-green-color pr-2'>
@@ -627,17 +627,17 @@ export default function Customer() {
                         </div>
                       </div>
 
-                      <div className='block items-center justify-start gap-x-5 py-5 lg:hidden'>
-                        <div className="flex items-center justify-start gap-x-5">
+                      <div className='block items-center justify-start gap-x-5 py-5 lg:hidden w-full '>
+                        <div className='flex w-full items-center justify-start lg:justify-center gap-x-2'>
                           <Link to="/" className='screening-big-btn flex items-center justify-around bg-green-color'>
                             <span>Nous contacter</span>
                             <Arrow background="#FFFF" textcolor="#2CE5B1" />
                           </Link>
 
                           <Link to="/" className='screening-big-btn-transparent text-green-deep flex items-center justify-around'>
-                            <div className='text-nowrap flex items-center justify-center'>Commencer <span className='pl-1 hidden md:block'>gratuitement</span></div>
+                            <div className='text-nowrap flex items-center justify-center w-full'>Commencer <span className='pl-1 hidden md:block'>gratuitement</span></div>
                             <span>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-7 pr-1">
                                 <path fillRule="evenodd" d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" />
                               </svg>
                             </span>
