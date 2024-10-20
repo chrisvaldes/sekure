@@ -994,9 +994,7 @@
     /* background-color: cadetblue; */
   }
 
-  /* .section-choise-us {
-    padding: 0 1rem;
-  } */
+ 
 
   .world-section {
     background-size: contain;
@@ -1824,16 +1822,7 @@ textarea {
     background-size: contain;
     /* Évite la répétition des images */
   }
-  
-  .footer-page-order-other {
-    background-image: url('../src/images/footer/vector-white.png');
-    background-position: 10% 100%;
-    /* Ajustez la position selon vos besoins */
-    background-repeat: no-repeat;
-    background-size: 412px 250px;
-    /* background-color: cadetblue; */
-    /* Évite la répétition des images */
-  }
+
   .title {
     font-family: "Satoshi";
     font-size: 35px;
@@ -2045,11 +2034,12 @@ textarea {
   }
 
   .customer-page-wrap {
-    margin: 2rem 0 0;
     background-image: url('../src/images/screening/vector.png');
     background-position: left bottom;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 150% 70%;
+    overflow-x: hidden;
+    /* background-color: cadetblue; */
   }
 
   .customer-btn-first {
@@ -2153,6 +2143,13 @@ textarea {
     text-align: center;
     color: #285246;
   }
+
+  .footer-page-order-other {
+    background-image: url('../src/images/footer/vector-white.png');
+    background-position: 10% 100%;
+    background-repeat: no-repeat;
+    background-size: 412px 250px;
+  }
 }
 
 @media (max-width:400px) {
@@ -2199,6 +2196,13 @@ textarea {
 
   .footer-content {
     text-align: center;
+  }
+
+  .footer-page-order-other {
+    background-image: url('../src/images/footer/vector-white.png');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 621px 331px;
   }
 
   .btn-footer {
@@ -2671,7 +2675,8 @@ textarea {
 
   .customer-selfie-box {
     background-image: url('../src/images/page-2/takePhoto.png');
-    background-size: contain;
+    /* background-size: cover; */
+    background-color: cadetblue;
     background-position: bottom center;
     background-repeat: no-repeat;
   }
