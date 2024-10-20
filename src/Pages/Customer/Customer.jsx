@@ -627,7 +627,7 @@ export default function Customer() {
                         </div>
                       </div>
 
-                      <div className='block items-center justify-start gap-x-5 py-5 lg:hidden w-full '>
+                      <div className='block items-center justify-start gap-x-5  lg:hidden w-full '>
                         <div className='flex w-full items-center justify-start lg:justify-center gap-x-2'>
                           <Link to="/" className='screening-big-btn flex items-center justify-around bg-green-color'>
                             <span>Nous contacter</span>
@@ -647,7 +647,7 @@ export default function Customer() {
                     </div>
                   </div>
 
-                  <div className="relative customer-selfie-img sm:h-[560px] block lg:hidden items-center justify-center w-full">
+                  <div className="relative customer-selfie-img h-[400px] sm:h-[560px] block lg:hidden items-center justify-center w-full">
                     <div className="absolute bottom-0 customer-selfie-box w-full bg-[100%_80%]" style={{ backgroundImage: `url(${vector})` }}>
                       <img src={takeselfie} alt="" className=' ' />
                     </div>

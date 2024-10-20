@@ -9,6 +9,7 @@ import Message from '../../Components/Message'
 import NavBar from '../../Components/NavBar'
 import SmallCheckCircle from '../../Components/SmallCheckCircle'
 import vectorBigMother from "../../images/bigMotherVector.png"
+import cote from "../../images/page-2/cote.png"
 import takeselfie from "../../images/page-2/takePhoto.png"
 import vector from '../../images/page-2/Vector.png'
 import vector1 from "../../images/page-2/Vector3.png"
@@ -21,7 +22,7 @@ import img2 from '../../images/screening/img2-card.png'
 import img3 from '../../images/screening/img3-card.png'
 import img4 from '../../images/screening/img4-card.png'
 import img5 from '../../images/screening/img5-card.png'
-import screenImg1 from "../../images/screening/screen-img1.png"
+import screenImg1 from "../../images/screening/screenImg1.png"
 import screenImg2 from "../../images/screening/screenImg2.png"
 import screenImg3 from "../../images/screening/screenImg3.png"
 import screenImg4 from "../../images/screening/screenImg4.png"
@@ -195,13 +196,12 @@ export default function Screening() {
 
                 <div className='w-full items-center customer-page-wrap justify-center relative  block lg:hidden'>
                   <div className='absolute flex items-center justify-center w-full bottom-0' >
-                    <img src={bgScreening} alt="" className='w-[310px] h-[320px]' />
+                    <img src={bgScreening} alt="" className='w-[310px] h-[320px] sm:w-[470px] sm:h-[400px]' />
                   </div>
                 </div>
-
               </div>
 
-              <div className='absolute customer-page hidden lg:block' >
+              <div className='absolute screening-page-bg hidden lg:block' >
               </div>
             </div>
             <div className='hidden lg:block lg:absolute  screening-card-absolute w-full px-20'>
@@ -211,11 +211,11 @@ export default function Screening() {
                     <div className='flex  gap-x-10'>
                       <CardSmile logo={img1} />
                       <div className="">
-                        <div className="screening-section1-card-title pb-2">
+                        <div className="screening-section1-card-title  pb-2">
                           Diligence raisonnable du client :
                         </div>
                         <div className="screening-section1-card-content">
-                          Mettez en place un processus KYC robuste<br />
+                          Mettez en place un processus KYC robuste
                           pour respecter les réglementations.
                         </div>
                       </div>
@@ -226,8 +226,8 @@ export default function Screening() {
                         <div className="screening-section1-card-title pb-2">
                           Contrôle des sanctions :
                         </div>
-                        <div className="screening-section1-card-content">
-                          Vérifiez si vos clients figurent sur des listes <br />
+                        <div className="screening-section1-card-content ">
+                          Vérifiez si vos clients figurent sur des listes
                           de sactions internationales.
                         </div>
                       </div>
@@ -238,8 +238,8 @@ export default function Screening() {
                         <div className="screening-section1-card-title pb-2">
                           Contrôle des médias négatifs :
                         </div>
-                        <div className="screening-section1-card-content">
-                          Recherchez des informations négatives sur<br />
+                        <div className="screening-section1-card-content ">
+                          Recherchez des informations négatives sur
                           vos clients dans les médias.
                         </div>
                       </div>
@@ -250,8 +250,8 @@ export default function Screening() {
                         <div className="screening-section1-card-title pb-2">
                           Diligences raisonnable renforcée :
                         </div>
-                        <div className="screening-section1-card-content">
-                          Renforcez la vérification pour les clients à<br />
+                        <div className="screening-section1-card-content ">
+                          Renforcez la vérification pour les clients à
                           risque élevé
                         </div>
                       </div>
@@ -262,8 +262,8 @@ export default function Screening() {
                         <div className="screening-section1-card-title pb-2">
                           Contrôle des PEP :
                         </div>
-                        <div className="screening-section1-card-content">
-                          Identifiez et gérez les risques liés aux<br />
+                        <div className="screening-section1-card-content ">
+                          Identifiez et gérez les risques liés aux
                           personnes politiquement exposées (PEP).
                         </div>
                       </div>
@@ -274,10 +274,93 @@ export default function Screening() {
                         <div className="screening-section1-card-title pb-2">
                           Surveillance continue :
                         </div>
-                        <div className="screening-section1-card-content">
-                          Surveillez en continu vos clients pour <br />
+                        <div className="screening-section1-card-content ">
+                          Surveillez en continu vos clients pour
                           détecter les changements de situation.
                         </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div className='block lg:hidden md:px-10 w-full'>
+            <div className=' flex items-center justify-center'>
+              <div className='flex items-center justify-center py-10 rounded-[20px] bg-white w-full'>
+                <div className=' gap-10  px-10 grid  items-center justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 '>
+                  <div className='flex  gap-x-10'>
+                    <CardSmile logo={img1} />
+                    <div className="">
+                      <div className="screening-section1-card-title pb-2">
+                        Diligence raisonnable du client :
+                      </div>
+                      <div className="screening-section1-card-content">
+                        Mettez en place un processus KYC robuste<br />
+                        pour respecter les réglementations.
+                      </div>
+                    </div>
+                  </div>
+                  <div className='flex  gap-x-10'>
+                    <CardSmile logo={img2} />
+                    <div className="">
+                      <div className="screening-section1-card-title pb-2">
+                        Contrôle des sanctions :
+                      </div>
+                      <div className="screening-section1-card-content">
+                        Vérifiez si vos clients figurent sur des listes <br />
+                        de sactions internationales.
+                      </div>
+                    </div>
+                  </div>
+                  <div className='flex  gap-x-10'>
+                    <CardSmile logo={img3} />
+                    <div className="">
+                      <div className="screening-section1-card-title pb-2">
+                        Contrôle des médias négatifs :
+                      </div>
+                      <div className="screening-section1-card-content">
+                        Recherchez des informations négatives sur<br />
+                        vos clients dans les médias.
+                      </div>
+                    </div>
+                  </div>
+                  <div className='flex  gap-x-10'>
+                    <CardSmile logo={img4} />
+                    <div className="">
+                      <div className="screening-section1-card-title pb-2">
+                        Diligences raisonnable renforcée :
+                      </div>
+                      <div className="screening-section1-card-content">
+                        Renforcez la vérification pour les clients à<br />
+                        risque élevé
+                      </div>
+                    </div>
+                  </div>
+                  <div className='flex  gap-x-10'>
+                    <CardSmile logo={img5} />
+                    <div className="">
+                      <div className="screening-section1-card-title pb-2">
+                        Contrôle des PEP :
+                      </div>
+                      <div className="screening-section1-card-content">
+                        Identifiez et gérez les risques liés aux<br />
+                        personnes politiquement exposées (PEP).
+                      </div>
+                    </div>
+                  </div>
+                  <div className='flex  gap-x-10'>
+                    <CardSmile logo={img1} />
+                    <div className="">
+                      <div className="screening-section1-card-title pb-2">
+                        Surveillance continue :
+                      </div>
+                      <div className="screening-section1-card-content">
+                        Surveillez en continu vos clients pour <br />
+                        détecter les changements de situation.
                       </div>
                     </div>
                   </div>
@@ -299,22 +382,44 @@ export default function Screening() {
 
         {/* start section with big mother */}
         <section>
-          <div className='group-card-horiz grid grid-cols-1 items-center justify-center bg-no-repeat  md:grid-cols-1 lg:grid-cols-2 lg:pt-32 gap-x-8 gap-y-32 mt-10' style={{ backgroundImage: `url(${vectorBigMother})` }}>
+          <div className='group-card-horiz grid grid-cols-1 items-center justify-center bg-no-repeat  md:grid-cols-1 lg:grid-cols-2 lg:pt-32 gap-x-8 gap-y-10 lg:gap-y-32 mt-10' style={{ backgroundImage: `url(${vectorBigMother})` }}>
             <div className=" flex items-center justify-center">
-              <div className=''>
+              {/* <div className=''>
                 <img src={screenImg1} alt="" />
+              </div> */}
+              <div className="order-2 lg:order-1 flex items-center justify-center">
+                <div className=''>
+                  <div className="hidden lg:block items-center justify-center">
+                    <div className='relative flex items-center justify-center gap-5'>
+                      <div className=" card-horiz"></div>
+                      <div className="card-horiz"></div>
+                      <div className="absolute w-[407.11px] h-[314.54px] flex items-center justify-center">
+                        <img src={screenImg1} alt="" className='w-[407.11px] h-[314.54px]' />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="lg:hidden flex items-center justify-center">
+                    <div className='relative flex flex-col items-center justify-center gap-y-5'>
+                      <div className=" card-vert"></div>
+                      <div className="card-vert"></div>
+                      <div className="absolute w-[326px] h-[295px] flex items-center justify-center">
+                        <img src={screenImg1} alt="" className=' ' />
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div className=" order-text group-card-horiz-content flex flex-col items-center gap-y-5">
               <div className="">
                 <div className="screening-horiz-vert-title">
-                  Protégez votre entreprise contre les <br />
+                  Protégez votre entreprise contre les
                   risques liés aux PEP et aux sanctions
                 </div>
-                <div className="screening-horiz-vert-content py-5">
-                  Notre solution de screening des PEP et des sanction vour permet de vérifier si <br />
-                  vos clients figure sur la liste de personnes politiquement exposées ou sous <br />
-                  sanction. En identifiant rapidement les risques liés à ces individus, vous vous <br />
+                <div className="screening-horiz-vert-cont py-5">
+                  Notre solution de screening des PEP et des sanction vour permet de vérifier si
+                  vos clients figure sur la liste de personnes politiquement exposées ou sous
+                  sanction. En identifiant rapidement les risques liés à ces individus, vous vous
                   protégez contre les amendes et les dommages réputationnels.
                 </div>
                 <div className='w-full'>
@@ -323,9 +428,9 @@ export default function Screening() {
                       <SmallCheckCircle />
                       <div className='flex flex-col'>
                         <p className='screening-grid-title pb-2'>Bases de données complètes:</p>
-                        <p className='screening-grid-content'>
-                          Accèdez à des bases de données mises à<br />
-                          jour en continu pour une couverture <br />
+                        <p className='screening-grid-content '>
+                          Accèdez à des bases de données mises à
+                          jour en continu pour une couverture
                           mondiale.
                         </p>
                       </div>
@@ -334,8 +439,8 @@ export default function Screening() {
                       <SmallCheckCircle />
                       <div className='flex flex-col'>
                         <p className='screening-grid-title pb-2'>Personnalisation des règles:</p>
-                        <p className='screening-grid-content'>
-                          Adaptez les critère de recherche à vos<br />
+                        <p className='screening-grid-content  '>
+                          Adaptez les critère de recherche à vos
                           besoins spécifiques.
                         </p>
                       </div>
@@ -344,8 +449,8 @@ export default function Screening() {
                       <SmallCheckCircle />
                       <div className='flex flex-col'>
                         <p className='screening-grid-title pb-2'>Vérifications en temps réel:</p>
-                        <p className='screening-grid-content'>
-                          Optenez des résultats instantanés pour une <br />
+                        <p className='screening-grid-content  '>
+                          Optenez des résultats instantanés pour une
                           prise de décision rapide.
                         </p>
                       </div>
@@ -354,8 +459,8 @@ export default function Screening() {
                       <SmallCheckCircle />
                       <div className='flex flex-col'>
                         <p className='screening-grid-title pb-2'>Intégration facile:</p>
-                        <p className='screening-grid-content'>
-                          Intégrez notre solution à votre flux de travail<br />
+                        <p className='screening-grid-content '>
+                          Intégrez notre solution à votre flux de travail
                           existant.
                         </p>
                       </div>
@@ -429,9 +534,18 @@ export default function Screening() {
                 </div>
               </div>
             </div>
-            <div className="order-1 lg:order-2 flex items-center justify-center pt-10">
-              <div className=''>
+            <div className="order-1 lg:order-2 flex items-center justify-center">
+              {/* <div className=''>
                 <img src={screenImg2} alt="" />
+              </div> */}
+              <div className="flex items-center justify-center pb-10">
+                <div className='relative flex flex-col items-center justify-center gap-5'>
+                  <div className=" card-vert"></div>
+                  <div className="card-vert"></div>
+                  <div className="absolute flex items-center justify-center w-[325px] h-[251px] top-5 sm:top-0 lg:w-full lg:h-full ">
+                    <img src={screenImg2} alt="" className='' />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -442,8 +556,30 @@ export default function Screening() {
         <section className="group-card-vert bg-no-repeat bg-right" style={{ backgroundImage: `url(${vectorDatabases})` }}>
           <div className='grid grid-cols-1 items-center justify-center md:grid-cols-1 lg:grid-cols-2 pb-20 gap-x-8 gap-y-20'>
             <div className=" flex items-center justify-center h-[120%]">
-              <div className=''>
+              {/* <div className=''>
                 <img src={screenImg3} alt="" />
+              </div> */}
+              <div className="order-2 lg:order-1 flex items-center justify-center">
+                <div className=''>
+                  <div className="hidden lg:block items-center justify-center">
+                    <div className='relative flex items-center justify-center gap-5'>
+                      <div className=" card-horiz"></div>
+                      <div className="card-horiz"></div>
+                      <div className="absolute w-[407.11px] h-[314.54px] flex items-center justify-center left-1">
+                        <img src={screenImg3} alt="" className='w-[407.11px] h-[314.54px]' />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="lg:hidden flex items-center justify-center">
+                    <div className='relative flex flex-col items-center justify-center gap-y-5'>
+                      <div className=" card-vert"></div>
+                      <div className="card-vert"></div>
+                      <div className="absolute w-[326px] h-[295px] flex items-center justify-center -left-2 sm:left-0">
+                        <img src={screenImg3} alt="" className=' ' />
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div className=" group-card-horiz-content flex flex-col items-center gap-y-5">
@@ -568,9 +704,18 @@ export default function Screening() {
                 </div>
               </div>
             </div>
-            <div className="order-1 lg:order-2 flex items-center justify-center pt-10">
-              <div className=''>
+            <div className="order-1 lg:order-2 flex items-center justify-center ">
+              {/* <div className=''>
                 <img src={screenImg4} alt="" />
+              </div> */}
+              <div className="flex items-center justify-center">
+                <div className='relative flex flex-col items-center justify-center gap-5'>
+                  <div className=" card-vert"></div>
+                  <div className="card-vert"></div>
+                  <div className="absolute flex items-center justify-center w-[340px] h-[251px] lg:w-full lg:h-full bottom-0 -left-4 ">
+                    <img src={screenImg4} alt="" className='w-[340px] h-[251px] lg:w-full lg:h-full' />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -579,7 +724,7 @@ export default function Screening() {
 
         <section className='section-choise-us bg-white relative'>
           <div className=''>
-            <div className='flex flex-col items-center justify-center pb-44 pt-10 px-20 bg-no-repeat bg-[110%_55%] ' style={{ backgroundImage: `url(${vector1})` }}>
+            <div className='flex flex-col items-center justify-center lg:pb-44 pt-10 px-5 sm:px-20 bg-no-repeat bg-[110%_55%] ' style={{ backgroundImage: `url(${vector1})` }}>
               <a href="#" className="btn-choice flex items-center justify-center">Pourquoi nous choisir</a>
               <div className="screening-horiz-vert-title text-center text-green-deep py-10">
                 Confiance, transparence, sécurité : Simplifez votre conformité <br />
@@ -588,17 +733,17 @@ export default function Screening() {
               <div className="screening-horiz-vert-content text-center">
                 Automatisez votre contrôle AML et optimisez votre parcours client pour rapporter plus de clients authentiques. Gagnez du temps et sécurisez votre croissance.
               </div>
-              <div className="card-choice-items items-center justify-center w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+              <div className="card-choice-items items-center justify-center w-full grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 pt-10 pb-24 px-2">
                 <RespectReglementation
                   image={imgC1}
                   title={
-                    <div>Respectez et évoluez <br />
+                    <div className="">Respectez et évoluez
                       avec la réglementation</div>
                   }
                   content={
                     <div>
-                      Soyez en conformité avec les <br />
-                      normes KYC/AML en vigueur dans <br />
+                      Soyez en conformité avec les
+                      normes KYC/AML en vigueur dans
                       le monde entier.
                     </div>
                   }
@@ -606,13 +751,13 @@ export default function Screening() {
                 <RespectReglementation
                   image={imgC2}
                   title={
-                    <div>Convertissez plus <br />
+                    <div className="">Convertissez plus
                       d’utilisateurs</div>
                   }
                   content={
                     <div>
-                      Offrez un processus d'onboarding <br />
-                      fluide et sécurisé pour fidéliser vos <br />
+                      Offrez un processus d'onboarding
+                      fluide et sécurisé pour fidéliser vos
                       clients.
                     </div>
                   }
@@ -620,13 +765,13 @@ export default function Screening() {
                 <RespectReglementation
                   image={imgC4}
                   title={
-                    <div>Verifications flexibles avec <br />
+                    <div className="">Verifications flexibles avec
                       des documents locaux</div>
                   }
                   content={
                     <div>
-                      Acceptez différents types de <br />
-                      documents adaptés selon les regions <br />
+                      Acceptez différents types de
+                      documents adaptés selon les regions
                       des utilisateurs
                     </div>
                   }
@@ -634,13 +779,13 @@ export default function Screening() {
                 <RespectReglementation
                   image={imgC3}
                   title={
-                    <div>Optimisez les couts <br />
+                    <div className="">Optimisez les couts
                       des verifications </div>
                   }
                   content={
                     <div>
-                      Réduisez les coûts liés à la <br />
-                      vérification manuelle des documents <br />
+                      Réduisez les coûts liés à la
+                      vérification manuelle des documents
                       d’identité de vos utilisateurs
                     </div>
                   }
@@ -735,20 +880,20 @@ export default function Screening() {
               <img src={takeselfie} alt="" className='absolute customer-selfie' />
             </div>
             <div className="w-full">
-              <div className=" accueil-content flex flex-col top-[145px] pb-5 w-full">
+              <div className=" accueil-content flex flex-col top-[145px] w-full">
                 <div className="text-nowrap gap-[6px] pb-[27px] px-8 w-full flex flex-col items-center justify-center">
                   <div className='pt-10'>
                     <Link to="/" className='flex items-center justify-center btn-verification btn-verification-text mb-5'>
                       Know your Customer
                     </Link>
                   </div>
-                  <div className='text-wrap take-selfie-title text-justify sarabun-bold text-green-deep'>
+                  <div className='text-wrap take-selfie-tit sarabun-bold text-green-deep'>
                     Démontrez aux régulateurs votre
                     engagement indéfectible dans la lutte
                     contre la criminalité financière.
                   </div>
                   <div className="">
-                    <div className=' text-wrap title-content-selfie-screening  text-justify py-5 w-full'>
+                    <div className=' text-wrap title-content-selfie-screening py-5 w-full'>
                       Distinguez-vous de vos concurrents en adoptant une approche proactive de la lutte contre
                       la criminalité financière. AIbiometrics vous permet non seulement de respecter les
                       réglementations en vigueur, mais aussi de renforcer la confiance de vos clients en leur
@@ -780,7 +925,7 @@ export default function Screening() {
                     </div>
                   </div> */}
 
-                  <div className='block items-center justify-center gap-x-5 py-5 lg:hidden w-full '>
+                  <div className='block items-center justify-center gap-x-5 lg:hidden w-full '>
                     <div className='flex w-full items-center justify-center lg:justify-center gap-x-2'>
                       <Link to="/" className='screening-big-btn flex items-center justify-around bg-green-color'>
                         <span>Nous contacter</span>
@@ -800,8 +945,8 @@ export default function Screening() {
                 </div>
               </div>
 
-              <div className="relative customer-selfie-img sm:h-[560px] block lg:hidden items-center justify-center w-full">
-                <div className="absolute bottom-0 customer-selfie-box w-full" style={{ backgroundImage: `url(${vector})` }}>
+              <div className="relative customer-selfie-img h-[400px] sm:h-[560px] block lg:hidden items-center justify-center w-full">
+                <div className="absolute bottom-0 customer-selfie-box w-full bg-[100%_80%]" style={{ backgroundImage: `url(${vector})` }}>
                   <img src={takeselfie} alt="" className=' ' />
                 </div>
               </div>
@@ -809,9 +954,17 @@ export default function Screening() {
           </div>
         </section>
 
-        <section className='pt-16 lg:pt-96 pb-20'>
+        <section className='pt-16 card-scroll-horiz-screening  pb-20'>
           <div>
-            <div className='flex items-start justify-start gap-8 overflow-x-auto px-20 scrollbar-hidden'>
+            <div className='pb-10 block lg:hidden'>
+              <div className='w-full take-selfie-title-scree flex items-center justify-center py-10 bg-no-repeat bg-center px-5' style={{ backgroundImage: `url(${cote})` }}>
+                Nous réinventons la vérification d'identité en alliant la puissance de l'intelligence artificielle
+                à une approche centrée sur l'utilisateur. Nous voulons vous offrir une solution
+                simple, sécurisée et fiable pour protéger vos données sensibles et renforcer la confiance
+                dans les interactions numériques.
+              </div>
+            </div>
+            <div className='flex items-start justify-start gap-8 overflow-x-auto px-8 scrollbar-hidden'>
               <Card
                 btnText="Disponibilité par pays"
                 title={

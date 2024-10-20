@@ -26,7 +26,7 @@ export default function Pricing() {
                 </h2>
                 <p class="pricing-content pt-7">
                   Vous avez un projet d'envergure ? Nos experts en biométrie sont là pour vous <br />
-                  accompagner. Contactez-nous dès maintenant pour discuter de vos besoins <br />
+                  accompagner. Contactez-dès maintenant pour discuter de vos besoins <br />
                   spécifiques et bénéficier de conseils personnalisés.
                 </p>
                 <div className='absolute bottom-0'>

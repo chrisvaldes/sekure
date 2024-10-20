@@ -57,6 +57,21 @@
     text-align: center;
     color: #F5F5F5;
   }
+  .accueil-btn-start {
+    width: 236px;
+    height: 50px;
+    /* padding: var(--sds-size-space-300); */
+    gap: var(--sds-size-space-200);
+    border-radius: var(--sds-size-radius-200);
+    border: var(--sds-size-stroke-border);
+    background: #285246;
+    font-family: "Satoshi";
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 14px;
+    text-align: center;
+    color: #F5F5F5;
+  }
 
   .verification-identiter {
     width: 441px;
@@ -905,10 +920,16 @@
   .customer-page {
     background-position: 100% 60%;
   }
+  .screening-page {
+    background-position: 100% 60%;
+  }
 }
 
 @media (max-width:1168px) {
   .customer-page {
+    background-position: 100% 65%;
+  }
+  .screening-page {
     background-position: 100% 65%;
   }
 }
@@ -1033,6 +1054,20 @@
   background-size: contain;
   background-image: url('../src/images/customer/customer-bg.png');
   background-repeat: no-repeat;
+}
+
+.screening-page-bg {
+  width: 383.97px;
+  height: 387px;
+  bottom: 16%;
+  right: 15%;
+  background-size: contain;
+  background-image: url('../src/images/screening/screening-bg.png');
+  background-repeat: no-repeat;
+}
+
+.card-scroll-horiz-screening{
+  margin-top: 20rem;
 }
 
 .customer-selfie-section {
@@ -1675,6 +1710,12 @@ textarea {
   top: 78%;
 }
 
+@media (max-width:1300.27px) {
+  .card-scroll-horiz-screening{
+    margin-top: 25rem;
+  }
+}
+
 @media (max-width:1231.20px) {
   .btn-accounts {
     display: flex;
@@ -1789,6 +1830,17 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+
+@media (max-width:710.40px) {
+  .pricingCard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20rem);
+    /* Utilisez minmax pour une meilleure flexibilité */
+    align-items: center;
+    justify-content: center;
+    /* gap: 19px; */
   }
 }
 
@@ -2250,6 +2302,10 @@ textarea {
     flex-direction: column;
     text-align: left;
   }
+
+  .card-scroll-horiz-screening{
+    margin-top: 1rem;
+  }
 }
 
 
@@ -2675,10 +2731,10 @@ textarea {
 
   .customer-selfie-box {
     background-image: url('../src/images/page-2/takePhoto.png');
-    /* background-size: cover; */
-    background-color: cadetblue;
-    background-position: bottom center;
+    background-size: contain;
+    background-position: bottom;
     background-repeat: no-repeat;
+    /* background-color: cadetblue; */
   }
 }
 
