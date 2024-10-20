@@ -9,19 +9,18 @@ import FooterAccueil from '../../Components/FooterAccueil'
 import Message from '../../Components/Message'
 import MiniCard from '../../Components/MiniCard'
 import NavBar from '../../Components/NavBar'
-import img1 from "../../images/about/aboutImg1.png"
 import img3 from "../../images/about/aboutImg3.png"
 import bgDotted from "../../images/about/bg-dotted.png"
 import boxBg from "../../images/about/boxBg.png"
 import boxVector from "../../images/about/boxVector.png"
 import fichier from "../../images/about/fichier.png"
 import frameSelfie from "../../images/about/Frameselfie.png"
+import image from "../../images/about/image.png"
 import database from "../../images/about/process.png"
 import processVector from "../../images/about/processVector.png"
 import rectangle from "../../images/about/Rectangle.png"
-import vectorBg from "../../images/about/Vector.png"
 import womenSelfie from '../../images/about/woman-selfie.png'
-import arrowWhite from '../../images/icons/arrowWhite.png'
+import manGlass from "../../images/about/manGlass.png"
 
 export default function About() {
   return (
@@ -30,13 +29,30 @@ export default function About() {
         <NavBar />
       </section>
 
-      <div className="about">
-        <section className='w-full bg-[#EFFFF3] ' style={{ backgroundImage: `url(${vectorBg})`, backgroundPosition: "center top", backgroundRepeat: "no-repeat", backgroundSize: "830px 442px" }}>
-          <div className='pt-32 pb-20'>
-            <Link to="/" class="about-btn-title">A propos de nous</Link>
+      <main className="about">
+        <section className='section-about w-full bg-[#EFFFF3]'>
+          <div className='pt-24 pb-20 px-5'>
+            <div className='block lg:hidden'>
+              <div className="flex items-center justify-center gap-x-5">
+                <Link to="/" className='customer-btn-first text-btn text-green-color flex items-center justify-center'>
+                  Solution
+                </Link>
+
+                <Link to="/" className='customer-btn-second text-btn text-nowrap text-green-color flex items-center justify-center'>
+                  Know your Customer
+                </Link>
+              </div>
+            </div>
+            <div className=" hidden lg:block w-full">
+              <div className="flex items-center justify-center">
+                <div className="about-btn-title flex items-center justify-center">
+                  <Link to="/" class=" items-center justify-center">A propos de nous</Link>
+                </div>
+              </div>
+            </div>
             <h2 className='about-title py-5'>
               Nous vous aidons à batir des solutions aussi <br />
-              <span class="text-cyan-color">crédibles</span> que <span class="text-cyan-color">faciles à utiliser</span>
+              <span class="text-green-color"> fiables</span> que <span class="text-green-color">faciles à utiliser</span>
             </h2>
             <p className='about-content pb-10'>
               Nos solutions, conçues pour s'adapter à vos besoins spécifiques, vous offrent une expérience utilisateur intuitive. Grâce à une interface claire et des processus <br />
@@ -58,7 +74,7 @@ export default function About() {
                 </span>
               </Link>
             </div> */}
-            <div className='flex w-full items-center justify-center lg:justify-start gap-x-2 py-8'>
+            <div className='flex w-full items-center justify-center gap-x-2 '>
               <Link to="/" className='screening-big-btn flex items-center justify-around bg-green-color'>
                 <span>Nous contacter</span>
                 <Arrow background="#FFFF" textcolor="#2CE5B1" />
@@ -73,7 +89,7 @@ export default function About() {
                 </span>
               </Link>
             </div>
-            <div className='about-subtitle py-10'>
+            <div className='about-subtitle py-10 about-cote'>
               Nous réinventons la vérification d'identité en alliant la puissance de <br />
               l'intelligence artificielle à une approche centrée sur l'utilisateur. Nous voulons <br />
               vous offrir une solution simple, sécurisée et fiable pour protéger vos données <br />
@@ -85,81 +101,111 @@ export default function About() {
         <section>
           <div className='bg-[-10%_92%]' style={{ backgroundImage: `url(${boxBg})`, backgroundRepeat: "no-repeat" }}>
             <div>
-              <div className=" px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center justify-center  gap-y-8">
-                  <div className='flex items-center justify-center'>
-                    <img src={img1} alt="" />
+              <div className=" px-4 py-8 sm:px-6 lg:px-8 lg:py-16 w-full">
+                <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center  gap-x-8">
+                  
+                  <div className="order-2 lg:order-1 flex items-center justify-center">
+                    <div className="flex items-center justify-center pb-10">
+                      <div className='relative flex flex-col items-center justify-center gap-5'>
+                        <div className=" card-vert"></div>
+                        <div className="card-vert"></div>
+                        <div className="absolute flex items-center justify-center w-[279px] h-[257px] lg:w-[350px] lg:h-[320px] bottom-0">
+                          <img src={image} alt="" className='w-[279px] h-[257px] lg:w-[350px] lg:h-[320px] ' />
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="flex flex-col items-center justify-end mx-10 mt-5 md:mt-32 lg:mt-32">
+                  
+                  <div class="order-1 lg:order-2 flex flex-col items-center justify-center w-full">
                     <h2 class="about-cart-title mb-5 w-full">
                       Vous aider à connaître vos utilisateurs <br />
                       et lutter contre la fraude
                     </h2>
-                    <p class="about-cart-content mb-10 w-full">
-                      La connaissance client est essentielle pour prévenir la fraude et le blanchiment <br />
-                      d'argent. Nos solutions vous permettent de créer des profils clients détaillés et de <br />
-                      détecter les anomalies comportementales. Grâce à notre expertise en matière <br />
-                      d'analyse de données, vous pouvez identifier les risques potentiels et prendre des <br />
+                    <p class="about-cart-content lg:text-left mb-10 w-full">
+                      La connaissance client est essentielle pour prévenir la fraude et le blanchiment
+                      d'argent. Nos solutions vous permettent de créer des profils clients détaillés et de
+                      détecter les anomalies comportementales. Grâce à notre expertise en matière
+                      d'analyse de données, vous pouvez identifier les risques potentiels et prendre des
                       décisions éclairées pour protéger votre entreprise
                     </p>
                   </div>
                 </div>
               </div>
-              <div className=" px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center justify-center  gap-y-8">
 
-                  <div class="flex flex-col items-center justify-end mx-10 mt-5 ">
-                    <h2 class="about-cart-title mb-5 w-full">
-                      Vous aider à connaître vos utilisateurs <br />
+              <div className=" px-4 py-8 sm:px-6 lg:px-8 lg:py-16">
+                <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center  gap-y-8">
+
+                  <div class="flex flex-col items-center justify-end px-5 lg:mx-10 ">
+                    <h2 class="about-cart-title text-left mb-5 w-full">
+                      Vous aider à connaître vos utilisateurs
                       et lutter contre la fraude
                     </h2>
                     <p class="about-cart-content mb-10 w-full">
-                      La connaissance client est essentielle pour prévenir la fraude et le blanchiment <br />
-                      d'argent. Nos solutions vous permettent de créer des profils clients détaillés et de <br />
-                      détecter les anomalies comportementales. Grâce à notre expertise en matière <br />
-                      d'analyse de données, vous pouvez identifier les risques potentiels et prendre des <br />
+                      La connaissance client est essentielle pour prévenir la fraude et le blanchiment
+                      d'argent. Nos solutions vous permettent de créer des profils clients détaillés et de
+                      détecter les anomalies comportementales. Grâce à notre expertise en matière
+                      d'analyse de données, vous pouvez identifier les risques potentiels et prendre des
                       décisions éclairées pour protéger votre entreprise
                     </p>
                   </div>
-                  <div className='flex items-center justify-center'>
-                    <img src={img3} alt="" />
+
+                  <div className="flex items-center justify-center">
+                    <div className="flex items-center justify-center pb-10">
+                      <div className='relative flex flex-col items-center justify-center gap-5'>
+                        <div className=" card-vert"></div>
+                        <div className="card-vert"></div>
+                        <div className="absolute flex items-center justify-center w-[279px] h-[257px] lg:w-[350px] lg:h-[320px] bottom-0">
+                          <img src={manGlass} alt="" className='w-[279px] h-[257px] lg:w-[350px] lg:h-[320px] ' />
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className=" px-4  sm:px-6 sm:py-12 lg:px-8 lg:py-16">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center justify-center  gap-y-8">
+              
+              <div className="lg:px-8 lg:py-16">
+                <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center  gap-y-8">
 
                   <div class="flex flex-col items-center justify-end mx-10 mt-5 ">
                     <h2 class="about-cart-title mb-5 w-full">
-                      Vous aider à connaître vos utilisateurs <br />
+                      Vous aider à connaître vos utilisateurs
                       et lutter contre la fraude
                     </h2>
                     <p class="about-cart-content mb-10 w-full">
-                      La connaissance client est essentielle pour prévenir la fraude et le blanchiment <br />
-                      d'argent. Nos solutions vous permettent de créer des profils clients détaillés et de <br />
-                      détecter les anomalies comportementales. Grâce à notre expertise en matière <br />
-                      d'analyse de données, vous pouvez identifier les risques potentiels et prendre des <br />
+                      La connaissance client est essentielle pour prévenir la fraude et le blanchiment
+                      d'argent. Nos solutions vous permettent de créer des profils clients détaillés et de
+                      détecter les anomalies comportementales. Grâce à notre expertise en matière
+                      d'analyse de données, vous pouvez identifier les risques potentiels et prendre des
                       décisions éclairées pour protéger votre entreprise
                     </p>
                   </div>
-                  <div className='flex items-center justify-center'>
-                    <img src={img3} alt="" />
+
+                  <div className="order-2 lg:order-1 flex items-center justify-center">
+                    <div className="flex items-center justify-center pb-10">
+                      <div className='relative flex flex-col items-center justify-center gap-5'>
+                        <div className=" card-vert"></div>
+                        <div className="card-vert"></div>
+                        <div className="absolute flex items-center justify-center w-[279px] h-[257px] lg:w-[350px] lg:h-[320px] bottom-0">
+                          <img src={manGlass} alt="" className='w-[279px] h-[257px] lg:w-[350px] lg:h-[320px] ' />
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+            <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
               <div className="pt-20"></div>
               <div className="py-20" style={{ backgroundImage: `url(${boxVector})`, backgroundRepeat: "no-repeat", backgroundPosition: "top center", backgroundSize: "contain" }}>
                 <div className='about-cart-title pb-5'>
-                  Nous supportons votre croissance et <br />
+                  Nous supportons votre croissance et
                   votre deployement dans les autres pays
                 </div>
                 <div className='about-cart-content'>
-                  Notre ambition est de vous accompagner dans votre développement à <br />
-                  l'international. Grâce à notre présence mondiale et à notre expertise des <br />
-                  réglementations AML spécifiques à chaque pays, nous vous aidons à étendre <br />
-                  votre activité en toute sérénité. Nous adaptons nos solutions à vos besoins et vous <br />
+                  Notre ambition est de vous accompagner dans votre développement à
+                  l'international. Grâce à notre présence mondiale et à notre expertise des
+                  réglementations AML spécifiques à chaque pays, nous vous aidons à étendre
+                  votre activité en toute sérénité. Nous adaptons nos solutions à vos besoins et vous
                   fournissons un support personnalisé à chaque étape de votre croissance.
                 </div>
               </div>
@@ -230,15 +276,15 @@ export default function About() {
                   <Link to="/" class=" bg-white  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
                     <span class="text-green-deep text-nowrap pr-5">contacter</span>
                     <Message background="#285246" textcolor="#FFFF" />
-                  </Link> */} 
-                    <Link to="/pricing" class=" accueil-btn-clean btn bg-green-color flex items-center justify-around gap-x-2">
-                      <div class="btn-text flex text-green-deep text-nowrap ">Connexion</div>
-                      <Arrow background="#FFFF" textcolor="#285246" />
-                    </Link>
-                    <Link to="/pricing" class=" accueil-btn-clean btn bg-white flex items-center justify-around gap-x-2">
-                      <div class="btn-text flex text-green-deep text-nowrap ">contacter</div>
-                      <Message background="#285246" textcolor="#FFFF" />
-                    </Link>
+                  </Link> */}
+                  <Link to="/pricing" class=" accueil-btn-clean btn bg-green-color flex items-center justify-around gap-x-2">
+                    <div class="btn-text flex text-green-deep text-nowrap ">Connexion</div>
+                    <Arrow background="#FFFF" textcolor="#285246" />
+                  </Link>
+                  <Link to="/pricing" class=" accueil-btn-clean btn bg-white flex items-center justify-around gap-x-2">
+                    <div class="btn-text flex text-green-deep text-nowrap ">contacter</div>
+                    <Message background="#285246" textcolor="#FFFF" />
+                  </Link>
                 </div>
               </div>
 
@@ -828,7 +874,7 @@ export default function About() {
         <section>
           <FooterAccueil />
         </section>
-      </div>
+      </main>
     </div>
   )
 }

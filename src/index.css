@@ -1263,6 +1263,13 @@ textarea {
   color: #285246;
 }
 
+.section-about{
+  background-image: url("../src/images/about/Vector.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 830px 442px;
+}
+
 .about-content {
   font-family: "Satoshi";
   font-size: 14px;
@@ -2305,6 +2312,15 @@ textarea {
 
   .card-scroll-horiz-screening{
     margin-top: 1rem;
+  }
+
+  .section-about{
+    background-image: none;
+  }
+  .about-cote{
+    background-image: url("../src/images/page-2/cote.png");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
