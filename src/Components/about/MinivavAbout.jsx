@@ -1,12 +1,11 @@
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import AccordionMiniNav from '../AccordionMiniNav';
-import Arrow from '../Arrow';
-import Message from '../Message';
-import SmallCheckCircle from '../SmallCheckCircle';
-import vectorMininav from "../../images/about/vectorMininav.png"
-import cmr from "../../images/about/cmrPicture.png"
+import cmr from "../../images/about/cmrPicture.png";
+import vectorMininav from "../../images/about/vectorMininav.png";
+import arrowLeft from "../../images/accueil/VectorLeft.png";
+import arrowRight from "../../images/accueil/VectorRight.png";
+import bgCountry from "../../images/about/bg-country.png"
 
 export default function MinivavAbout() {
     const [content, setContent] = useState("Afrique");
@@ -18,14 +17,36 @@ export default function MinivavAbout() {
 
     const [activeLink, setActiveLink] = useState('');
 
+    const options = [
+        "Afrique",
+        "Europe",
+        "Asie",
+        "Amerique",
+        "Océanie"
+    ];
+
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    const handleLeftClick = () => {
+        if (currentIndex > 0) {
+            setCurrentIndex(currentIndex - 1);
+        }
+    };
+
+    const handleRightClick = () => {
+        if (currentIndex < options.length - 1) {
+            setCurrentIndex(currentIndex + 1);
+        }
+    };
+
     const handleClick = (link) => {
         setActiveLink(link);
     };
 
     return (
         <section>
-            <div className="not-accordion bg-white pl-20 w-full">
-                <div className="flex flex-col pt-10" style={{ backgroundImage: `url(${vectorMininav})`, backgroundRepeat: "no-repeat", backgroundPosition: "100% 100%" }}>
+            <div className="bg-white sm:pl-20 w-full">
+                <div className="flex px-5 sm:px-0 flex-col py-10" style={{ backgroundImage: `url(${vectorMininav})`, backgroundRepeat: "no-repeat", backgroundPosition: "100% 100%" }}>
                     <Link to="/" className='bg-green-color flex items-center justify-center mini-nav-btn mini-nav-btn-text '>
                         Nos Outils
                     </Link>
@@ -38,7 +59,7 @@ export default function MinivavAbout() {
                         que vous soyez dans le monde.
                     </div>
                 </div>
-                <div className='pr-20'>
+                <div className='pr-20  hidden lg:block'>
                     <ul className="flex mini-nav-items items-center justify-around bg-[#DFFCE3] h-[54px] rounded-xl my-10 gap-x-5 px-5">
                         <li className={`mini-nav-option ${content === "Afrique" ? 'mini-nav-item-active ' : ''}`} onClick={(event) => handleNavClick(event, "Afrique")}>
                             <a href="#">Afrique</a>
@@ -58,162 +79,160 @@ export default function MinivavAbout() {
                     </ul>
 
                     <div className="flex flex-wrap items-center justify-center gap-16 pb-10 lg:pb-16">
-
-
                         {content === "Afrique" && (
 
                             <table className=' w-full'>
                                 <tr className=''>
                                     <td className='py-5 pl-5'>
-                                        <div className='flex items-center justify-start'>
-                                            <img src={cmr} alt="" className='pr-5' />
-                                            <span>Cameroun</span>
+                                        <div className='flex items-center justify-center'>
+                                            <img src={cmr} alt="" className='pr-2' />
+                                            <span className='pr-4'>Cameroun</span>
                                         </div>
                                     </td>
                                     <td className='py-5'>
-                                        <div className='flex items-center justify-start'>
-                                            <img src={cmr} alt="" className='pr-5' />
-                                            <span>Cameroun</span>
+                                        <div className='flex items-center justify-center'>
+                                            <img src={cmr} alt="" className='pr-2' />
+                                            <span className='pr-4'>Cameroun</span>
                                         </div>
                                     </td>
                                     <td className='py-5'>
-                                        <div className='flex items-center justify-start'>
-                                            <img src={cmr} alt="" className='pr-5' />
-                                            <span>Cameroun</span>
+                                        <div className='flex items-center justify-center'>
+                                            <img src={cmr} alt="" className='pr-2' />
+                                            <span className='pr-4'>Cameroun</span>
                                         </div>
                                     </td>
                                     <td className='py-5'>
-                                        <div className='flex items-center justify-start'>
-                                            <img src={cmr} alt="" className='pr-5' />
-                                            <span>Cameroun</span>
+                                        <div className='flex items-center justify-center'>
+                                            <img src={cmr} alt="" className='pr-2' />
+                                            <span className='pr-4'>Cameroun</span>
                                         </div>
                                     </td>
                                     <td className='py-5'>
-                                        <div className='flex items-center justify-start'>
-                                            <img src={cmr} alt="" className='pr-5' />
-                                            <span>Cameroun</span>
+                                        <div className='flex items-center justify-center'>
+                                            <img src={cmr} alt="" className='pr-2' />
+                                            <span className='pr-4'>Cameroun</span>
                                         </div>
                                     </td>
                                     <td className='py-5'>
-                                        <div className='flex items-center justify-start'>
-                                            <img src={cmr} alt="" className='pr-5' />
-                                            <span>Cameroun</span>
+                                        <div className='flex items-center justify-center'>
+                                            <img src={cmr} alt="" className='pr-2' />
+                                            <span className='pr-4'>Cameroun</span>
                                         </div>
                                     </td>
                                 </tr>
                                 <tr className=''>
                                     <td className='py-5 pl-5'>
-                                        <div className='flex items-center justify-start'>
-                                            <img src={cmr} alt="" className='pr-5' />
-                                            <span>Cameroun</span>
+                                        <div className='flex items-center justify-center'>
+                                            <img src={cmr} alt="" className='pr-2' />
+                                            <span className='pr-4'>Cameroun</span>
                                         </div>
                                     </td>
                                     <td className='py-5'>
-                                        <div className='flex items-center justify-start'>
-                                            <img src={cmr} alt="" className='pr-5' />
-                                            <span>Cameroun</span>
+                                        <div className='flex items-center justify-center'>
+                                            <img src={cmr} alt="" className='pr-2' />
+                                            <span className='pr-4'>Cameroun</span>
                                         </div>
                                     </td>
                                     <td className='py-5'>
-                                        <div className='flex items-center justify-start'>
-                                            <img src={cmr} alt="" className='pr-5' />
-                                            <span>Cameroun</span>
+                                        <div className='flex items-center justify-center'>
+                                            <img src={cmr} alt="" className='pr-2' />
+                                            <span className='pr-4'>Cameroun</span>
                                         </div>
                                     </td>
                                     <td className='py-5'>
-                                        <div className='flex items-center justify-start'>
-                                            <img src={cmr} alt="" className='pr-5' />
-                                            <span>Cameroun</span>
+                                        <div className='flex items-center justify-center'>
+                                            <img src={cmr} alt="" className='pr-2' />
+                                            <span className='pr-4'>Cameroun</span>
                                         </div>
                                     </td>
                                     <td className='py-5'>
-                                        <div className='flex items-center justify-start'>
-                                            <img src={cmr} alt="" className='pr-5' />
-                                            <span>Cameroun</span>
+                                        <div className='flex items-center justify-center'>
+                                            <img src={cmr} alt="" className='pr-2' />
+                                            <span className='pr-4'>Cameroun</span>
                                         </div>
                                     </td>
                                     <td className='py-5'>
-                                        <div className='flex items-center justify-start'>
-                                            <img src={cmr} alt="" className='pr-5' />
-                                            <span>Cameroun</span>
+                                        <div className='flex items-center justify-center'>
+                                            <img src={cmr} alt="" className='pr-2' />
+                                            <span className='pr-4'>Cameroun</span>
                                         </div>
                                     </td>
 
                                 </tr>
                                 <tr className=''>
                                     <td className='py-5 pl-5'>
-                                        <div className='flex items-center justify-start'>
-                                            <img src={cmr} alt="" className='pr-5' />
-                                            <span>Cameroun</span>
+                                        <div className='flex items-center justify-center'>
+                                            <img src={cmr} alt="" className='pr-2' />
+                                            <span className='pr-4'>Cameroun</span>
                                         </div>
                                     </td>
                                     <td className='py-5'>
-                                        <div className='flex items-center justify-start'>
-                                            <img src={cmr} alt="" className='pr-5' />
-                                            <span>Cameroun</span>
+                                        <div className='flex items-center justify-center'>
+                                            <img src={cmr} alt="" className='pr-2' />
+                                            <span className='pr-4'>Cameroun</span>
                                         </div>
                                     </td>
                                     <td className='py-5'>
-                                        <div className='flex items-center justify-start'>
-                                            <img src={cmr} alt="" className='pr-5' />
-                                            <span>Cameroun</span>
+                                        <div className='flex items-center justify-center'>
+                                            <img src={cmr} alt="" className='pr-2' />
+                                            <span className='pr-4'>Cameroun</span>
                                         </div>
                                     </td>
                                     <td className='py-5'>
-                                        <div className='flex items-center justify-start'>
-                                            <img src={cmr} alt="" className='pr-5' />
-                                            <span>Cameroun</span>
+                                        <div className='flex items-center justify-center'>
+                                            <img src={cmr} alt="" className='pr-2' />
+                                            <span className='pr-4'>Cameroun</span>
                                         </div>
                                     </td>
                                     <td className='py-5'>
-                                        <div className='flex items-center justify-start'>
-                                            <img src={cmr} alt="" className='pr-5' />
-                                            <span>Cameroun</span>
+                                        <div className='flex items-center justify-center'>
+                                            <img src={cmr} alt="" className='pr-2' />
+                                            <span className='pr-4'>Cameroun</span>
                                         </div>
                                     </td>
                                     <td className='py-5'>
-                                        <div className='flex items-center justify-start'>
-                                            <img src={cmr} alt="" className='pr-5' />
-                                            <span>Cameroun</span>
+                                        <div className='flex items-center justify-center'>
+                                            <img src={cmr} alt="" className='pr-2' />
+                                            <span className='pr-4'>Cameroun</span>
                                         </div>
                                     </td>
 
                                 </tr>
                                 <tr className=''>
                                     <td className='py-5 pl-5'>
-                                        <div className='flex items-center justify-start'>
-                                            <img src={cmr} alt="" className='pr-5' />
-                                            <span>Cameroun</span>
+                                        <div className='flex items-center justify-center'>
+                                            <img src={cmr} alt="" className='pr-2' />
+                                            <span className='pr-4'>Cameroun</span>
                                         </div>
                                     </td>
                                     <td className='py-5'>
-                                        <div className='flex items-center justify-start'>
-                                            <img src={cmr} alt="" className='pr-5' />
-                                            <span>Cameroun</span>
+                                        <div className='flex items-center justify-center'>
+                                            <img src={cmr} alt="" className='pr-2' />
+                                            <span className='pr-4'>Cameroun</span>
                                         </div>
                                     </td>
                                     <td className='py-5'>
-                                        <div className='flex items-center justify-start'>
-                                            <img src={cmr} alt="" className='pr-5' />
-                                            <span>Cameroun</span>
+                                        <div className='flex items-center justify-center'>
+                                            <img src={cmr} alt="" className='pr-2' />
+                                            <span className='pr-4'>Cameroun</span>
                                         </div>
                                     </td>
                                     <td className='py-5'>
-                                        <div className='flex items-center justify-start'>
-                                            <img src={cmr} alt="" className='pr-5' />
-                                            <span>Cameroun</span>
+                                        <div className='flex items-center justify-center'>
+                                            <img src={cmr} alt="" className='pr-2' />
+                                            <span className='pr-4'>Cameroun</span>
                                         </div>
                                     </td>
                                     <td className='py-5'>
-                                        <div className='flex items-center justify-start'>
-                                            <img src={cmr} alt="" className='pr-5' />
-                                            <span>Cameroun</span>
+                                        <div className='flex items-center justify-center'>
+                                            <img src={cmr} alt="" className='pr-2' />
+                                            <span className='pr-4'>Cameroun</span>
                                         </div>
                                     </td>
                                     <td className='py-5'>
-                                        <div className='flex items-center justify-start'>
-                                            <img src={cmr} alt="" className='pr-5' />
-                                            <span>Cameroun</span>
+                                        <div className='flex items-center justify-center'>
+                                            <img src={cmr} alt="" className='pr-2' />
+                                            <span className='pr-4'>Cameroun</span>
                                         </div>
                                     </td>
 
@@ -250,8 +269,128 @@ export default function MinivavAbout() {
                 </div>
             </div>
 
-            <div className='accordion'>
-                <AccordionMiniNav />
+            <div className='block lg:hidden'>
+                <div className="mini-nav-arrows">
+                    <ul className="flex items-center justify-between bg-[#DFFCE3] h-[54px] rounded-xl gap-x-5 px-5">
+                        <li className='cursor-pointer'>
+                            <img src={arrowLeft} alt="Flèche gauche" onClick={handleLeftClick} />
+                        </li>
+                        <li className={`mini-nav-option ${currentIndex === 0 ? 'mini-nav-item-active' : ''}`} onClick={() => setCurrentIndex(0)}>
+                            <a href="#">{currentIndex + 1}/5 {options[currentIndex]}</a>
+                        </li>
+
+                        <li className='cursor-pointer'>
+                            <img src={arrowRight} alt="Flèche droite" onClick={handleRightClick} />
+                        </li>
+                    </ul>
+
+
+                    <div className="flex flex-wrap items-center justify-center gap-16 pb-10 lg:pb-16">
+                        {currentIndex === 0 && (
+                            <div className='flex items-center justify-center bg-no-repeat w-full bg-cover bg-[50%_50%] pb-96' style={{backgroundImage : `url(${bgCountry})`}}>
+                                <table className=' w-full'>
+                                    <tr className=''>
+                                        <td className='py-5 pl-5'>
+                                            <div className='flex items-center justify-center'>
+                                                <img src={cmr} alt="" className='pr-2' />
+                                                <span className='pr-4'>Cameroun</span>
+                                            </div>
+                                        </td>
+                                        <td className='py-5'>
+                                            <div className='flex items-center justify-center'>
+                                                <img src={cmr} alt="" className='pr-2' />
+                                                <span className='pr-4'>Cameroun</span>
+                                            </div>
+                                        </td>
+                                        <td className='py-5'>
+                                            <div className='flex items-center justify-center'>
+                                                <img src={cmr} alt="" className='pr-2' />
+                                                <span className='pr-4'>Cameroun</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr className=''>
+                                        <td className='py-5 pl-5'>
+                                            <div className='flex items-center justify-center'>
+                                                <img src={cmr} alt="" className='pr-2' />
+                                                <span className='pr-4'>Cameroun</span>
+                                            </div>
+                                        </td>
+                                        <td className='py-5'>
+                                            <div className='flex items-center justify-center'>
+                                                <img src={cmr} alt="" className='pr-2' />
+                                                <span className='pr-4'>Cameroun</span>
+                                            </div>
+                                        </td>
+                                        <td className='py-5'>
+                                            <div className='flex items-center justify-center'>
+                                                <img src={cmr} alt="" className='pr-2' />
+                                                <span className='pr-4'>Cameroun</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr className=''>
+                                        <td className='py-5 pl-5'>
+                                            <div className='flex items-center justify-center'>
+                                                <img src={cmr} alt="" className='pr-2' />
+                                                <span className='pr-4'>Cameroun</span>
+                                            </div>
+                                        </td>
+                                        <td className='py-5'>
+                                            <div className='flex items-center justify-center'>
+                                                <img src={cmr} alt="" className='pr-2' />
+                                                <span className='pr-4'>Cameroun</span>
+                                            </div>
+                                        </td>
+                                        <td className='py-5'>
+                                            <div className='flex items-center justify-center'>
+                                                <img src={cmr} alt="" className='pr-2' />
+                                                <span className='pr-4'>Cameroun</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr className=''>
+                                        <td className='py-5 pl-5'>
+                                            <div className='flex items-center justify-center'>
+                                                <img src={cmr} alt="" className='pr-2' />
+                                                <span className='pr-4'>Cameroun</span>
+                                            </div>
+                                        </td>
+                                        <td className='py-5'>
+                                            <div className='flex items-center justify-center'>
+                                                <img src={cmr} alt="" className='pr-2' />
+                                                <span className='pr-4'>Cameroun</span>
+                                            </div>
+                                        </td>
+                                        <td className='py-5'>
+                                            <div className='flex items-center justify-center'>
+                                                <img src={cmr} alt="" className='pr-2' />
+                                                <span className='pr-4'>Cameroun</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        )}
+                        {currentIndex === 1 && (
+                            <div></div>
+                        )}
+                        {/* REFERENCE ....... */}
+                        {currentIndex === 2 && (
+                            <div></div>
+                        )}
+                        {/** END REFERENCE ....... */}
+                        {currentIndex === 3 && (
+                            <div></div>
+                        )}
+                        {currentIndex === 4 && (
+                            <div></div>
+                        )}
+
+                        {/* Ajoute d'autres conditions pour le reste du contenu ici */}
+
+                    </div>
+                </div>
             </div>
         </section>
     );

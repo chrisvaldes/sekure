@@ -524,7 +524,7 @@ export default function About() {
               <img src={database} alt="" />
             </div>
             <div className='block flex items-center justify-center md:hidden w-full'>
-                  <img src={miDiagram} alt="" className='flex items-center justify-center' />
+              <img src={miDiagram} alt="" className='flex items-center justify-center' />
             </div>
           </div>
         </section>
@@ -722,7 +722,9 @@ export default function About() {
           </div>
         </section>
 
-        <MinivavAbout />
+        <div className="">
+          <MinivavAbout />
+        </div>
 
         <section>
           <FooterAccueil />
