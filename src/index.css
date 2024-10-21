@@ -57,6 +57,13 @@
     text-align: center;
     color: #F5F5F5;
   }
+
+  .bg-Box-world{
+    background-image: url("../src/images/about/boxBg.png");
+    background-repeat: no-repeat;
+    background-position: -10% 92%;
+  }
+
   .accueil-btn-start {
     width: 236px;
     height: 50px;
@@ -459,6 +466,13 @@
     color: #FFFFFF;
     background: #2CE5B1;
 
+  }
+
+  .box-vector{
+    background-image: url("../src/images/about/boxVector.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
   }
 
   .big-btn-about-us {
@@ -2322,6 +2336,26 @@ textarea {
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  .box-vector{
+    background-image: none;
+  }
+
+  .bg-Box{
+    background-image: none;
+  }
+  .bg-Box-middle{
+    width: 481px;
+    height: 336px;
+    background-image: url("../src/images/about/boxBg.png");
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: contain;
+  }
+  .bg-Box-world{
+    background-image: none;
+  }
+
 }
 
 

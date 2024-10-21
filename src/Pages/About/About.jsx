@@ -9,18 +9,17 @@ import FooterAccueil from '../../Components/FooterAccueil'
 import Message from '../../Components/Message'
 import MiniCard from '../../Components/MiniCard'
 import NavBar from '../../Components/NavBar'
-import img3 from "../../images/about/aboutImg3.png"
 import bgDotted from "../../images/about/bg-dotted.png"
 import boxBg from "../../images/about/boxBg.png"
-import boxVector from "../../images/about/boxVector.png"
 import fichier from "../../images/about/fichier.png"
 import frameSelfie from "../../images/about/Frameselfie.png"
 import image from "../../images/about/image.png"
+import manGlass from "../../images/about/manGlass.png"
 import database from "../../images/about/process.png"
 import processVector from "../../images/about/processVector.png"
 import rectangle from "../../images/about/Rectangle.png"
 import womenSelfie from '../../images/about/woman-selfie.png'
-import manGlass from "../../images/about/manGlass.png"
+import groupDatabases from "../../images/groupDatabases.png"
 
 export default function About() {
   return (
@@ -98,14 +97,14 @@ export default function About() {
           </div>
         </section>
 
-        <section>
-          <div className='bg-[-10%_92%]' style={{ backgroundImage: `url(${boxBg})`, backgroundRepeat: "no-repeat" }}>
+        <section className='bg-Box-world'>
+          <div className=''>
             <div>
               <div className=" px-4 py-8 sm:px-6 lg:px-8 lg:py-16 w-full">
                 <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center  gap-x-8">
                   
                   <div className="order-2 lg:order-1 flex items-center justify-center">
-                    <div className="flex items-center justify-center pb-10">
+                    <div className="flex items-center justify-center">
                       <div className='relative flex flex-col items-center justify-center gap-5'>
                         <div className=" card-vert"></div>
                         <div className="card-vert"></div>
@@ -162,8 +161,7 @@ export default function About() {
                   </div>
                 </div>
               </div>
-              
-              <div className="lg:px-8 lg:py-16">
+              <div className="lg:px-8 lg:py-10">
                 <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center  gap-y-8">
 
                   <div class="flex flex-col items-center justify-end mx-10 mt-5 ">
@@ -181,12 +179,12 @@ export default function About() {
                   </div>
 
                   <div className="order-2 lg:order-1 flex items-center justify-center">
-                    <div className="flex items-center justify-center pb-10">
+                    <div className="flex items-center justify-center">
                       <div className='relative flex flex-col items-center justify-center gap-5'>
                         <div className=" card-vert"></div>
                         <div className="card-vert"></div>
-                        <div className="absolute flex items-center justify-center w-[279px] h-[257px] lg:w-[350px] lg:h-[320px] bottom-0">
-                          <img src={manGlass} alt="" className='w-[279px] h-[257px] lg:w-[350px] lg:h-[320px] ' />
+                        <div className="absolute flex items-center justify-center w-[279px] h-[257px] lg:w-[350px] lg:h-[320px]">
+                          <img src={groupDatabases} alt="" className='w-[269px] h-[247px] lg:w-[350px] lg:h-[320px] ' />
                         </div>
                       </div>
                     </div>
@@ -194,9 +192,10 @@ export default function About() {
                 </div>
               </div>
             </div>
+
             <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
-              <div className="pt-20"></div>
-              <div className="py-20" style={{ backgroundImage: `url(${boxVector})`, backgroundRepeat: "no-repeat", backgroundPosition: "top center", backgroundSize: "contain" }}>
+              <div className=""></div>
+              <div className="py-20 box-vector px-5 lg:px-0">
                 <div className='about-cart-title pb-5'>
                   Nous supportons votre croissance et
                   votre deployement dans les autres pays
@@ -209,8 +208,11 @@ export default function About() {
                   fournissons un support personnalisé à chaque étape de votre croissance.
                 </div>
               </div>
+            </div>
+            <div className="bg-Box-middle w-full block lg:hidden">
 
             </div>
+
             <div className="pb-20 pt-10">
               <div className="card-choice-items flex items-center justify-center w-full py-10">
                 <MiniCard title="6 s"
@@ -662,7 +664,7 @@ export default function About() {
                 </div>
               </section> */}
 
-        <section className=' pt-20 bg-[#EFFFF3]'>
+        <section className=' pt-20 px-5 bg-[#EFFFF3]'>
           <div style={{ backgroundImage: `url(${processVector})`, backgroundRepeat: "no-repeat", backgroundPosition: "bottom left" }}>
             <div className='flex flex-col items-center justify-center'>
               <Link to="/" className='about-btn-title flex items-center justify-center'>à propos de nous</Link>
