@@ -80,6 +80,12 @@
     color: #F5F5F5;
   }
 
+  .process-vector{
+    background-image: url("../src/images/about/processVector.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+  }
+
   .verification-identiter {
     width: 441px;
     height: 405px;
@@ -1419,11 +1425,19 @@ textarea {
   left: 4%;
 }
 
+.women-vector{
+  background-image: url("../src/images/about/Vector.png");
+  background-repeat: no-repeat;
+  background-position: -1% 60%;
+  background-color: cadetblue;
+  background-size: -90% -90%;
+}
+
 .about-womenselfie-title {
   font-family: "Satoshi";
   font-size: 25px;
   font-weight: 400;
-  line-height: 37px;
+  line-height: 30px;
   text-align: left;
   color: #285246;
 }
@@ -1432,7 +1446,9 @@ textarea {
   font-family: "Satoshi";
   font-size: 12px;
   font-weight: 700;
-  line-height: 37px;
+  line-height: 10px;
+  padding-bottom: 5px;
+  text-wrap: nowrap;
   text-align: left;
   color: #285246;
 }
@@ -2354,6 +2370,10 @@ textarea {
   }
   .bg-Box-world{
     background-image: none;
+  }
+
+  .process-vector{
+    background-image:none;
   }
 
 }

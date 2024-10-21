@@ -21,15 +21,16 @@ import rectangle from "../../images/about/Rectangle.png"
 import womenSelfie from '../../images/about/woman-selfie.png'
 import groupDatabases from "../../images/groupDatabases.png"
 import vector from "../../images/about/Vector.png"
+import miDiagram from "../../images/about/mi-diagram.png"
 
 export default function About() {
   return (
     <div>
-      <section className='fixed'>
+      <section className='fixed z-40'>
         <NavBar />
       </section>
 
-      <main className="about">
+      <main className="about z-10">
         <section className='section-about w-full bg-[#EFFFF3]'>
           <div className='pt-24 pb-20 px-5'>
             <div className='block lg:hidden'>
@@ -106,11 +107,13 @@ export default function About() {
 
                   <div className="order-2 lg:order-1 flex items-center justify-center">
                     <div className="flex items-center justify-center">
-                      <div className='relative flex flex-col items-center justify-center gap-5'>
-                        <div className=" card-vert"></div>
-                        <div className="card-vert"></div>
-                        <div className="absolute flex items-center justify-center w-[279px] h-[257px] lg:w-[350px] lg:h-[320px] bottom-0">
-                          <img src={image} alt="" className='w-[279px] h-[257px] lg:w-[350px] lg:h-[320px] ' />
+                      <div className="">
+                        <div className='relative flex flex-col items-center justify-center gap-5'>
+                          <div className=" card-vert"></div>
+                          <div className="card-vert"></div>
+                          <div className="absolute flex items-center justify-center w-[279px] h-[257px] lg:w-[350px] lg:h-[320px] bottom-0">
+                            <img src={image} alt="" className='w-[279px] h-[257px] lg:w-[350px] lg:h-[320px] ' />
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -256,7 +259,7 @@ export default function About() {
         <section className='bg-[#285246] lg:pl-5 sm:pr-5 pb-20' style={{ backgroundImage: `url(${bgDotted})`, backgroundPosition: "bottom center", backgroundRepeat: "no-repeat" }}>
           <div className='w-full'>
             <div className='text-left grid items-center justify-around sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-10 w-full'>
-              <div className='h-full pt-20 w-full col-span-2 lg:col-span-1 flex flex-col items-center justify-center lg:items-start lg:justify-start'>
+              <div className='h-full pt-20 px-5 w-full col-span-2 lg:col-span-1 flex flex-col items-center justify-center lg:items-start lg:justify-start'>
                 <Link to="/" className='about-btn-title flex items-center justify-center'>à propos de nous</Link>
                 <div className='about-dotted-title pt-4 pb-8 w-full flex items-center justify-center text-center lg:text-left'>
                   Un service qui
@@ -272,14 +275,6 @@ export default function About() {
                   avons la solution adaptée à vos besoins.
                 </div>
                 <div class=" flex  gap-1 pt-10 w-full items-center justify-center text-center lg:text-left">
-                  {/* <Link to="/" class="bg-green-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
-                    <span class="text-nowrap" >Connexion</span>
-                    <Arrow background="#FFFF" textcolor="#285246" />
-                  </Link>
-                  <Link to="/" class=" bg-white  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
-                    <span class="text-green-deep text-nowrap pr-5">contacter</span>
-                    <Message background="#285246" textcolor="#FFFF" />
-                  </Link> */}
                   <Link to="/pricing" class=" accueil-btn-clean btn bg-green-color flex items-center justify-around gap-x-2">
                     <div class="btn-text flex text-green-deep text-nowrap ">Connexion</div>
                     <Arrow background="#FFFF" textcolor="#285246" />
@@ -403,7 +398,7 @@ export default function About() {
           </div>
           <div className='pt-16 card-scroll-horiz-screening pb-20 w-full block lg:hidden'>
             <div className='w-full'>
-              <div className='grid grid-cols-3 gap-y-8 overflow-x-auto px-8 w-full gap-x-80'>
+              <div className='grid grid-cols-3 gap-y-8 overflow-x-auto scrollbar-hidden px-8 w-full gap-x-80'>
                 <CardAbout
                   fichier={fichier}
                   textBnt="Disponible par pays"
@@ -513,160 +508,8 @@ export default function About() {
           </div>
         </section>
 
-        {/* <section className='pt-16 card-scroll-horiz-screening  pb-20'>
-                <div>
-                  <div className='flex items-start justify-start gap-8 overflow-x-auto px-8 scrollbar-hidden'>
-                    <Card
-                      btnText="Disponibilité par pays"
-                      title={
-                        <span>
-                          Est-ce-que je peux payer <br />
-                          depuis mon pays en Afrique ?
-                        </span>
-                      }
-                      content={
-                        <span>
-                          Localement ou internationalement, vos achats en <br />
-                          ligne ne connaissent plus de limite avec les <br />
-                          cartes virtuelles Visa et Mastercard de chez <br />
-                          SEKURE. En 2 minutes, créez et vérifiez votre <br />
-                          compte Sekure pour obtenir votre carte virtuelle. <br />
-                          Entre des frais d'entretien inexistants et des frais <br />
-                          de transaction amoindris, Sekure vous offre les <br />
-                          meilleurs avantages du marché bancaire africain <br />
-                          sur jusqu’à 06 cartes que vous pouvez suivre <br />
-                          individuellement dans via l'application.
-                        </span>
-                      }
-                      bgColor="white"
-                    />
-                    <Card
-                      btnText="Disponibilité par pays"
-                      title={
-                        <span>
-                          Est-ce-que je peux payer <br />
-                          depuis mon pays en Afrique ?
-                        </span>
-                      }
-                      content={
-                        <span>
-                          Localement ou internationalement, vos achats en <br />
-                          ligne ne connaissent plus de limite avec les <br />
-                          cartes virtuelles Visa et Mastercard de chez <br />
-                          SEKURE. En 2 minutes, créez et vérifiez votre <br />
-                          compte Sekure pour obtenir votre carte virtuelle. <br />
-                          Entre des frais d'entretien inexistants et des frais <br />
-                          de transaction amoindris, Sekure vous offre les <br />
-                          meilleurs avantages du marché bancaire africain <br />
-                          sur jusqu’à 06 cartes que vous pouvez suivre <br />
-                          individuellement dans via l'application.
-                        </span>
-                      }
-                      bgColor="white"
-                    />
-                    <Card
-                      btnText="Disponibilité par pays"
-                      title={
-                        <span>
-                          Est-ce-que je peux payer <br />
-                          depuis mon pays en Afrique ?
-                        </span>
-                      }
-                      content={
-                        <span>
-                          Localement ou internationalement, vos achats en <br />
-                          ligne ne connaissent plus de limite avec les <br />
-                          cartes virtuelles Visa et Mastercard de chez <br />
-                          SEKURE. En 2 minutes, créez et vérifiez votre <br />
-                          compte Sekure pour obtenir votre carte virtuelle. <br />
-                          Entre des frais d'entretien inexistants et des frais <br />
-                          de transaction amoindris, Sekure vous offre les <br />
-                          meilleurs avantages du marché bancaire africain <br />
-                          sur jusqu’à 06 cartes que vous pouvez suivre <br />
-                          individuellement dans via l'application.
-                        </span>
-                      }
-                      bgColor="white"
-                    />
-                    <Card
-                      btnText="Disponibilité par pays"
-                      title={
-                        <span>
-                          Est-ce-que je peux payer <br />
-                          depuis mon pays en Afrique ?
-                        </span>
-                      }
-                      content={
-                        <span>
-                          Localement ou internationalement, vos achats en <br />
-                          ligne ne connaissent plus de limite avec les <br />
-                          cartes virtuelles Visa et Mastercard de chez <br />
-                          SEKURE. En 2 minutes, créez et vérifiez votre <br />
-                          compte Sekure pour obtenir votre carte virtuelle. <br />
-                          Entre des frais d'entretien inexistants et des frais <br />
-                          de transaction amoindris, Sekure vous offre les <br />
-                          meilleurs avantages du marché bancaire africain <br />
-                          sur jusqu’à 06 cartes que vous pouvez suivre <br />
-                          individuellement dans via l'application.
-                        </span>
-                      }
-                      bgColor="white"
-                    />
-                    <Card
-                      btnText="Disponibilité par pays"
-                      title={
-                        <span>
-                          Est-ce-que je peux payer <br />
-                          depuis mon pays en Afrique ?
-                        </span>
-                      }
-                      content={
-                        <span>
-                          Localement ou internationalement, vos achats en <br />
-                          ligne ne connaissent plus de limite avec les <br />
-                          cartes virtuelles Visa et Mastercard de chez <br />
-                          SEKURE. En 2 minutes, créez et vérifiez votre <br />
-                          compte Sekure pour obtenir votre carte virtuelle. <br />
-                          Entre des frais d'entretien inexistants et des frais <br />
-                          de transaction amoindris, Sekure vous offre les <br />
-                          meilleurs avantages du marché bancaire africain <br />
-                          sur jusqu’à 06 cartes que vous pouvez suivre <br />
-                          individuellement dans via l'application.
-                        </span>
-                      }
-                      bgColor="white"
-                    />
-                    <Card
-                      btnText="Disponibilité par pays"
-                      title={
-                        <span>
-                          Est-ce-que je peux payer <br />
-                          depuis mon pays en Afrique ?
-                        </span>
-                      }
-                      content={
-                        <span>
-                          Localement ou internationalement, vos achats en <br />
-                          ligne ne connaissent plus de limite avec les <br />
-                          cartes virtuelles Visa et Mastercard de chez <br />
-                          SEKURE. En 2 minutes, créez et vérifiez votre <br />
-                          compte Sekure pour obtenir votre carte virtuelle. <br />
-                          Entre des frais d'entretien inexistants et des frais <br />
-                          de transaction amoindris, Sekure vous offre les <br />
-                          meilleurs avantages du marché bancaire africain <br />
-                          sur jusqu’à 06 cartes que vous pouvez suivre <br />
-                          individuellement dans via l'application.
-                        </span>
-                      }
-                      bgColor="white"
-                    />
-
-                  </div>
-                </div>
-              </section> */}
-
         <section className=' pt-20 px-5 bg-[#EFFFF3]'>
-          <div style={{ backgroundImage: `url(${processVector})`, backgroundRepeat: "no-repeat", backgroundPosition: "bottom left" }}>
+          <div className='process-vector'>
             <div className='flex flex-col items-center justify-center'>
               <Link to="/" className='about-btn-title flex items-center justify-center'>à propos de nous</Link>
               <span className='about-process-title py-5'>
@@ -677,20 +520,23 @@ export default function About() {
                 Offrez à vos utilisateurs une expérience fluide et personnalisée. Notre parcours utilisateur intuitif est conçu pour les satisfaire dès le premier clic.
               </div>
             </div>
-            <div className='flex items-center justify-center'>
+            <div className='hidden md:block items-center justify-center'>
               <img src={database} alt="" />
+            </div>
+            <div className='block flex items-center justify-center md:hidden w-full'>
+                  <img src={miDiagram} alt="" className='flex items-center justify-center' />
             </div>
           </div>
         </section>
 
 
         <section style={{ backgroundImage: `url(${frameSelfie})`, backgroundPosition: "bottom right", backgroundRepeat: "no-repeat" }} >
-          <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
             <div className="pt-10 lg:pt-24">
-              <div className=' py-20 hidden lg:block'>
+              <div className='relative py-20 hidden lg:block'>
                 <img src={rectangle} alt="" className='pb-10' />
                 <img src={rectangle} alt="" />
-                {/* <img src={womenSelfie} alt="" className='absolute womenSelfie' /> */}
+                <img src={womenSelfie} alt="" className='absolute womenSelfie' />
               </div>
             </div>
             <div className="flex flex-col items-center justify-center px-5">
@@ -709,13 +555,14 @@ export default function About() {
                 <WomenCard />
                 <WomenCard />
               </div>
-              <div className="pt-10 bg-[5%_10%]" style={{ backgroundImage: `url(${vector})`, backgroundRepeat: "no-repeat" }}>
-                <img src={womenSelfie} alt="" className='womenSelfie' />
+              <div className="block lg:hidden pt-10 women-vector">
+                <img src={womenSelfie} alt="" className='' />
               </div>
             </div>
 
           </div>
         </section>
+
         <section className='pt-20 pb-20 bg-[#EAFFF1]'>
           <div>
             <div className='flex flex-col items-center justify-center'>

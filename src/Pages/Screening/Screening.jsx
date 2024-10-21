@@ -284,7 +284,7 @@ export default function Screening() {
                       <div className=" card-vert"></div>
                       <div className="card-vert"></div>
                       <div className="absolute w-[326px] h-[295px] flex items-center justify-center">
-                        <img src={screenImg1} alt="" className=' ' />
+                        <img src={screenImg1} alt="" className='w-[335px] h-[292px] ' />
                       </div>
                     </div>
                   </div>
@@ -423,8 +423,8 @@ export default function Screening() {
                 <div className='relative flex flex-col items-center justify-center gap-5'>
                   <div className=" card-vert"></div>
                   <div className="card-vert"></div>
-                  <div className="absolute flex items-center justify-center w-[325px] h-[251px] top-5 sm:top-0 lg:w-full lg:h-full ">
-                    <img src={screenImg2} alt="" className='' />
+                  <div className="absolute flex items-center justify-center w-[325px] h-[251px] top-2 lg:w-full lg:h-full ">
+                    <img src={screenImg2} alt="" className='w-[276px] h-[315px]' />
                   </div>
                 </div>
               </div>
@@ -455,8 +455,8 @@ export default function Screening() {
                     <div className='relative flex flex-col items-center justify-center gap-y-5'>
                       <div className=" card-vert"></div>
                       <div className="card-vert"></div>
-                      <div className="absolute w-[326px] h-[295px] flex items-center justify-center -left-2 sm:left-0">
-                        <img src={screenImg3} alt="" className=' ' />
+                      <div className="absolute w-[326px] h-[295px] flex items-center justify-center md:w-full -left-2 sm:left-0">
+                        <img src={screenImg3} alt="" className=' w-[326px] h-[233px]' />
                       </div>
                     </div>
                   </div>
@@ -593,7 +593,7 @@ export default function Screening() {
                 <div className='relative flex flex-col items-center justify-center gap-5'>
                   <div className=" card-vert"></div>
                   <div className="card-vert"></div>
-                  <div className="absolute flex items-center justify-center w-[340px] h-[251px] lg:w-full lg:h-full bottom-0 -left-4 ">
+                  <div className="absolute flex items-center justify-center w-[340px] h-[251px] sm:w-full lg:h-full bottom-0 -left-4 ">
                     <img src={screenImg4} alt="" className='w-[340px] h-[251px] lg:w-full lg:h-full' />
                   </div>
                 </div>
