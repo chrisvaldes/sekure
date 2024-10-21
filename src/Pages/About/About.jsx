@@ -20,11 +20,12 @@ import processVector from "../../images/about/processVector.png"
 import rectangle from "../../images/about/Rectangle.png"
 import womenSelfie from '../../images/about/woman-selfie.png'
 import groupDatabases from "../../images/groupDatabases.png"
+import vector from "../../images/about/Vector.png"
 
 export default function About() {
   return (
     <div>
-      <section>
+      <section className='fixed'>
         <NavBar />
       </section>
 
@@ -102,7 +103,7 @@ export default function About() {
             <div>
               <div className=" px-4 py-8 sm:px-6 lg:px-8 lg:py-16 w-full">
                 <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center  gap-x-8">
-                  
+
                   <div className="order-2 lg:order-1 flex items-center justify-center">
                     <div className="flex items-center justify-center">
                       <div className='relative flex flex-col items-center justify-center gap-5'>
@@ -114,7 +115,7 @@ export default function About() {
                       </div>
                     </div>
                   </div>
-                  
+
                   <div class="order-1 lg:order-2 flex flex-col items-center justify-center w-full">
                     <h2 class="about-cart-title mb-5 w-full">
                       Vous aider à connaître vos utilisateurs <br />
@@ -685,11 +686,11 @@ export default function About() {
 
         <section style={{ backgroundImage: `url(${frameSelfie})`, backgroundPosition: "bottom right", backgroundRepeat: "no-repeat" }} >
           <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
-            <div className="pt-24">
-              <div className=' py-20'>
+            <div className="pt-10 lg:pt-24">
+              <div className=' py-20 hidden lg:block'>
                 <img src={rectangle} alt="" className='pb-10' />
                 <img src={rectangle} alt="" />
-                <img src={womenSelfie} alt="" className='absolute womenSelfie' />
+                {/* <img src={womenSelfie} alt="" className='absolute womenSelfie' /> */}
               </div>
             </div>
             <div className="flex flex-col items-center justify-center px-5">
@@ -707,6 +708,9 @@ export default function About() {
                 <WomenCard />
                 <WomenCard />
                 <WomenCard />
+              </div>
+              <div className="pt-10 bg-[5%_10%]" style={{ backgroundImage: `url(${vector})`, backgroundRepeat: "no-repeat" }}>
+                <img src={womenSelfie} alt="" className='womenSelfie' />
               </div>
             </div>
 
