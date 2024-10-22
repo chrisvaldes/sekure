@@ -63,10 +63,28 @@ export default function NextPricing() {
 
                                         <div className='flex flex-col text-left w-full'>
                                             <label htmlFor="name" className='pricing-label'> J'utiliser AIBIOMETRICS pour : </label>
-                                            <select name="" id="" className='pricing-input w-full'>
+                                            <select name="" id="" className=' w-full'>
                                                 <option value=""></option>
                                             </select>
                                         </div>
+
+                                        <div>
+                                           <label htmlFor="name" className='pricing-label'> J'utiliser AIBIOMETRICS pour : </label>
+                                            <select
+                                                name="HeadlineAct"
+                                                className="pricing-input w-full"
+                                            >
+                                                <option value="">Please select</option>
+                                                <option value="JM">John Mayer</option>
+                                                <option value="SRV">Stevie Ray Vaughn</option>
+                                                <option value="JH">Jimi Hendrix</option>
+                                                <option value="BBK">B.B King</option>
+                                                <option value="AK">Albert King</option>
+                                                <option value="BG">Buddy Guy</option>
+                                                <option value="EC">Eric Clapton</option>
+                                            </select>
+                                        </div>
+
                                         <div className='flex flex-col text-left' >
                                             <label htmlFor="name" className='pricing-label'> Volume annuel de transactions </label>
                                             <select name="" id="" className='pricing-input w-full'>
