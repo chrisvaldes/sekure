@@ -46,25 +46,38 @@ export default function NextPricing() {
                                             </div>
                                         </div>
 
-                                        <div className='flex flex-col text-left w-full pt-5 gap-y-2'>
-                                            <label htmlFor="" className='pricing-label'>Prenom <span className='text-red-500'>*</span></label>
-                                            <input type="text" name="" id="" placeholder='ex : ismael' className='pricing-input w-full' />
+                                        <div className='flex flex-col text-left w-full'>
+                                            <label htmlFor="name" className='pricing-label'>Secteur d'activité</label>
+                                            <input type="text" name="" id="" placeholder='Your company' className='pricing-input w-full' />
                                         </div>
-                                        <div className='flex flex-col text-left w-full pt-5 gap-y-2'>
-                                            <label htmlFor="" className='pricing-label'>Nom de votre entreprise <span className='text-red-500'>*</span></label>
-                                            <input type="text" name="" id="" placeholder='ex : Business SARL' className='pricing-input w-full' />
+
+                                        <div className='flex flex-col text-left w-full'>
+                                            <label htmlFor="name" className='pricing-label'>Pays</label>
+                                            <input type="text" name="" id="" placeholder='Your company' className='pricing-input w-full' />
                                         </div>
+
                                         <div className='flex flex-col text-left w-full pt-5 gap-y-2'>
                                             <label htmlFor="" className='pricing-label'>Poste <span className='text-red-500'>*</span></label>
                                             <input type="text" name="" id="" placeholder='' className='pricing-input w-full' />
                                         </div>
-                                        <div className='flex flex-col text-left w-full pt-5 gap-y-2'>
-                                            <label htmlFor="" className='pricing-label'>Site WEB</label>
-                                            <input type="text" name="" id="" placeholder='' className='pricing-input w-full' />
+
+                                        <div className='flex flex-col text-left w-full'>
+                                            <label htmlFor="name" className='pricing-label'> J'utiliser AIBIOMETRICS pour : </label>
+                                            <select name="" id="" className='pricing-input w-full'>
+                                                <option value=""></option>
+                                            </select>
                                         </div>
-                                        <div className='flex flex-col text-left w-full pt-5 gap-y-2'>
-                                            <label htmlFor="" className='pricing-label'>Adresse Mail professionnelle <span className='text-red-500'>*</span></label>
-                                            <input type="email" name="" id="" placeholder='ismael@businesssarl.com' className='pricing-input w-full' />
+                                        <div className='flex flex-col text-left' >
+                                            <label htmlFor="name" className='pricing-label'> Volume annuel de transactions </label>
+                                            <select name="" id="" className='pricing-input w-full'>
+                                                <option value=""></option>
+                                            </select>
+                                        </div>
+
+                                        <div className='flex flex-col text-left pt-5'>
+                                            <label htmlFor="" className='pricing-label'>Ajouter un message</label>
+                                            <textarea name="" id="" rows={8} className='pricing-input w-full' placeholder='Envoyez un message à AIBIOMETRICS'>
+                                            </textarea>
                                         </div>
 
                                         <div class="pt-8 pb-16">
