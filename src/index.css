@@ -1197,6 +1197,12 @@ textarea {
   color: #285246;
 }
 
+.vector-pricing{
+  background-image: url("../src/images/pricing/Vector-pricing.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
 .pricing-contact-btn {
   padding-top: 5rem;
   width: 111px;
@@ -2376,6 +2382,9 @@ textarea {
     background-image:none;
   }
 
+  .vector-pricing{
+    background-image:none;
+  }
 }
 
 

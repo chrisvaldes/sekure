@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Arrow from '../../Components/Arrow'
 import FooterAccueil from '../../Components/FooterAccueil'
 import NavBar from '../../Components/NavBar'
+import iconArrow from "../../images/icons/arrowWhite.png"
 import vectorPricing from '../../images/pricing/Vector-pricing.png'
 import pricingBg from '../../images/pricing/pricing-bg.png'
 
@@ -15,8 +16,8 @@ export default function Pricing() {
         </section>
         <div className='pricing'>
           <section className='bg-white pricing-section' >
-            <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2  pt-16'>
-              <div className='pricing-bg relative flex flex-col text-left px-20 pt-20 pb-[48rem] items-start bg-no-repeat bg-bottom' style={{ backgroundImage: `url(${vectorPricing})` }}>
+            <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 sm:pt-16'>
+              <div className='pricing-bg relative flex flex-col text-left px-5 sm:px-20 pt-20 lg:pb-[48rem] items-start vector-pricing'>
                 <Link to="/" className='pricing-contact-btn flex items-center justify-center'>
                   Contactez nous
                 </Link>
@@ -29,11 +30,54 @@ export default function Pricing() {
                   accompagner. Contactez-dès maintenant pour discuter de vos besoins <br />
                   spécifiques et bénéficier de conseils personnalisés.
                 </p>
-                <div className='absolute bottom-0'>
+
+                <div className="block lg:hidden w-full">
+                  <form action="" className="">
+
+                    <div className='flex flex-col text-left w-full pt-5 gap-y-2'>
+                      <label htmlFor="" className='pricing-label'>Nom <span className='text-red-500'>*</span></label>
+                      <input type="text" name="" id="" placeholder='ex : Aboubacar' className='pricing-input w-full' />
+                    </div>
+                    <div className='flex flex-col text-left w-full pt-5 gap-y-2'>
+                      <label htmlFor="" className='pricing-label'>Prenom <span className='text-red-500'>*</span></label>
+                      <input type="text" name="" id="" placeholder='ex : ismael' className='pricing-input w-full' />
+                    </div>
+                    <div className='flex flex-col text-left w-full pt-5 gap-y-2'>
+                      <label htmlFor="" className='pricing-label'>Nom de votre entreprise <span className='text-red-500'>*</span></label>
+                      <input type="text" name="" id="" placeholder='ex : Business SARL' className='pricing-input w-full' />
+                    </div>
+                    <div className='flex flex-col text-left w-full pt-5 gap-y-2'>
+                      <label htmlFor="" className='pricing-label'>Poste <span className='text-red-500'>*</span></label>
+                      <input type="text" name="" id="" placeholder='' className='pricing-input w-full' />
+                    </div>
+                    <div className='flex flex-col text-left w-full pt-5 gap-y-2'>
+                      <label htmlFor="" className='pricing-label'>Site WEB</label>
+                      <input type="text" name="" id="" placeholder='' className='pricing-input w-full' />
+                    </div>
+                    <div className='flex flex-col text-left w-full pt-5 gap-y-2'>
+                      <label htmlFor="" className='pricing-label'>Adresse Mail professionnelle <span className='text-red-500'>*</span></label>
+                      <input type="email" name="" id="" placeholder='ismael@businesssarl.com' className='pricing-input w-full' />
+                    </div>
+
+                    <div class="pt-8 pb-16">
+                      <div class="flex  flex-wrap lg:flex-nowrap items-center justify-center gap-5 btn-accounts">
+                        <Link to="/pricing-final" className="btn-account flex items-center justify-center text-nowrap w-full" href="#">
+                          <span className='w-full text-center'>Suivant</span>
+                          <img src={iconArrow} alt="" />
+                        </Link>
+                        <Link to="/creation-compte" class="btn-has-account px-5 py-3.5 text-center flex items-center justify-center lg:justify-start gap-5 w-full">
+                          <span class="btn-has-account-grey-text ">Pas de compte? <span className='btn-has-account-black-text'>Inscrivez vous par cette occasion</span></span>
+                        </Link>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+                <div className='absolute bottom-0 hidden lg:block'>
                   <img src={pricingBg} alt="" />
                 </div>
               </div>
-              <div className='flex items-center justify-center px-10 pt-10 sm:px-20 md:px-20 lg:px-8'>
+              <div className='flex items-center justify-center hidden lg:block px-10 pt-10 sm:px-20 md:px-20 lg:px-8'>
                 <form action="" className=''>
                   <div className='flex items-center justify-center  gap-[27px]'>
                     <div className='flex flex-col text-left w-full'>
@@ -110,6 +154,7 @@ export default function Pricing() {
                   </div>
                 </form>
               </div>
+
             </div>
           </section>
           <section>

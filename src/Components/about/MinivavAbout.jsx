@@ -270,7 +270,7 @@ export default function MinivavAbout() {
             </div>
 
             <div className='block lg:hidden'>
-                <div className="mini-nav-arrows">
+                <div className="mini-nav-arrows px-5">
                     <ul className="flex items-center justify-between bg-[#DFFCE3] h-[54px] rounded-xl gap-x-5 px-5">
                         <li className='cursor-pointer'>
                             <img src={arrowLeft} alt="Flèche gauche" onClick={handleLeftClick} />

@@ -572,7 +572,7 @@ export default function About() {
                 ce que vous n'osiez pas demander).
               </div>
             </div>
-            <div className='flex items-start justify-start gap-8 overflow-x-auto px-20 scrollbar-hidden'>
+            <div className='flex items-start justify-start gap-8 overflow-x-auto px-5 scrollbar-hidden'>
               <Card
                 btnText="Disponibilité par pays"
                 title={
