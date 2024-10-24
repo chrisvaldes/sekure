@@ -22,7 +22,7 @@ export default function NextPricing() {
                                 <Link to="/" className='pricing-contact-btn flex items-center justify-center'>
                                     Contactez nous
                                 </Link>
-                                <h2 className='pricing-title pt-5'>
+                                <h2 className='pricing-title flex  pt-5'>
                                     Parlez à un responsable <br />
                                     chez Albiometrics
                                 </h2>
@@ -35,10 +35,9 @@ export default function NextPricing() {
                                 <div className="block lg:hidden w-full">
                                     <form action="" className="">
 
-                                        <div className='flex flex-col text-left w-full pt-5 gap-y-2'>
+                                        <div className='flex flex-col pt-5 gap-y-3'>
                                             <label htmlFor="" className='pricing-label'> Numéro de Téléphone <span className='text-red-500'>*</span></label>
                                             <div className='flex items-center justify-center bg-[#F3F3F3]'>
-
                                                 <select name="" id="" value="" className='bg-[#F3F3F3]'>
                                                     <option value="+ 237"><img src={cmr} alt="" /> + 237</option>
                                                 </select>
@@ -46,55 +45,56 @@ export default function NextPricing() {
                                             </div>
                                         </div>
 
-                                        <div className='flex flex-col text-left w-full'>
+                                        <div className='flex flex-col pt-5 gap-y-3'>
                                             <label htmlFor="name" className='pricing-label'>Secteur d'activité</label>
-                                            <input type="text" name="" id="" placeholder='Your company' className='pricing-input w-full' />
-                                        </div>
-
-                                        <div className='flex flex-col text-left w-full'>
-                                            <label htmlFor="name" className='pricing-label'>Pays</label>
-                                            <input type="text" name="" id="" placeholder='Your company' className='pricing-input w-full' />
-                                        </div>
-
-                                        <div className='flex flex-col text-left w-full pt-5 gap-y-2'>
-                                            <label htmlFor="" className='pricing-label'>Poste <span className='text-red-500'>*</span></label>
-                                            <input type="text" name="" id="" placeholder='' className='pricing-input w-full' />
-                                        </div>
-
-                                        <div className='flex flex-col text-left w-full'>
-                                            <label htmlFor="name" className='pricing-label'> J'utiliser AIBIOMETRICS pour : </label>
-                                            <select name="" id="" className=' w-full'>
-                                                <option value=""></option>
-                                            </select>
-                                        </div>
-
-                                        <div>
-                                           <label htmlFor="name" className='pricing-label'> J'utiliser AIBIOMETRICS pour : </label>
                                             <select name="HeadlineAct" className="pricing-input w-full">
-                                                <option value="">Please select</option>
+                                                <option value="">Choisir un secteur</option>
                                                 <option value="JM">John Mayer</option>
                                                 <option value="SRV">Stevie Ray Vaughn</option>
                                                 <option value="JH">Jimi Hendrix</option>
                                             </select>
                                         </div>
 
-                                        <div className='flex flex-col text-left' >
-                                            <label htmlFor="name" className='pricing-label'> Volume annuel de transactions </label>
-                                            <select name="" id="" className='pricing-input w-full'>
-                                                <option value=""></option>
+                                        <div className='flex flex-col pt-5 gap-y-3'>
+                                            <label htmlFor="name" className='pricing-label'>Pays</label>
+                                            <select name="HeadlineAct" className="pricing-input w-full">
+                                                <option value="">Choisir un pays</option>
+                                                <option value="JM">John Mayer</option>
+                                                <option value="SRV">Stevie Ray Vaughn</option>
+                                                <option value="JH">Jimi Hendrix</option>
                                             </select>
                                         </div>
 
-                                        <div className='flex flex-col text-left pt-5'>
+                                        <div className='flex flex-col pt-5 gap-y-3'>
+                                            <label htmlFor="name" className='pricing-label'> J'utiliser AIBIOMETRICS pour : </label>
+                                            <select name="HeadlineAct" className="pricing-input w-full">
+                                                <option value="">Choisir une raison</option>
+                                                <option value="JM">John Mayer</option>
+                                                <option value="SRV">Stevie Ray Vaughn</option>
+                                                <option value="JH">Jimi Hendrix</option>
+                                            </select>
+                                        </div>
+
+                                        <div className='flex flex-col text-left gap-y-3 pt-5' >
+                                            <label htmlFor="name" className='pricing-label'> Volume annuel de transactions </label>
+                                            <select name="HeadlineAct" className="pricing-input w-full">
+                                                <option value="">Choisir une plage de montants</option>
+                                                <option value="JM">John Mayer</option>
+                                                <option value="SRV">Stevie Ray Vaughn</option>
+                                                <option value="JH">Jimi Hendrix</option>
+                                            </select>
+                                        </div>
+
+                                        <div className='flex flex-col text-left gap-y-3 pt-5'>
                                             <label htmlFor="" className='pricing-label'>Ajouter un message</label>
-                                            <textarea name="" id="" rows={8} className='pricing-input w-full' placeholder='Envoyez un message à AIBIOMETRICS'>
+                                            <textarea name="" id="" className='pricing-input w-full pt-2' placeholder='Envoyez un message à AIBIOMETRICS' style={{height:"5rem"}}>
                                             </textarea>
                                         </div>
 
                                         <div class="pt-8 pb-16">
                                             <div class="flex  flex-wrap lg:flex-nowrap items-center justify-center gap-5 btn-accounts">
-                                                <button type='submit' className="btn-account flex items-center justify-center text-nowrap w-full" href="#">
-                                                    <span className='w-full text-center'>Suivant</span>
+                                                <button type='submit' className="btn-account flex items-center justify-center text-nowrap w-full bg-green-deep" href="#">
+                                                    <span className='w-full text-center'>Envoyer</span>
                                                     <img src={iconArrow} alt="" />
                                                 </button>
                                                 <Link to="/creation-compte" class="btn-has-account px-5 py-3.5 text-center flex items-center justify-center lg:justify-start gap-5 w-full">

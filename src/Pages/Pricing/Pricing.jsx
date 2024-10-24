@@ -61,7 +61,7 @@ export default function Pricing() {
 
                     <div class="pt-8 pb-16">
                       <div class="flex  flex-wrap lg:flex-nowrap items-center justify-center gap-5 btn-accounts">
-                        <Link to="/pricing-final" className="btn-account flex items-center justify-center text-nowrap w-full" href="#">
+                        <Link to="/pricing-final" className="btn-account bg-green-deep flex items-center justify-center text-nowrap w-full" href="#">
                           <span className='w-full text-center'>Suivant</span>
                           <img src={iconArrow} alt="" />
                         </Link>
@@ -77,6 +77,8 @@ export default function Pricing() {
                   <img src={pricingBg} alt="" />
                 </div>
               </div>
+
+
               <div className='flex items-center justify-center hidden lg:block px-10 pt-10 sm:px-20 md:px-20 lg:px-8'>
                 <form action="" className=''>
                   <div className='flex items-center justify-center  gap-[27px]'>
