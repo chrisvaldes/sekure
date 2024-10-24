@@ -32,14 +32,14 @@ export default function Enregistrement() {
             <section>
                 <NavBar />
             </section>
-            <div className="flex items-center justify-center min-h-screen bg-white">
-                <div className='otp-verification bg-white'>
+            <div className="flex items-center justify-center min-h-screen bg-white w-full">
+                <div className='otp-verification bg-white w-full'>
                     <div className='w-full grid grid-col-1 md:grid-cols-3 lg:grid-cols-12'>
                         <div className="w-full col-span-1 md:hidden lg:block"></div>
-                        <div className="w-full md:col-span-3 col-span-4 lg:col-span-4 bg-[-2%_10%] lg:bg-[left-center] lg:bg-none" style={{ backgroundImage: `url(${vector})`, backgroundRepeat: "no-repeat" }}>
+                        <div className="w-full px-5 md:col-span-3 col-span-4 lg:col-span-4 bg-[-2%_10%] lg:bg-[left-center] lg:bg-none" style={{ backgroundImage: `url(${vector})`, backgroundRepeat: "no-repeat" }}>
                             <div className=' flex flex-col items-center justify-center px-5 pt-10 sm:px-20 md:px-20 lg:px-8 w-full'>
-                                <form action="" className='' onSubmit={handleSubmit(handleCreationCompte)}>
-                                    <div className='connexion-connect py-5'>
+                                <form action="" className='w-full' onSubmit={handleSubmit(handleCreationCompte)}>
+                                    <div className='connexion-connect pt-20 pb-5'>
                                         Créer un compte
                                     </div>
                                     <div className='flex items-center justify-center  gap-[27px]'>
