@@ -235,43 +235,43 @@ export default function Accueil() {
                 {/* end div with 3 cols */}
 
                 {/* start section cni and passport */}
-                <section>
+                <section className='md:px-10'>
                     <div className='group-card-vert grid grid-cols-1 items-center justify-center md:grid-cols-1 lg:grid-cols-2 pt-20 gap-8'>
                         <div className="group-card-vert-content flex flex-col items-center gap-y-5">
                             <div className="">
                                 <p className="title-1">
-                                    Acceptez un maximum de documents <br />
-                                    pour vérifier les identité de vos utilisateurs <br />
+                                    Acceptez un maximum de documents
+                                    pour vérifier les identité de vos utilisateurs
                                     dans leur region
                                 </p>
-                                <p className="title-content-1 py-5">
-                                    Simplifiez le processus d'onboarding de vos utilisateurs en leur permettant <br />
-                                    de choisir parmi une large gamme de documents d'identité. Notre plateforme <br />
-                                    supporte les formats les plus courants, qu'ils soient émis localement ou <br />
+                                <p className="title-content-1 py-5 text-justify">
+                                    Simplifiez le processus d'onboarding de vos utilisateurs en leur permettant
+                                    de choisir parmi une large gamme de documents d'identité. Notre plateforme
+                                    supporte les formats les plus courants, qu'ils soient émis localement ou
                                     internationalement.
                                 </p>
                                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
                                     <div className="flex gap-3">
                                         <SmallCheckCircle />
-                                        <div className='text-left content-small-circle-check'>
-                                            Prenez en charge une multitude de types <br />
-                                            de documents d'identité, des passeports <br />
+                                        <div className='content-small-circle-check text-justify'>
+                                            Prenez en charge une multitude de types
+                                            de documents d'identité, des passeports
                                             aux cartes d'identité nationales.
                                         </div>
 
                                     </div>
                                     <div className="flex gap-3">
                                         <SmallCheckCircle />
-                                        <div className='text-left content-small-circle-check'>
-                                            Adaptez les documents acceptés en <br />
+                                        <div className='text-justify content-small-circle-check'>
+                                            Adaptez les documents acceptés en
                                             fonction des régions des utilisateurs
                                         </div>
 
                                     </div>
                                     <div className="flex gap-3">
                                         <SmallCheckCircle />
-                                        <div className='text-left content-small-circle-check'>
-                                            Respectez les réglementations locales en <br />
+                                        <div className='text-justify content-small-circle-check'>
+                                            Respectez les réglementations locales en
                                             matière de vérification d'identité.
                                         </div>
 
@@ -293,8 +293,8 @@ export default function Accueil() {
                 {/* end section cni and passport  */}
 
                 {/* start section with big mother */}
-                <section>
-                    <div className='group-card-horiz grid grid-cols-1 items-center justify-center bg-no-repeat  md:grid-cols-1 lg:grid-cols-2 lg:pt-32 gap-x-8 gap-y-32 mt-10' style={{ backgroundImage: `url(${vectorBigMother})` }}>
+                <section className='md:px-10'>
+                    <div className='group-card-horiz grid grid-cols-1 items-center justify-center bg-no-repeat  md:grid-cols-1 lg:grid-cols-2 lg:pt-32 gap-x-8 gap-y-20 mt-10' style={{ backgroundImage: `url(${vectorBigMother})` }}>
                         <div className='order-img'>
                             <div className="hidden lg:block items-center justify-center">
                                 <div className='relative flex gap-5'>
@@ -316,43 +316,43 @@ export default function Accueil() {
                         <div className=" order-text flex flex-col items-center gap-y-5">
                             <div className="">
                                 <div className="title-1">
-                                    Identifications et Vérifications par scan <br />
+                                    Identifications et Vérifications par scan
                                     facial inteligent et rapide
                                 </div>
-                                <div className="title-content-1 py-5">
-                                    Grâce à notre technologie de scan facial avancée, la vérification des identités <br />
-                                    devient un processus rapide et sécurisé. Cela permet une expérience utilisateur <br />
+                                <div className="title-content-1 py-5 text-justify">
+                                    Grâce à notre technologie de scan facial avancée, la vérification des identités
+                                    devient un processus rapide et sécurisé. Cela permet une expérience utilisateur
                                     fluide tout en maintenant un haut niveau de sécurité.
                                 </div>
                                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
                                     <div className="flex gap-3">
                                         <SmallCheckCircle />
-                                        <div className='text-left content-small-circle-check'>
-                                            Obtenez des résultats instantanés pour une <br />
+                                        <div className='text-justify content-small-circle-check'>
+                                            Obtenez des résultats instantanés pour une
                                             expérience utilisateur fluide.
                                         </div>
 
                                     </div>
                                     <div className="flex gap-3">
                                         <SmallCheckCircle />
-                                        <div className='text-left content-small-circle-check'>
-                                            Taux de reconnaissance faciale élevé, même <br />
+                                        <div className='text-justify content-small-circle-check'>
+                                            Taux de reconnaissance faciale élevé, même
                                             en cas de mauvaise qualité d'image.
                                         </div>
 
                                     </div>
                                     <div className="flex gap-3">
                                         <SmallCheckCircle />
-                                        <div className='text-left content-small-circle-check'>
-                                            Protégez vos utilisateurs contre l'usurpation <br />
+                                        <div className='text-justify content-small-circle-check'>
+                                            Protégez vos utilisateurs contre l'usurpation
                                             d'identité
                                         </div>
 
                                     </div>
                                     <div className="flex gap-3">
                                         <SmallCheckCircle />
-                                        <div className='text-left content-small-circle-check'>
-                                            Offrez à vos utilisateurs une expérience <br />
+                                        <div className=' content-small-circle-check text-justify'>
+                                            Offrez à vos utilisateurs une expérience 
                                             intuitive et sans effort.
                                         </div>
 
@@ -365,48 +365,48 @@ export default function Accueil() {
                 {/* start section with big mother */}
 
                 {/* start section girl */}
-                <section>
-                    <div className='group-card-vert grid grid-cols-1 items-center justify-center md:grid-cols-1 lg:grid-cols-2 gap-y-10 lg:py-20'>
+                <section className='md:px-10'>
+                    <div className='group-card-vert grid grid-cols-1 items-center justify-center md:grid-cols-1 pt-10 lg:grid-cols-2 lg:py-20'>
                         <div className="flex flex-col items-center gap-y-5">
                             <div className="">
                                 <div className="title-1">
-                                    Protection contre les fraudes et <br />
+                                    Protection contre les fraudes et
                                     personnes sous sanctions AML
                                 </div>
-                                <div className="title-content-1 py-5">
-                                    Respectez  les réglementations en vigueur et renforcez la sécurité de votre plateforme <br />
-                                    en détectant et en empêchant les fraudes. Notre système de vérification intègre des <br />
-                                    contrôles AML (anti-blanchiment d'argent) et des vérifications d'antécédents pour <br />
+                                <div className="title-content-1 py-5 text-justify">
+                                    Respectez  les réglementations en vigueur et renforcez la sécurité de votre plateforme
+                                    en détectant et en empêchant les fraudes. Notre système de vérification intègre des
+                                    contrôles AML (anti-blanchiment d'argent) et des vérifications d'antécédents pour
                                     identifier les personnes à risque.
                                 </div>
                                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
                                     <div className="flex gap-3">
                                         <SmallCheckCircle />
-                                        <div className='text-left content-small-circle-check'>
-                                            Consultez des bases de données intl pour <br />
+                                        <div className='content-small-circle-check text-justify'>
+                                            Consultez des bases de données intl pour 
                                             détecter les personnes à risque.
                                         </div>
 
                                     </div>
                                     <div className="flex gap-3">
                                         <SmallCheckCircle />
-                                        <div className='text-left content-small-circle-check'>
-                                            Surveillance continue pour une détection <br />
+                                        <div className='text-justify content-small-circle-check'>
+                                            Surveillance continue pour une détection
                                             proactive.
                                         </div>
 
                                     </div>
                                     <div className="flex gap-3">
                                         <SmallCheckCircle />
-                                        <div className='text-left content-small-circle-check'>
-                                            Renforcement de la confiance des <br />
+                                        <div className='text-justify content-small-circle-check'>
+                                            Renforcement de la confiance des
                                             utilisateurs dans votre service.
                                         </div>
                                     </div>
                                     <div className="flex gap-3">
                                         <SmallCheckCircle />
-                                        <div className='text-left content-small-circle-check'>
-                                            Identifiez et empêchez les activités liées au <br />
+                                        <div className='text-justify content-small-circle-check'>
+                                            Identifiez et empêchez les activités liées au
                                             blanchiment d'argent.
                                         </div>
                                     </div>
@@ -427,11 +427,9 @@ export default function Accueil() {
                 {/* end section girl  */}
 
                 {/* start section communication */}
-                <section className="group-card-vert bg-no-repeat bg-right" style={{ backgroundImage: `url(${vectorDatabases})` }}>
-                    <div className='grid grid-cols-1 items-center justify-center md:grid-cols-1 lg:grid-cols-2 py-20 gap-x-8 gap-y-10 lg:gap-y-20'>
-                        {/* <div className="order-img flex items-center justify-center h-[120%]">
-                            <img src={groupDatabases} alt="" />
-                        </div> */}
+                <section className="group-card-vert bg-no-repeat bg-right md:px-20" style={{ backgroundImage: `url(${vectorDatabases})` }}>
+                    <div className='grid grid-cols-1 items-center justify-center md:grid-cols-1 lg:grid-cols-2 py-10 gap-x-8 gap-y-10 lg:gap-y-20'>
+                        
                         <div className='order-img'>
                             <div className="hidden lg:block items-center justify-center">
                                 <div className='relative flex items-center justify-center gap-5'>
@@ -455,43 +453,43 @@ export default function Accueil() {
                         <div className="flex flex-col items-center gap-y-5 bg-no-repeat">
                             <div className="">
                                 <div className="title-1">
-                                    Identifications et Vérifications par scan <br />
+                                    Identifications et Vérifications par scan
                                     facial inteligent et rapide
                                 </div>
-                                <div className="title-content-1 py-5">
-                                    Grâce à notre technologie de scan facial avancée, la vérification des identités <br />
-                                    devient un processus rapide et sécurisé. Cela permet une expérience utilisateur <br />
+                                <div className="title-content-1 py-5 text-justify">
+                                    Grâce à notre technologie de scan facial avancée, la vérification des identités
+                                    devient un processus rapide et sécurisé. Cela permet une expérience utilisateur
                                     fluide tout en maintenant un haut niveau de sécurité.
                                 </div>
                                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
                                     <div className="flex gap-3">
                                         <SmallCheckCircle />
-                                        <div className='text-left content-small-circle-check'>
-                                            Obtenez des résultats instantanés pour une <br />
+                                        <div className='text-justify content-small-circle-check'>
+                                            Obtenez des résultats instantanés pour une
                                             expérience utilisateur fluide.
                                         </div>
 
                                     </div>
                                     <div className="flex gap-3">
                                         <SmallCheckCircle />
-                                        <div className='text-left content-small-circle-check'>
-                                            Taux de reconnaissance faciale élevé, même <br />
+                                        <div className='text-justify content-small-circle-check'>
+                                            Taux de reconnaissance faciale élevé, même
                                             en cas de mauvaise qualité d'image.
                                         </div>
 
                                     </div>
                                     <div className="flex gap-3">
                                         <SmallCheckCircle />
-                                        <div className='text-left content-small-circle-check'>
-                                            Protégez vos utilisateurs contre l'usurpation <br />
+                                        <div className='text-justify content-small-circle-check'>
+                                            Protégez vos utilisateurs contre l'usurpation
                                             d'identité
                                         </div>
 
                                     </div>
                                     <div className="flex gap-3">
                                         <SmallCheckCircle />
-                                        <div className='text-left content-small-circle-check'>
-                                            Offrez à vos utilisateurs une expérience <br />
+                                        <div className='text-justify content-small-circle-check'>
+                                            Offrez à vos utilisateurs une expérience
                                             intuitive et sans effort.
                                         </div>
 
@@ -505,13 +503,21 @@ export default function Accueil() {
 
                 {/* section choice us */}
                 <section className='section-choise-us bg-no-repeat bg-center bg-cover' style={{ backgroundImage: `url(${bgChoice})` }}>
-                    <div className='flex flex-col items-center justify-center py-10' >
+                    <div className='flex flex-col items-center justify-center py-20' >
                         <a href="#" className="btn-choice flex items-center justify-center">Pourquoi nous choisir</a>
-                        <div className="title-1 text-center text-green-deep py-10">
+                        <div className="title-1 text-center text-green-deep py-10 hidden lg:block">
                             Avec Aibiometrics, les <span className='text-green-color'>étrangers</span> anonymes deviennent <br />
                             facilement <span className='text-green-color'>votre base clientèle fiable</span>
                         </div>
-                        <div className="title-content-1 text-center">
+                        <div className="title-1 text-center text-green-deep py-10 block lg:hidden px-5">
+                            Avec Aibiometrics, les <span className='text-green-color'>étrangers</span> anonymes deviennent
+                            facilement <span className='text-green-color'>votre base clientèle fiable</span>
+                        </div>
+                        <div className="title-content-1 text-center hidden lg:block">
+                            Nos clients sont au cœur de nos préoccupations. Grâce à notre solution, 98% de nos utilisateurs ont déclaré être satisfaits de <br />
+                            l'expérience de vérification. De plus, nous avons réduit de 50% le taux d'abandon lors du processus d'inscription.
+                        </div>
+                        <div className="title-content-1 text-justify block lg:hidden px-5">
                             Nos clients sont au cœur de nos préoccupations. Grâce à notre solution, 98% de nos utilisateurs ont déclaré être satisfaits de <br />
                             l'expérience de vérification. De plus, nous avons réduit de 50% le taux d'abandon lors du processus d'inscription.
                         </div>

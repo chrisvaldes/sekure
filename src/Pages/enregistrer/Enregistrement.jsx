@@ -142,10 +142,10 @@ export default function Enregistrement() {
                                         <span className='connexion-side3-logo pr-2'>AIBIOMETRICS</span>
                                         <img src={vectorLogo} alt="" />
                                     </div>
-                                    <div className="connexion-side3-content w-full pb-10">
-                                        Pionniers de la biométrie par Intelligence Artificielle. Des solutions innovantes <br />
-                                        d'identification biométrique pour une sécurité renforcée. Sécurisez vos établissements <br />
-                                        financiers avec nos solutions biométriques de pointe. Authentification forte, lutte contre la <br />
+                                    <div className="connexion-side3-content text-justify">
+                                        Pionniers de la biométrie par Intelligence Artificielle. Des solutions innovantes
+                                        d'identification biométrique pour une sécurité renforcée. Sécurisez vos établissements
+                                        financiers avec nos solutions biométriques de pointe. Authentification forte, lutte contre la
                                         fraude. Contactez nos experts pour une démonstration. © AIbiometrics. Tous droits réservés.
                                     </div>
                                 </form>

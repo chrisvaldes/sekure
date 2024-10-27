@@ -1958,14 +1958,14 @@ textarea {
   }
 
   .verification-identiter {
-    width: 290px;
+    width: 380px;
     height: 380px;
     border-radius: 17px;
     background: #EEEEEE;
   }
 
   .verification-biometrique {
-    width: 290px;
+    width: 380px;
     height: 380px;
     border-radius: 17px;
     background: #B9FFC4;
@@ -1973,14 +1973,14 @@ textarea {
   }
 
   .preuve-adresse {
-    width: 290px;
+    width: 380px;
     height: 380px;
     border-radius: 17px;
     background: #EEEEEE;
   }
 
   .detection-appareil {
-    width: 290px;
+    width: 380px;
     height: 380px;
     border-radius: 17px;
     background: #B9FFC4;
@@ -1992,7 +1992,7 @@ textarea {
   } */
 
   .sactions {
-    width: 290px;
+    width: 380px;
     height: 380px;
     border-radius: 17px;
     background: #EEEEEE;

@@ -15,7 +15,7 @@ export default function OTPVerification() {
             <section>
                 <NavBar />
             </section>
-            <section className='otp-verification flex items-center justify-center min-h-screen bg-white'>
+            <section className='otp-verification flex items-center justify-center min-h-screen bg-white pt-10'>
                 <div className='w-full relative'>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 lg:grid-cols-9">
                         <div className="col-span-2 hidden lg:block h-full bg-green-color">
@@ -124,25 +124,13 @@ export default function OTPVerification() {
                                         <div className='text-left pt-4'>
                                             <span className="pricing-get-account-link text-[#898989]">Vous n'avez pas reçu de code? <Link href="" className='text-green-color'>Renvoyez le code</Link></span>
                                         </div>
-                                        <div className="pt-8 pb-24 lg:pb-36">
+                                        <div className="pt-8 pb-24 lg:pb-24">
                                             <div class="flex  flex-wrap lg:flex-nowrap items-center justify-center gap-5 btn-accounts">
-                                                {/* <button type='submit' className="btn-account flex items-center justify-center text-nowrap w-full" href="#">
-                                                <span className='w-full text-center'>Créer mon compte</span>
-                                                <img src={iconArrow} alt="" />
-                                            </button> */}
+                                                
                                                 <Link to="/accueil" className="btn-account flex items-center justify-center text-nowrap w-full">
                                                     <span className='w-full text-center'>Créer mon compte</span>
                                                     <img src={iconArrow} alt="" />
                                                 </Link>
-                                                {/* <Link to="/accueil" type='submit' className="btn-connect btn-nav-text flex items-center justify-around bg-green-color btn-nav  w-full" href="#">
-                                                <div className="w-full flex items-center justify-center">
-                                                    <span>continuer</span>
-                                                </div>
-                                                <Arrow background="#FFFF" textcolor="#285246" />
-                                            </Link> */}
-                                                {/* <Link to="/creation-compte" class=" bg-gray-100  px-5 py-3.5 text-center flex items-center justify-center lg:justify-start gap-5 w-full">
-                                                <span class="btn-has-account-grey-text ">Pas de compte? <span className='btn-has-account-black-text'>Inscrivez vous</span></span>
-                                            </Link> */}
                                             </div>
                                         </div>
 
@@ -152,10 +140,10 @@ export default function OTPVerification() {
                                             <span className='connexion-side3-logo pr-2'>AIBIOMETRICS</span>
                                             <img src={vectorLogo} alt="" />
                                         </div>
-                                        <div className="connexion-side3-content">
-                                            Pionniers de la biométrie par Intelligence Artificielle. Des solutions innovantes <br />
-                                            d'identification biométrique pour une sécurité renforcée. Sécurisez vos établissements <br />
-                                            financiers avec nos solutions biométriques de pointe. Authentification forte, lutte contre la <br />
+                                        <div className="connexion-side3-content text-justify">
+                                            Pionniers de la biométrie par Intelligence Artificielle. Des solutions innovantes
+                                            d'identification biométrique pour une sécurité renforcée. Sécurisez vos établissements
+                                            financiers avec nos solutions biométriques de pointe. Authentification forte, lutte contre la
                                             fraude. Contactez nos experts pour une démonstration. © AIbiometrics. Tous droits réservés.
                                         </div>
                                     </div>

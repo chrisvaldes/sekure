@@ -2,7 +2,6 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import React from 'react'
 import { useForm } from 'react-hook-form'
 import { Link, useNavigate } from 'react-router-dom'
-import Arrow from '../../Components/Arrow'
 import ConnexionCard from '../../Components/connexion/ConnexionCard'
 import Input from '../../Components/Input'
 import man from "../../images/connexion/man.png"
@@ -34,7 +33,7 @@ export default function Connexion() {
       <section>
         <NavBar />
       </section>
-      <section className='connexion flex items-center justify-center min-h-screen bg-white lg:bg-none'>
+      <section className='connexion flex items-center justify-center min-h-screen bg-white lg:bg-none pt-20'>
         <div className='w-full relative'>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-9" >
             <div className="col-span-2 hidden items-center justify-center md:hidden lg:block h-full connexion-col-2 bg-green-color">
@@ -165,10 +164,10 @@ export default function Connexion() {
                         <span className='connexion-side3-logo'>AIBIOMETRICS</span>
                         <img src={vectorLogo} alt="" />
                       </div>
-                      <div className="connexion-side3-content">
-                        Pionniers de la biométrie par Intelligence Artificielle. Des solutions innovantes <br />
-                        d'identification biométrique pour une sécurité renforcée. Sécurisez vos établissements <br />
-                        financiers avec nos solutions biométriques de pointe. Authentification forte, lutte contre la <br />
+                      <div className="connexion-side3-content text-justify">
+                        Pionniers de la biométrie par Intelligence Artificielle. Des solutions innovantes
+                        d'identification biométrique pour une sécurité renforcée. Sécurisez vos établissements
+                        financiers avec nos solutions biométriques de pointe. Authentification forte, lutte contre la
                         fraude. Contactez nos experts pour une démonstration. © AIbiometrics. Tous droits réservés.
                       </div>
                     </div>

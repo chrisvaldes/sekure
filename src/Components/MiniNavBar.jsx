@@ -11,6 +11,8 @@ import message from "../images/icons/messageWhite.png";
 import Arrow from './Arrow';
 import Message from './Message';
 import SmallCheckCircle from './SmallCheckCircle';
+import verificatiIdentite from "../images/cni.png"
+import verificationBiomet from "../images/handPhone1.png"
 
 
 export default function MiniNavBar() {
@@ -56,8 +58,12 @@ export default function MiniNavBar() {
                     <Link to="/" className='bg-green-color flex items-center justify-center mini-nav-btn mini-nav-btn-text'>
                         Nos Outils
                     </Link>
-                    <span className='title-1 text-left lg:text-left pt-5'>
+                    <span className='title-1 text-left lg:text-left pt-5 hidden lg:block'>
                         Tous les outils qu'il vous faut pour protéger <br />
+                        votre plateforme de la fraude
+                    </span>
+                    <span className='title-1 text-left pt-5 block lg:hidden'>
+                        Tous les outils qu'il vous faut pour protéger
                         votre plateforme de la fraude
                     </span>
                 </div>
@@ -84,11 +90,14 @@ export default function MiniNavBar() {
                         <div className="flex flex-wrap items-center justify-center gap-16 pb-10 lg:pb-16">
                             {content === "Vérification d'identité" && (
                                 <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center w-full mx-auto gap-10 ">
-                                    <div className="flex items-center justify-center h-[25rem] md:h-[30rem] lg:h-[30rem] w-full">
-                                        <div className='relative verification-identiter'>
-
+                                    <div className="flex items-center justify-center  w-full">
+                                        <div className="hand-div2 py-10 flex items-center justify-center w-full">
+                                            <div className='verification-identiter flex items-center justify-center relative'>
+                                                <div className="absolute h-[450px]">
+                                                    <img src={verificatiIdentite} alt="" className='' />
+                                                </div>
+                                            </div>
                                         </div>
-                                        {/* <img src={verificatiIdentite} alt="" className='hand contain' /> */}
                                     </div>
                                     <div className='flex flex-col items-center justify-center w-full'>
                                         <h2 className="mini-nav-side-title mb-5 w-full">
@@ -165,10 +174,11 @@ export default function MiniNavBar() {
                             {content === "Vérification biométrique" && (
                                 <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center w-full mx-auto gap-10 ">
                                     <div className="flex items-center justify-center  hand-div2 h-[25rem] md:h-[30rem] lg:h-[30rem] w-full">
-                                        <div className='verification-biometrique'>
-
+                                        <div className='verification-biometrique relative flex items-center justify-center'>
+                                            <div className="absolute flex items-center justify-center">
+                                                <img src={verificationBiomet} alt="" className='' />
+                                            </div>
                                         </div>
-                                        {/* <img src={verificationBiomet} alt="" className='hand contain' /> */}
                                     </div>
                                     <div className='flex flex-col items-center justify-center w-full'>
                                         <h2 className="mini-nav-side-title mb-5 w-full">
@@ -246,8 +256,10 @@ export default function MiniNavBar() {
                             {content === "Preuve d'adresse" && (
                                 <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center w-full mx-auto gap-10 ">
                                     <div className="flex items-center justify-center  hand-div2 h-[25rem] md:h-[30rem] lg:h-[30rem] w-full">
-                                        <div className="preuve-adresse flex items-center justify-center">
-                                            <img src={preuveAddress} alt="" className='hand contain' />
+                                        <div className="preuve-adresse relative flex items-center justify-center">
+                                            <div className="absolute flex items-center justify-center">
+                                                <img src={preuveAddress} alt="" className='' />
+                                            </div>
                                         </div>
                                     </div>
                                     <div className='flex flex-col items-center justify-center w-full'>
@@ -328,8 +340,10 @@ export default function MiniNavBar() {
                             {content === "Détection d'appareil" && (
                                 <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center w-full mx-auto gap-10 ">
                                     <div className="hand-div2 flex items-center justify-center relative">
-                                        <div className="detection-appareil absolute flex items-center justify-center">
-                                            <img src={detectionApp} alt="" className='img-detection-appareil' />
+                                        <div className="detection-appareil relative flex items-center justify-center">
+                                            <div className="absolute flex items-center justify-center">
+                                                <img src={detectionApp} alt="" className='' />
+                                            </div>
                                         </div>
                                     </div>
                                     <div className='flex flex-col items-center justify-center w-full'>
@@ -409,9 +423,9 @@ export default function MiniNavBar() {
                             {content === "Sanctions" && (
                                 <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center w-full mx-auto gap-10 ">
                                     <div className='w-full flex items-center justify-center'>
-                                        <div className="hand-div2 h-[25rem] md:w-1/2 lg:w-[25rem] w-full">
-                                            <div className="sactions flex items-center justify-center">
-                                                <img src={sanctions} alt="" className='img-sanction' />
+                                        <div className="sactions relative flex justify-center items-center">
+                                            <div className=" absolute flex items-center justify-center">
+                                                <img src={sanctions} alt="" className='' />
                                             </div>
                                         </div>
                                     </div>
@@ -516,24 +530,25 @@ export default function MiniNavBar() {
                                 <div className=" flex items-center justify-center w-full mx-auto gap-10 ">
                                     <div className='flex flex-col items-center justify-center w-full'>
                                         <h2 className="mini-nav-side-title text-center mb-5 w-full">
-                                            Identifications et Vérifications par scan <br />
+                                            Identifications et Vérifications par scan
                                             facial intelligent et rapide
                                         </h2>
-                                        <div className="mini-nav-side-content text-center lg:mb-10 w-full">
-                                            Localement ou internationalement, vos achats en ligne ne connaissent plus de limite <br />
-                                            avec les cartes virtuelles Visa MasterCard de chez SEKURE. En 2 minutes, créez et <br />
-                                            vérifiez votre compte Sekure pour obtenir votre carte virtuelle. Entre des frais d'entretien <br />
+                                        <div className="mini-nav-side-content text-justify lg:mb-10 w-full px-5">
+                                            Localement ou internationalement, vos achats en ligne ne connaissent plus de limite
+                                            avec les cartes virtuelles Visa MasterCard de chez SEKURE. En 2 minutes, créez et
+                                            vérifiez votre compte Sekure pour obtenir votre carte virtuelle. Entre des frais d'entretien
                                             inexistants et des frais de
                                         </div>
 
                                         <div className="hand-div2 py-10 flex items-center justify-center w-full">
-                                            <div className='verification-identiter'>
-
+                                            <div className='verification-identiter flex items-center justify-center relative'>
+                                                <div className="absolute h-[431px]">
+                                                    <img src={verificatiIdentite} alt="" className='' />
+                                                </div>
                                             </div>
-                                            {/* <img src={verificatiIdentite} alt="" className='hand contain' /> */}
                                         </div>
 
-                                        <div className='w-full'>
+                                        <div className='w-full pt-10'>
                                             <div class="w-full grid grid-cols-2 items-center justify-center gap-5">
                                                 <div className="flex gap-2 justify-center">
                                                     <SmallCheckCircle />
@@ -590,19 +605,6 @@ export default function MiniNavBar() {
                                                     <img src={message} alt="" />
                                                 </Link>
                                             </div>
-                                            {/* <div class="flex pt-10">
-                                                <div class=" flex w-full items-center justify-center gap-5 pb-10">
-                                                    <Link to="/" class="bg-green-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
-                                                        <span class="text-nowrap" >Commencer </span>
-                                                        <Arrow background="#FFFF" textcolor="#285246" />
-                                                    </Link>
-                                                    <Link to="/pricing" class=" bg-green-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
-                                                        <span class="text-white text-nowrap pr-5">Contacter</span>
-                                                        <Message background="#FFFF" textcolor="#285246" />
-                                                    </Link>
-
-                                                </div>
-                                            </div> */}
                                         </div>
                                     </div>
                                 </div>
@@ -611,22 +613,23 @@ export default function MiniNavBar() {
                                 <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center w-full mx-auto gap-10 ">
                                     <div className='flex flex-col items-center justify-center w-full'>
                                         <h2 className="mini-nav-side-title text-center mb-5 w-full">
-                                            Identifications et Vérifications par scan <br />
+                                            Identifications et Vérifications par scan
                                             facial intelligent et rapide
                                         </h2>
-                                        <div className="mini-nav-side-content text-center mb-10 w-full">
-                                            Localement ou internationalement, vos achats en ligne ne connaissent plus de limite <br />
-                                            avec les cartes virtuelles Visa MasterCard de chez SEKURE. En 2 minutes, créez et <br />
-                                            vérifiez votre compte Sekure pour obtenir votre carte virtuelle. Entre des frais d'entretien <br />
+                                        <div className="mini-nav-side-content text-justify mb-16 lg:mb-10 w-full px-5">
+                                            Localement ou internationalement, vos achats en ligne ne connaissent plus de limite
+                                            avec les cartes virtuelles Visa MasterCard de chez SEKURE. En 2 minutes, créez et
+                                            vérifiez votre compte Sekure pour obtenir votre carte virtuelle. Entre des frais d'entretien
                                             inexistants et des frais de
                                         </div>
                                         <div className="flex items-center justify-center w-full pb-10">
-                                            <div className='verification-biometrique'>
-
+                                            <div className='verification-biometrique relative flex items-center justify-center'>
+                                                <div className=" flex items-center justify-center">
+                                                    <img src={verificationBiomet} alt="" className='absolute' />
+                                                </div>
                                             </div>
-                                            {/* <img src={verificationBiomet} alt="" className='hand contain' /> */}
                                         </div>
-                                        <div className='w-full'>
+                                        <div className='w-full pt-5'>
                                             <div class="w-full grid grid-cols-2 items-center justify-center gap-5">
                                                 <div className="flex gap-2 justify-center">
                                                     <SmallCheckCircle />
@@ -683,19 +686,6 @@ export default function MiniNavBar() {
                                                     <img src={message} alt="" />
                                                 </Link>
                                             </div>
-                                            {/* <div class="flex pt-10">
-                                                <div class=" flex w-full items-center justify-center gap-5 pb-10">
-                                                    <Link to="/" class="bg-green-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
-                                                        <span class="text-nowrap" >Commencer </span>
-                                                        <Arrow background="#FFFF" textcolor="#285246" />
-                                                    </Link>
-                                                    <Link to="/pricing" class=" bg-green-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
-                                                        <span class="text-white text-nowrap pr-5">Contacter</span>
-                                                        <Message background="#FFFF" textcolor="#285246" />
-                                                    </Link>
-
-                                                </div>
-                                            </div> */}
                                         </div>
                                     </div>
                                 </div>
@@ -706,18 +696,20 @@ export default function MiniNavBar() {
 
                                     <div className='flex flex-col items-center justify-center w-full'>
                                         <h2 className="mini-nav-side-title text-center mb-5 w-full">
-                                            Identifications et Vérifications par scan <br />
+                                            Identifications et Vérifications par scan
                                             facial intelligent et rapide
                                         </h2>
-                                        <div className="mini-nav-side-content text-center mb-10 w-full">
-                                            Localement ou internationalement, vos achats en ligne ne connaissent plus de limite <br />
-                                            avec les cartes virtuelles Visa MasterCard de chez SEKURE. En 2 minutes, créez et <br />
-                                            vérifiez votre compte Sekure pour obtenir votre carte virtuelle. Entre des frais d'entretien <br />
+                                        <div className="mini-nav-side-content text-justify lg:mb-10 w-full px-5 pb-10">
+                                            Localement ou internationalement, vos achats en ligne ne connaissent plus de limite
+                                            avec les cartes virtuelles Visa MasterCard de chez SEKURE. En 2 minutes, créez et
+                                            vérifiez votre compte Sekure pour obtenir votre carte virtuelle. Entre des frais d'entretien
                                             inexistants et des frais de
                                         </div>
-                                        <div className="flex items-center pb-10 justify-center w-full">
-                                            <div className="preuve-adresse flex items-center justify-center">
-                                                <img src={preuveAddress} alt="" className='w-[85%]' />
+                                        <div className="flex items-center pb-10 justify-center  w-full">
+                                            <div className="preuve-adresse relative flex items-center justify-center">
+                                                <div className="absolute flex items-center justify-center">
+                                                    <img src={preuveAddress} alt="" className='w-[350px] ' />
+                                                </div>
                                             </div>
                                         </div>
                                         <div className='w-full'>
@@ -800,21 +792,22 @@ export default function MiniNavBar() {
 
                                     <div className='flex flex-col items-center justify-center w-full'>
                                         <h2 className="mini-nav-side-title text-center mb-5 w-full">
-                                            Identifications et Vérifications par scan <br />
+                                            Identifications et Vérifications par scan
                                             facial intelligent et rapide
                                         </h2>
-                                        <div className="mini-nav-side-content text-center mb-10 w-full">
-                                            Localement ou internationalement, vos achats en ligne ne connaissent plus de limite <br />
-                                            avec les cartes virtuelles Visa MasterCard de chez SEKURE. En 2 minutes, créez et <br />
-                                            vérifiez votre compte Sekure pour obtenir votre carte virtuelle. Entre des frais d'entretien <br />
+                                        <div className="mini-nav-side-content text-justify lg:mb-10 w-full px-5 pb-10">
+                                            Localement ou internationalement, vos achats en ligne ne connaissent plus de limite
+                                            avec les cartes virtuelles Visa MasterCard de chez SEKURE. En 2 minutes, créez et
+                                            vérifiez votre compte Sekure pour obtenir votre carte virtuelle. Entre des frais d'entretien
                                             inexistants et des frais de
                                         </div>
 
                                         <div className="flex items-center justify-center pb-10 w-full">
-                                            <div className="detection-appareil flex items-center justify-center">
-                                                <img src={detectionApp} alt="" className='img-detection-appareil w-[80%]' />
+                                            <div className="detection-appareil relative flex items-center justify-center">
+                                                <div className="absolute flex items-center justify-center">
+                                                    <img src={detectionApp} alt="" className='w-[360px]' />
+                                                </div>
                                             </div>
-                                            {/* <img src={detectionApp} alt="" className='hand object-contain w-4/6' /> */}
                                         </div>
 
                                         <div className='w-full'>
@@ -874,19 +867,6 @@ export default function MiniNavBar() {
                                                     <img src={message} alt="" />
                                                 </Link>
                                             </div>
-                                            {/* <div class="flex pt-10">
-                                                <div class=" flex w-full items-center justify-center gap-5 pb-10">
-                                                    <Link to="/" class="bg-green-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
-                                                        <span class="text-nowrap" >Commencer </span>
-                                                        <Arrow background="#FFFF" textcolor="#285246" />
-                                                    </Link>
-                                                    <Link to="/pricing" class=" bg-green-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
-                                                        <span class="text-white text-nowrap pr-5">Contacter</span>
-                                                        <Message background="#FFFF" textcolor="#285246" />
-                                                    </Link>
-
-                                                </div>
-                                            </div> */}
                                         </div>
                                     </div>
                                 </div>
@@ -896,20 +876,22 @@ export default function MiniNavBar() {
 
                                     <div className='flex flex-col items-center justify-center w-full'>
                                         <h2 className="mini-nav-side-title text-center mb-5 w-full">
-                                            Identifications et Vérifications par scan <br />
+                                            Identifications et Vérifications par scan
                                             facial intelligent et rapide
                                         </h2>
-                                        <div className="mini-nav-side-content text-center mb-10 w-full">
-                                            Localement ou internationalement, vos achats en ligne ne connaissent plus de limite <br />
-                                            avec les cartes virtuelles Visa MasterCard de chez SEKURE. En 2 minutes, créez et <br />
-                                            vérifiez votre compte Sekure pour obtenir votre carte virtuelle. Entre des frais d'entretien <br />
+                                        <div className="mini-nav-side-content text-justify lg:mb-10 w-full px-5 pb-10">
+                                            Localement ou internationalement, vos achats en ligne ne connaissent plus de limite
+                                            avec les cartes virtuelles Visa MasterCard de chez SEKURE. En 2 minutes, créez et
+                                            vérifiez votre compte Sekure pour obtenir votre carte virtuelle. Entre des frais d'entretien
                                             inexistants et des frais de
                                         </div>
 
                                         <div className='w-full flex items-center justify-center'>
                                             <div className="flex items-center justify-center w-full pb-10">
-                                                <div className="sactions flex justify-center items-center">
-                                                    <img src={sanctions} alt="" className='w-[90%] img-sanction' />
+                                                <div className="sactions relative flex justify-center items-center">
+                                                    <div className=" absolute flex items-center justify-center">
+                                                        <img src={sanctions} alt="" className='w-[350px]' />
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -971,19 +953,6 @@ export default function MiniNavBar() {
                                                     <img src={message} alt="" />
                                                 </Link>
                                             </div>
-                                            {/* <div class="flex pt-10">
-                                                <div class=" flex w-full items-center justify-center gap-5 pb-10">
-                                                    <Link to="/" class="bg-green-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
-                                                        <span class="text-nowrap" >Commencer </span>
-                                                        <Arrow background="#FFFF" textcolor="#285246" />
-                                                    </Link>
-                                                    <Link to="/pricing" class=" bg-green-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
-                                                        <span class="text-white text-nowrap pr-5">Contacter</span>
-                                                        <Message background="#FFFF" textcolor="#285246" />
-                                                    </Link>
-
-                                                </div>
-                                            </div> */}
                                         </div>
                                     </div>
                                 </div>
