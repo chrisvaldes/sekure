@@ -1802,11 +1802,11 @@ textarea {
   }
 }
 
-@media (max-width:1289px) {
+/* @media (max-width:1289px) {
   .gratuitement{
     display: none;
   }
-}
+} */
 
 @media (max-width:1236px) {
   .sub-title-page-2 {
@@ -2134,7 +2134,6 @@ textarea {
     background-repeat: no-repeat;
     background-size: 150% 70%;
     overflow-x: hidden;
-    /* background-color: cadetblue; */
   }
 
   .customer-btn-first {
@@ -2247,6 +2246,13 @@ textarea {
   }
   .gratuitement{
     display: none;
+  }
+}
+
+@media (max-width:1282px) and (min-width:1023.20px) {
+  .gratuitement{
+    display: none;
+    background-color: cadetblue;
   }
 }
 
