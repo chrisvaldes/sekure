@@ -706,7 +706,7 @@
 }
 
 .cni-img {
-  transform: translateX(10%);
+  transform: translateX(5%);
   opacity: 0;
   transition: transform 1.5s ease-out, opacity .4s ease-out;
 }
@@ -715,12 +715,22 @@
   transform: translateX(0);
   opacity: 1;
 }
+.verification-img {
+  /* transform: translateX(5%); */
+  opacity: 0;
+  transition: transform 1.5s ease-out, opacity 1.5s ease-out;
+}
+
+.verification-img.active {
+  /* transform: translateX(0); */
+  opacity: 1;
+}
 
 .bigMother {
   position: absolute;
   top: -45.5%;
   left: 3%;
-  transform: translateX(-10%);
+  transform: translateX(-5%);
   opacity: 0;
   transition: transform 1.5s ease-out, opacity .4s ease-out;
 }
@@ -731,7 +741,7 @@
 }
 
 .bigMother-wrap {
-  transform: translateX(-10%);
+  transform: translateX(-5%);
   opacity: 0;
   transition: transform 1.5s ease-out, opacity .4s ease-out;
 }
@@ -742,7 +752,7 @@
 }
 
 .girl-cni {
-  transform: translateX(10%);
+  transform: translateX(5%);
   opacity: 0;
   transition: transform 1.5s ease-out, opacity .4s ease-out;
 }
@@ -753,7 +763,7 @@
 }
 
 .group-database {
-  transform: translateX(-10%);
+  transform: translateX(-5%);
   opacity: 0;
   transition: transform 1.5s ease-out, opacity .4s ease-out;
 }
@@ -1023,17 +1033,6 @@
   .group-card-horiz {
     padding: 0 2rem;
   }
-
-  .cni-img {
-    /* position: absolute; */
-    /* top: -20%;
-    left: 0; */
-    /* width: 325px;
-    height: 251px; */
-    /* background-color: cadetblue; */
-  }
-
- 
 
   .world-section {
     background-size: contain;

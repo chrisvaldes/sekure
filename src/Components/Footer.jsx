@@ -1,108 +1,997 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import womenFooter from '../images/footer/women-footer.png'
-import logo from "../images/Group.png"
-import arrowWhite from '../images/icons/arrowWhite.png'
-import Message from './Message'
+
+import React, { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
+import detectionApp from '../images/accueil/DetectionAppareil.png';
+import preuveAddress from '../images/accueil/preveuAdresse.png';
+import sanctions from "../images/accueil/sanctions.png";
+import arrowLeft from "../images/accueil/VectorLeft.png";
+import arrowRight from "../images/accueil/VectorRight.png";
+import arrowWhite from '../images/icons/arrowWhite.png';
+import message from "../images/icons/messageWhite.png";
+import Arrow from './Arrow';
+import Message from './Message';
+import SmallCheckCircle from './SmallCheckCircle';
+import verificatiIdentite from "../images/cni.png"
+import verificationBiomet from "../images/handPhone1.png"
 
 
-export default function Footer() {
+export default function MiniNavBar() {
+    const [content, setContent] = useState("Vérification d'identité");
+
+    const handleNavClick = (event, newListItem) => {
+        event.preventDefault(); // Empêche le rechargement de la page
+        setContent(newListItem);
+    };
+
+    const [activeLink, setActiveLink] = useState('');
+
+    const options = [
+        "Vérification d'identité",
+        "Vérification biométrique",
+        "Preuve d'adresse",
+        "Détection d'appareil",
+        "Sanctions"
+    ];
+
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    const handleLeftClick = () => {
+        if (currentIndex > 0) {
+            setCurrentIndex(currentIndex - 1);
+        }
+    };
+
+    const handleRightClick = () => {
+        if (currentIndex < options.length - 1) {
+            setCurrentIndex(currentIndex + 1);
+        }
+    };
+
+    const handleClick = (link) => {
+        setActiveLink(link);
+    };
+
+    const verificatiIdentiteWrapRef = useRef()
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    if (entry.target === verificatiIdentiteWrapRef.current) {
+                        verificatiIdentiteWrapRef.current.classList.add("active");
+                        observer.unobserve(verificatiIdentiteWrapRef.current);
+                    } 
+                }
+            });
+        });
+
+        if (verificatiIdentiteWrapRef.current) {
+            observer.observe(verificatiIdentiteWrapRef.current);
+        }
+         
+
+    }, [])
+
+
     return (
-        <div className='bg-green-color sm:py-10  footer-section'>
-            <div className='relative footer-page grid grid-cols-1 lg:grid-cols-2 w-full'>
-                <div className='flex order-2 lg:order-1 footer-section-text flex-col items-start justify-center z-20 w-full'>
-                    <div className="w-full  px-5 sm:px-10 lg:px-20">
-                        <div className='footer-title text-center lg:text-left flex items-center lg:items-start justify-center flex-col py-5 text-nowrap w-full'>
-                            <span className='text-green-deep'>La vérification n'est plus un <br />
-                                obstacle pour votre business,<br /></span>
-                            <span className='text-green-deep md:text-white'>Acceptez plus facilement vos <br />
-                                utilisateurs</span>
-                        </div>
-                        <div className='footer-content text-justify sm:px-0 pt-5 w-full'>
-                            Intégrez notre API en quelques lignes de code et concentrez-vous sur votre cœur de métier.
-                            Notre solution, robuste et fiable, s'adapte à toutes vos exigences. Prêt à révolutionner votre
-                            processus de vérification ? Commencez votre essai gratuit dès aujourd'hui.
+        <section>
+            <div className=" bg-white extra px-5 sm:px-10">
+                <div className=" w-full flex flex-col items-center justify-center lg:items-start text-cyan-deep pt-10">
+                    <Link to="/" className='bg-green-color flex items-center justify-center mini-nav-btn mini-nav-btn-text'>
+                        Nos Outils
+                    </Link>
+                    <span className='title-1 text-left lg:text-left pt-5 hidden lg:block'>
+                        Tous les outils qu'il vous faut pour protéger <br />
+                        votre plateforme de la fraude
+                    </span>
+                    <span className='title-1 text-left pt-5 block lg:hidden'>
+                        Tous les outils qu'il vous faut pour protéger
+                        votre plateforme de la fraude
+                    </span>
+                </div>
+                <div className=''>
+                    <div className="mini-nav-without-arrow">
+                        <ul className="flex mini-nav-items items-center justify-around bg-[#DFFCE3] h-[54px] rounded-xl my-10 gap-x-5 px-5">
+                            <li className={`mini-nav-option ${content === "Vérification d'identité" ? 'mini-nav-item-active ' : ''}`} onClick={(event) => handleNavClick(event, "Vérification d'identité")}>
+                                <a href="#">Vérification d'identité</a>
+                            </li>
+                            <li className={`mini-nav-option ${content === "Vérification biométrique" ? 'mini-nav-item-active ' : ''}`} onClick={(event) => handleNavClick(event, "Vérification biométrique")}>
+                                <a href="#">Vérification biométrique</a>
+                            </li>
+                            <li className={`mini-nav-option ${content === "Preuve d'adresse" ? 'mini-nav-item-active ' : ''}`} onClick={(event) => handleNavClick(event, "Preuve d'adresse")}>
+                                <a href="#">Preuve d'adresse</a>
+                            </li>
+                            <li className={`mini-nav-option ${content === "Détection d'appareil" ? 'mini-nav-item-active ' : ''}`} onClick={(event) => handleNavClick(event, "Détection d'appareil")}>
+                                <a href="#">Détection d'appareil</a>
+                            </li>
+                            <li className={`mini-nav-option ${content === "Sanctions" ? 'mini-nav-item-active ' : ''}`} onClick={(event) => handleNavClick(event, "Sanctions")}>
+                                <a href="#">Sanctions</a>
+                            </li>
+                        </ul>
+
+                        <div className="flex flex-wrap items-center justify-center gap-16 pb-10 lg:pb-16">
+                            {content === "Vérification d'identité" && (
+                                <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center w-full mx-auto gap-10 ">
+                                    <div className="flex items-center justify-center  w-full">
+                                        <div className="hand-div2 py-10 flex items-center justify-center w-full">
+                                            <div className='verification-identiter flex items-center justify-center relative'>
+                                                <div className="absolute h-[450px]">
+                                                    <img src={verificatiIdentite} alt="" className='' />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='flex flex-col items-center justify-center w-full'>
+                                        <h2 className="mini-nav-side-title mb-5 w-full">
+                                            Identifications et Vérifications par scan <br />
+                                            facial intelligent et rapide
+                                        </h2>
+                                        <div className="mini-nav-side-content mb-10 w-full">
+                                            Localement ou internationalement, vos achats en ligne ne connaissent plus de limite <br />
+                                            avec les cartes virtuelles Visa MasterCard de chez SEKURE. En 2 minutes, créez et <br />
+                                            vérifiez votre compte Sekure pour obtenir votre carte virtuelle. Entre des frais d'entretien <br />
+                                            inexistants et des frais de
+                                        </div>
+                                        <div className='w-full'>
+                                            <div class="w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-start justify-start gap-5">
+                                                <div className="flex gap-3">
+                                                    <SmallCheckCircle />
+                                                    <div className='flex flex-col'>
+                                                        <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                                        <p className='mini-nav-grid-content'>
+                                                            Passeports, permis de conduire, cartes, <br />
+                                                            d'identity nationales, etc
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div className="flex gap-3">
+                                                    <SmallCheckCircle />
+                                                    <div className='flex flex-col'>
+                                                        <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                                        <p className='mini-nav-grid-content'>
+                                                            Passeports, permis de conduire, cartes, <br />
+                                                            d'identity nationales, etc
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div className="flex gap-3 ">
+                                                    <SmallCheckCircle />
+                                                    <div className='flex flex-col'>
+                                                        <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                                        <p className='mini-nav-grid-content'>
+                                                            Passeports, permis de conduire, cartes, <br />
+                                                            d'identity nationales, etc
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div className="flex gap-3 ">
+                                                    <SmallCheckCircle />
+                                                    <div className='flex flex-col'>
+                                                        <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                                        <p className='mini-nav-grid-content'>
+                                                            Passeports, permis de conduire, cartes, <br />
+                                                            d'identity nationales, etc
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex pt-10">
+                                                <div class=" flex flex-wrap w-full items-center justify-start gap-5 pb-10">
+                                                    <Link to="/" class="bg-green-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
+                                                        <span class="text-nowrap" >Commencer </span>
+                                                        <Arrow background="#FFFF" textcolor="#285246" />
+                                                    </Link>
+                                                    <Link to="/pricing" class=" bg-green-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
+                                                        <span class="text-white text-nowrap pr-5">Contacter</span>
+                                                        <Message background="#FFFF" textcolor="#285246" />
+                                                    </Link>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div></div>
+                                </div>
+                            )}
+                            {content === "Vérification biométrique" && (
+                                <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center w-full mx-auto gap-10 ">
+                                    <div className="flex items-center justify-center  hand-div2 h-[25rem] md:h-[30rem] lg:h-[30rem] w-full">
+                                        <div className='verification-biometrique relative flex items-center justify-center'>
+                                            <div className="absolute flex items-center justify-center">
+                                                <img src={verificationBiomet} alt="" className='' />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='flex flex-col items-center justify-center w-full'>
+                                        <h2 className="mini-nav-side-title mb-5 w-full">
+                                            Identifications et Vérifications par scan <br />
+                                            facial intelligent et rapide
+                                        </h2>
+                                        <div className="mini-nav-side-content mb-10 w-full">
+                                            Localement ou internationalement, vos achats en ligne ne connaissent plus de limite <br />
+                                            avec les cartes virtuelles Visa MasterCard de chez SEKURE. En 2 minutes, créez et <br />
+                                            vérifiez votre compte Sekure pour obtenir votre carte virtuelle. Entre des frais d'entretien <br />
+                                            inexistants et des frais de
+                                        </div>
+                                        <div className='w-full'>
+                                            <div class="w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-start justify-start gap-5">
+                                                <div className="flex gap-3">
+                                                    <SmallCheckCircle />
+                                                    <div className='flex flex-col'>
+                                                        <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                                        <p className='mini-nav-grid-content'>
+                                                            Passeports, permis de conduire, cartes, <br />
+                                                            d'identity nationales, etc
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div className="flex gap-3">
+                                                    <SmallCheckCircle />
+                                                    <div className='flex flex-col'>
+                                                        <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                                        <p className='mini-nav-grid-content'>
+                                                            Passeports, permis de conduire, cartes, <br />
+                                                            d'identity nationales, etc
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div className="flex gap-3 ">
+                                                    <SmallCheckCircle />
+                                                    <div className='flex flex-col'>
+                                                        <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                                        <p className='mini-nav-grid-content'>
+                                                            Passeports, permis de conduire, cartes, <br />
+                                                            d'identity nationales, etc
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div className="flex gap-3 ">
+                                                    <SmallCheckCircle />
+                                                    <div className='flex flex-col'>
+                                                        <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                                        <p className='mini-nav-grid-content'>
+                                                            Passeports, permis de conduire, cartes, <br />
+                                                            d'identity nationales, etc
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex pt-10">
+                                                <div class=" flex flex-wrap w-full items-center justify-start gap-5 pb-10">
+                                                    <Link to="/" class="bg-green-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
+                                                        <span class="text-nowrap" >Commencer </span>
+                                                        <Arrow background="#FFFF" textcolor="#285246" />
+                                                    </Link>
+                                                    <Link to="/pricing" class=" bg-green-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
+                                                        <span class="text-white text-nowrap pr-5">Contacter</span>
+                                                        <Message background="#FFFF" textcolor="#285246" />
+                                                    </Link>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div></div>
+                                </div>
+                            )}
+                            {/* REFERENCE ....... */}
+                            {content === "Preuve d'adresse" && (
+                                <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center w-full mx-auto gap-10 ">
+                                    <div className="flex items-center justify-center  hand-div2 h-[25rem] md:h-[30rem] lg:h-[30rem] w-full">
+                                        <div className="preuve-adresse relative flex items-center justify-center">
+                                            <div className="absolute flex items-center justify-center">
+                                                <img src={preuveAddress} alt="" className='' />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='flex flex-col items-center justify-center w-full'>
+                                        <h2 className="mini-nav-side-title mb-5 w-full">
+                                            Identifications et Vérifications par scan <br />
+                                            facial intelligent et rapide
+                                        </h2>
+                                        <div className="mini-nav-side-content mb-10 w-full">
+                                            Localement ou internationalement, vos achats en ligne ne connaissent plus de limite <br />
+                                            avec les cartes virtuelles Visa MasterCard de chez SEKURE. En 2 minutes, créez et <br />
+                                            vérifiez votre compte Sekure pour obtenir votre carte virtuelle. Entre des frais d'entretien <br />
+                                            inexistants et des frais de
+                                        </div>
+                                        <div className='w-full'>
+                                            <div class="w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-start justify-start gap-5">
+                                                <div className="flex gap-3">
+                                                    <SmallCheckCircle />
+                                                    <div className='flex flex-col'>
+                                                        <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                                        <p className='mini-nav-grid-content'>
+                                                            Passeports, permis de conduire, cartes, <br />
+                                                            d'identity nationales, etc
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div className="flex gap-3">
+                                                    <SmallCheckCircle />
+                                                    <div className='flex flex-col'>
+                                                        <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                                        <p className='mini-nav-grid-content'>
+                                                            Passeports, permis de conduire, cartes, <br />
+                                                            d'identity nationales, etc
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div className="flex gap-3 ">
+                                                    <SmallCheckCircle />
+                                                    <div className='flex flex-col'>
+                                                        <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                                        <p className='mini-nav-grid-content'>
+                                                            Passeports, permis de conduire, cartes, <br />
+                                                            d'identity nationales, etc
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div className="flex gap-3 ">
+                                                    <SmallCheckCircle />
+                                                    <div className='flex flex-col'>
+                                                        <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                                        <p className='mini-nav-grid-content'>
+                                                            Passeports, permis de conduire, cartes, <br />
+                                                            d'identity nationales, etc
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex pt-10">
+                                                <div class=" flex flex-wrap w-full items-center justify-start gap-5 pb-10">
+                                                    <Link to="/" class="bg-green-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
+                                                        <span class="text-nowrap" >Commencer </span>
+                                                        <Arrow background="#FFFF" textcolor="#285246" />
+                                                    </Link>
+                                                    <Link to="/pricing" class=" bg-green-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
+                                                        <span class="text-white text-nowrap pr-5">Contacter</span>
+                                                        <Message background="#FFFF" textcolor="#285246" />
+                                                    </Link>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+
+                                    </div>
+                                </div>
+                            )}
+                            {/** END REFERENCE ....... */}
+                            {content === "Détection d'appareil" && (
+                                <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center w-full mx-auto gap-10 ">
+                                    <div className="hand-div2 flex items-center justify-center relative">
+                                        <div className="detection-appareil relative flex items-center justify-center">
+                                            <div className="absolute flex items-center justify-center">
+                                                <img src={detectionApp} alt="" className='' />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='flex flex-col items-center justify-center w-full'>
+                                        <h2 className="mini-nav-side-title mb-5 w-full">
+                                            Identifications et Vérifications par scan <br />
+                                            facial intelligent et rapide
+                                        </h2>
+                                        <div className="mini-nav-side-content mb-10 w-full">
+                                            Localement ou internationalement, vos achats en ligne ne connaissent plus de limite <br />
+                                            avec les cartes virtuelles Visa MasterCard de chez SEKURE. En 2 minutes, créez et <br />
+                                            vérifiez votre compte Sekure pour obtenir votre carte virtuelle. Entre des frais d'entretien <br />
+                                            inexistants et des frais de
+                                        </div>
+                                        <div className='w-full'>
+                                            <div class="w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-start justify-start gap-5">
+                                                <div className="flex gap-3">
+                                                    <SmallCheckCircle />
+                                                    <div className='flex flex-col'>
+                                                        <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                                        <p className='mini-nav-grid-content'>
+                                                            Passeports, permis de conduire, cartes, <br />
+                                                            d'identity nationales, etc
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div className="flex gap-3">
+                                                    <SmallCheckCircle />
+                                                    <div className='flex flex-col'>
+                                                        <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                                        <p className='mini-nav-grid-content'>
+                                                            Passeports, permis de conduire, cartes, <br />
+                                                            d'identity nationales, etc
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div className="flex gap-3 ">
+                                                    <SmallCheckCircle />
+                                                    <div className='flex flex-col'>
+                                                        <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                                        <p className='mini-nav-grid-content'>
+                                                            Passeports, permis de conduire, cartes, <br />
+                                                            d'identity nationales, etc
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div className="flex gap-3 ">
+                                                    <SmallCheckCircle />
+                                                    <div className='flex flex-col'>
+                                                        <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                                        <p className='mini-nav-grid-content'>
+                                                            Passeports, permis de conduire, cartes, <br />
+                                                            d'identity nationales, etc
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex pt-10">
+                                                <div class=" flex flex-wrap w-full items-center justify-start gap-5 pb-10">
+                                                    <Link to="/" class="bg-green-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
+                                                        <span class="text-nowrap" >Commencer </span>
+                                                        <Arrow background="#FFFF" textcolor="#285246" />
+                                                    </Link>
+                                                    <Link to="/pricing" class=" bg-green-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
+                                                        <span class="text-white text-nowrap pr-5">Contacter</span>
+                                                        <Message background="#FFFF" textcolor="#285246" />
+                                                    </Link>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+
+                                    </div>
+                                </div>
+                            )}
+                            {content === "Sanctions" && (
+                                <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center w-full mx-auto gap-10 ">
+                                    <div className='w-full flex items-center justify-center'>
+                                        <div className="sactions relative flex justify-center items-center">
+                                            <div className=" absolute flex items-center justify-center">
+                                                <img src={sanctions} alt="" className='' />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="w-full items-center justify-center">
+                                        <div className='flex flex-col items-center justify-center w-full'>
+                                            <h2 className="mini-nav-side-title mb-5 w-full">
+                                                Identifications et Vérifications par scan <br />
+                                                facial intelligent et rapide
+                                            </h2>
+                                            <div className="mini-nav-side-content mb-10 w-full">
+                                                Localement ou internationalement, vos achats en ligne ne connaissent plus de limite <br />
+                                                avec les cartes virtuelles Visa MasterCard de chez SEKURE. En 2 minutes, créez et <br />
+                                                vérifiez votre compte Sekure pour obtenir votre carte virtuelle. Entre des frais d'entretien <br />
+                                                inexistants et des frais de
+                                            </div>
+                                            <div className='w-full'>
+                                                <div class="w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-start justify-start gap-5">
+                                                    <div className="flex gap-3">
+                                                        <SmallCheckCircle />
+                                                        <div className='flex flex-col'>
+                                                            <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                                            <p className='mini-nav-grid-content'>
+                                                                Passeports, permis de conduire, cartes, <br />
+                                                                d'identity nationales, etc
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div className="flex gap-3">
+                                                        <SmallCheckCircle />
+                                                        <div className='flex flex-col'>
+                                                            <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                                            <p className='mini-nav-grid-content'>
+                                                                Passeports, permis de conduire, cartes, <br />
+                                                                d'identity nationales, etc
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div className="flex gap-3 ">
+                                                        <SmallCheckCircle />
+                                                        <div className='flex flex-col'>
+                                                            <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                                            <p className='mini-nav-grid-content'>
+                                                                Passeports, permis de conduire, cartes, <br />
+                                                                d'identity nationales, etc
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div className="flex gap-3 ">
+                                                        <SmallCheckCircle />
+                                                        <div className='flex flex-col'>
+                                                            <p className='mini-nav-grid-title pb-2'>Document acceptés :</p>
+                                                            <p className='mini-nav-grid-content'>
+                                                                Passeports, permis de conduire, cartes, <br />
+                                                                d'identity nationales, etc
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="flex pt-10">
+                                                    <div class=" flex flex-wrap w-full items-center justify-start gap-5 pb-10">
+                                                        <Link to="/" class="bg-green-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
+                                                            <span class="text-nowrap" >Commencer </span>
+                                                            <Arrow background="#FFFF" textcolor="#285246" />
+                                                        </Link>
+                                                        <Link to="/pricing" class=" bg-green-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
+                                                            <span class="text-white text-nowrap pr-5">Contacter</span>
+                                                            <Message background="#FFFF" textcolor="#285246" />
+                                                        </Link>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+
+                                    </div>
+                                </div>
+                            )}
+
+                            {/* Ajoute d'autres conditions pour le reste du contenu ici */}
+
                         </div>
                     </div>
-                    <div className="w-full  px-5 sm:px-10 lg:px-20">
-                        <div class="  flex items-center justify-center lg:justify-start md:flex-nowrap  gap-5 pt-10 sm:px-0 w-full">
-                            <Link to="/" class="flex  accueil-btn w-1/2">
-                                <div className="flex text-nowrap items-center justify-around w-full">
-                                    <div className='flex items-center'>
-                                        Commencer
-                                        <span className=" pl-1 gratuitement"> gratuitement</span>
+
+                    <div className="mini-nav-arrows">
+                        <ul className="flex items-center justify-between bg-[#DFFCE3] h-[54px] rounded-xl my-10 gap-x-5 px-5">
+                            <li className='cursor-pointer'>
+                                <img src={arrowLeft} alt="Flèche gauche" onClick={handleLeftClick} />
+                            </li>
+                            <li className={`mini-nav-option ${currentIndex === 0 ? 'mini-nav-item-active' : ''}`} onClick={() => setCurrentIndex(0)}>
+                                <a href="#">{currentIndex + 1}/5 {options[currentIndex]}</a>
+                            </li>
+
+                            <li className='cursor-pointer'>
+                                <img src={arrowRight} alt="Flèche droite" onClick={handleRightClick} />
+                            </li>
+                        </ul>
+
+                        <div className="flex flex-wrap items-center justify-center gap-16 pb-5 lg:pb-16">
+                            {currentIndex === 0 && (
+                                <div className=" flex items-center justify-center w-full mx-auto gap-10 ">
+                                    <div className='flex flex-col items-center justify-center w-full'>
+                                        <h2 className="mini-nav-side-title text-center mb-5 w-full">
+                                            Identifications et Vérifications par scan
+                                            facial intelligent et rapide
+                                        </h2>
+                                        <div className="mini-nav-side-content text-justify lg:mb-10 w-full px-5">
+                                            Localement ou internationalement, vos achats en ligne ne connaissent plus de limite
+                                            avec les cartes virtuelles Visa MasterCard de chez SEKURE. En 2 minutes, créez et
+                                            vérifiez votre compte Sekure pour obtenir votre carte virtuelle. Entre des frais d'entretien
+                                            inexistants et des frais de
+                                        </div>
+
+                                        <div className="flex items-center justify-center  w-full">
+                                            <div className="hand-div2 py-16 flex items-center justify-center w-full">
+                                                <div className='verification-identiter flex items-center justify-center relative'>
+                                                    <div className="absolute h-[450px] flex items-center justify-center py-5">
+                                                        <img ref={verificatiIdentiteWrapRef} src={verificatiIdentite} alt="" className='mt-12 verification-img' />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className='w-full pt-10'>
+                                            <div class="w-full grid grid-cols-2 items-center justify-center gap-5">
+                                                <div className="flex gap-2 justify-center">
+                                                    <SmallCheckCircle />
+                                                    <div className='flex flex-col justify-center'>
+                                                        <p className='mini-nav-grid-title text-nowrap pb-2'>Document acceptés :</p>
+                                                        <p className='mini-nav-grid-content'>
+                                                            Passeports, permis de conduire, cartes, <br />
+                                                            d'identity nationales, etc
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div className="flex gap-2 justify-center">
+                                                    <SmallCheckCircle />
+                                                    <div className='flex flex-col'>
+                                                        <p className='mini-nav-grid-title text-nowrap pb-2'>Document acceptés :</p>
+                                                        <p className='mini-nav-grid-content'>
+                                                            Passeports, permis de conduire, cartes, <br />
+                                                            d'identity nationales, etc
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div className="flex gap-2 justify-center">
+                                                    <SmallCheckCircle />
+                                                    <div className='flex flex-col justify-center'>
+                                                        <p className='mini-nav-grid-title text-nowrap pb-2'>Document acceptés :</p>
+                                                        <p className='mini-nav-grid-content'>
+                                                            Passeports, permis de conduire, cartes, <br />
+                                                            d'identity nationales, etc
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div className="flex gap-2 justify-center">
+                                                    <SmallCheckCircle />
+                                                    <div className='flex flex-col justify-center'>
+                                                        <p className='mini-nav-grid-title text-nowrap pb-2'>Document acceptés :</p>
+                                                        <p className='mini-nav-grid-content'>
+                                                            Passeports, permis de conduire, cartes, <br />
+                                                            d'identity nationales, etc
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className='flex items-center justify-center md:items-center md:justify-center lg:items-start lg:justify-start gap-x-2 md:gap-[28px] pt-[28px] pb-16 w-full'>
+                                                <Link to="/" className='btn big-btn-about-us voir-tout-pays-phone-color flex items-center justify-center bg-green-color '>
+                                                    <span className=' flex items-center text-nowrap text-white'>
+                                                        Commencer
+                                                    </span>
+                                                    <img src={arrowWhite} alt="" />
+                                                </Link>
+                                                <Link to="/" className='btn-contacter-phone voir-tout-pays-phone-deep flex items-center justify-center bg-green-deep'>
+                                                    <span className='btn-text text-white'>
+                                                        Contacter
+                                                    </span>
+                                                    <img src={message} alt="" />
+                                                </Link>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <img src={arrowWhite} alt="" />
                                 </div>
-                            </Link>
-                            <Link to="/pricing" class=" accueil-btn-clean btn bg-white flex items-center justify-around w-1/2 gap-x-2">
-                                <div class="btn-text flex text-green-deep text-nowrap "><span className='hidden sm:block pr-1'>Nous </span> contacter</div>
-                                <Message background="#285246" textcolor="#FFFF" />
-                            </Link>
+                            )}
+                            {currentIndex === 1 && (
+                                <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center w-full mx-auto gap-10 ">
+                                    <div className='flex flex-col items-center justify-center w-full'>
+                                        <h2 className="mini-nav-side-title text-center mb-5 w-full">
+                                            Identifications et Vérifications par scan
+                                            facial intelligent et rapide
+                                        </h2>
+                                        <div className="mini-nav-side-content text-justify mb-16 lg:mb-10 w-full px-5">
+                                            Localement ou internationalement, vos achats en ligne ne connaissent plus de limite
+                                            avec les cartes virtuelles Visa MasterCard de chez SEKURE. En 2 minutes, créez et
+                                            vérifiez votre compte Sekure pour obtenir votre carte virtuelle. Entre des frais d'entretien
+                                            inexistants et des frais de
+                                        </div>
+                                        <div className="flex items-center justify-center w-full pb-10">
+                                            <div className='verification-biometrique relative flex items-center justify-center'>
+                                                <div className=" flex items-center justify-center">
+                                                    <img src={verificationBiomet} alt="" className='absolute' />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className='w-full pt-5'>
+                                            <div class="w-full grid grid-cols-2 items-center justify-center gap-5">
+                                                <div className="flex gap-2 justify-center">
+                                                    <SmallCheckCircle />
+                                                    <div className='flex flex-col justify-center'>
+                                                        <p className='mini-nav-grid-title text-nowrap pb-2'>Document acceptés :</p>
+                                                        <p className='mini-nav-grid-content'>
+                                                            Passeports, permis de conduire, cartes, <br />
+                                                            d'identity nationales, etc
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div className="flex gap-2 justify-center">
+                                                    <SmallCheckCircle />
+                                                    <div className='flex flex-col'>
+                                                        <p className='mini-nav-grid-title text-nowrap pb-2'>Document acceptés :</p>
+                                                        <p className='mini-nav-grid-content'>
+                                                            Passeports, permis de conduire, cartes, <br />
+                                                            d'identity nationales, etc
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div className="flex gap-2 justify-center">
+                                                    <SmallCheckCircle />
+                                                    <div className='flex flex-col justify-center'>
+                                                        <p className='mini-nav-grid-title text-nowrap pb-2'>Document acceptés :</p>
+                                                        <p className='mini-nav-grid-content'>
+                                                            Passeports, permis de conduire, cartes, <br />
+                                                            d'identity nationales, etc
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div className="flex gap-2 justify-center">
+                                                    <SmallCheckCircle />
+                                                    <div className='flex flex-col justify-center'>
+                                                        <p className='mini-nav-grid-title text-nowrap pb-2'>Document acceptés :</p>
+                                                        <p className='mini-nav-grid-content'>
+                                                            Passeports, permis de conduire, cartes, <br />
+                                                            d'identity nationales, etc
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className='flex items-center justify-center md:items-center md:justify-center lg:items-start lg:justify-start gap-x-2 md:gap-[28px] pt-[28px] pb-16 w-full'>
+                                                <Link to="/" className='btn big-btn-about-us voir-tout-pays-phone-color flex items-center justify-center bg-green-color '>
+                                                    <span className=' flex items-center text-nowrap text-white'>
+                                                        Commencer
+                                                    </span>
+                                                    <img src={arrowWhite} alt="" />
+                                                </Link>
+                                                <Link to="/" className='btn-contacter-phone voir-tout-pays-phone-deep flex items-center justify-center bg-green-deep'>
+                                                    <span className='btn-text text-white'>
+                                                        Contacter
+                                                    </span>
+                                                    <img src={message} alt="" />
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            )}
+                            {/* REFERENCE ....... */}
+                            {currentIndex === 2 && (
+                                <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center w-full mx-auto gap-10 ">
+
+                                    <div className='flex flex-col items-center justify-center w-full'>
+                                        <h2 className="mini-nav-side-title text-center mb-5 w-full">
+                                            Identifications et Vérifications par scan
+                                            facial intelligent et rapide
+                                        </h2>
+                                        <div className="mini-nav-side-content text-justify lg:mb-10 w-full px-5 pb-10">
+                                            Localement ou internationalement, vos achats en ligne ne connaissent plus de limite
+                                            avec les cartes virtuelles Visa MasterCard de chez SEKURE. En 2 minutes, créez et
+                                            vérifiez votre compte Sekure pour obtenir votre carte virtuelle. Entre des frais d'entretien
+                                            inexistants et des frais de
+                                        </div>
+                                        <div className="flex items-center pb-10 justify-center  w-full">
+                                            <div className="preuve-adresse relative flex items-center justify-center">
+                                                <div className="absolute flex items-center justify-center">
+                                                    <img src={preuveAddress} alt="" className='w-[300px] ' />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className='w-full'>
+                                            <div class="w-full grid grid-cols-2 items-center justify-center gap-5">
+                                                <div className="flex gap-2 justify-center">
+                                                    <SmallCheckCircle />
+                                                    <div className='flex flex-col justify-center'>
+                                                        <p className='mini-nav-grid-title text-nowrap pb-2'>Document acceptés :</p>
+                                                        <p className='mini-nav-grid-content'>
+                                                            Passeports, permis de conduire, cartes, <br />
+                                                            d'identity nationales, etc
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div className="flex gap-2 justify-center">
+                                                    <SmallCheckCircle />
+                                                    <div className='flex flex-col'>
+                                                        <p className='mini-nav-grid-title text-nowrap pb-2'>Document acceptés :</p>
+                                                        <p className='mini-nav-grid-content'>
+                                                            Passeports, permis de conduire, cartes, <br />
+                                                            d'identity nationales, etc
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div className="flex gap-2 justify-center">
+                                                    <SmallCheckCircle />
+                                                    <div className='flex flex-col justify-center'>
+                                                        <p className='mini-nav-grid-title text-nowrap pb-2'>Document acceptés :</p>
+                                                        <p className='mini-nav-grid-content'>
+                                                            Passeports, permis de conduire, cartes, <br />
+                                                            d'identity nationales, etc
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div className="flex gap-2 justify-center">
+                                                    <SmallCheckCircle />
+                                                    <div className='flex flex-col justify-center'>
+                                                        <p className='mini-nav-grid-title text-nowrap pb-2'>Document acceptés :</p>
+                                                        <p className='mini-nav-grid-content'>
+                                                            Passeports, permis de conduire, cartes, <br />
+                                                            d'identity nationales, etc
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className='flex items-center justify-center md:items-center md:justify-center lg:items-start lg:justify-start gap-x-2 md:gap-[28px] pt-[28px] pb-16 w-full'>
+                                                <Link to="/" className='btn big-btn-about-us voir-tout-pays-phone-color flex items-center justify-center bg-green-color '>
+                                                    <span className=' flex items-center text-nowrap text-white'>
+                                                        Commencer
+                                                    </span>
+                                                    <img src={arrowWhite} alt="" />
+                                                </Link>
+                                                <Link to="/" className='btn-contacter-phone voir-tout-pays-phone-deep flex items-center justify-center bg-green-deep'>
+                                                    <span className='btn-text text-white'>
+                                                        Contacter
+                                                    </span>
+                                                    <img src={message} alt="" />
+                                                </Link>
+                                            </div>
+                                            {/* <div class="flex pt-10">
+                                                <div class=" flex w-full items-center justify-center gap-5 pb-10">
+                                                    <Link to="/" class="bg-green-color  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
+                                                        <span class="text-nowrap" >Commencer </span>
+                                                        <Arrow background="#FFFF" textcolor="#285246" />
+                                                    </Link>
+                                                    <Link to="/pricing" class=" bg-green-deep  px-5 py-2 rounded-lg text-white flex items-center justify-around gap-5">
+                                                        <span class="text-white text-nowrap pr-5">Contacter</span>
+                                                        <Message background="#FFFF" textcolor="#285246" />
+                                                    </Link>
+
+                                                </div>
+                                            </div> */}
+                                        </div>
+                                    </div>
+                                </div>
+                            )}
+                            {/** END REFERENCE ....... */}
+                            {currentIndex === 3 && (
+                                <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center w-full mx-auto gap-10 ">
+
+                                    <div className='flex flex-col items-center justify-center w-full'>
+                                        <h2 className="mini-nav-side-title text-center mb-5 w-full">
+                                            Identifications et Vérifications par scan
+                                            facial intelligent et rapide
+                                        </h2>
+                                        <div className="mini-nav-side-content text-justify lg:mb-10 w-full px-5 pb-10">
+                                            Localement ou internationalement, vos achats en ligne ne connaissent plus de limite
+                                            avec les cartes virtuelles Visa MasterCard de chez SEKURE. En 2 minutes, créez et
+                                            vérifiez votre compte Sekure pour obtenir votre carte virtuelle. Entre des frais d'entretien
+                                            inexistants et des frais de
+                                        </div>
+
+                                        <div className="flex items-center justify-center pb-10 w-full">
+                                            <div className="detection-appareil relative flex items-center justify-center">
+                                                <div className="absolute flex items-center justify-center px-2 sm:px-0">
+                                                    <img src={detectionApp} alt="" className='h-full' />
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className='w-full'>
+                                            <div class="w-full grid grid-cols-2 items-center justify-center gap-5">
+                                                <div className="flex gap-2 justify-center">
+                                                    <SmallCheckCircle />
+                                                    <div className='flex flex-col justify-center'>
+                                                        <p className='mini-nav-grid-title text-nowrap pb-2'>Document acceptés :</p>
+                                                        <p className='mini-nav-grid-content'>
+                                                            Passeports, permis de conduire, cartes, <br />
+                                                            d'identity nationales, etc
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div className="flex gap-2 justify-center">
+                                                    <SmallCheckCircle />
+                                                    <div className='flex flex-col'>
+                                                        <p className='mini-nav-grid-title text-nowrap pb-2'>Document acceptés :</p>
+                                                        <p className='mini-nav-grid-content'>
+                                                            Passeports, permis de conduire, cartes, <br />
+                                                            d'identity nationales, etc
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div className="flex gap-2 justify-center">
+                                                    <SmallCheckCircle />
+                                                    <div className='flex flex-col justify-center'>
+                                                        <p className='mini-nav-grid-title text-nowrap pb-2'>Document acceptés :</p>
+                                                        <p className='mini-nav-grid-content'>
+                                                            Passeports, permis de conduire, cartes, <br />
+                                                            d'identity nationales, etc
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div className="flex gap-2 justify-center">
+                                                    <SmallCheckCircle />
+                                                    <div className='flex flex-col justify-center'>
+                                                        <p className='mini-nav-grid-title text-nowrap pb-2'>Document acceptés :</p>
+                                                        <p className='mini-nav-grid-content'>
+                                                            Passeports, permis de conduire, cartes, <br />
+                                                            d'identity nationales, etc
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className='flex items-center justify-center md:items-center md:justify-center lg:items-start lg:justify-start gap-x-2 md:gap-[28px] pt-[28px] pb-16 w-full'>
+                                                <Link to="/" className='btn big-btn-about-us voir-tout-pays-phone-color flex items-center justify-center bg-green-color '>
+                                                    <span className=' flex items-center text-nowrap text-white'>
+                                                        Commencer
+                                                    </span>
+                                                    <img src={arrowWhite} alt="" />
+                                                </Link>
+                                                <Link to="/" className='btn-contacter-phone voir-tout-pays-phone-deep flex items-center justify-center bg-green-deep'>
+                                                    <span className='btn-text text-white'>
+                                                        Contacter
+                                                    </span>
+                                                    <img src={message} alt="" />
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            )}
+                            {currentIndex === 4 && (
+                                <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center w-full mx-auto gap-10 ">
+
+                                    <div className='flex flex-col items-center justify-center w-full'>
+                                        <h2 className="mini-nav-side-title text-center mb-5 w-full">
+                                            Identifications et Vérifications par scan
+                                            facial intelligent et rapide
+                                        </h2>
+                                        <div className="mini-nav-side-content text-justify lg:mb-10 w-full px-5 pb-10">
+                                            Localement ou internationalement, vos achats en ligne ne connaissent plus de limite
+                                            avec les cartes virtuelles Visa MasterCard de chez SEKURE. En 2 minutes, créez et
+                                            vérifiez votre compte Sekure pour obtenir votre carte virtuelle. Entre des frais d'entretien
+                                            inexistants et des frais de
+                                        </div>
+
+                                        <div className='w-full flex items-center justify-center'>
+                                            <div className="flex items-center justify-center w-full pb-10">
+                                                <div className="sactions relative flex justify-center items-center">
+                                                    <div className=" absolute flex items-center justify-center">
+                                                        <img src={sanctions} alt="" className='w-[300px]' />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className='w-full'>
+                                            <div class="w-full grid grid-cols-2 items-center justify-center gap-5">
+                                                <div className="flex gap-2 justify-center">
+                                                    <SmallCheckCircle />
+                                                    <div className='flex flex-col justify-center'>
+                                                        <p className='mini-nav-grid-title text-nowrap pb-2'>Document acceptés :</p>
+                                                        <p className='mini-nav-grid-content'>
+                                                            Passeports, permis de conduire, cartes, <br />
+                                                            d'identity nationales, etc
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div className="flex gap-2 justify-center">
+                                                    <SmallCheckCircle />
+                                                    <div className='flex flex-col'>
+                                                        <p className='mini-nav-grid-title text-nowrap pb-2'>Document acceptés :</p>
+                                                        <p className='mini-nav-grid-content'>
+                                                            Passeports, permis de conduire, cartes, <br />
+                                                            d'identity nationales, etc
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div className="flex gap-2 justify-center">
+                                                    <SmallCheckCircle />
+                                                    <div className='flex flex-col justify-center'>
+                                                        <p className='mini-nav-grid-title text-nowrap pb-2'>Document acceptés :</p>
+                                                        <p className='mini-nav-grid-content'>
+                                                            Passeports, permis de conduire, cartes, <br />
+                                                            d'identity nationales, etc
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div className="flex gap-2 justify-center">
+                                                    <SmallCheckCircle />
+                                                    <div className='flex flex-col justify-center'>
+                                                        <p className='mini-nav-grid-title text-nowrap pb-2'>Document acceptés :</p>
+                                                        <p className='mini-nav-grid-content'>
+                                                            Passeports, permis de conduire, cartes, <br />
+                                                            d'identity nationales, etc
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className='flex items-center justify-center md:items-center md:justify-center lg:items-start lg:justify-start gap-x-2 md:gap-[28px] pt-[28px] pb-16 w-full'>
+                                                <Link to="/" className='btn big-btn-about-us voir-tout-pays-phone-color flex items-center justify-center bg-green-color '>
+                                                    <span className=' flex items-center text-nowrap text-white'>
+                                                        Commencer
+                                                    </span>
+                                                    <img src={arrowWhite} alt="" />
+                                                </Link>
+                                                <Link to="/" className='btn-contacter-phone voir-tout-pays-phone-deep flex items-center justify-center bg-green-deep'>
+                                                    <span className='btn-text text-white'>
+                                                        Contacter
+                                                    </span>
+                                                    <img src={message} alt="" />
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            )}
+
+                            {/* Ajoute d'autres conditions pour le reste du contenu ici */}
 
                         </div>
                     </div>
                 </div>
-                <div className="relative lg:hidden footer-page-order flex items-center justify-center order-1 lg:order-2  w-full h-[350px]">
-                    <div className="flex items-center justify-center absolute bottom-0 -left-3 lg:left-0 w-full">
-                        <img src={womenFooter} alt="" className='w-[400px] h-[380px] sm:w-[482.12px] sm:h-[444px]' />
-                    </div>
-                </div>
-                <img src={womenFooter} alt="" className='womenFooter hidden lg:block absolute bottom-0 right-28 w-[482.12px] h-[444px] z-10' />
             </div>
-            <div className="flex flex-wrap items-center justify-around w-full py-10  px-10 sm:px-10 md:px-10 lg:px-20">
-                <div className="flex w-full  gap-10 flex-wrap items-center md:mx-0 md:justify-between">
-                    <div className="flex flex-col">
-                        <span className='grid-footer-grid-title'>Explorer</span>
-                        <span className='grid-footer-grid-content'>Documentation</span>
-                        <span className='grid-footer-grid-content'>Dashboard</span>
-                        <span className='grid-footer-grid-content'>Confidentialité</span>
-                        <span className='grid-footer-grid-content'>Termes</span>
-                    </div>
-                    <div className="flex flex-col">
-                        <span className='grid-footer-grid-title'>Explorer</span>
-                        <span className='grid-footer-grid-content'>Accueil</span>
-                        <span className='grid-footer-grid-content'>A propos</span>
-                        <span className='grid-footer-grid-content'>Contact</span>
-                        <span className='grid-footer-grid-content'>FAQ</span>
-                    </div>
-                    <div className="flex flex-col">
-                        <span className='grid-footer-grid-title'>KYC</span>
-                        <span className='grid-footer-grid-content'>Comment ça marche</span>
-                        <span className='grid-footer-grid-content'>interface KYC</span>
-                        <span className='grid-footer-grid-content'>Options KYC</span>
-                        <span className='grid-footer-grid-content'>Avantages</span>
-                    </div>
-                    <div className="flex flex-col">
-                        <span className='grid-footer-grid-title'>AML</span>
-                        <span className='grid-footer-grid-content'>Comment ça marche</span>
-                        <span className='grid-footer-grid-content'>Process AML</span>
-                        <span className='grid-footer-grid-content'>Requis</span>
-                        <span className='grid-footer-grid-content'>Avantages</span>
-                    </div>
-                    <div className="flex flex-col">
-                        <span className='grid-footer-grid-title'>Commencer</span>
-                        <span className='grid-footer-grid-content'>Pricing</span>
-                        <span className='grid-footer-grid-content'>Se Connecter</span>
-                        <span className='grid-footer-grid-content'>Voir Demo</span>
-                    </div>
-                    <div className="flex-col gap-2 pb-5 hidden md:block">
-                        <div className='flex items-center justify-start'>
-                            <div className='footer-grid-logo'>AIBIOMETRICS</div>
-                            <img src={logo} alt="" className='logo' />
-                        </div>
-                        <form action="">
-                            <textarea name="" id="" placeholder='Recevoir Newsletter
-                                Enter your address mail' className="w-full p-2"></textarea>
-                            <div className='btn flex items-center justify-around bg-green-deep'>
-                                <button className='btn-send-letter text-white'>
-                                    Recevoir NewsLetter
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    )
+
+            {/* <div className='accordion'>
+                <AccordionMiniNav />
+            </div> */}
+        </section>
+    );
 }

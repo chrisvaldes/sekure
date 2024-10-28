@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import detectionApp from '../images/accueil/DetectionAppareil.png';
 import preuveAddress from '../images/accueil/preveuAdresse.png';
@@ -50,6 +50,28 @@ export default function MiniNavBar() {
     const handleClick = (link) => {
         setActiveLink(link);
     };
+
+    const verificatiIdentiteWrapRef = useRef()
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    if (entry.target === verificatiIdentiteWrapRef.current) {
+                        verificatiIdentiteWrapRef.current.classList.add("active");
+                        observer.unobserve(verificatiIdentiteWrapRef.current);
+                    } 
+                }
+            });
+        });
+
+        if (verificatiIdentiteWrapRef.current) {
+            observer.observe(verificatiIdentiteWrapRef.current);
+        }
+         
+
+    }, [])
+
 
     return (
         <section>
@@ -544,7 +566,7 @@ export default function MiniNavBar() {
                                             <div className="hand-div2 py-16 flex items-center justify-center w-full">
                                                 <div className='verification-identiter flex items-center justify-center relative'>
                                                     <div className="absolute h-[450px] flex items-center justify-center py-5">
-                                                        <img src={verificatiIdentite} alt="" className='mt-12' />
+                                                        <img ref={verificatiIdentiteWrapRef} src={verificatiIdentite} alt="" className='mt-12 verification-img' />
                                                     </div>
                                                 </div>
                                             </div>
@@ -806,8 +828,8 @@ export default function MiniNavBar() {
 
                                         <div className="flex items-center justify-center pb-10 w-full">
                                             <div className="detection-appareil relative flex items-center justify-center">
-                                                <div className="absolute flex items-center justify-center">
-                                                    <img src={detectionApp} alt="" className='w-[300px]' />
+                                                <div className="absolute flex items-center justify-center px-2 sm:px-0">
+                                                    <img src={detectionApp} alt="" className='h-full' />
                                                 </div>
                                             </div>
                                         </div>
