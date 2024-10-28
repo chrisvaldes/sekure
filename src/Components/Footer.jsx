@@ -51,12 +51,17 @@ export default function MiniNavBar() {
         setActiveLink(link);
     };
 
+    const verificatiIdentiteRef = useRef()
     const verificatiIdentiteWrapRef = useRef()
 
     useEffect(() => {
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
+                    if (entry.target === verificatiIdentiteRef.current) {
+                        verificatiIdentiteRef.current.classList.add("active");
+                        observer.unobserve(verificatiIdentiteRef.current);
+                    } 
                     if (entry.target === verificatiIdentiteWrapRef.current) {
                         verificatiIdentiteWrapRef.current.classList.add("active");
                         observer.unobserve(verificatiIdentiteWrapRef.current);
@@ -65,6 +70,9 @@ export default function MiniNavBar() {
             });
         });
 
+        if (verificatiIdentiteRef.current) {
+            observer.observe(verificatiIdentiteRef.current);
+        }
         if (verificatiIdentiteWrapRef.current) {
             observer.observe(verificatiIdentiteWrapRef.current);
         }
@@ -116,7 +124,7 @@ export default function MiniNavBar() {
                                         <div className="hand-div2 py-10 flex items-center justify-center w-full">
                                             <div className='verification-identiter flex items-center justify-center relative'>
                                                 <div className="absolute h-[450px]">
-                                                    <img src={verificatiIdentite} alt="" className='' />
+                                                    <img ref={verificatiIdentiteRef} src={verificatiIdentite} alt="" className='verification-img' />
                                                 </div>
                                             </div>
                                         </div>
