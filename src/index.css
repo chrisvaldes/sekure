@@ -715,15 +715,13 @@
   transform: translateX(0);
   opacity: 1;
 }
-.verification-img {
-  /* transform: translateX(5%); */
-  opacity: 0;
-  transition: transform 1.5s ease-out, opacity 1.5s ease-out;
+.verification-img {  
+  transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
 }
 
 .verification-img.active {
   /* transform: translateX(0); */
-  opacity: 1;
+  opacity: 0;
 }
 
 .bigMother {
@@ -2820,6 +2818,25 @@ textarea {
 }
 
 /* Animation keyframes*/
+
+.verification-img {
+  animation-name: appear;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  opacity: 1; /*Commence invisible */
+}
+
+@keyframes appear {
+  0% {
+      opacity: 0; /* Invisible au début */
+      transform: scale(0.95); /* Légère réduction */
+  }
+  100% {
+      opacity: 1; /* Visible à la fin */
+      transform: scale(1); /* Échelle normale */
+  }
+}
+
 
 .img-sanction {
   animation-name: slideInFromBottom;

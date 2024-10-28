@@ -51,34 +51,34 @@ export default function MiniNavBar() {
         setActiveLink(link);
     };
 
-    const verificatiIdentiteRef = useRef()
-    const verificatiIdentiteWrapRef = useRef()
+    // const verificatiIdentiteRef = useRef()
+    // const verificatiIdentiteWrapRef = useRef()
 
-    useEffect(() => {
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    if (entry.target === verificatiIdentiteRef.current) {
-                        verificatiIdentiteRef.current.classList.add("active");
-                        observer.unobserve(verificatiIdentiteRef.current);
-                    }
-                    else if (entry.target === verificatiIdentiteWrapRef.current) {
-                        verificatiIdentiteWrapRef.current.classList.add("active");
-                        observer.unobserve(verificatiIdentiteWrapRef.current);
-                    }
-                }
-            });
-        });
+    // useEffect(() => {
+    //     const observer = new IntersectionObserver(entries => {
+    //         entries.forEach(entry => {
+    //             if (entry.isIntersecting) {
+    //                 if (entry.target === verificatiIdentiteRef.current) {
+    //                     verificatiIdentiteRef.current.classList.add("active");
+    //                     observer.unobserve(verificatiIdentiteRef.current);
+    //                 }
+    //                 else if (entry.target === verificatiIdentiteWrapRef.current) {
+    //                     verificatiIdentiteWrapRef.current.classList.add("active");
+    //                     observer.unobserve(verificatiIdentiteWrapRef.current);
+    //                 }
+    //             }
+    //         });
+    //     });
 
-        if (verificatiIdentiteRef.current) {
-            observer.observe(verificatiIdentiteRef.current);
-        }
-        if (verificatiIdentiteWrapRef.current) {
-            observer.observe(verificatiIdentiteWrapRef.current);
-        }
+    //     if (verificatiIdentiteRef.current) {
+    //         observer.observe(verificatiIdentiteRef.current);
+    //     }
+    //     if (verificatiIdentiteWrapRef.current) {
+    //         observer.observe(verificatiIdentiteWrapRef.current);
+    //     }
          
 
-    }, [])
+    // }, [])
 
 
     return (
@@ -124,7 +124,7 @@ export default function MiniNavBar() {
                                         <div className="hand-div2 py-10 flex items-center justify-center w-full">
                                             <div className='verification-identiter flex items-center justify-center relative'>
                                                 <div className="absolute h-[450px]">
-                                                    <img ref={verificatiIdentiteRef} src={verificatiIdentite} alt="" className='verification-img' />
+                                                    <img src={verificatiIdentite} alt="" className='verification-img' />
                                                 </div>
                                             </div>
                                         </div>
@@ -206,7 +206,7 @@ export default function MiniNavBar() {
                                     <div className="flex items-center justify-center  hand-div2 h-[25rem] md:h-[30rem] lg:h-[30rem] w-full">
                                         <div className='verification-biometrique relative flex items-center justify-center'>
                                             <div className="absolute flex items-center justify-center">
-                                                <img src={verificationBiomet} alt="" className='' />
+                                                <img src={verificationBiomet} alt="" className='verification-img' />
                                             </div>
                                         </div>
                                     </div>
@@ -288,7 +288,7 @@ export default function MiniNavBar() {
                                     <div className="flex items-center justify-center  hand-div2 h-[25rem] md:h-[30rem] lg:h-[30rem] w-full">
                                         <div className="preuve-adresse relative flex items-center justify-center">
                                             <div className="absolute flex items-center justify-center">
-                                                <img src={preuveAddress} alt="" className='' />
+                                                <img src={preuveAddress} alt="" className='verification-img' />
                                             </div>
                                         </div>
                                     </div>
@@ -372,7 +372,7 @@ export default function MiniNavBar() {
                                     <div className="hand-div2 flex items-center justify-center relative">
                                         <div className="detection-appareil relative flex items-center justify-center">
                                             <div className="absolute flex items-center justify-center">
-                                                <img src={detectionApp} alt="" className='' />
+                                                <img src={detectionApp} alt="" className='verification-img' />
                                             </div>
                                         </div>
                                     </div>
@@ -455,7 +455,7 @@ export default function MiniNavBar() {
                                     <div className='w-full flex items-center justify-center'>
                                         <div className="sactions relative flex justify-center items-center">
                                             <div className=" absolute flex items-center justify-center">
-                                                <img src={sanctions} alt="" className='' />
+                                                <img src={sanctions} alt="" className='verification-img' />
                                             </div>
                                         </div>
                                     </div>
@@ -574,7 +574,7 @@ export default function MiniNavBar() {
                                             <div className="hand-div2 py-16 flex items-center justify-center w-full">
                                                 <div className='verification-identiter flex items-center justify-center relative'>
                                                     <div className="absolute h-[450px] flex items-center justify-center py-5">
-                                                        <img ref={verificatiIdentiteWrapRef} src={verificatiIdentite} alt="" className='mt-12 verification-img' />
+                                                        <img src={verificatiIdentite} alt="" className='mt-12 verification-img' />
                                                     </div>
                                                 </div>
                                             </div>
