@@ -86,7 +86,7 @@ export default function Customer() {
               <div className=' flex items-center justify-center'>
                 <div className='flex items-center justify-center py-10 rounded-[20px] bg-white w-full'>
                   <div className=' gap-10  px-10 grid  items-center justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 '>
-                    
+
                     <div>
                       <CardSmile logo={img1}
                         title={
@@ -105,7 +105,7 @@ export default function Customer() {
                         }
                         content={
                           <span>Vérifiez si vos clients figurent sur des listes
-                          de sactions internationales.</span>
+                            de sactions internationales.</span>
                         }
                       />
                     </div>
@@ -116,7 +116,7 @@ export default function Customer() {
                         }
                         content={
                           <span>Recherchez des informations négatives sur
-                          vos clients dans les médias.</span>
+                            vos clients dans les médias.</span>
                         }
                       />
                     </div>
@@ -127,7 +127,7 @@ export default function Customer() {
                         }
                         content={
                           <span>Renforcez la vérification pour les clients à
-                          risque élevé</span>
+                            risque élevé</span>
                         }
                       />
                     </div>
@@ -138,7 +138,7 @@ export default function Customer() {
                         }
                         content={
                           <span>Identifiez et gérez les risques liés aux
-                          personnes politiquement exposées (PEP).</span>
+                            personnes politiquement exposées (PEP).</span>
                         }
                       />
                     </div>
@@ -149,7 +149,7 @@ export default function Customer() {
                         }
                         content={
                           <span>Surveillez en continu vos clients pour
-                          détecter les changements de situation.</span>
+                            détecter les changements de situation.</span>
                         }
                       />
                     </div>
@@ -274,8 +274,7 @@ export default function Customer() {
             <div className="order-1 lg:order-2 flex flex-col items-center gap-y-5 w-full">
               <div className="">
                 <div className="screening-horiz-vert-title">
-                  Protégez votre entreprise contre les
-                  risques liés aux PEP et aux sanctions
+                  Prendre des photos de vos pièces d’identité
                 </div>
                 <div className="screening-horiz-vert-content py-5">
                   Notre solution de screening des PEP et des sanction vour permet de vérifier si
@@ -284,47 +283,31 @@ export default function Customer() {
                   protégez contre les amendes et les dommages réputationnels.
                 </div>
                 <div className='w-full'>
-                  <div class="w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-start justify-start gap-5">
-                    <div className="flex gap-3">
-                      <SmallCheckCircle />
-                      <div className='flex flex-col'>
-                        <p className='screening-grid-title pb-2'>Bases de données complètes:</p>
-                        <p className='screening-grid-content'>
-                          Accèdez à des bases de données mises à
-                          jour en continu pour une couverture
-                          mondiale.
-                        </p>
-                      </div>
+                  <div class="w-full grid grid-cols-2 items-start justify-start gap-5">
+                    <div className="flex items-center gap-3">
+                      <SmallCheckCircle 
+                        title="Cartes Nationales d’identité"
+                      />
                     </div>
-                    <div className="flex gap-3">
-                      <SmallCheckCircle />
-                      <div className='flex flex-col'>
-                        <p className='screening-grid-title pb-2'>Personnalisation des règles:</p>
-                        <p className='screening-grid-content'>
-                          Adaptez les critère de recherche à vos
-                          besoins spécifiques.
-                        </p>
-                      </div>
+                    <div className="flex items-center gap-3">
+                      <SmallCheckCircle 
+                        title="Personnalisation des règles"
+                      />
                     </div>
-                    <div className="flex gap-3 ">
-                      <SmallCheckCircle />
-                      <div className='flex flex-col'>
-                        <p className='screening-grid-title pb-2'>Vérifications en temps réel:</p>
-                        <p className='screening-grid-content'>
-                          Optenez des résultats instantanés pour une
-                          prise de décision rapide.
-                        </p>
-                      </div>
+                    <div className="flex items-center gap-3">
+                      <SmallCheckCircle 
+                        title="Vérifications en temps réel"
+                      />
                     </div>
-                    <div className="flex gap-3 ">
-                      <SmallCheckCircle />
-                      <div className='flex flex-col'>
-                        <p className='screening-grid-title pb-2'>Intégration facile:</p>
-                        <p className='screening-grid-content'>
-                          Intégrez notre solution à votre flux de travail
-                          existant.
-                        </p>
-                      </div>
+                    <div className="flex items-center gap-3">
+                      <SmallCheckCircle 
+                        title="Intégration facile"
+                      />
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <SmallCheckCircle 
+                        title="Cartes temporaires d’identité"
+                      />
                     </div>
                   </div>
                 </div>
@@ -336,12 +319,11 @@ export default function Customer() {
 
         {/* start section girl */}
         <section>
-          <div className='group-card-vert grid grid-cols-1 items-center justify-center md:grid-cols-1 lg:grid-cols-2 gap-y-10 p-20'>
+          <div className='group-card-vert grid grid-cols-1 items-center justify-center md:grid-cols-1 lg:grid-cols-2 gap-y-10 py-20 px-10'>
             <div className="flex flex-col items-center gap-y-5">
               <div className="">
                 <div className="screening-horiz-vert-title">
-                  Accédez à une information exhaustive
-                  sur vos clients
+                  Prendre des selfies pour verifier l’authenticité
                 </div>
                 <div className="screening-horiz-vert-content py-5">
                   Notre solution vous permet d'accéder à une multitude de sources d'information
@@ -351,45 +333,17 @@ export default function Customer() {
                 </div>
                 <div className='w-full'>
                   <div class="w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-start justify-start gap-5">
-                    <div className="flex gap-3">
-                      <SmallCheckCircle />
-                      <div className='flex flex-col'>
-                        <p className='screening-grid-title pb-2'>Analyse des médias sociaux:</p>
-                        <p className='screening-grid-content'>
-                          Identifiez les signaux faibles qui
-                          pourraient indiquer un risque.
-                        </p>
-                      </div>
+                    <div className="flex items-center gap-3">
+                      <SmallCheckCircle
+                        title="Identifiez les signaux faibles qui
+                          pourraient indiquer un risque."
+                      />
                     </div>
-                    <div className="flex gap-3">
-                      <SmallCheckCircle />
-                      <div className='flex flex-col'>
-                        <p className='screening-grid-title pb-2'>Recherche dans les registres public:</p>
-                        <p className='screening-grid-content'>
-                          Vérifiez les antécédents judiciaire et les
-                          affiliations politiques.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex gap-3 ">
-                      <SmallCheckCircle />
-                      <div className='flex flex-col'>
-                        <p className='screening-grid-title pb-2'>Surveillance continue:</p>
-                        <p className='screening-grid-content'>
-                          Soyez alerté en cas de nouveaux évènements
-                          susceptibles d'affecter votre risque.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex gap-3 ">
-                      <SmallCheckCircle />
-                      <div className='flex flex-col'>
-                        <p className='screening-grid-title pb-2'>Rapports personnalisés:</p>
-                        <p className='screening-grid-content'>
-                          Obtenez des Rapports détaillés pour une
-                          meilleure compréhension de vos clients.
-                        </p>
-                      </div>
+                    <div className="flex items-center gap-3">
+                      <SmallCheckCircle
+                        title="Vérifiez les antécédents judiciaire et les
+                          affiliations politiques."
+                      />
                     </div>
                   </div>
                 </div>
@@ -436,8 +390,7 @@ export default function Customer() {
             <div className="order-1 lg:order-2 group-card-horiz-content flex flex-col items-center gap-y-5">
               <div className="">
                 <div className="screening-horiz-vert-title">
-                  Surveillez en continu vos clients
-                  pour une protection optimale
+                Verification en quelques secondes et connexion
                 </div>
                 <div className="screening-horiz-vert-content py-5">
                   Notre solution de Surveillance contine Analyse les transaction, les
@@ -446,45 +399,29 @@ export default function Customer() {
                 </div>
                 <div className='w-full'>
                   <div class="w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-start justify-start gap-5">
-                    <div className="flex gap-3">
-                      <SmallCheckCircle />
-                      <div className='flex flex-col'>
-                        <p className='screening-grid-title pb-2'>Alertes en temps réel:</p>
-                        <p className='screening-grid-content'>
-                          Soyez informé immédiatement des évènements
-                          importants.
-                        </p>
-                      </div>
+                    <div className="flex items-center gap-3">
+                      <SmallCheckCircle 
+                        title="Soyez informé immédiatement des évènements
+                          importants."
+                      />
                     </div>
-                    <div className="flex gap-3">
-                      <SmallCheckCircle />
-                      <div className='flex flex-col'>
-                        <p className='screening-grid-title pb-2'>Adaptation aux changements réglémentaires:</p>
-                        <p className='screening-grid-content'>
-                          Restez conforme aux dernières exigences en
-                          matière de Surveillance continue.
-                        </p>
-                      </div>
+                    <div className="flex items-center gap-3">
+                      <SmallCheckCircle 
+                        title="Restez conforme aux dernières exigences en
+                          matière de Surveillance continue."
+                      />
                     </div>
-                    <div className="flex gap-3 ">
-                      <SmallCheckCircle />
-                      <div className='flex flex-col'>
-                        <p className='screening-grid-title pb-2'>Analyse comportementale:</p>
-                        <p className='screening-grid-content'>
-                          Identifiez les anomalies dans les habitudes
-                          des transactions.
-                        </p>
-                      </div>
+                    <div className="flex items-center gap-3">
+                      <SmallCheckCircle 
+                        title="Identifiez les anomalies dans les habitudes
+                          des transactions."
+                      />
                     </div>
-                    <div className="flex gap-3 ">
-                      <SmallCheckCircle />
-                      <div className='flex flex-col'>
-                        <p className='screening-grid-title pb-2'>Intégration avec d'autres systèmes:</p>
-                        <p className='screening-grid-content'>
-                          Combinez notre solution avec vos outils
-                          existants pour une vision globale.
-                        </p>
-                      </div>
+                    <div className="flex items-center gap-3">
+                      <SmallCheckCircle 
+                        title="Combinez notre solution avec vos outils
+                          existants pour une vision globale."
+                      />
                     </div>
                   </div>
                 </div>
