@@ -546,8 +546,8 @@ export default function MiniNavBar() {
                             <li className='cursor-pointer'>
                                 <img src={arrowLeft} alt="Flèche gauche" onClick={handleLeftClick} />
                             </li>
-                            <li className={`mini-nav-option ${currentIndex === 0 ? 'mini-nav-item-active' : ''}`} onClick={() => setCurrentIndex(0)}>
-                                <a href="#">{currentIndex + 1}/5 {options[currentIndex]}</a>
+                            <li className={`mini-nav-option ${currentIndex === 0 ? 'mini-nav-item-active' : ''}`} >
+                                <a  >{currentIndex + 1}/5 {options[currentIndex]}</a>
                             </li>
 
                             <li className='cursor-pointer'>
@@ -657,7 +657,7 @@ export default function MiniNavBar() {
                                         <div className="flex items-center justify-center w-full pb-10">
                                             <div className='verification-biometrique relative flex items-center justify-center'>
                                                 <div className=" flex items-center justify-center">
-                                                    <img src={verificationBiomet} alt="" className='absolute' />
+                                                    <img src={verificationBiomet} alt="" className='absolute verification-img' />
                                                 </div>
                                             </div>
                                         </div>
@@ -740,7 +740,7 @@ export default function MiniNavBar() {
                                         <div className="flex items-center pb-10 justify-center  w-full">
                                             <div className="preuve-adresse relative flex items-center justify-center">
                                                 <div className="absolute flex items-center justify-center">
-                                                    <img src={preuveAddress} alt="" className='w-[300px] ' />
+                                                    <img src={preuveAddress} alt="" className='w-[300px] verification-img' />
                                                 </div>
                                             </div>
                                         </div>
@@ -837,7 +837,7 @@ export default function MiniNavBar() {
                                         <div className="flex items-center justify-center pb-10 w-full">
                                             <div className="detection-appareil relative flex items-center justify-center">
                                                 <div className="absolute flex items-center justify-center px-2 sm:px-0">
-                                                    <img src={detectionApp} alt="" className='h-full' />
+                                                    <img src={detectionApp} alt="" className='h-full verification-img' />
                                                 </div>
                                             </div>
                                         </div>
@@ -922,7 +922,7 @@ export default function MiniNavBar() {
                                             <div className="flex items-center justify-center w-full pb-10">
                                                 <div className="sactions relative flex justify-center items-center">
                                                     <div className=" absolute flex items-center justify-center">
-                                                        <img src={sanctions} alt="" className='w-[300px]' />
+                                                        <img src={sanctions} alt="" className='w-[300px] verification-img' />
                                                     </div>
                                                 </div>
                                             </div>
