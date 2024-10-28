@@ -56,7 +56,7 @@ export default function Accueil() {
                     } else if (entry.target === girlCniRef.current) {
                         girlCniRef.current.classList.add("active");
                         observer.unobserve(girlCniRef.current);
-                    }else if (entry.target === groupDatabaseRef.current) {
+                    } else if (entry.target === groupDatabaseRef.current) {
                         groupDatabaseRef.current.classList.add("active");
                         observer.unobserve(groupDatabaseRef.current);
                     } else if (entry.target === groupDatabaseWrapRef.current) {
@@ -176,15 +176,15 @@ export default function Accueil() {
                                     img={cardIcon}
                                     title={
                                         <span>
-                                            Rendez la vérification facile et <br />
+                                            Rendez la vérification facile et
                                             rapide pour vas utilisateurs
                                         </span>
                                     }
                                     content={
                                         <span>
-                                            Offrez à vos utilisateurs une expérience de <br />
-                                            vérification fluide et sans tracas. Grâce à notre <br />
-                                            technologie de pointe, la vérification d'identité <br />
+                                            Offrez à vos utilisateurs une expérience de
+                                            vérification fluide et sans tracas. Grâce à notre
+                                            technologie de pointe, la vérification d'identité
                                             devient un processus simple et rapide.
                                         </span>
                                     }
@@ -195,15 +195,15 @@ export default function Accueil() {
                                     img={cardArrow}
                                     title={
                                         <span>
-                                            Rendez la vérification facile et <br />
+                                            Rendez la vérification facile et
                                             rapide pour vas utilisateurs
                                         </span>
                                     }
                                     content={
                                         <span>
-                                            Offrez à vos utilisateurs une expérience de <br />
-                                            vérification fluide et sans tracas. Grâce à notre <br />
-                                            technologie de pointe, la vérification d'identité <br />
+                                            Offrez à vos utilisateurs une expérience de
+                                            vérification fluide et sans tracas. Grâce à notre
+                                            technologie de pointe, la vérification d'identité
                                             devient un processus simple et rapide.
                                         </span>
                                     }
@@ -214,15 +214,15 @@ export default function Accueil() {
                                     img={cardSmile}
                                     title={
                                         <span>
-                                            Rendez la vérification facile et <br />
+                                            Rendez la vérification facile et
                                             rapide pour vas utilisateurs
                                         </span>
                                     }
                                     content={
                                         <span>
-                                            Offrez à vos utilisateurs une expérience de <br />
-                                            vérification fluide et sans tracas. Grâce à notre <br />
-                                            technologie de pointe, la vérification d'identité <br />
+                                            Offrez à vos utilisateurs une expérience de
+                                            vérification fluide et sans tracas. Grâce à notre
+                                            technologie de pointe, la vérification d'identité
                                             devient un processus simple et rapide.
                                         </span>
                                     }
@@ -352,7 +352,7 @@ export default function Accueil() {
                                     <div className="flex gap-3">
                                         <SmallCheckCircle />
                                         <div className=' content-small-circle-check text-justify'>
-                                            Offrez à vos utilisateurs une expérience 
+                                            Offrez à vos utilisateurs une expérience
                                             intuitive et sans effort.
                                         </div>
 
@@ -365,7 +365,7 @@ export default function Accueil() {
                 {/* start section with big mother */}
 
                 {/* start section girl */}
-                <section className='md:px-10'>
+                <section className='md:px-15'>
                     <div className='group-card-vert grid grid-cols-1 items-center justify-center md:grid-cols-1 pt-10 lg:grid-cols-2 lg:py-20'>
                         <div className="flex flex-col items-center gap-y-5">
                             <div className="">
@@ -383,7 +383,7 @@ export default function Accueil() {
                                     <div className="flex gap-3">
                                         <SmallCheckCircle />
                                         <div className='content-small-circle-check text-justify'>
-                                            Consultez des bases de données intl pour 
+                                            Consultez des bases de données intl pour
                                             détecter les personnes à risque.
                                         </div>
 
@@ -429,7 +429,7 @@ export default function Accueil() {
                 {/* start section communication */}
                 <section className="group-card-vert bg-no-repeat bg-right md:px-20" style={{ backgroundImage: `url(${vectorDatabases})` }}>
                     <div className='grid grid-cols-1 items-center justify-center md:grid-cols-1 lg:grid-cols-2 py-10 gap-x-8 gap-y-10 lg:gap-y-20'>
-                        
+
                         <div className='order-img'>
                             <div className="hidden lg:block items-center justify-center">
                                 <div className='relative flex items-center justify-center gap-5'>
@@ -573,13 +573,18 @@ export default function Accueil() {
                             Des méthodes de vérification d’identité <br />
                             adaptées à l'Afrique et du  monde entier
                         </div>
-                        <div className='title-content-1 flex md:items-center md:justify-center lg:items-start lg:justify-start text-center'>
-                            Notre plateforme de vérification d'identité est conçue pour s'adapter aux spécificités de <br />
-                            chaque marché, tout en offrant une couverture mondiale inégalée. Que vous opériez en <br />
-                            Afrique, en Europe, en Asie ou en Amérique, nous vous proposons une solution flexible <br />
-                            et évolutive. Grâce à notre base de données constamment mise à jour et à notre <br />
-                            expertise locale, nous prenons en charge une multitude de documents d'identité et de <br />
-                            normes réglementaires.
+                        <div className="grid grid-cols-1 lg:grid-cols-2">
+                            <div className='title-content-1 flex md:items-center md:justify-center lg:items-start lg:justify-start text-justify sm:px-10 lg:px-0'>
+                                Notre plateforme de vérification d'identité est conçue pour s'adapter aux spécificités de
+                                chaque marché, tout en offrant une couverture mondiale inégalée. Que vous opériez en
+                                Afrique, en Europe, en Asie ou en Amérique, nous vous proposons une solution flexible
+                                et évolutive. Grâce à notre base de données constamment mise à jour et à notre
+                                expertise locale, nous prenons en charge une multitude de documents d'identité et de
+                                normes réglementaires.
+                            </div>
+                            <div className="">
+
+                            </div>
                         </div>
                         <div className='flex items-center justify-center md:items-center md:justify-center lg:items-start lg:justify-start gap-x-2 md:gap-[28px] pt-[28px] pb-16 w-full'>
                             <Link to="/" className='big-btn-about-us voir-tout-pays-phone-color flex items-center justify-between bg-green-color '>
@@ -781,8 +786,6 @@ export default function Accueil() {
                             </div>
                         </div>
                     </div>
-
-
                 </section>
                 {/* end experience utilisateur  */}
 

@@ -540,10 +540,12 @@ export default function MiniNavBar() {
                                             inexistants et des frais de
                                         </div>
 
-                                        <div className="hand-div2 py-10 flex items-center justify-center w-full">
-                                            <div className='verification-identiter flex items-center justify-center relative'>
-                                                <div className="absolute h-[431px]">
-                                                    <img src={verificatiIdentite} alt="" className='' />
+                                        <div className="flex items-center justify-center  w-full">
+                                            <div className="hand-div2 py-16 flex items-center justify-center w-full">
+                                                <div className='verification-identiter flex items-center justify-center relative'>
+                                                    <div className="absolute h-[450px] flex items-center justify-center py-5">
+                                                        <img src={verificatiIdentite} alt="" className='mt-12' />
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -708,7 +710,7 @@ export default function MiniNavBar() {
                                         <div className="flex items-center pb-10 justify-center  w-full">
                                             <div className="preuve-adresse relative flex items-center justify-center">
                                                 <div className="absolute flex items-center justify-center">
-                                                    <img src={preuveAddress} alt="" className='w-[350px] ' />
+                                                    <img src={preuveAddress} alt="" className='w-[300px] ' />
                                                 </div>
                                             </div>
                                         </div>
@@ -805,7 +807,7 @@ export default function MiniNavBar() {
                                         <div className="flex items-center justify-center pb-10 w-full">
                                             <div className="detection-appareil relative flex items-center justify-center">
                                                 <div className="absolute flex items-center justify-center">
-                                                    <img src={detectionApp} alt="" className='w-[360px]' />
+                                                    <img src={detectionApp} alt="" className='w-[300px]' />
                                                 </div>
                                             </div>
                                         </div>
@@ -890,7 +892,7 @@ export default function MiniNavBar() {
                                             <div className="flex items-center justify-center w-full pb-10">
                                                 <div className="sactions relative flex justify-center items-center">
                                                     <div className=" absolute flex items-center justify-center">
-                                                        <img src={sanctions} alt="" className='w-[350px]' />
+                                                        <img src={sanctions} alt="" className='w-[300px]' />
                                                     </div>
                                                 </div>
                                             </div>

@@ -964,9 +964,9 @@
   padding: 0 5rem;
 }
 
-.footer-section {
+/* .footer-section {
   padding: 0 5rem;
-}
+} */
 
 @media (max-width : 736px) {
   /* .accueil .women-selfie {
@@ -997,9 +997,7 @@
     padding: 0 0rem;
   }
 
-  .footer-section-text {
-    padding: 0 2rem;
-  }
+   
 
   .card-vert {
     width: 330px;
@@ -1807,6 +1805,12 @@ textarea {
   }
 }
 
+@media (max-width:1289px) {
+  .gratuitement{
+    display: none;
+  }
+}
+
 @media (max-width:1236px) {
   .sub-title-page-2 {
     padding-top: 20rem;
@@ -1912,11 +1916,9 @@ textarea {
 
   .footer-page-order {
     background-image: url('../src/images/footer/vector-white.png');
-    background-position: bottom center;
-    /* Ajustez la position selon vos besoins */
+    background-position: bottom left;
     background-repeat: no-repeat;
-    background-size: contain;
-    /* Évite la répétition des images */
+    background-size: 170% auto;
   }
 
   .title {
@@ -1959,7 +1961,7 @@ textarea {
 
   .verification-identiter {
     width: 380px;
-    height: 380px;
+    height: 320px;
     border-radius: 17px;
     background: #EEEEEE;
   }
@@ -2042,7 +2044,7 @@ textarea {
     font-weight: 700;
     line-height: 30px;
     letter-spacing: -1px;
-    text-align: center;
+    text-align: left;
 
   }
 
@@ -2246,6 +2248,9 @@ textarea {
     background-repeat: no-repeat;
     background-size: 412px 250px;
   }
+  .gratuitement{
+    display: none;
+  }
 }
 
 @media (max-width:400px) {
@@ -2284,10 +2289,6 @@ textarea {
 
   .footer-page {
     background-image: none;
-  }
-
-  .footer-title {
-    text-align: center;
   }
 
   .footer-content {
@@ -2471,6 +2472,7 @@ textarea {
     flex-direction: column;
     text-align: center;
   }
+
 
   /* .accueil-section1-btn {
     display: flex;
