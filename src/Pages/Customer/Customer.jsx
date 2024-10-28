@@ -86,77 +86,72 @@ export default function Customer() {
               <div className=' flex items-center justify-center'>
                 <div className='flex items-center justify-center py-10 rounded-[20px] bg-white w-full'>
                   <div className=' gap-10  px-10 grid  items-center justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 '>
-                    <div className='flex  gap-x-10'>
-                      <CardSmile logo={img1} />
-                      <div className="">
-                        <div className="screening-section1-card-title pb-2">
-                          Diligence raisonnable du client :
-                        </div>
-                        <div className="screening-section1-card-content">
-                          Mettez en place un processus KYC robuste<br />
-                          pour respecter les réglementations.
-                        </div>
-                      </div>
+                    
+                    <div>
+                      <CardSmile logo={img1}
+                        title={
+                          <span>Diligence raisonnable du client :</span>
+                        }
+                        content={
+                          <span>Mettez en place un processus KYC robuste
+                            pour respecter les réglementations.</span>
+                        }
+                      />
                     </div>
-                    <div className='flex  gap-x-10'>
-                      <CardSmile logo={img2} />
-                      <div className="">
-                        <div className="screening-section1-card-title pb-2">
-                          Contrôle des sanctions :
-                        </div>
-                        <div className="screening-section1-card-content">
-                          Vérifiez si vos clients figurent sur des listes <br />
-                          de sactions internationales.
-                        </div>
-                      </div>
+                    <div>
+                      <CardSmile logo={img2}
+                        title={
+                          <span>Contrôle des sanctions :</span>
+                        }
+                        content={
+                          <span>Vérifiez si vos clients figurent sur des listes
+                          de sactions internationales.</span>
+                        }
+                      />
                     </div>
-                    <div className='flex  gap-x-10'>
-                      <CardSmile logo={img3} />
-                      <div className="">
-                        <div className="screening-section1-card-title pb-2">
-                          Contrôle des médias négatifs :
-                        </div>
-                        <div className="screening-section1-card-content">
-                          Recherchez des informations négatives sur<br />
-                          vos clients dans les médias.
-                        </div>
-                      </div>
+                    <div>
+                      <CardSmile logo={img3}
+                        title={
+                          <span>Contrôle des médias négatifs :</span>
+                        }
+                        content={
+                          <span>Recherchez des informations négatives sur
+                          vos clients dans les médias.</span>
+                        }
+                      />
                     </div>
-                    <div className='flex  gap-x-10'>
-                      <CardSmile logo={img4} />
-                      <div className="">
-                        <div className="screening-section1-card-title pb-2">
-                          Diligences raisonnable renforcée :
-                        </div>
-                        <div className="screening-section1-card-content">
-                          Renforcez la vérification pour les clients à<br />
-                          risque élevé
-                        </div>
-                      </div>
+                    <div>
+                      <CardSmile logo={img4}
+                        title={
+                          <span  >Diligences raisonnable renforcée :</span>
+                        }
+                        content={
+                          <span>Renforcez la vérification pour les clients à
+                          risque élevé</span>
+                        }
+                      />
                     </div>
-                    <div className='flex  gap-x-10'>
-                      <CardSmile logo={img5} />
-                      <div className="">
-                        <div className="screening-section1-card-title pb-2">
-                          Contrôle des PEP :
-                        </div>
-                        <div className="screening-section1-card-content">
-                          Identifiez et gérez les risques liés aux<br />
-                          personnes politiquement exposées (PEP).
-                        </div>
-                      </div>
+                    <div>
+                      <CardSmile logo={img5}
+                        title={
+                          <span>Contrôle des PEP :</span>
+                        }
+                        content={
+                          <span>Identifiez et gérez les risques liés aux
+                          personnes politiquement exposées (PEP).</span>
+                        }
+                      />
                     </div>
-                    <div className='flex  gap-x-10'>
-                      <CardSmile logo={img1} />
-                      <div className="">
-                        <div className="screening-section1-card-title pb-2">
-                          Surveillance continue :
-                        </div>
-                        <div className="screening-section1-card-content">
-                          Surveillez en continu vos clients pour <br />
-                          détecter les changements de situation.
-                        </div>
-                      </div>
+                    <div>
+                      <CardSmile logo={img1}
+                        title={
+                          <span>Surveillance continue :</span>
+                        }
+                        content={
+                          <span>Surveillez en continu vos clients pour
+                          détecter les changements de situation.</span>
+                        }
+                      />
                     </div>
                   </div>
                 </div>
@@ -165,82 +160,76 @@ export default function Customer() {
           </div>
         </section>
 
-        <section>
+        <section className=''>
           <div className='block lg:hidden md:px-10 w-full'>
             <div className=' flex items-center justify-center'>
               <div className='flex items-center justify-center py-10 rounded-[20px] bg-white w-full'>
                 <div className=' gap-10  px-10 grid  items-center justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 '>
-                  <div className='flex  gap-x-10'>
-                    <CardSmile logo={img1} />
-                    <div className="">
-                      <div className="screening-section1-card-title pb-2">
-                        Diligence raisonnable du client :
-                      </div>
-                      <div className="screening-section1-card-content">
-                        Mettez en place un processus KYC robuste<br />
-                        pour respecter les réglementations.
-                      </div>
-                    </div>
+                  <div className='flex'>
+                    <CardSmile logo={img1}
+                      title={
+                        <span>Contrôle des PEP :</span>
+                      }
+                      content={
+                        <span>Identifiez et gérez les risques liés aux
+                          personnes politiquement exposées (PEP).</span>
+                      }
+                    />
                   </div>
-                  <div className='flex  gap-x-10'>
-                    <CardSmile logo={img2} />
-                    <div className="">
-                      <div className="screening-section1-card-title pb-2">
-                        Contrôle des sanctions :
-                      </div>
-                      <div className="screening-section1-card-content">
-                        Vérifiez si vos clients figurent sur des listes <br />
-                        de sactions internationales.
-                      </div>
-                    </div>
+                  <div className='flex'>
+                    <CardSmile logo={img2}
+                      title={
+                        <span>Contrôle des PEP :</span>
+                      }
+                      content={
+                        <span>Identifiez et gérez les risques liés aux
+                          personnes politiquement exposées (PEP).</span>
+                      }
+                    />
                   </div>
-                  <div className='flex  gap-x-10'>
-                    <CardSmile logo={img3} />
-                    <div className="">
-                      <div className="screening-section1-card-title pb-2">
-                        Contrôle des médias négatifs :
-                      </div>
-                      <div className="screening-section1-card-content">
-                        Recherchez des informations négatives sur<br />
-                        vos clients dans les médias.
-                      </div>
-                    </div>
+                  <div className='flex'>
+                    <CardSmile logo={img3}
+                      title={
+                        <span>Contrôle des PEP :</span>
+                      }
+                      content={
+                        <span>Identifiez et gérez les risques liés aux
+                          personnes politiquement exposées (PEP).</span>
+                      }
+                    />
                   </div>
-                  <div className='flex  gap-x-10'>
-                    <CardSmile logo={img4} />
-                    <div className="">
-                      <div className="screening-section1-card-title pb-2">
-                        Diligences raisonnable renforcée :
-                      </div>
-                      <div className="screening-section1-card-content">
-                        Renforcez la vérification pour les clients à<br />
-                        risque élevé
-                      </div>
-                    </div>
+                  <div className='flex'>
+                    <CardSmile logo={img4}
+                      title={
+                        <span>Contrôle des PEP :</span>
+                      }
+                      content={
+                        <span>Identifiez et gérez les risques liés aux
+                          personnes politiquement exposées (PEP).</span>
+                      }
+                    />
                   </div>
-                  <div className='flex  gap-x-10'>
-                    <CardSmile logo={img5} />
-                    <div className="">
-                      <div className="screening-section1-card-title pb-2">
-                        Contrôle des PEP :
-                      </div>
-                      <div className="screening-section1-card-content">
-                        Identifiez et gérez les risques liés aux<br />
-                        personnes politiquement exposées (PEP).
-                      </div>
-                    </div>
+                  <div className='flex'>
+                    <CardSmile logo={img5}
+                      title={
+                        <span>Contrôle des PEP :</span>
+                      }
+                      content={
+                        <span>Identifiez et gérez les risques liés aux
+                          personnes politiquement exposées (PEP).</span>
+                      }
+                    />
                   </div>
-                  <div className='flex  gap-x-10'>
-                    <CardSmile logo={img1} />
-                    <div className="">
-                      <div className="screening-section1-card-title pb-2">
-                        Surveillance continue :
-                      </div>
-                      <div className="screening-section1-card-content">
-                        Surveillez en continu vos clients pour <br />
-                        détecter les changements de situation.
-                      </div>
-                    </div>
+                  <div className='flex'>
+                    <CardSmile logo={img1}
+                      title={
+                        <span>Contrôle des PEP :</span>
+                      }
+                      content={
+                        <span>Identifiez et gérez les risques liés aux
+                          personnes politiquement exposées (PEP).</span>
+                      }
+                    />
                   </div>
                 </div>
               </div>
@@ -248,19 +237,18 @@ export default function Customer() {
           </div>
         </section>
 
-        <section>
-          <div>
-            <div className='screening-section2-title'>
-              Au-delà de la conformité, une protection <br />
-              proactive : nous anticipons et neutralisons <br />
-              les risques AML
+        <section className=''>
+          <div className='grid grid-cols-1 lg:grid-cols-3'>
+            <div className='screening-section2-title px-10 sm:pl-20 md:col-span-2'>
+              Couvrez facilement l’afrique et les autres pays avec la verification de documents
             </div>
+            <div></div>
           </div>
         </section>
 
         {/* start section with big mother */}
         <section>
-          <div className='group-card-horiz grid grid-cols-1 items-center justify-center bg-no-repeat  md:grid-cols-1 lg:grid-cols-2 lg:pt-32 gap-x-8 gap-y-12 lg:gap-y-32' style={{ backgroundImage: `url(${vectorBigMother})` }}>
+          <div className='group-card-horiz grid grid-cols-1 items-center justify-center bg-no-repeat  md:grid-cols-1 lg:grid-cols-2 lg:pt-32 gap-x-8 gap-y-12 lg:gap-y-32 px-10 sm:px-20' style={{ backgroundImage: `url(${vectorBigMother})` }}>
             <div className="order-2 lg:order-1 flex items-center justify-center">
               <div className=''>
                 <div className="hidden lg:block items-center justify-center">
@@ -283,16 +271,16 @@ export default function Customer() {
                 </div>
               </div>
             </div>
-            <div className="order-1 lg:order-2 flex flex-col items-center gap-y-5">
+            <div className="order-1 lg:order-2 flex flex-col items-center gap-y-5 w-full">
               <div className="">
                 <div className="screening-horiz-vert-title">
-                  Protégez votre entreprise contre les <br />
+                  Protégez votre entreprise contre les
                   risques liés aux PEP et aux sanctions
                 </div>
                 <div className="screening-horiz-vert-content py-5">
-                  Notre solution de screening des PEP et des sanction vour permet de vérifier si <br />
-                  vos clients figure sur la liste de personnes politiquement exposées ou sous <br />
-                  sanction. En identifiant rapidement les risques liés à ces individus, vous vous <br />
+                  Notre solution de screening des PEP et des sanction vour permet de vérifier si
+                  vos clients figure sur la liste de personnes politiquement exposées ou sous
+                  sanction. En identifiant rapidement les risques liés à ces individus, vous vous
                   protégez contre les amendes et les dommages réputationnels.
                 </div>
                 <div className='w-full'>
@@ -302,8 +290,8 @@ export default function Customer() {
                       <div className='flex flex-col'>
                         <p className='screening-grid-title pb-2'>Bases de données complètes:</p>
                         <p className='screening-grid-content'>
-                          Accèdez à des bases de données mises à<br />
-                          jour en continu pour une couverture <br />
+                          Accèdez à des bases de données mises à
+                          jour en continu pour une couverture
                           mondiale.
                         </p>
                       </div>
@@ -313,7 +301,7 @@ export default function Customer() {
                       <div className='flex flex-col'>
                         <p className='screening-grid-title pb-2'>Personnalisation des règles:</p>
                         <p className='screening-grid-content'>
-                          Adaptez les critère de recherche à vos<br />
+                          Adaptez les critère de recherche à vos
                           besoins spécifiques.
                         </p>
                       </div>
@@ -323,7 +311,7 @@ export default function Customer() {
                       <div className='flex flex-col'>
                         <p className='screening-grid-title pb-2'>Vérifications en temps réel:</p>
                         <p className='screening-grid-content'>
-                          Optenez des résultats instantanés pour une <br />
+                          Optenez des résultats instantanés pour une
                           prise de décision rapide.
                         </p>
                       </div>
@@ -333,7 +321,7 @@ export default function Customer() {
                       <div className='flex flex-col'>
                         <p className='screening-grid-title pb-2'>Intégration facile:</p>
                         <p className='screening-grid-content'>
-                          Intégrez notre solution à votre flux de travail<br />
+                          Intégrez notre solution à votre flux de travail
                           existant.
                         </p>
                       </div>
@@ -348,17 +336,17 @@ export default function Customer() {
 
         {/* start section girl */}
         <section>
-          <div className='group-card-vert grid grid-cols-1 items-center justify-center md:grid-cols-1 lg:grid-cols-2 gap-y-10 py-20'>
+          <div className='group-card-vert grid grid-cols-1 items-center justify-center md:grid-cols-1 lg:grid-cols-2 gap-y-10 p-20'>
             <div className="flex flex-col items-center gap-y-5">
               <div className="">
                 <div className="screening-horiz-vert-title">
-                  Accédez à une information exhaustive <br />
+                  Accédez à une information exhaustive
                   sur vos clients
                 </div>
                 <div className="screening-horiz-vert-content py-5">
-                  Notre solution vous permet d'accéder à une multitude de sources d'information<br />
-                  Pour mieux connaitre vos clients. En analysant les médias, les registres publics et<br />
-                  d'autre sources pertinentes, nous vous aidons à prendre des décisions éclairées<br />
+                  Notre solution vous permet d'accéder à une multitude de sources d'information
+                  Pour mieux connaitre vos clients. En analysant les médias, les registres publics et
+                  d'autre sources pertinentes, nous vous aidons à prendre des décisions éclairées
                   et à réduire les risques.
                 </div>
                 <div className='w-full'>
@@ -368,7 +356,7 @@ export default function Customer() {
                       <div className='flex flex-col'>
                         <p className='screening-grid-title pb-2'>Analyse des médias sociaux:</p>
                         <p className='screening-grid-content'>
-                          Identifiez les signaux faibles qui<br />
+                          Identifiez les signaux faibles qui
                           pourraient indiquer un risque.
                         </p>
                       </div>
@@ -378,7 +366,7 @@ export default function Customer() {
                       <div className='flex flex-col'>
                         <p className='screening-grid-title pb-2'>Recherche dans les registres public:</p>
                         <p className='screening-grid-content'>
-                          Vérifiez les antécédents judiciaire et les<br />
+                          Vérifiez les antécédents judiciaire et les
                           affiliations politiques.
                         </p>
                       </div>
@@ -388,7 +376,7 @@ export default function Customer() {
                       <div className='flex flex-col'>
                         <p className='screening-grid-title pb-2'>Surveillance continue:</p>
                         <p className='screening-grid-content'>
-                          Soyez alerté en cas de nouveaux évènements<br />
+                          Soyez alerté en cas de nouveaux évènements
                           susceptibles d'affecter votre risque.
                         </p>
                       </div>
@@ -398,7 +386,7 @@ export default function Customer() {
                       <div className='flex flex-col'>
                         <p className='screening-grid-title pb-2'>Rapports personnalisés:</p>
                         <p className='screening-grid-content'>
-                          Obtenez des Rapports détaillés pour une<br />
+                          Obtenez des Rapports détaillés pour une
                           meilleure compréhension de vos clients.
                         </p>
                       </div>
@@ -448,12 +436,12 @@ export default function Customer() {
             <div className="order-1 lg:order-2 group-card-horiz-content flex flex-col items-center gap-y-5">
               <div className="">
                 <div className="screening-horiz-vert-title">
-                  Surveillez en continu vos clients<br />
+                  Surveillez en continu vos clients
                   pour une protection optimale
                 </div>
                 <div className="screening-horiz-vert-content py-5">
-                  Notre solution de Surveillance contine Analyse les transaction, les<br />
-                  comportement et les informations publiques de vos clients en temps réel, pour<br />
+                  Notre solution de Surveillance contine Analyse les transaction, les
+                  comportement et les informations publiques de vos clients en temps réel, pour
                   vous aider à identifier les activités suspectes et à prendre des mesures correctives
                 </div>
                 <div className='w-full'>
@@ -463,7 +451,7 @@ export default function Customer() {
                       <div className='flex flex-col'>
                         <p className='screening-grid-title pb-2'>Alertes en temps réel:</p>
                         <p className='screening-grid-content'>
-                          Soyez informé immédiatement des évènements<br />
+                          Soyez informé immédiatement des évènements
                           importants.
                         </p>
                       </div>
@@ -473,7 +461,7 @@ export default function Customer() {
                       <div className='flex flex-col'>
                         <p className='screening-grid-title pb-2'>Adaptation aux changements réglémentaires:</p>
                         <p className='screening-grid-content'>
-                          Restez conforme aux dernières exigences en<br />
+                          Restez conforme aux dernières exigences en
                           matière de Surveillance continue.
                         </p>
                       </div>
@@ -483,7 +471,7 @@ export default function Customer() {
                       <div className='flex flex-col'>
                         <p className='screening-grid-title pb-2'>Analyse comportementale:</p>
                         <p className='screening-grid-content'>
-                          Identifiez les anomalies dans les habitudes <br />
+                          Identifiez les anomalies dans les habitudes
                           des transactions.
                         </p>
                       </div>
@@ -493,7 +481,7 @@ export default function Customer() {
                       <div className='flex flex-col'>
                         <p className='screening-grid-title pb-2'>Intégration avec d'autres systèmes:</p>
                         <p className='screening-grid-content'>
-                          Combinez notre solution avec vos outils<br />
+                          Combinez notre solution avec vos outils
                           existants pour une vision globale.
                         </p>
                       </div>

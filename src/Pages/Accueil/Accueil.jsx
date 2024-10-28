@@ -586,14 +586,6 @@ export default function Accueil() {
 
                             </div>
                         </div>
-                        {/* <div className='title-content-1 text-justify flex md:items-center md:justify-center lg:items-start lg:justify-start px-10'>
-                            Notre plateforme de vérification d'identité est conçue pour s'adapter aux spécificités de
-                            chaque marché, tout en offrant une couverture mondiale inégalée. Que vous opériez en
-                            Afrique, en Europe, en Asie ou en Amérique, nous vous proposons une solution flexible
-                            et évolutive. Grâce à notre base de données constamment mise à jour et à notre
-                            expertise locale, nous prenons en charge une multitude de documents d'identité et de
-                            normes réglementaires.
-                        </div> */}
                         <div className='flex items-center justify-center md:items-center md:justify-center lg:items-start lg:justify-start gap-x-2 md:gap-[28px] pt-[28px] pb-16 w-full'>
                             <Link to="/" className='big-btn-about-us voir-tout-pays-phone-color flex items-center justify-between bg-green-color '>
                                 <span className=' flex items-center text-nowrap text-white'>

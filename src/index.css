@@ -941,7 +941,7 @@
 }
 
 .screening-section2-title {
-  padding: 15rem 8.5rem 0 8.5rem;
+  padding: 15rem 8.5rem 0 0;
 }
 
 @media (max-width:1432px) {
@@ -1765,11 +1765,7 @@ textarea {
 
 @media (min-width:1400) {
   .screening-section2-title {
-    padding-top: 15rem;
-  }
-
-  .screening-section2-title {
-    padding: 15rem 8.5rem 0 8.5rem;
+    padding: 15rem 8.5rem 0 0;
   }
 }
 
@@ -1788,7 +1784,7 @@ textarea {
   }
 
   .screening-section2-title {
-    padding: 17rem 8.5rem 0 8.5rem;
+    padding: 15rem 8.5rem 0 0;
   }
 }
 
@@ -1798,7 +1794,7 @@ textarea {
   }
 
   .screening-section2-title {
-    padding: 21rem 8.5rem 0 8.5rem;
+    padding: 14rem 8.5rem 0 0;
   }
 }
 
@@ -1825,7 +1821,7 @@ textarea {
   }
 
   .screening-section2-title {
-    padding: 22rem 8.5rem 0 8.5rem;
+    padding: 14rem 8.5rem 0 0;
   }
 }
 
@@ -2310,7 +2306,7 @@ textarea {
   }
 
   .screening-section2-title {
-    padding: 2rem 2rem;
+    padding: 2rem 0;
   }
 
   .customer-page-vector {
