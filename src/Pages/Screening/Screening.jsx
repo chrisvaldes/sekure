@@ -439,44 +439,44 @@ export default function Screening() {
                 <div className='w-full'>
                   <div class="w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-start justify-start gap-5">
                     <div className="flex gap-3">
-                      <SmallCheckCircle />
-                      <div className='flex flex-col'>
-                        <p className='screening-grid-title pb-2'>Alertes en temps réel:</p>
-                        <p className='screening-grid-content'>
-                          Soyez informé immédiatement des évènements<br />
-                          importants.
-                        </p>
-                      </div>
+                      <SmallCheckCircle
+                        title={
+                          <div>
+                            <span className='text-bold'>Alertes en temps réel : </span>
+                            <span className='screening-grid-content'>Soyez informé immédiatement des événements importants.</span>
+                          </div>
+                        }
+                      />
                     </div>
                     <div className="flex gap-3">
-                      <SmallCheckCircle />
-                      <div className='flex flex-col'>
-                        <p className='screening-grid-title pb-2'>Adaptation aux changements réglémentaires:</p>
-                        <p className='screening-grid-content'>
-                          Restez conforme aux dernières exigences en<br />
-                          matière de Surveillance continue.
-                        </p>
-                      </div>
+                      <SmallCheckCircle
+                        title={
+                          <div>
+                            <span className='text-bold'>Analyse comportementale : </span>
+                            <span className='screening-grid-content'>Identifiez les anomalies dans les habitudes de transaction.</span>
+                          </div>
+                        }
+                      />
                     </div>
-                    <div className="flex gap-3 ">
-                      <SmallCheckCircle />
-                      <div className='flex flex-col'>
-                        <p className='screening-grid-title pb-2'>Analyse comportementale:</p>
-                        <p className='screening-grid-content'>
-                          Identifiez les anomalies dans les habitudes <br />
-                          des transactions.
-                        </p>
-                      </div>
+                    <div className="flex gap-3">
+                      <SmallCheckCircle
+                        title={
+                          <div>
+                            <span className='text-bold'>Adaptation aux changements réglementaires : </span>
+                            <span className='screening-grid-content'>Restez conforme aux dernières exigences en matière de surveillance continue.</span>
+                          </div>
+                        }
+                      />
                     </div>
-                    <div className="flex gap-3 ">
-                      <SmallCheckCircle />
-                      <div className='flex flex-col'>
-                        <p className='screening-grid-title pb-2'>Intégration avec d'autres systèmes:</p>
-                        <p className='screening-grid-content'>
-                          Combinez notre solution avec vos outils<br />
-                          existants pour une vision globale.
-                        </p>
-                      </div>
+                    <div className="flex gap-3">
+                      <SmallCheckCircle
+                        title={
+                          <div>
+                            <span className='text-bold'>Intégration avec d'autres systèmes : </span>
+                            <span className='screening-grid-content'>Combinez notre solution avec vos outils existants pour une vision globale.</span>
+                          </div>
+                        }
+                      />
                     </div>
                   </div>
                 </div>
@@ -504,14 +504,44 @@ export default function Screening() {
                 <div className='w-full'>
                   <div class="w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-start justify-start gap-5">
                     <div className="flex gap-3">
-                      <SmallCheckCircle />
-                      <div className='flex flex-col'>
-                        <p className='screening-grid-title pb-2'>Couverture mondiale:</p>
-                        <p className='screening-grid-content'>
-                          Prenez en charge une multitude de <br />
-                          réglémentations internationales.
-                        </p>
-                      </div>
+                      <SmallCheckCircle
+                        title={
+                          <div>
+                            <span className='text-bold'>Couverture mondiale : </span>
+                            <span className='screening-grid-content'>Prenez en charge une multitude de réglementations internationales.</span>
+                          </div>
+                        }
+                      />
+                    </div>
+                    <div className="flex gap-3">
+                      <SmallCheckCircle
+                        title={
+                          <div>
+                            <span className='text-bold'>Mises à jour régulières : </span>
+                            <span className='screening-grid-content'>Soyez toujours à jour des dernières évolutions législatives.</span>
+                          </div>
+                        }
+                      />
+                    </div>
+                    <div className="flex gap-3">
+                      <SmallCheckCircle
+                        title={
+                          <div>
+                            <span className='text-bold'>Expertise juridique : </span>
+                            <span className='screening-grid-content'>Bénéficiez de l'expertise de nos juristes spécialisés en AML.</span>
+                          </div>
+                        }
+                      />
+                    </div>
+                    <div className="flex gap-3">
+                      <SmallCheckCircle
+                        title={
+                          <div>
+                            <span className='text-bold'>Flexibilité : </span>
+                            <span className='screening-grid-content'>Adaptez notre solution à vos besoins spécifiques.</span>
+                          </div>
+                        }
+                      />
                     </div>
                     <div className="flex gap-3">
                       <SmallCheckCircle />
