@@ -1423,8 +1423,10 @@ textarea {
 .women-vector{
   background-image: url("../src/images/about/Vector.png");
   background-repeat: no-repeat;
-  background-position: -1% 60%; 
-  background-size: -90% -90%;
+  background-position: bottom left; 
+  background-size: -20% -90%;
+  height: 500px;
+  width: 100%;
 }
 
 .about-womenselfie-title {

@@ -561,24 +561,28 @@ export default function About() {
                 <img src={womenSelfie} alt="" className='absolute womenSelfie' />
               </div>
             </div>
-            <div className="flex flex-col items-center justify-center px-10 lg:px-20">
-              <div className='about-womenselfie-title w-full'>
-                Ce qui nous distingue ? Notre engagement à <br />
-                vous offrir des solutions innovantes, fiables et <br />
-                adaptées à vos enjeux. Nous croyons en une <br />
-                relation de partenariat basée sur la confiance <br />
-                et la transparence.
+            <div className="flex flex-col items-center justify-center">
+              <div className=" px-10 lg:px-20">
+                <div className='about-womenselfie-title w-full'>
+                  Ce qui nous distingue ? Notre engagement à <br />
+                  vous offrir des solutions innovantes, fiables et <br />
+                  adaptées à vos enjeux. Nous croyons en une <br />
+                  relation de partenariat basée sur la confiance <br />
+                  et la transparence.
+                </div>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-y-7 pt-5 w-full'>
+                  <WomenCard />
+                  <WomenCard />
+                  <WomenCard />
+                  <WomenCard />
+                  <WomenCard />
+                  <WomenCard />
+                </div>
               </div>
-              <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-y-7 pt-5 w-full'>
-                <WomenCard />
-                <WomenCard />
-                <WomenCard />
-                <WomenCard />
-                <WomenCard />
-                <WomenCard />
-              </div>
-              <div className="block lg:hidden pt-10 women-vector">
-                <img src={womenSelfie} alt="" className='' />
+              <div className="relative block lg:hidden pt-10 women-vector">
+                <div className="absolute bottom-0">
+                  <img src={womenSelfie} alt="" className='' />
+                </div>
               </div>
             </div>
 
