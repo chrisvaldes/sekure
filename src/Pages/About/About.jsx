@@ -579,7 +579,7 @@ export default function About() {
                   <WomenCard />
                 </div>
               </div>
-              <div className="relative block lg:hidden pt-10 women-vector">
+              <div className="relative block lg:hidden pt-10 women-vector flex items-center justify-center">
                 <div className="absolute bottom-0">
                   <img src={womenSelfie} alt="" className='' />
                 </div>
@@ -594,7 +594,7 @@ export default function About() {
             <div className='flex flex-col items-center justify-center'>
               <Link to="/" className='about-btn-title flex items-center justify-center'>à propos de nous</Link>
               <div className='about-process-title py-5'>
-                Tout ce que vous avez toujours voulu savoir sur Aibiomerics (et <br />
+                Tout ce que vous avez toujours voulu savoir sur Aibiomerics <br /> (et 
                 ce que vous n'osiez pas demander).
               </div>
             </div>

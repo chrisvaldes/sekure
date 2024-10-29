@@ -1420,15 +1420,6 @@ textarea {
   left: 4%;
 }
 
-.women-vector{
-  background-image: url("../src/images/about/Vector.png");
-  background-repeat: no-repeat;
-  background-position: bottom left; 
-  background-size: -20% -90%;
-  height: 500px;
-  width: 100%;
-}
-
 .about-womenselfie-title {
   font-family: "Satoshi";
   font-size: 25px;
@@ -1974,11 +1965,6 @@ textarea {
     background: #B9FFC4;
   }
 
-  /* .img-detection-appareil{
-    width: 440px;
-    height: 190px;
-  } */
-
   .sactions {
     width: 380px;
     height: 380px;
@@ -2236,6 +2222,15 @@ textarea {
   .gratuitement{
     display: none;
   }
+
+  .women-vector{
+    background-image: url("../src/images/about/Vector.png");
+    background-repeat: no-repeat;
+    background-position: bottom left; 
+    background-size: -20% -90%;
+    height: 500px;
+    width: 100%;
+  }
 }
 
 @media (max-width:1282px) and (min-width:1023.20px) {
@@ -2378,6 +2373,15 @@ textarea {
 
   .vector-pricing{
     background-image:none;
+  }
+
+  .women-vector{
+    background-image: url("../src/images/about/Vector.png");
+    background-repeat: no-repeat;
+    background-position: bottom left; 
+    background-size: -20% -90%;
+    height: 600px;
+    width: 100%;
   }
 }
 
