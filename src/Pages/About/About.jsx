@@ -51,15 +51,30 @@ export default function About() {
                 </div>
               </div>
             </div>
-            <h2 className='about-title py-5'>
-              Nous vous aidons à batir des solutions aussi <br />
-              <span class="text-green-color"> fiables</span> que <span class="text-green-color">faciles à utiliser</span>
-            </h2>
-            <p className='about-content pb-10'>
-              Nos solutions, conçues pour s'adapter à vos besoins spécifiques, vous offrent une expérience utilisateur intuitive. Grâce à une interface claire et des processus <br />
-              automatisés, vous gagnerez en efficacité et réduirez les risques d'erreur. Nous mettons à votre disposition les outils nécessaires pour bâtir un système de <br />
-              vérification fiable et efficace.
-            </p>
+            <div className="px-5">
+              <div className="hidden lg:block">
+                <h2 className='about-title py-5'>
+                  Nous vous aidons à batir des solutions aussi <br />
+                  <span class="text-green-color"> fiables</span> que <span class="text-green-color">faciles à utiliser</span>
+                </h2>
+                <p className='about-content pb-10'>
+                  Nos solutions, conçues pour s'adapter à vos besoins spécifiques, vous offrent une expérience utilisateur intuitive. Grâce à une interface claire et des processus <br />
+                  automatisés, vous gagnerez en efficacité et réduirez les risques d'erreur. Nous mettons à votre disposition les outils nécessaires pour bâtir un système de <br />
+                  vérification fiable et efficace.
+                </p>
+              </div>
+              <div className="block lg:hidden">
+                <h2 className='about-title py-5 text-left'>
+                  Nous vous aidons à batir des solutions aussi
+                  <span class="text-green-color"> fiables</span> que <span class="text-green-color">faciles à utiliser</span>
+                </h2>
+                <p className='about-content pb-10 text-justify'>
+                  Nos solutions, conçues pour s'adapter à vos besoins spécifiques, vous offrent une expérience utilisateur intuitive. Grâce à une interface claire et des processus
+                  automatisés, vous gagnerez en efficacité et réduirez les risques d'erreur. Nous mettons à votre disposition les outils nécessaires pour bâtir un système de
+                  vérification fiable et efficace.
+                </p>
+              </div>
+            </div>
             {/* <div className='flex items-center justify-center gap-x-5 pt-5'>
               <Link to="/" className='screening-big-btn flex items-center justify-around bg-green-color'>
                 <span>Nous contacter</span>
@@ -75,7 +90,7 @@ export default function About() {
                 </span>
               </Link>
             </div> */}
-            <div className='flex w-full items-center justify-center gap-x-2 '>
+            <div className='flex w-full  items-center justify-center gap-x-2 '>
               <Link to="/" className='screening-big-btn flex items-center justify-around bg-green-color'>
                 <span>Nous contacter</span>
                 <Arrow background="#FFFF" textcolor="#2CE5B1" />
@@ -90,10 +105,16 @@ export default function About() {
                 </span>
               </Link>
             </div>
-            <div className='about-subtitle py-10 about-cote'>
+            <div className='about-subtitle py-10 about-cote hidden lg:block'>
               Nous réinventons la vérification d'identité en alliant la puissance de <br />
               l'intelligence artificielle à une approche centrée sur l'utilisateur. Nous voulons <br />
               vous offrir une solution simple, sécurisée et fiable pour protéger vos données <br />
+              sensibles et renforcer la confiance dans les interactions numériques.
+            </div>
+            <div className='about-subtitle py-10 about-cote block lg:hidden px-5 text-justify'>
+              Nous réinventons la vérification d'identité en alliant la puissance de
+              l'intelligence artificielle à une approche centrée sur l'utilisateur. Nous voulons
+              vous offrir une solution simple, sécurisée et fiable pour protéger vos données
               sensibles et renforcer la confiance dans les interactions numériques.
             </div>
           </div>
@@ -102,8 +123,8 @@ export default function About() {
         <section className='bg-Box-world'>
           <div className=''>
             <div>
-              <div className=" px-4 py-8 sm:px-6 lg:px-8 lg:py-16 w-full">
-                <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center  gap-x-8">
+              <div className="py-8 px-10 lg:px-20  lg:py-16 w-full">
+                <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center gap-x-8">
 
                   <div className="order-2 lg:order-1 flex items-center justify-center">
                     <div className="flex items-center justify-center">
@@ -121,10 +142,10 @@ export default function About() {
 
                   <div class="order-1 lg:order-2 flex flex-col items-center justify-center w-full">
                     <h2 class="about-cart-title mb-5 w-full">
-                      Vous aider à connaître vos utilisateurs <br />
+                      Vous aider à connaître vos utilisateurs
                       et lutter contre la fraude
                     </h2>
-                    <p class="about-cart-content lg:text-left mb-10 w-full">
+                    <p class="about-cart-content text-justify lg:text-left mb-10 w-full">
                       La connaissance client est essentielle pour prévenir la fraude et le blanchiment
                       d'argent. Nos solutions vous permettent de créer des profils clients détaillés et de
                       détecter les anomalies comportementales. Grâce à notre expertise en matière
@@ -135,15 +156,15 @@ export default function About() {
                 </div>
               </div>
 
-              <div className=" px-4 py-8 sm:px-6 lg:px-8 lg:py-16">
+              <div className="py-8 sm:px-6 lg:py-16 px-10 lg:px-20">
                 <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center  gap-y-8">
 
-                  <div class="flex flex-col items-center justify-end px-5 lg:mx-10 ">
+                  <div class="flex flex-col items-center justify-end lg:mx-10 ">
                     <h2 class="about-cart-title text-left mb-5 w-full">
                       Vous aider à connaître vos utilisateurs
                       et lutter contre la fraude
                     </h2>
-                    <p class="about-cart-content mb-10 w-full">
+                    <p class="about-cart-content mb-10 w-full text-justify">
                       La connaissance client est essentielle pour prévenir la fraude et le blanchiment
                       d'argent. Nos solutions vous permettent de créer des profils clients détaillés et de
                       détecter les anomalies comportementales. Grâce à notre expertise en matière
@@ -165,15 +186,16 @@ export default function About() {
                   </div>
                 </div>
               </div>
-              <div className="lg:px-8 lg:py-10">
+
+              <div className="px-10 lg:px-20 lg:py-10">
                 <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center justify-center  gap-y-8">
 
-                  <div class="flex flex-col items-center justify-end mx-10 mt-5 ">
+                  <div class="flex flex-col items-center justify-end  mt-5 ">
                     <h2 class="about-cart-title mb-5 w-full">
                       Vous aider à connaître vos utilisateurs
                       et lutter contre la fraude
                     </h2>
-                    <p class="about-cart-content mb-10 w-full">
+                    <p class="about-cart-content mb-10 w-full text-justify">
                       La connaissance client est essentielle pour prévenir la fraude et le blanchiment
                       d'argent. Nos solutions vous permettent de créer des profils clients détaillés et de
                       détecter les anomalies comportementales. Grâce à notre expertise en matière
@@ -199,12 +221,12 @@ export default function About() {
 
             <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
               <div className=""></div>
-              <div className="py-20 box-vector px-5 lg:px-0">
+              <div className="py-20 box-vector px-10 lg:px-20">
                 <div className='about-cart-title pb-5'>
                   Nous supportons votre croissance et
                   votre deployement dans les autres pays
                 </div>
-                <div className='about-cart-content'>
+                <div className='about-cart-content text-justify'>
                   Notre ambition est de vous accompagner dans votre développement à
                   l'international. Grâce à notre présence mondiale et à notre expertise des
                   réglementations AML spécifiques à chaque pays, nous vous aidons à étendre
@@ -222,31 +244,31 @@ export default function About() {
                 <MiniCard title="6 s"
                   content={
                     <>
-                      Temps de traitement <br /> moyen
+                      Temps de traitement moyen
                     </>
                   } />
                 <MiniCard title="95%"
                   content={
                     <>
-                      Taux de verification <br /> à la premiere tentation
+                      Taux de verification à la premiere tentation
                     </>
                   } />
                 <MiniCard title="2000+"
                   content={
                     <>
-                      Types de documents<br /> acceptés
+                      Types de documents acceptés
                     </>
                   } />
                 <MiniCard title="180 +"
                   content={
                     <>
-                      Pays couverts dans <br /> le monde
+                      Pays couverts dans le monde
                     </>
                   } />
                 <MiniCard title="+95%"
                   content={
                     <>
-                      Taux de détection des <br /> fraudes
+                      Taux de détection des fraudes
                     </>
                   } />
               </div>
@@ -258,7 +280,7 @@ export default function About() {
 
         <section className='bg-[#285246] lg:pl-5 sm:pr-5 pb-20' style={{ backgroundImage: `url(${bgDotted})`, backgroundPosition: "bottom center", backgroundRepeat: "no-repeat" }}>
           <div className='w-full'>
-            <div className='text-left grid items-center justify-around sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-10 w-full'>
+            <div className='text-left grid items-center justify-around sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-10 md:px-5 pt-10 w-full'>
               <div className='h-full pt-20 px-5 w-full col-span-2 lg:col-span-1 flex flex-col items-center justify-center lg:items-start lg:justify-start'>
                 <Link to="/" className='about-btn-title flex items-center justify-center'>à propos de nous</Link>
                 <div className='about-dotted-title pt-4 pb-8 w-full flex items-center justify-center text-center lg:text-left'>
@@ -266,7 +288,7 @@ export default function About() {
                   s’adapte selon votre
                   secteur d’activité ...
                 </div>
-                <div className='about-dotted-content pb-4w-full flex items-center justify-center text-center lg:text-left'>
+                <div className='about-dotted-content pb-4w-full flex items-center justify-center text-justify lg:text-left'>
                   Chaque secteur d'activité a ses spécificités. C'est pourquoi
                   nous proposons des solutions flexibles et personnalisables. Nous
                   travaillons en étroite collaboration avec vous pour comprendre
@@ -508,15 +530,15 @@ export default function About() {
           </div>
         </section>
 
-        <section className=' pt-20 px-5 bg-[#EFFFF3]'>
+        <section className=' pt-20 px-10 lg:px-20 bg-[#EFFFF3]'>
           <div className='process-vector'>
             <div className='flex flex-col items-center justify-center'>
               <Link to="/" className='about-btn-title flex items-center justify-center'>à propos de nous</Link>
-              <span className='about-process-title py-5'>
+              <span className='about-process-title text-left lg:text-center py-5'>
                 Un parcours utilisateur fluide et intuitif qui ne laisse pas <br />
                 vos utilisateurs perdre du temps
               </span>
-              <div className='about-process-content pb-5'>
+              <div className='about-process-content text-justify pb-5'>
                 Offrez à vos utilisateurs une expérience fluide et personnalisée. Notre parcours utilisateur intuitif est conçu pour les satisfaire dès le premier clic.
               </div>
             </div>
@@ -539,7 +561,7 @@ export default function About() {
                 <img src={womenSelfie} alt="" className='absolute womenSelfie' />
               </div>
             </div>
-            <div className="flex flex-col items-center justify-center px-5">
+            <div className="flex flex-col items-center justify-center px-10 lg:px-20">
               <div className='about-womenselfie-title w-full'>
                 Ce qui nous distingue ? Notre engagement à <br />
                 vous offrir des solutions innovantes, fiables et <br />
@@ -547,7 +569,7 @@ export default function About() {
                 relation de partenariat basée sur la confiance <br />
                 et la transparence.
               </div>
-              <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-y-7 pt-5'>
+              <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-y-7 pt-5 w-full'>
                 <WomenCard />
                 <WomenCard />
                 <WomenCard />
