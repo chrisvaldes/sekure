@@ -157,7 +157,7 @@ export default function Accueil() {
                             </div>
                         </div>
                         <div className="women-accueil-bg hidden lg:block items-center justify-center sm:h-[650px] lg:h-[680px]" style={{ backgroundImage: `url(${vector})`, backgroundRepeat: "no-repeat", backgroundSize: "720.54px", backgroundPosition: "center", width: "100%" }}>
-                            <div className="absolute bottom-0">
+                            <div className="absolute bottom-0 right-10">
                                 <img src={women} alt="" className='' />
                             </div>
                         </div>
@@ -574,7 +574,7 @@ export default function Accueil() {
                             adaptées à l'Afrique et du  monde entier
                         </div>
                         <div className="grid grid-cols-1 lg:grid-cols-2">
-                            <div className='title-content-1 flex md:items-center md:justify-center lg:items-start lg:justify-start text-justify sm:px-10 lg:px-0'>
+                            <div className='title-content-1 flex md:items-center md:justify-center lg:items-start lg:justify-start text-justify px-10 lg:px-0'>
                                 Notre plateforme de vérification d'identité est conçue pour s'adapter aux spécificités de
                                 chaque marché, tout en offrant une couverture mondiale inégalée. Que vous opériez en
                                 Afrique, en Europe, en Asie ou en Amérique, nous vous proposons une solution flexible
@@ -585,7 +585,7 @@ export default function Accueil() {
                             <div className="">
 
                             </div>
-                        </div>
+                        </div> 
                         <div className='flex items-center justify-center md:items-center md:justify-center lg:items-start lg:justify-start gap-x-2 md:gap-[28px] pt-[28px] pb-16 w-full'>
                             <Link to="/" className='big-btn-about-us voir-tout-pays-phone-color flex items-center justify-between bg-green-color '>
                                 <span className=' flex items-center text-nowrap text-white'>

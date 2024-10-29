@@ -248,7 +248,7 @@ export default function Customer() {
 
         {/* start section with big mother */}
         <section>
-          <div className='group-card-horiz grid grid-cols-1 items-center justify-center bg-no-repeat  md:grid-cols-1 lg:grid-cols-2 lg:pt-32 gap-x-8 gap-y-12 lg:gap-y-32 px-10 sm:px-20' style={{ backgroundImage: `url(${vectorBigMother})` }}>
+          <div className='group-card-horiz grid grid-cols-1 items-center justify-center bg-no-repeat  md:grid-cols-1 lg:grid-cols-2 lg:pt-32 gap-x-8 gap-y-12 lg:gap-y-32 lg:px-20 sm:px-20' style={{ backgroundImage: `url(${vectorBigMother})` }}>
             <div className="order-2 lg:order-1 flex items-center justify-center">
               <div className=''>
                 <div className="hidden lg:block items-center justify-center">
@@ -319,7 +319,7 @@ export default function Customer() {
 
         {/* start section girl */}
         <section>
-          <div className='group-card-vert grid grid-cols-1 items-center justify-center md:grid-cols-1 lg:grid-cols-2 gap-y-10 py-20 px-10'>
+          <div className='group-card-vert grid grid-cols-1 items-center justify-center md:grid-cols-1 lg:grid-cols-2 gap-y-10 py-20 lg:px-20'>
             <div className="flex flex-col items-center gap-y-5">
               <div className="">
                 <div className="screening-horiz-vert-title">
@@ -387,7 +387,7 @@ export default function Customer() {
               </div>
             </div>
 
-            <div className="order-1 lg:order-2 group-card-horiz-content flex flex-col items-center gap-y-5">
+            <div className="order-1 lg:order-2 group-card-horiz-content flex flex-col items-center gap-y-5 pr-10">
               <div className="">
                 <div className="screening-horiz-vert-title">
                 Verification en quelques secondes et connexion
@@ -436,15 +436,15 @@ export default function Customer() {
           <div className=''>
             <div className='flex flex-col items-center justify-center pb-20 pt-10 md:px-10 lg:px-20 bg-white bg-no-repeat bg-[110%_60%] w-full' style={{ backgroundImage: `url(${vector1})` }}>
               <a href="#" className="btn-choice flex items-center justify-center">Pourquoi nous choisir</a>
-              <div className="title-1 text-center text-green-deep py-10">
+              <div className="title-1 text-center text-green-deep p-10">
                 Respectez la réglementation KYC et accélérez <br />
                 l'acquisition de clients
               </div>
-              <div className="title-content-1 text-justify px-5">
+              <div className="title-content-1 text-justify px-10">
                 En automatisant vos processus KYC, vous réduisez considérablement les frictions et les délais d'onboarding. Notre solution vous permet de respecter
                 les normes les plus strictes tout en offrant une expérience client fluide.
               </div>
-              <div className="card-choice-items items-center justify-center w-full grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 pt-10 pb-24 px-2">
+              <div className="card-choice-items items-center justify-center w-full grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 pt-10 pb-24 px-10">
                 <RespectReglementation
                   image={imgC1}
                   title={
@@ -452,7 +452,7 @@ export default function Customer() {
                       avec la réglementation</div>
                   }
                   content={
-                    <div>
+                    <div className=''>
                       Soyez en conformité avec les
                       normes KYC/AML en vigueur dans
                       le monde entier.
@@ -502,38 +502,38 @@ export default function Customer() {
                   }
                 />
               </div>
-              <div className="bg-[#D4FFDE] customer-selfie-section w-full grid grid-cols-1 md:grid-cols-1 md:px-8 lg:grid-cols-2 rounded-[33px] ">
+              <div className="relative bg-[#D4FFDE] customer-selfie-section w-full grid grid-cols-1 md:grid-cols-1 md:px-8 lg:grid-cols-2 lg:rounded-[33px] ">
                 <div className="relative customer-selfie-box">
                   <img src={takeselfie} alt="" className='absolute customer-selfie' />
                 </div>
                 <div className="w-full">
                   <div className=" accueil-content flex flex-col top-[145px] pb-5 w-full">
-                    <div className="text-nowrap gap-[6px] pb-[27px] px-8 w-full">
+                    <div className="text-nowrap gap-[6px] pb-[27px] px-10 w-full">
                       <div className='pt-10'>
                         <Link to="/" className='flex items-center justify-center btn-verification btn-verification-text mb-5'>
                           Know your Customer
                         </Link>
                       </div>
                       <div className='text-wrap take-selfie-title text-left sarabun-bold text-green-deep'>
-                        Démontrez aux régulateurs votre <br />
-                        engagement indéfectible dans la lutte <br />
+                        Démontrez aux régulateurs votre
+                        engagement indéfectible dans la lutte
                         contre la criminalité financière.
                       </div>
                       <div className="">
-                        <div className=' text-wrap title-content-selfie-screening  text-left py-5 w-full'>
-                          Distinguez-vous de vos concurrents en adoptant une approche proactive de la lutte contre <br />
-                          la criminalité financière. AIbiometrics vous permet non seulement de respecter les <br />
-                          réglementations en vigueur, mais aussi de renforcer la confiance de vos clients en leur <br />
+                        <div className=' text-wrap title-content-selfie-screening  text-justify py-5 w-full'>
+                          Distinguez-vous de vos concurrents en adoptant une approche proactive de la lutte contre
+                          la criminalité financière. AIbiometrics vous permet non seulement de respecter les
+                          réglementations en vigueur, mais aussi de renforcer la confiance de vos clients en leur
                           assurant une expérience d'onboarding sécurisée et transparente.
                         </div>
-                        <div className='text-left text-wrap title-content-selfie-screening '>
-                          Démontrez aux régulateurs que vous êtes un acteur responsable et engagé en choisissant <br />
+                        <div className='text-justify text-wrap title-content-selfie-screening '>
+                          Démontrez aux régulateurs que vous êtes un acteur responsable et engagé en choisissant
                           <span className='title-content-selfie-creening-span'>AIbiometrics pour vos verifications d’utilisateurs</span>
                         </div>
                       </div>
                     </div>
 
-                    <div className="w-full px-5">
+                    <div className="w-full px-10">
                       <div className="text-wrap items-start gap-x-[28px] hidden lg:block">
                         <div className='flex flex-wrap md:flex-nowrap items-center justify-center  lg:items-start lg:justify-start gap-[28px] md:gap-[10px] md:pr-2'>
                           <div className='btn flex items-center justify-center  bg-green-color pr-2'>
@@ -572,9 +572,9 @@ export default function Customer() {
                     </div>
                   </div>
 
-                  <div className="relative customer-selfie-img h-[400px] sm:h-[560px] block lg:hidden items-center justify-center w-full">
-                    <div className="absolute bottom-0 customer-selfie-box w-full bg-[100%_80%]" style={{ backgroundImage: `url(${vector})` }}>
-                      <img src={takeselfie} alt="" className=' ' />
+                  <div className=" customer-selfie-img h-[400px] sm:h-[560px] block lg:hidden items-center justify-center w-full">
+                    <div className=" bg-no-repeat  bg-[0%_10%] sm:bg-[50%_50%] h-[490px] sm:w-full " style={{ backgroundImage: `url(${vector})` }}>
+                      <img src={takeselfie} alt="" className='w-[460px] h-[480px] sm:w-[503px] sm:left-24  sm:h-[600px] absolute bottom-0' />
                     </div>
                   </div>
                 </div>

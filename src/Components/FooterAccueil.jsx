@@ -1,4 +1,4 @@
-import React from 'react' 
+import React from 'react'
 import logo from "../images/Group.png"
 import Message from './Message'
 import { Link } from 'react-router-dom'
@@ -10,17 +10,34 @@ export default function FooterAccueil() {
     return (
         <div className='bg-green-color sm:py-10  footer-section'>
             <div className='relative footer-page grid grid-cols-1 lg:grid-cols-2'>
-                <div className='flex order-2 lg:order-1 footer-section-text flex-col items-start justify-center z-20 w-full'>
-                    <div className='footer-title py-5 text-nowrap w-full'>
-                        <span className='text-green-deep'>La vérification n'est plus un <br />
-                            obstacle pour votre business,<br /></span>
-                        <span className='text-green-deep md:text-white'>Acceptez plus facilement vos <br />
-                            utilisateurs</span>
-                    </div>
-                    <div className='footer-content pt-5 md:text-nowrap w-full'>
-                        Intégrez notre API en quelques lignes de code et concentrez-vous sur votre cœur de métier. <br />
-                        Notre solution, robuste et fiable, s'adapte à toutes vos exigences. Prêt à révolutionner votre <br />
-                        processus de vérification ? Commencez votre essai gratuit dès aujourd'hui.
+                <div className='flex order-2 lg:order-1 footer-section-text flex-col items-start justify-center z-20 w-full px-5'>
+                    <div className="">
+                        <div className="hidden lg:block">
+                            <div className='footer-title py-5 md:text-center lg:text-left text-nowrap w-full'>
+                                <span className='text-green-deep'>La vérification n'est plus un <br />
+                                    obstacle pour votre business,<br /></span>
+                                <span className='text-green-deep md:text-white'>Acceptez plus facilement vos <br />
+                                    utilisateurs</span>
+                            </div>
+                            <div className='footer-content pt-5 flex items-center justify-center lg:justify-start  md:text-justify lg:text-left w-full'>
+                                Intégrez notre API en quelques lignes de code et concentrez-vous sur votre cœur de métier. <br />
+                                Notre solution, robuste et fiable, s'adapte à toutes vos exigences. Prêt à révolutionner votre <br />
+                                processus de vérification ? Commencez votre essai gratuit dès aujourd'hui.
+                            </div>
+                        </div>
+                        <div className="block lg:hidden">
+                            <div className='footer-title py-5 md:text-center lg:text-left w-full'>
+                                <span className='text-green-deep'>La vérification n'est plus un
+                                    obstacle pour votre business,<br /></span>
+                                <span className='text-green-deep md:text-white'>Acceptez plus facilement vos <br />
+                                    utilisateurs</span>
+                            </div>
+                            <div className='footer-content pt-5 flex items-center justify-center lg:justify-start text-justify lg:text-left w-full'>
+                                Intégrez notre API en quelques lignes de code et concentrez-vous sur votre cœur de métier.
+                                Notre solution, robuste et fiable, s'adapte à toutes vos exigences. Prêt à révolutionner votre
+                                processus de vérification ? Commencez votre essai gratuit dès aujourd'hui.
+                            </div>
+                        </div>
                     </div>
                     <div class="  flex items-center justify-center lg:justify-start md:flex-nowrap  gap-5 pt-10 w-full">
                         <Link to="/" class="flex  accueil-btn w-1/2">
@@ -33,8 +50,8 @@ export default function FooterAccueil() {
                             </div>
                         </Link>
                         <Link to="/pricing" class=" accueil-btn-clean btn bg-white flex items-center justify-around w-1/2 gap-x-2">
-                                <div class="btn-text flex text-green-deep text-nowrap "><span className='hidden sm:block pr-1'>Nous </span> contacter</div>
-                                <Message background="#285246" textcolor="#FFFF" />
+                            <div class="btn-text flex text-green-deep text-nowrap "><span className='hidden sm:block pr-1'>Nous </span> contacter</div>
+                            <Message background="#285246" textcolor="#FFFF" />
                         </Link>
 
                     </div>
@@ -46,7 +63,7 @@ export default function FooterAccueil() {
                 </div>
                 <img src={manFooter} alt="" className='womenFooter hidden lg:block absolute bottom-0 right-28 w-[420.12px] h-[470px] z-10' />
             </div>
-            <div className="flex flex-wrap items-center justify-around w-full py-10">
+            <div className="flex flex-wrap items-center justify-around w-full py-10 sm:px-5 md:px-10 lg:px-20">
                 <div className="flex w-full  gap-10 flex-wrap items-center mx-8 md:mx-0 md:justify-between">
                     <div className="flex flex-col">
                         <span className='grid-footer-grid-title'>Explorer</span>
@@ -82,7 +99,7 @@ export default function FooterAccueil() {
                         <span className='grid-footer-grid-content'>Se Connecter</span>
                         <span className='grid-footer-grid-content'>Voir Demo</span>
                     </div>
-                    <div className="flex-col gap-2 pb-5 hidden sm:block">
+                    <div className="flex-col gap-2 pb-5 hidden md:block">
                         <div className='flex items-center justify-start'>
                             <div className='footer-grid-logo'>AIBIOMETRICS</div>
                             <img src={logo} alt="" className='logo' />
@@ -103,9 +120,9 @@ export default function FooterAccueil() {
     )
 }
 
-    // return (
-    //     <div className='bg-green-color py-10  footer-section'>
-            {/* <div className="flex items-center justify-around">
+// return (
+//     <div className='bg-green-color py-10  footer-section'>
+{/* <div className="flex items-center justify-around">
                 <div className="">
                     <div className="title text-green-deep">
                         La vérification n’est plus un <br />
@@ -141,7 +158,7 @@ export default function FooterAccueil() {
 
 
             </div> */}
-            {/* <div className='relative footer-page'>
+{/* <div className='relative footer-page'>
                 <div className='flex flex-col items-start justify-center'>
                     <div className='screening-section1-title py-5'>
                         <span className='text-white'>Notre API Robuste</span>supportera <br />
