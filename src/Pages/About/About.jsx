@@ -280,7 +280,7 @@ export default function About() {
 
         <section className='bg-[#285246] lg:pl-5 sm:pr-5 pb-20' style={{ backgroundImage: `url(${bgDotted})`, backgroundPosition: "bottom center", backgroundRepeat: "no-repeat" }}>
           <div className='w-full'>
-            <div className='text-left grid items-center justify-around sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-10 md:px-5 pt-10 w-full'>
+            <div className='text-left grid items-center justify-around sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-5 pt-10 w-full'>
               <div className='h-full pt-20 px-5 w-full col-span-2 lg:col-span-1 flex flex-col items-center justify-center lg:items-start lg:justify-start'>
                 <Link to="/" className='about-btn-title flex items-center justify-center'>à propos de nous</Link>
                 <div className='about-dotted-title pt-4 pb-8 w-full flex items-center justify-center text-center lg:text-left'>
@@ -584,8 +584,7 @@ export default function About() {
                   <img src={womenSelfie} alt="" className='' />
                 </div>
               </div>
-            </div>
-
+            </div> 
           </div>
         </section>
 
@@ -593,8 +592,12 @@ export default function About() {
           <div>
             <div className='flex flex-col items-center justify-center'>
               <Link to="/" className='about-btn-title flex items-center justify-center'>à propos de nous</Link>
-              <div className='about-process-title py-5'>
+              <div className='about-process-title py-5 hidden lg:block'>
                 Tout ce que vous avez toujours voulu savoir sur Aibiomerics <br /> (et 
+                ce que vous n'osiez pas demander).
+              </div>
+              <div className='about-process-title py-5 text-left px-10 block lg:hidden'>
+                Tout ce que vous avez toujours voulu savoir sur Aibiomerics (et 
                 ce que vous n'osiez pas demander).
               </div>
             </div>
@@ -608,18 +611,18 @@ export default function About() {
                   </span>
                 }
                 content={
-                  <span>
-                    Localement ou internationalement, vos achats en <br />
-                    ligne ne connaissent plus de limite avec les <br />
-                    cartes virtuelles Visa et Mastercard de chez <br />
-                    SEKURE. En 2 minutes, créez et vérifiez votre <br />
-                    compte Sekure pour obtenir votre carte virtuelle. <br />
-                    Entre des frais d'entretien inexistants et des frais <br />
-                    de transaction amoindris, Sekure vous offre les <br />
-                    meilleurs avantages du marché bancaire africain <br />
-                    sur jusqu’à 06 cartes que vous pouvez suivre <br />
+                  <div className='text-justify'>
+                    Localement ou internationalement, vos achats en
+                    ligne ne connaissent plus de limite avec les
+                    cartes virtuelles Visa et Mastercard de chez
+                    SEKURE. En 2 minutes, créez et vérifiez votre
+                    compte Sekure pour obtenir votre carte virtuelle.
+                    Entre des frais d'entretien inexistants et des frais
+                    de transaction amoindris, Sekure vous offre les
+                    meilleurs avantages du marché bancaire africain
+                    sur jusqu’à 06 cartes que vous pouvez suivre
                     individuellement dans via l'application.
-                  </span>
+                  </div>
                 }
                 bgColor="white"
               />
@@ -632,18 +635,18 @@ export default function About() {
                   </span>
                 }
                 content={
-                  <span>
-                    Localement ou internationalement, vos achats en <br />
-                    ligne ne connaissent plus de limite avec les <br />
-                    cartes virtuelles Visa et Mastercard de chez <br />
-                    SEKURE. En 2 minutes, créez et vérifiez votre <br />
-                    compte Sekure pour obtenir votre carte virtuelle. <br />
-                    Entre des frais d'entretien inexistants et des frais <br />
-                    de transaction amoindris, Sekure vous offre les <br />
-                    meilleurs avantages du marché bancaire africain <br />
-                    sur jusqu’à 06 cartes que vous pouvez suivre <br />
+                  <div className='text-justify'>
+                    Localement ou internationalement, vos achats en
+                    ligne ne connaissent plus de limite avec les
+                    cartes virtuelles Visa et Mastercard de chez
+                    SEKURE. En 2 minutes, créez et vérifiez votre
+                    compte Sekure pour obtenir votre carte virtuelle.
+                    Entre des frais d'entretien inexistants et des frais
+                    de transaction amoindris, Sekure vous offre les
+                    meilleurs avantages du marché bancaire africain
+                    sur jusqu’à 06 cartes que vous pouvez suivre
                     individuellement dans via l'application.
-                  </span>
+                  </div>
                 }
                 bgColor="white"
               />
@@ -656,18 +659,18 @@ export default function About() {
                   </span>
                 }
                 content={
-                  <span>
-                    Localement ou internationalement, vos achats en <br />
-                    ligne ne connaissent plus de limite avec les <br />
-                    cartes virtuelles Visa et Mastercard de chez <br />
-                    SEKURE. En 2 minutes, créez et vérifiez votre <br />
-                    compte Sekure pour obtenir votre carte virtuelle. <br />
-                    Entre des frais d'entretien inexistants et des frais <br />
-                    de transaction amoindris, Sekure vous offre les <br />
-                    meilleurs avantages du marché bancaire africain <br />
-                    sur jusqu’à 06 cartes que vous pouvez suivre <br />
+                  <div className='text-justify'>
+                    Localement ou internationalement, vos achats en
+                    ligne ne connaissent plus de limite avec les
+                    cartes virtuelles Visa et Mastercard de chez
+                    SEKURE. En 2 minutes, créez et vérifiez votre
+                    compte Sekure pour obtenir votre carte virtuelle.
+                    Entre des frais d'entretien inexistants et des frais
+                    de transaction amoindris, Sekure vous offre les
+                    meilleurs avantages du marché bancaire africain
+                    sur jusqu’à 06 cartes que vous pouvez suivre
                     individuellement dans via l'application.
-                  </span>
+                  </div>
                 }
                 bgColor="white"
               />
@@ -680,18 +683,18 @@ export default function About() {
                   </span>
                 }
                 content={
-                  <span>
-                    Localement ou internationalement, vos achats en <br />
-                    ligne ne connaissent plus de limite avec les <br />
-                    cartes virtuelles Visa et Mastercard de chez <br />
-                    SEKURE. En 2 minutes, créez et vérifiez votre <br />
-                    compte Sekure pour obtenir votre carte virtuelle. <br />
-                    Entre des frais d'entretien inexistants et des frais <br />
-                    de transaction amoindris, Sekure vous offre les <br />
-                    meilleurs avantages du marché bancaire africain <br />
-                    sur jusqu’à 06 cartes que vous pouvez suivre <br />
+                  <div className='text-justify'>
+                    Localement ou internationalement, vos achats en
+                    ligne ne connaissent plus de limite avec les
+                    cartes virtuelles Visa et Mastercard de chez
+                    SEKURE. En 2 minutes, créez et vérifiez votre
+                    compte Sekure pour obtenir votre carte virtuelle.
+                    Entre des frais d'entretien inexistants et des frais
+                    de transaction amoindris, Sekure vous offre les
+                    meilleurs avantages du marché bancaire africain
+                    sur jusqu’à 06 cartes que vous pouvez suivre
                     individuellement dans via l'application.
-                  </span>
+                  </div>
                 }
                 bgColor="white"
               />
@@ -704,18 +707,18 @@ export default function About() {
                   </span>
                 }
                 content={
-                  <span>
-                    Localement ou internationalement, vos achats en <br />
-                    ligne ne connaissent plus de limite avec les <br />
-                    cartes virtuelles Visa et Mastercard de chez <br />
-                    SEKURE. En 2 minutes, créez et vérifiez votre <br />
-                    compte Sekure pour obtenir votre carte virtuelle. <br />
-                    Entre des frais d'entretien inexistants et des frais <br />
-                    de transaction amoindris, Sekure vous offre les <br />
-                    meilleurs avantages du marché bancaire africain <br />
-                    sur jusqu’à 06 cartes que vous pouvez suivre <br />
+                  <div className='text-justify'>
+                    Localement ou internationalement, vos achats en
+                    ligne ne connaissent plus de limite avec les
+                    cartes virtuelles Visa et Mastercard de chez
+                    SEKURE. En 2 minutes, créez et vérifiez votre
+                    compte Sekure pour obtenir votre carte virtuelle.
+                    Entre des frais d'entretien inexistants et des frais
+                    de transaction amoindris, Sekure vous offre les
+                    meilleurs avantages du marché bancaire africain
+                    sur jusqu’à 06 cartes que vous pouvez suivre
                     individuellement dans via l'application.
-                  </span>
+                  </div>
                 }
                 bgColor="white"
               />
@@ -728,18 +731,18 @@ export default function About() {
                   </span>
                 }
                 content={
-                  <span>
-                    Localement ou internationalement, vos achats en <br />
-                    ligne ne connaissent plus de limite avec les <br />
-                    cartes virtuelles Visa et Mastercard de chez <br />
-                    SEKURE. En 2 minutes, créez et vérifiez votre <br />
-                    compte Sekure pour obtenir votre carte virtuelle. <br />
-                    Entre des frais d'entretien inexistants et des frais <br />
-                    de transaction amoindris, Sekure vous offre les <br />
-                    meilleurs avantages du marché bancaire africain <br />
-                    sur jusqu’à 06 cartes que vous pouvez suivre <br />
+                  <div className='text-justify'>
+                    Localement ou internationalement, vos achats en
+                    ligne ne connaissent plus de limite avec les
+                    cartes virtuelles Visa et Mastercard de chez
+                    SEKURE. En 2 minutes, créez et vérifiez votre
+                    compte Sekure pour obtenir votre carte virtuelle.
+                    Entre des frais d'entretien inexistants et des frais
+                    de transaction amoindris, Sekure vous offre les
+                    meilleurs avantages du marché bancaire africain
+                    sur jusqu’à 06 cartes que vous pouvez suivre
                     individuellement dans via l'application.
-                  </span>
+                  </div>
                 }
                 bgColor="white"
               />

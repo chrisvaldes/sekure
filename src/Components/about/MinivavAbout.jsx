@@ -45,8 +45,8 @@ export default function MinivavAbout() {
 
     return (
         <section>
-            <div className="bg-white sm:pl-20 w-full">
-                <div className="flex px-5 sm:px-0 flex-col py-10" style={{ backgroundImage: `url(${vectorMininav})`, backgroundRepeat: "no-repeat", backgroundPosition: "100% 100%" }}>
+            <div className="bg-white pl-10 lg:pl-20 w-full">
+                <div className="flex flex-col py-10 w-full" style={{ backgroundImage: `url(${vectorMininav})`, backgroundRepeat: "no-repeat", backgroundPosition: "100% 100%" }}>
                     <Link to="/" className='bg-green-color flex items-center justify-center mini-nav-btn mini-nav-btn-text '>
                         Nos Outils
                     </Link>
