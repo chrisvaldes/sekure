@@ -34,7 +34,7 @@ export default function Customer() {
       <main className='accueil'>
         <section>
           <div className='pt-20 lg:py-32 bg-white customer-page-vector relative'>
-            <div className='flex flex-col items-start justify-center  lg:px-20'>
+            <div className='flex flex-col items-start justify-center  lg:px-10'>
               <div className="z-20 w-full">
                 <div className="px-5 sm:px-10 w-full flex flex-col items-center justify-center lg:items-start">
                   <div className='flex items-center justify-start gap-x-5'>
@@ -613,6 +613,7 @@ export default function Customer() {
                       individuellement dans via l'application.
                     </span>
                   }
+                  bgColor="#F2F2F2"
                 />
                 <Card
                   btnText="Disponibilité par pays"
@@ -636,6 +637,7 @@ export default function Customer() {
                       individuellement dans via l'application.
                     </span>
                   }
+                  bgColor="#F2F2F2"
                 />
                 <Card
                   btnText="Disponibilité par pays"
@@ -659,6 +661,7 @@ export default function Customer() {
                       individuellement dans via l'application.
                     </span>
                   }
+                  bgColor="#F2F2F2"
                 />
                 <Card
                   btnText="Disponibilité par pays"
@@ -682,6 +685,7 @@ export default function Customer() {
                       individuellement dans via l'application.
                     </span>
                   }
+                  bgColor="#F2F2F2"
                 />
                 <Card
                   btnText="Disponibilité par pays"
@@ -705,6 +709,7 @@ export default function Customer() {
                       individuellement dans via l'application.
                     </span>
                   }
+                  bgColor="#F2F2F2"
                 />
                 <Card
                   btnText="Disponibilité par pays"
@@ -728,6 +733,7 @@ export default function Customer() {
                       individuellement dans via l'application.
                     </span>
                   }
+                  bgColor="#F2F2F2"
                 />
 
               </div>

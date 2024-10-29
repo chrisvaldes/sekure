@@ -38,7 +38,7 @@ export default function Screening() {
       <main className='screening'>
         <section>
           <div className='pt-20 lg:py-32 bg-white customer-page-vector relative'>
-            <div className='flex flex-col items-start justify-center  lg:px-20'>
+            <div className='flex flex-col items-start justify-center  lg:px-10'>
               <div className="z-20 w-full">
                 <div className="px-5 sm:px-10 w-full flex flex-col items-center justify-center lg:items-start">
                   <div className='flex items-center justify-start gap-x-5'>
@@ -51,11 +51,15 @@ export default function Screening() {
                     </Link>
                   </div>
                   <div className='screening-section1-title py-5'>
-                    KYC Rapide et flexible pour +180 <br />
-                    pays d'Afrique et du monde
+                    Minimisez les risques de fraude et <br />
+                    de blanchiment gràce à l’IA
                   </div>
-                  <div className='screening-section1-content pt-5'>
+                  <div className='screening-section1-content pt-5 hidden lg:block'>
                     Grâce à des algorithme avancés, notre solution AML alimentée par l'IA vous permet de détecter les<br />
+                    activités suspectes en temps réel pour identifier les transactions et les entités à haut risque.
+                  </div>
+                  <div className='screening-section1-content text-justify sm:px-10 pt-5 block lg:hidden'>
+                    Grâce à des algorithme avancés, notre solution AML alimentée par l'IA vous permet de détecter les
                     activités suspectes en temps réel pour identifier les transactions et les entités à haut risque.
                   </div>
                   <div className='flex w-full items-center justify-center lg:justify-start gap-x-2 py-8'>
@@ -75,9 +79,9 @@ export default function Screening() {
                   </div>
                 </div>
 
-                <div className='w-full items-center customer-page-wrap justify-center relative  block lg:hidden'>
+                <div className='w-full items-center customer-page-wrap justify-center relative block lg:hidden'>
                   <div className='absolute flex items-center justify-center w-full bottom-0' >
-                    <img src={bgScreening} alt="" className='w-[310px] h-[320px] sm:w-[470px] sm:h-[400px]' />
+                    <img src={bgScreening} alt="" className='w-[360px] h-[380px] sm:w-[410px] sm:h-[400px]' />
                   </div>
                 </div>
               </div>

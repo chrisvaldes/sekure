@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Card({btnText, title, content, bgColor}) {
     return (
-        <div className='customer-card p-10' style={{backgroundColor : `${bgColor}`}}>
+        <div className='customer-card p-10 rounded-[25px]' style={{backgroundColor : `${bgColor}`}}>
             <div className='flex flex-col '>
                 <div className='btn-customer-card btn-text-customer-card text-white bg-green-color flex items-center justify-center text-nowrap'>
                     {btnText}

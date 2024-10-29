@@ -10,7 +10,7 @@ export default function FooterAccueil() {
     return (
         <div className='bg-green-color sm:py-10  footer-section'>
             <div className='relative footer-page grid grid-cols-1 lg:grid-cols-2'>
-                <div className='flex order-2 lg:order-1 footer-section-text flex-col items-start justify-center z-20 w-full px-5'>
+                <div className='flex order-2 lg:order-1 footer-section-text flex-col items-start justify-center z-20 w-full px-5 lg:px-20'>
                     <div className="">
                         <div className="hidden lg:block">
                             <div className='footer-title py-5 md:text-center lg:text-left text-nowrap w-full'>
