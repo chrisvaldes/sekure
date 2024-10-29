@@ -187,17 +187,13 @@ export default function Customer() {
                       }
                     />
                   </div>
-                  <div className='flex'>
-                    <CardSmile logo={img3}
-                      title={
-                        <span>Contrôle des PEP :</span>
-                      }
-                      content={
-                        <span>Identifiez et gérez les risques liés aux
-                          personnes politiquement exposées (PEP).</span>
-                      }
-                    />
-                  </div>
+                  <div>
+                      <CardSmile logo={img4}
+                        title="Diligences raisonnable renforcée :"
+                        content="Renforcez la vérification pour les clients à
+                          risque élevé."
+                      /> 
+                    </div>
                   <div className='flex'>
                     <CardSmile logo={img4}
                       title={
@@ -319,7 +315,7 @@ export default function Customer() {
 
         {/* start section girl */}
         <section>
-          <div className='group-card-vert grid grid-cols-1 items-center justify-center md:grid-cols-1 lg:grid-cols-2 gap-y-10 py-20 lg:px-20'>
+          <div className='group-card-vert grid grid-cols-1 items-center justify-center md:grid-cols-1 lg:grid-cols-2 gap-y-10 py-20 px-10 sm:px-20 lg:px-20'>
             <div className="flex flex-col items-center gap-y-5">
               <div className="">
                 <div className="screening-horiz-vert-title">
@@ -363,8 +359,8 @@ export default function Customer() {
         {/* end section girl  */}
 
         {/* start section communication */}
-        <section className="group-card-vert bg-no-repeat bg-right" style={{ backgroundImage: `url(${vectorDatabases})` }}>
-          <div className='grid grid-cols-1 items-center justify-center md:grid-cols-1 lg:grid-cols-2 pb-20 gap-x-8 gap-y-20'>
+        <section className="bg-no-repeat bg-right" style={{ backgroundImage: `url(${vectorDatabases})` }}>
+          <div className='grid grid-cols-1 items-center justify-center md:grid-cols-1 lg:grid-cols-2 pb-20 gap-x-8 px-10 sm:px-20 gap-y-20'>
 
             <div className='order-2 lg:order-1'>
               <div className="hidden lg:block items-center justify-center">

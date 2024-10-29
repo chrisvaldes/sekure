@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function SmallCheckCircle({ title }) {
+export default function SmallCheckCircle({ title}) {
     return (
 
         <div className="flex items-center justify-center gap-x-2">
@@ -9,8 +9,8 @@ export default function SmallCheckCircle({ title }) {
                     <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
                 </svg>
             </div>
-            <div className="screening-grid-title">
-                {title}
+            <div className="screening-grid-content">
+                <span className='screening-grid-title'>{title}</span>
             </div>
         </div>
     )
