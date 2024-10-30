@@ -1144,6 +1144,7 @@ textarea {
   background-position: bottom center;
   /* Ajustez la position selon vos besoins */
   background-repeat: no-repeat;
+  background-size: contain;
   /* Évite la répétition des images */
 }
 
@@ -1878,7 +1879,7 @@ textarea {
     background-image: url('../src/images/footer/vector-white.png');
     background-position: bottom left;
     background-repeat: no-repeat;
-    background-size: 170% auto;
+    background-size: 130% auto;
   }
 
   .title {

@@ -56,7 +56,7 @@ export default function FooterAccueil() {
 
                     </div>
                 </div>
-                <div className="relative  footer-page-order-other lg:hidden block items-center justify-center order-1 lg:order-2  w-full h-[350px]">
+                <div className="relative  footer-page-order lg:hidden block items-center justify-center order-1 lg:order-2  w-full h-[350px]">
                     <div className="flex items-center justify-center absolute bottom-0 lg:left-0 w-full">
                         <img src={manFooter} alt="" className='w-[350px] h-[380px] sm:w-[420.12px] sm:h-[444px]' />
                     </div>
