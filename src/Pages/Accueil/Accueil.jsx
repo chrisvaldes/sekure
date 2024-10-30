@@ -118,9 +118,14 @@ export default function Accueil() {
                             </div>
 
                             <div className="">
-                                <p className='title-content mx-5 sm:mx-0'>
+                                <p className='title-content mx-5 sm:mx-0 hidden lg:block'>
                                     Votre plateforme de vérification d'identité alimentée par l'IA pour la prévention des fraudes, <br />
                                     la conformité et la protection de vos clients. Construisez des communautés numériques de<br />
+                                    confiance, améliorez l'expérience utilisateur et stimulez la croissance de votre entreprise
+                                </p>
+                                <p className='title-content block lg:hidden text-justify px-10'>
+                                    Votre plateforme de vérification d'identité alimentée par l'IA pour la prévention des fraudes,
+                                    la conformité et la protection de vos clients. Construisez des communautés numériques de
                                     confiance, améliorez l'expérience utilisateur et stimulez la croissance de votre entreprise
                                 </p>
                                 <div className="flex items-center justify-center w-full">
@@ -236,7 +241,7 @@ export default function Accueil() {
 
                 {/* start section cni and passport */}
                 <section className='md:px-10'>
-                    <div className='group-card-vert grid grid-cols-1 items-center justify-center md:grid-cols-1 lg:grid-cols-2 pt-20 gap-8'>
+                    <div className='group-card-vert grid grid-cols-1 items-center justify-center md:grid-cols-1 lg:grid-cols-2 px-10 lg:px-20 pt-20 gap-8'>
                         <div className="group-card-vert-content flex flex-col items-center gap-y-5">
                             <div className="">
                                 <p className="title-1">
@@ -293,8 +298,8 @@ export default function Accueil() {
                 {/* end section cni and passport  */}
 
                 {/* start section with big mother */}
-                <section className='md:px-10'>
-                    <div className='group-card-horiz grid grid-cols-1 items-center justify-center bg-no-repeat  md:grid-cols-1 lg:grid-cols-2 lg:pt-32 gap-x-8 gap-y-20 mt-10' style={{ backgroundImage: `url(${vectorBigMother})` }}>
+                <section className='px-10 lg:px-20'>
+                    <div className=' grid grid-cols-1 items-center justify-center bg-no-repeat  md:grid-cols-1 lg:grid-cols-2 lg:pt-32 gap-x-8 gap-y-20 mt-10' style={{ backgroundImage: `url(${vectorBigMother})` }}>
                         <div className='order-img'>
                             <div className="hidden lg:block items-center justify-center">
                                 <div className='relative flex gap-5'>
@@ -365,7 +370,7 @@ export default function Accueil() {
                 {/* start section with big mother */}
 
                 {/* start section girl */}
-                <section className='md:px-15'>
+                <section className='px-10 lg:px-20'>
                     <div className='group-card-vert grid grid-cols-1 items-center justify-center md:grid-cols-1 pt-10 lg:grid-cols-2 lg:py-20'>
                         <div className="flex flex-col items-center gap-y-5">
                             <div className="">
@@ -427,7 +432,7 @@ export default function Accueil() {
                 {/* end section girl  */}
 
                 {/* start section communication */}
-                <section className="group-card-vert bg-no-repeat bg-right md:px-20" style={{ backgroundImage: `url(${vectorDatabases})` }}>
+                <section className="group-card-vert bg-no-repeat bg-right px-10 lg:px-20" style={{ backgroundImage: `url(${vectorDatabases})` }}>
                     <div className='grid grid-cols-1 items-center justify-center md:grid-cols-1 lg:grid-cols-2 py-10 gap-x-8 gap-y-10 lg:gap-y-20'>
 
                         <div className='order-img'>
@@ -517,7 +522,7 @@ export default function Accueil() {
                             Nos clients sont au cœur de nos préoccupations. Grâce à notre solution, 98% de nos utilisateurs ont déclaré être satisfaits de <br />
                             l'expérience de vérification. De plus, nous avons réduit de 50% le taux d'abandon lors du processus d'inscription.
                         </div>
-                        <div className="title-content-1 text-justify block lg:hidden px-5">
+                        <div className="title-content-1 text-justify block lg:hidden px-10">
                             Nos clients sont au cœur de nos préoccupations. Grâce à notre solution, 98% de nos utilisateurs ont déclaré être satisfaits de <br />
                             l'expérience de vérification. De plus, nous avons réduit de 50% le taux d'abandon lors du processus d'inscription.
                         </div>
@@ -564,7 +569,7 @@ export default function Accueil() {
                 {/* end section mini navbar  */}
 
                 {/* start world section  */}
-                <section className='world-section bg-no-repeat pb-40 sm:pb-2 lg:pt-1 sm:bg-[100%_10%] bg-contain'>
+                <section className='world-section px-10 lg:px-20 bg-no-repeat pb-40 sm:pb-2 lg:pt-1 sm:bg-[100%_10%] bg-contain'>
                     <div className=' world-section-content lg:pl-[8rem]'>
                         <div className="btn-about flex md:items-center md:justify-center lg:items-start lg:justify-start w-full">
                             <Link to="/about" className="btn-choice flex items-center justify-center">A propos de nous</Link>
@@ -574,7 +579,7 @@ export default function Accueil() {
                             adaptées à l'Afrique et du  monde entier
                         </div>
                         <div className="grid grid-cols-1 lg:grid-cols-2">
-                            <div className='title-content-1 flex md:items-center md:justify-center lg:items-start lg:justify-start text-justify px-10 lg:px-0'>
+                            <div className='title-content-1 flex md:items-center md:justify-center lg:items-start lg:justify-start text-justify lg:px-0'>
                                 Notre plateforme de vérification d'identité est conçue pour s'adapter aux spécificités de
                                 chaque marché, tout en offrant une couverture mondiale inégalée. Que vous opériez en
                                 Afrique, en Europe, en Asie ou en Amérique, nous vous proposons une solution flexible
@@ -615,8 +620,14 @@ export default function Accueil() {
                                 Une expérience utilisateur fluide et intuitive
                             </div>
                             <div>
-                                <div className='title-content-1 text-center pt-5 pb-20'>
+                                <div className='title-content-1 text-center pt-5 pb-20 hidden lg:block'>
                                     Notre processus de vérification est conçu pour être aussi simple et intuitif que possible. En quelques clics, vos utilisateurs peuvent <br />
+                                    confirmer leur identité et accéder à vos services.
+                                </div>
+                            </div>
+                            <div>
+                                <div className='title-content-1 text-justify block lg:hidden pt-5 pb-20'>
+                                    Notre processus de vérification est conçu pour être aussi simple et intuitif que possible. En quelques clics, vos utilisateurs peuvent
                                     confirmer leur identité et accéder à vos services.
                                 </div>
                             </div>
@@ -794,7 +805,7 @@ export default function Accueil() {
                 {/* start section phone  */}
                 <section className=''>
                     <div className=' flex pt-10 lg:pt-28'>
-                        <div className=" flex flex-col  w-full items-start phone-accordion gap-x-10 ">
+                        <div className=" flex flex-col  w-full items-start phone-accordion px-10 lg:px-20 gap-x-10 ">
                             <div className='top-accordion'>
                                 <div className='flex items-start justify-start py-5'>
                                     <a href="#" className="btn-choice flex items-center justify-center">A propos de nous</a>

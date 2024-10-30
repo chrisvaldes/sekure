@@ -777,12 +777,6 @@
   left: 0;
   height: 90%;
 } */
-
-
-.group-card-horiz {
-  padding: 0 3rem;
-}
-
 .mini-nav-items .mini-nav-item-active {
   border-bottom: solid 5px #5edeaf;
   font-family: "Satoshi";
@@ -965,10 +959,6 @@
   }
 }
 
-.phone-accordion {
-  padding: 0 5rem;
-}
-
 /* .footer-section {
   padding: 0 5rem;
 } */
@@ -1021,18 +1011,11 @@
     width: 90%;
   }
  
-  .group-card-horiz {
-    padding: 0 2rem;
-  }
-
   .world-section {
     background-size: contain;
-    padding: 0 2rem;
   }
 
-  .phone-accordion {
-    padding: 0 2rem;
-  }
+
 
   .img-arrow {
     display: none;
