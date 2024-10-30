@@ -814,12 +814,20 @@ export default function Accueil() {
                                     Une interface intuitive pour une <br />
                                     prise en main rapide
                                 </div>
-                                <div className='title-content-1  text-justify py-10'>
+                                <div className='title-content-1  text-justify py-10 hidden lg:block'>
                                     Notre plateforme est conçue pour être accessible à tous, quel que soit votre <br />
                                     niveau de compétence technique. Grâce à une interface intuitive et à une <br />
                                     navigation simple, vous pouvez rapidement prendre en main nos outils et <br />
                                     configurer vos processus de vérification. Notre équipe d'experts est <br />
                                     également à votre disposition pour vous accompagner dans la mise en <br />
+                                    œuvre de notre solution.
+                                </div>
+                                <div className='title-content-1  text-justify py-10 block lg:hidden'>
+                                    Notre plateforme est conçue pour être accessible à tous, quel que soit votre
+                                    niveau de compétence technique. Grâce à une interface intuitive et à une
+                                    navigation simple, vous pouvez rapidement prendre en main nos outils et
+                                    configurer vos processus de vérification. Notre équipe d'experts est
+                                    également à votre disposition pour vous accompagner dans la mise en
                                     œuvre de notre solution.
                                 </div>
                             </div>
