@@ -285,7 +285,7 @@ export default function Customer() {
 
         {/* start section with big mother */}
         <section>
-          <div className='group-card-horiz grid grid-cols-1 items-center justify-center bg-no-repeat  md:grid-cols-1 lg:grid-cols-2 lg:pt-32 gap-x-8 gap-y-12 lg:gap-y-32 lg:px-20 sm:px-20' style={{ backgroundImage: `url(${vectorBigMother})` }}>
+          <div className='group-card-horiz grid grid-cols-1 items-center justify-center bg-no-repeat  md:grid-cols-1 lg:grid-cols-2 lg:pt-32 gap-x-8 gap-y-12 lg:gap-y-32 lg:px-20 px-10' style={{ backgroundImage: `url(${vectorBigMother})` }}>
             <div className="order-2 lg:order-1 flex items-center justify-center">
               <div className=''>
                 <div className="hidden lg:block items-center justify-center">
@@ -356,7 +356,7 @@ export default function Customer() {
 
         {/* start section girl */}
         <section>
-          <div className='group-card-vert grid grid-cols-1 items-center justify-center md:grid-cols-1 lg:grid-cols-2 gap-y-10 py-20 px-10 sm:px-20 lg:px-20'>
+          <div className='group-card-vert grid grid-cols-1 items-center justify-center md:grid-cols-1 lg:grid-cols-2 gap-y-10 py-20 px-10 lg:px-20'>
             <div className="flex flex-col items-center gap-y-5">
               <div className="">
                 <div className="screening-horiz-vert-title">
@@ -401,7 +401,7 @@ export default function Customer() {
 
         {/* start section communication */}
         <section className="bg-no-repeat bg-right" style={{ backgroundImage: `url(${vectorDatabases})` }}>
-          <div className='grid grid-cols-1 items-center justify-center md:grid-cols-1 lg:grid-cols-2 pb-20 gap-x-8 px-10 sm:px-20 gap-y-20'>
+          <div className='grid grid-cols-1 items-center justify-center md:grid-cols-1 lg:grid-cols-2 pb-20 gap-x-8 px-10 lg:px-20 gap-y-20'>
 
             <div className='order-2 lg:order-1'>
               <div className="hidden lg:block items-center justify-center">
