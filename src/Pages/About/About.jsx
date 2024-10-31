@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import CardAbout from '../../Components/about/CardAbout'
 import MinivavAbout from '../../Components/about/MinivavAbout'
@@ -10,20 +10,77 @@ import Message from '../../Components/Message'
 import MiniCard from '../../Components/MiniCard'
 import NavBar from '../../Components/NavBar'
 import bgDotted from "../../images/about/bg-dotted.png"
-import boxBg from "../../images/about/boxBg.png"
 import fichier from "../../images/about/fichier.png"
 import frameSelfie from "../../images/about/Frameselfie.png"
 import image from "../../images/about/image.png"
 import manGlass from "../../images/about/manGlass.png"
+import miDiagram from "../../images/about/mi-diagram.png"
 import database from "../../images/about/process.png"
-import processVector from "../../images/about/processVector.png"
 import rectangle from "../../images/about/Rectangle.png"
 import womenSelfie from '../../images/about/woman-selfie.png'
 import groupDatabases from "../../images/groupDatabases.png"
-import vector from "../../images/about/Vector.png"
-import miDiagram from "../../images/about/mi-diagram.png"
 
 export default function About() {
+
+  const womenSelfieRef = useRef()
+  const manGlassRef = useRef()
+  const groupDatabasesRef = useRef()
+  const womenWonderRef = useRef()
+  const womenWonderWrapRef = useRef()
+  const manAngryRef = useRef()
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          if (entry.target === womenSelfieRef.current) {
+            womenSelfieRef.current.classList.add("active");
+            observer.unobserve(womenSelfieRef.current);
+          }
+          else if (entry.target === manGlassRef.current) {
+            manGlassRef.current.classList.add("active");
+            observer.unobserve(manGlassRef.current);
+          }
+          else if (entry.target === groupDatabasesRef.current) {
+            groupDatabasesRef.current.classList.add("active");
+            observer.unobserve(groupDatabasesRef.current);
+          }
+          // else if (entry.target === womenWonderRef.current) {
+          //   womenWonderRef.current.classList.add("active");
+          //     observer.unobserve(womenWonderRef.current);
+          // }
+          // else if (entry.target === womenWonderWrapRef.current) {
+          //   womenWonderWrapRef.current.classList.add("active");
+          //     observer.unobserve(womenWonderWrapRef.current);
+          // }
+          // else if (entry.target === manAngryRef.current) {
+          //   manAngryRef.current.classList.add("active");
+          //     observer.unobserve(manAngryRef.current);
+          // }
+        }
+      });
+    });
+
+    if (womenSelfieRef.current) {
+      observer.observe(womenSelfieRef.current);
+    }
+    if (manGlassRef.current) {
+      observer.observe(manGlassRef.current);
+    }
+    if (groupDatabasesRef.current) {
+        observer.observe(groupDatabasesRef.current);
+    }
+    // if (womenWonderRef.current) {
+    //     observer.observe(womenWonderRef.current);
+    // }
+    // if (womenWonderWrapRef.current) {
+    //     observer.observe(womenWonderWrapRef.current);
+    // }
+    // if (manAngryRef.current) {
+    //     observer.observe(manAngryRef.current);
+    // }
+  }, [])
+
   return (
     <div>
       <section className='fixed z-40'>
@@ -133,7 +190,7 @@ export default function About() {
                           <div className=" card-vert"></div>
                           <div className="card-vert"></div>
                           <div className="absolute flex items-center justify-center w-[279px] h-[257px] lg:w-[350px] lg:h-[320px] bottom-0">
-                            <img src={image} alt="" className='w-[279px] h-[257px] lg:w-[350px] lg:h-[320px] ' />
+                            <img ref={womenSelfieRef} src={image} alt="" className='w-[279px] h-[257px] lg:w-[350px] lg:h-[320px] show-img' />
                           </div>
                         </div>
                       </div>
@@ -179,7 +236,7 @@ export default function About() {
                         <div className=" card-vert"></div>
                         <div className="card-vert"></div>
                         <div className="absolute flex items-center justify-center w-[279px] h-[257px] lg:w-[350px] lg:h-[320px] bottom-0">
-                          <img src={manGlass} alt="" className='w-[279px] h-[257px] lg:w-[350px] lg:h-[320px] ' />
+                          <img ref={manGlassRef} src={manGlass} alt="" className='w-[279px] h-[257px] lg:w-[350px] lg:h-[320px] show-img' />
                         </div>
                       </div>
                     </div>
@@ -210,7 +267,7 @@ export default function About() {
                         <div className=" card-vert"></div>
                         <div className="card-vert"></div>
                         <div className="absolute flex items-center justify-center w-[279px] h-[257px] lg:w-[350px] lg:h-[320px]">
-                          <img src={groupDatabases} alt="" className='w-[269px] h-[247px] lg:w-[350px] lg:h-[320px] ' />
+                          <img ref={groupDatabasesRef} src={groupDatabases} alt="" className='w-[269px] h-[247px] lg:w-[350px] lg:h-[320px] show-img' />
                         </div>
                       </div>
                     </div>

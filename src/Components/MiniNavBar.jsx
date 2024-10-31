@@ -51,36 +51,6 @@ export default function MiniNavBar() {
         setActiveLink(link);
     };
 
-    // const verificatiIdentiteRef = useRef()
-    // const verificatiIdentiteWrapRef = useRef()
-
-    // useEffect(() => {
-    //     const observer = new IntersectionObserver(entries => {
-    //         entries.forEach(entry => {
-    //             if (entry.isIntersecting) {
-    //                 if (entry.target === verificatiIdentiteRef.current) {
-    //                     verificatiIdentiteRef.current.classList.add("active");
-    //                     observer.unobserve(verificatiIdentiteRef.current);
-    //                 }
-    //                 else if (entry.target === verificatiIdentiteWrapRef.current) {
-    //                     verificatiIdentiteWrapRef.current.classList.add("active");
-    //                     observer.unobserve(verificatiIdentiteWrapRef.current);
-    //                 }
-    //             }
-    //         });
-    //     });
-
-    //     if (verificatiIdentiteRef.current) {
-    //         observer.observe(verificatiIdentiteRef.current);
-    //     }
-    //     if (verificatiIdentiteWrapRef.current) {
-    //         observer.observe(verificatiIdentiteWrapRef.current);
-    //     }
-         
-
-    // }, [])
-
-
     return (
         <section>
             <div className=" bg-white extra px-5 sm:px-10">

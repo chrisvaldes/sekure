@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import Arrow from '../../Components/Arrow'
 import CardSmile from '../../Components/CardSmile'
@@ -30,6 +30,67 @@ import bgScreening from "../../images/screening/screening-bg.png"
 import vectorDatabases from "../../images/vectorDatabases.png"
 
 export default function Screening() {
+
+  const womenRef = useRef()
+  const womenWrapRef = useRef()
+  const newsRef = useRef()
+  const womenWonderRef = useRef()
+  const womenWonderWrapRef = useRef()
+  const manAngryRef = useRef()
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          if (entry.target === womenRef.current) {
+            womenRef.current.classList.add("active");
+            observer.unobserve(womenRef.current);
+          }
+          else if (entry.target === womenWrapRef.current) {
+            womenWrapRef.current.classList.add("active");
+            observer.unobserve(womenWrapRef.current);
+          }
+          else if (entry.target === newsRef.current) {
+            newsRef.current.classList.add("active");
+            observer.unobserve(newsRef.current);
+          }
+          else if (entry.target === womenWonderRef.current) {
+            womenWonderRef.current.classList.add("active");
+              observer.unobserve(womenWonderRef.current);
+          }
+          else if (entry.target === womenWonderWrapRef.current) {
+            womenWonderWrapRef.current.classList.add("active");
+              observer.unobserve(womenWonderWrapRef.current);
+          }
+          else if (entry.target === manAngryRef.current) {
+            manAngryRef.current.classList.add("active");
+              observer.unobserve(manAngryRef.current);
+          }
+        }
+      });
+    });
+
+    if (womenRef.current) {
+      observer.observe(womenRef.current);
+    }
+    if (womenWrapRef.current) {
+      observer.observe(womenWrapRef.current);
+    }
+    if (newsRef.current) {
+        observer.observe(newsRef.current);
+    }
+    if (womenWonderRef.current) {
+        observer.observe(womenWonderRef.current);
+    }
+    if (womenWonderWrapRef.current) {
+        observer.observe(womenWonderWrapRef.current);
+    }
+    if (manAngryRef.current) {
+        observer.observe(manAngryRef.current);
+    }
+  }, [])
+
+
   return (
     <div className=''>
       <section>
@@ -233,7 +294,7 @@ export default function Screening() {
 
         {/* start section with big mother */}
         <section>
-          <div className='group-card-horiz grid grid-cols-1 items-center justify-center bg-no-repeat  md:grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-10 lg:gap-y-32 mt-10' style={{ backgroundImage: `url(${vectorBigMother})` }}>
+          <div className='group-card-horiz grid grid-cols-1 items-center justify-center bg-no-repeat  md:grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-10 lg:gap-y-32 mt-10 px-10 lg:px-20' style={{ backgroundImage: `url(${vectorBigMother})` }}>
             <div className="order-2 lg:order-1 flex items-center justify-center">
               <div className="order-2 lg:order-1 flex items-center justify-center">
                 <div className=''>
@@ -242,7 +303,7 @@ export default function Screening() {
                       <div className=" card-horiz"></div>
                       <div className="card-horiz"></div>
                       <div className="absolute w-[407.11px] h-[314.54px] flex items-center justify-center">
-                        <img src={screenImg1} alt="" className='w-[407.11px] h-[314.54px]' />
+                        <img ref={womenRef} src={screenImg1} alt="" className='w-[407.11px] h-[314.54px] show-img' />
                       </div>
                     </div>
                   </div>
@@ -251,7 +312,7 @@ export default function Screening() {
                       <div className=" card-vert"></div>
                       <div className="card-vert"></div>
                       <div className="absolute w-[326px] h-[295px] flex items-center justify-center">
-                        <img src={screenImg1} alt="" className='w-[335px] h-[292px] ' />
+                        <img ref={womenWrapRef} src={screenImg1} alt="" className='w-[335px] h-[292px] show-img' />
                       </div>
                     </div>
                   </div>
@@ -389,7 +450,7 @@ export default function Screening() {
                   <div className=" card-vert"></div>
                   <div className="card-vert"></div>
                   <div className="absolute flex items-center justify-center w-[325px] h-[251px] top-2 lg:w-full lg:h-full ">
-                    <img src={screenImg2} alt="" className='w-[276px] h-[315px]' />
+                    <img ref={newsRef} src={screenImg2} alt="" className='w-[276px] h-[315px] show-img' />
                   </div>
                 </div>
               </div>
@@ -409,7 +470,7 @@ export default function Screening() {
                       <div className=" card-horiz"></div>
                       <div className="card-horiz"></div>
                       <div className="absolute w-[407.11px] h-[314.54px] flex items-center justify-center left-1">
-                        <img src={screenImg3} alt="" className='w-[407.11px] h-[314.54px]' />
+                        <img ref={womenWonderRef} src={screenImg3} alt="" className='w-[407.11px] h-[314.54px] show-img' />
                       </div>
                     </div>
                   </div>
@@ -418,7 +479,7 @@ export default function Screening() {
                       <div className=" card-vert"></div>
                       <div className="card-vert"></div>
                       <div className="absolute w-[326px] h-[295px] flex items-center justify-center md:w-full -left-2 sm:left-0">
-                        <img src={screenImg3} alt="" className=' w-[326px] h-[233px]' />
+                        <img ref={womenWonderWrapRef} src={screenImg3} alt="" className=' w-[326px] h-[233px] show-img' />
                       </div>
                     </div>
                   </div>
@@ -543,36 +604,6 @@ export default function Screening() {
                         }
                       />
                     </div>
-                    <div className="flex gap-3">
-                      <SmallCheckCircle />
-                      <div className='flex flex-col'>
-                        <p className='screening-grid-title pb-2'>Mises à jour régulières:</p>
-                        <p className='screening-grid-content'>
-                          Soyez toujours à jour des dernières<br />
-                          évolutions législatives.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex gap-3 ">
-                      <SmallCheckCircle />
-                      <div className='flex flex-col'>
-                        <p className='screening-grid-title pb-2'>Expertise juridique:</p>
-                        <p className='screening-grid-content'>
-                          Bénéficiez de l'expertise de nos juristes<br />
-                          spécialisés en AML.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex gap-3 ">
-                      <SmallCheckCircle />
-                      <div className='flex flex-col'>
-                        <p className='screening-grid-title pb-2'>Flexibilité:</p>
-                        <p className='screening-grid-content'>
-                          Adaptez notre solution à vos besoins<br />
-                          spécifiques.
-                        </p>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -586,7 +617,7 @@ export default function Screening() {
                   <div className=" card-vert"></div>
                   <div className="card-vert"></div>
                   <div className="absolute flex items-center justify-center w-[340px] h-[251px] sm:w-full lg:h-full bottom-0 -left-4 ">
-                    <img src={screenImg4} alt="" className='w-[340px] h-[251px] lg:w-full lg:h-full' />
+                    <img ref={manAngryRef} src={screenImg4} alt="" className='w-[340px] h-[251px] lg:w-full lg:h-full show-img' />
                   </div>
                 </div>
               </div>

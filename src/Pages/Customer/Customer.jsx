@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import Arrow from '../../Components/Arrow'
 import CardSmile from '../../Components/CardSmile'
@@ -28,6 +28,47 @@ import screening from "../../images/screening/screening-img.png"
 import vectorDatabases from "../../images/vectorDatabases.png"
 
 export default function Customer() {
+
+  const cniRef = useRef()
+  const cniWrapRef = useRef()
+  const cniPhone = useRef()
+  const cniMan = useRef()
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    if (entry.target === cniRef.current) {
+                        cniRef.current.classList.add("active");
+                        observer.unobserve(cniRef.current);
+                    }else if (entry.target === cniWrapRef.current) {
+                      cniWrapRef.current.classList.add("active");
+                      observer.unobserve(cniWrapRef.current);
+                  }else if (entry.target === cniPhone.current) {
+                      cniPhone.current.classList.add("active");
+                      observer.unobserve(cniPhone.current);
+                  }else if (entry.target === cniMan.current) {
+                    cniMan.current.classList.add("active");
+                      observer.unobserve(cniMan.current);
+                  }
+                }
+            });
+        });
+
+        if (cniRef.current) {
+            observer.observe(cniRef.current);
+        }
+        if (cniWrapRef.current) {
+            observer.observe(cniWrapRef.current);
+        }
+        if (cniPhone.current) {
+            observer.observe(cniPhone.current);
+        }
+        if (cniMan.current) {
+            observer.observe(cniMan.current);
+        }
+    }, [])
+
   return (
     <div>
       <NavBar />
@@ -252,7 +293,7 @@ export default function Customer() {
                     <div className=" card-horiz"></div>
                     <div className="card-horiz"></div>
                     <div className="absolute w-[407.11px] h-[314.54px] flex items-center justify-center">
-                      <img src={cniWrap} alt="" className='w-[407.11px] h-[314.54px]' />
+                      <img ref={cniRef} src={cniWrap} alt="" className='w-[407.11px] h-[314.54px] show-img' />
                     </div>
                   </div>
                 </div>
@@ -261,7 +302,7 @@ export default function Customer() {
                     <div className=" card-vert"></div>
                     <div className="card-vert"></div>
                     <div className="absolute w-[326px] h-[295px] flex items-center justify-center">
-                      <img src={cniWrap} alt="" className=' ' />
+                      <img ref={cniWrapRef} src={cniWrap} alt="" className='show-img' />
                     </div>
                   </div>
                 </div>
@@ -350,7 +391,7 @@ export default function Customer() {
                 <div className=" card-vert"></div>
                 <div className="card-vert"></div>
                 <div className="absolute flex items-center justify-center w-[325px] h-[251px] lg:w-full lg:h-full ">
-                  <img src={screenImg2} alt="" className='' />
+                  <img ref={cniPhone} src={screenImg2} alt="" className='show-img' />
                 </div>
               </div>
             </div>
@@ -368,7 +409,7 @@ export default function Customer() {
                   <div className=" card-horiz"></div>
                   <div className="card-horiz"></div>
                   <div className="absolute w-[407.11px] h-[314.54px] flex items-center justify-center">
-                    <img src={screenImg3} alt="" className='w-[407.11px] h-[314.54px]' />
+                    <img ref={cniMan} src={screenImg3} alt="" className='w-[407.11px] h-[314.54px] show-img' />
                   </div>
                 </div>
               </div>
@@ -377,7 +418,7 @@ export default function Customer() {
                   <div className=" card-vert"></div>
                   <div className="card-vert"></div>
                   <div className="absolute w-[326px] h-[295px] flex items-center justify-center">
-                    <img src={screenImg3} alt="" className=' ' />
+                    <img ref={cniMan} src={screenImg3} alt="" className='show-img' />
                   </div>
                 </div>
               </div>

@@ -36,7 +36,6 @@ export default function Accueil() {
     const bigMotherRef = useRef()
     const bigMotherWrapRef = useRef()
     const girlCniRef = useRef()
-    const groupDatabasesRef = useRef()
     const groupDatabaseRef = useRef()
     const groupDatabaseWrapRef = useRef()
 
@@ -289,7 +288,7 @@ export default function Accueil() {
                                 <div className=" card-vert"></div>
                                 <div className="card-vert"></div>
                                 <div className="absolute flex items-center justify-center w-[325px] h-[251px] lg:w-full lg:h-full ">
-                                    <img ref={cniRef} src={cniPassport} alt="" className='cni-img' />
+                                    <img ref={cniRef} src={cniPassport} alt="" className='show-img' />
                                 </div>
                             </div>
                         </div>
@@ -305,7 +304,7 @@ export default function Accueil() {
                                 <div className='relative flex gap-5'>
                                     <div className=" card-horiz"></div>
                                     <div className="card-horiz"></div>
-                                    <img ref={bigMotherRef} src={bigMother} alt="" className=' bigMother' />
+                                    <img ref={bigMotherRef} src={bigMother} alt="" className=' bigMother show-img' />
                                 </div>
                             </div>
                             <div className="lg:hidden flex items-center justify-center">
@@ -313,7 +312,7 @@ export default function Accueil() {
                                     <div className=" card-vert"></div>
                                     <div className="card-vert"></div>
                                     <div className="absolute w-[326px] h-[295px] flex items-center justify-center bottom-0 left-1 sm:left-5 md:left-10">
-                                        <img ref={bigMotherWrapRef} src={bigMother} alt="" className='bigMother-wrap' />
+                                        <img ref={bigMotherWrapRef} src={bigMother} alt="" className=' show-img' />
                                     </div>
                                 </div>
                             </div>
@@ -423,7 +422,7 @@ export default function Accueil() {
                                 <div className=" card-vert"></div>
                                 <div className="card-vert"></div>
                                 <div className="absolute w-full h-full flex items-center justify-center lg:bottom-3  lg:left-0">
-                                    <img ref={girlCniRef} src={girlCni} alt="" className='girl-cni w-[300px] h-[190px] lg:w-[420px] lg:h-[260px]' />
+                                    <img ref={girlCniRef} src={girlCni} alt="" className='girl-cni w-[300px] h-[190px] lg:w-[420px] lg:h-[260px] show-img' />
                                 </div>
                             </div>
                         </div>
@@ -441,7 +440,7 @@ export default function Accueil() {
                                     <div className=" card-horiz"></div>
                                     <div className="card-horiz"></div>
                                     <div className="absolute flex items-center justify-center">
-                                        <img ref={groupDatabaseRef} src={groupDatabases} alt="" className='group-database' />
+                                        <img ref={groupDatabaseRef} src={groupDatabases} alt="" className='group-database show-img' />
                                     </div>
                                 </div>
                             </div>
@@ -450,7 +449,7 @@ export default function Accueil() {
                                     <div className=" card-vert"></div>
                                     <div className="card-vert"></div>
                                     <div className="absolute w-[300px] h-[200px] md:w-[329px] md:h-[214px] flex items-center justify-center">
-                                        <img ref={groupDatabaseWrapRef} src={groupDatabases} alt="" className='group-database' />
+                                        <img ref={groupDatabaseWrapRef} src={groupDatabases} alt="" className='group-database show-img' />
                                     </div>
                                 </div>
                             </div>
