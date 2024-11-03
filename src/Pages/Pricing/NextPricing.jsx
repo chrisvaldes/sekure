@@ -1,14 +1,37 @@
+import { zodResolver } from '@hookform/resolvers/zod'
 import React from 'react'
-import { Link } from 'react-router-dom'
-import Arrow from '../../Components/Arrow'
+import { useForm } from 'react-hook-form'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import FooterAccueil from '../../Components/FooterAccueil'
+import Input from '../../Components/Input'
 import NavBar from '../../Components/NavBar'
+import cmr from "../../images/about/cmrPicture.png"
 import iconArrow from "../../images/icons/arrowWhite.png"
-import vectorPricing from '../../images/pricing/Vector-pricing.png'
-import pricingBg from '../../images/pricing/pricing-bg.png'
-import cmr from "../../images/about/cmrPicture.png";
+import { PricingValidationFinalSchema } from '../../validation/pricing-validation-final'
 
 export default function NextPricing() {
+
+    const navigate = useNavigate()
+
+    const location = useLocation()
+    const item = location.state?.item;
+
+    const { register, handleSubmit, formState: { errors } } = useForm({
+        resolver: zodResolver(PricingValidationFinalSchema)
+    })
+
+    const handlePrincingFinal = async (data, e) => {
+        e.preventDefault()
+        console.log("phone : ", data.phone)
+        console.log("nom : ", item.nom)
+        console.log("prenom : ", item.prenom)
+        console.log("entreprise : ", item.company)
+        console.log("site web : ", item.website)
+        console.log("email : ", item.email)
+        // navigate("/")
+    }
+
+
     return (
         <div>
             <div className=''>
@@ -33,7 +56,7 @@ export default function NextPricing() {
                                 </p>
 
                                 <div className="block lg:hidden w-full">
-                                    <form action="" className="">
+                                    <form action="" className=""  onSubmit={handleSubmit(handlePrincingFinal)}>
 
                                         <div className='flex flex-col pt-5 gap-y-3'>
                                             <label htmlFor="" className='pricing-label'> Numéro de Téléphone <span className='text-red-500'>*</span></label>
@@ -41,13 +64,22 @@ export default function NextPricing() {
                                                 <select name="" id="" value="" className='bg-[#F3F3F3]'>
                                                     <option value="+ 237"><img src={cmr} alt="" /> + 237</option>
                                                 </select>
-                                                <input type="text" name="" id="" placeholder='Your company' className='pricing-input w-full w-full' />
+                                                <div className='flex-col text-left w-full gap-y-2'>
+                                                    <Input
+                                                        type="number"
+                                                        name="phone"
+                                                        placeholder='Numero de telephone'
+                                                        id="phone"
+                                                        register={register}
+                                                        className='pricing-input w-full'
+                                                    />
+                                                </div>
                                             </div>
                                         </div>
 
                                         <div className='flex flex-col pt-5 gap-y-3'>
                                             <label htmlFor="name" className='pricing-label'>Secteur d'activité</label>
-                                            <select name="HeadlineAct" className="pricing-input w-full">
+                                            <select name="secteurActivite" className="pricing-input w-full">
                                                 <option value="">Choisir un secteur</option>
                                                 <option value="JM">John Mayer</option>
                                                 <option value="SRV">Stevie Ray Vaughn</option>
@@ -57,7 +89,7 @@ export default function NextPricing() {
 
                                         <div className='flex flex-col pt-5 gap-y-3'>
                                             <label htmlFor="name" className='pricing-label'>Pays</label>
-                                            <select name="HeadlineAct" className="pricing-input w-full">
+                                            <select name="pays" className="pricing-input w-full">
                                                 <option value="">Choisir un pays</option>
                                                 <option value="JM">John Mayer</option>
                                                 <option value="SRV">Stevie Ray Vaughn</option>
@@ -67,7 +99,7 @@ export default function NextPricing() {
 
                                         <div className='flex flex-col pt-5 gap-y-3'>
                                             <label htmlFor="name" className='pricing-label'> J'utiliser AIBIOMETRICS pour : </label>
-                                            <select name="HeadlineAct" className="pricing-input w-full">
+                                            <select name="raison" className="pricing-input w-full">
                                                 <option value="">Choisir une raison</option>
                                                 <option value="JM">John Mayer</option>
                                                 <option value="SRV">Stevie Ray Vaughn</option>
@@ -77,7 +109,7 @@ export default function NextPricing() {
 
                                         <div className='flex flex-col text-left gap-y-3 pt-5' >
                                             <label htmlFor="name" className='pricing-label'> Volume annuel de transactions </label>
-                                            <select name="HeadlineAct" className="pricing-input w-full">
+                                            <select name="volumeTransac" className="pricing-input w-full">
                                                 <option value="">Choisir une plage de montants</option>
                                                 <option value="JM">John Mayer</option>
                                                 <option value="SRV">Stevie Ray Vaughn</option>
@@ -87,7 +119,7 @@ export default function NextPricing() {
 
                                         <div className='flex flex-col text-left gap-y-3 pt-5'>
                                             <label htmlFor="" className='pricing-label'>Ajouter un message</label>
-                                            <textarea name="" id="" className='pricing-input w-full pt-2' placeholder='Envoyez un message à AIBIOMETRICS' style={{height:"5rem"}}>
+                                            <textarea name="message" id="" className='pricing-input w-full pt-2' placeholder='Envoyez un message à AIBIOMETRICS' style={{ height: "5rem" }}>
                                             </textarea>
                                         </div>
 

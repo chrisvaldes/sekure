@@ -38,7 +38,26 @@ export default function Screening() {
   const womenWonderWrapRef = useRef()
   const manAngryRef = useRef()
 
+  const scrollRef = useRef(null);
+
   useEffect(() => {
+
+    const intervalId = setInterval(() => {
+      if (scrollRef.current) {
+        const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
+
+        // Vérifier si on a atteint la fin
+        if (scrollLeft + clientWidth >= scrollWidth) {
+            // Revenir au début
+            scrollRef.current.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+            // Scroller la largeur d'une carte
+            scrollRef.current.scrollBy({ left: 300, behavior: 'smooth' });
+        }
+    }
+  }, 3000); // 2000 ms = 2 secondes
+
+
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -88,6 +107,9 @@ export default function Screening() {
     if (manAngryRef.current) {
         observer.observe(manAngryRef.current);
     }
+
+    return () => clearInterval(intervalId); // Nettoyer l'intervalle lors du démontage
+
   }, [])
 
 
@@ -868,7 +890,7 @@ export default function Screening() {
                 dans les interactions numériques.
               </div>
             </div>
-            <div className='flex items-start justify-start gap-8 overflow-x-auto px-8 scrollbar-hidden'>
+            <div className='flex items-start justify-start gap-8 overflow-x-auto px-8 scrollbar-hidden' ref={scrollRef}>
               <Card
                 btnText="Disponibilité par pays"
                 title={

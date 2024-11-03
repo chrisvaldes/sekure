@@ -22,6 +22,7 @@ const Input = ({
           className={className}
           style={style}
           {...(register ? register(name) : {})}
+          required
         />
         {error && <p style={{ color: 'red', textAlign : 'left' }}>{error.message}</p>} {/* Affichez l'erreur ici */}
       </>
